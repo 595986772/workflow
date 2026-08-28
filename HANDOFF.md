@@ -15,7 +15,8 @@
 3. 最终架构图与论文图：`paper_assets/`
 4. 正文数字与seed级证据：`experiment_evidence/locked_snapshot_20260825/`
 5. 可执行代码与测试：`reproducible_code/`
-6. 审稿风险和未决项：`pro_reviews/OUR_投稿前最终严格审计_20260825.md`
+6. 作者原始DAOC源码：`upstream/daoc`（Git submodule）
+7. 审稿风险和未决项：`pro_reviews/OUR_投稿前最终严格审计_20260825.md`
 
 ## 3. 当前核心结果边界
 

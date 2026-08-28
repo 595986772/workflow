@@ -11,8 +11,10 @@
 - `paper_assets/`: 第一章架构图源文件和第五章实际引用的最终SVG。
 - `experiment_evidence/`: 锁定结果、seed级统计、协议锁和作图数据快照。
 - `references/`: DAOC的标准引用、DOI、IEEE页面和作者机构公开报告入口。
+- `upstream/daoc`: 作者官方DAOC源码的固定commit submodule，用于审计原始baseline。
 - `HANDOFF.md`: 换机器、换账号或交给其他模型时的工作入口。
 - `SOURCE_PROVENANCE.md`: 本次打包来源、完整性和适用边界。
+- `SUBMODULES.lock`: 上游源码的仓库、路径和固定commit。
 - `SHA256SUMS.txt`: 仓库内交付文件的 SHA-256 清单。
 
 ## Reproduction
@@ -30,6 +32,12 @@
 ```bash
 cd reproducible_code
 python -m pip install -r requirements.txt
+```
+
+如需同时获取作者原始DAOC源码，先在仓库根目录执行：
+
+```bash
+git submodule update --init --recursive
 ```
 
 运行核心回归测试：

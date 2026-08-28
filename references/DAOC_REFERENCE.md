@@ -17,4 +17,12 @@ The GERAD page above is the author-affiliated public access point and provides i
 
 ## Role in This Project
 
-This work is the primary baseline paper referred to as `DAOC` in the manuscript, code, experiment protocols, and Pro-review files. Its public implementation is represented under `reproducible_code/`; claims about the paper itself should still be checked against the official article or the author-affiliated report.
+This work is the primary baseline paper referred to as `DAOC` in the manuscript, code, experiment protocols, and Pro-review files. The pristine authors' implementation is pinned under `upstream/daoc`; the audited reproduction path and this project's extensions are under `reproducible_code/`. Claims about the paper itself should still be checked against the official article or the author-affiliated report.
+
+## Official Source Code
+
+- Authors' repository: https://github.com/MR-Golzari/distributed-dag-offloading-caching
+- Pinned project submodule: `upstream/daoc`
+- Pinned commit: `15596b3137e2e0a61d8b36c073c8a250deb5f2f5`
+
+Initialize it with `git submodule update --init --recursive`. See `upstream/README.md` for the separation between the pristine DAOC source and this project's extended reproducibility code.

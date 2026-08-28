@@ -1,0 +1,3 @@
+[submodule "upstream/daoc"]
+	path = upstream/daoc
+	url = https://github.com/MR-Golzari/distributed-dag-offloading-caching.git

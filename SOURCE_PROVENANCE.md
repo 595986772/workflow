@@ -57,6 +57,10 @@ Draw.io源文件内嵌11个图像对象，不依赖本机绝对路径。`paper_a
 
 `references/DAOC_REFERENCE.md`记录DAOC的标准引用、DOI、IEEE页面和GERAD作者机构技术报告入口。本地查阅的IEEE出版PDF明确限制再发布/再分发，因此不复制到该公开仓库。
 
+## Upstream DAOC Source
+
+`upstream/daoc`以Git submodule方式指向作者官方仓库`MR-Golzari/distributed-dag-offloading-caching`，并固定于commit `15596b3137e2e0a61d8b36c073c8a250deb5f2f5`。该目录表示未修改的上游baseline；`reproducible_code/`表示本项目审计、扩展并锁定实验协议后的代码快照。上游固定commit未包含明确许可证，因此保留submodule引用而不复制或重新授权其源码。`SUBMODULES.lock`记录仓库URL和固定commit；`SHA256SUMS.txt`只校验主仓库的实体文件，不将submodule目录当作普通文件哈希。
+
 ## Publication Boundary
 
 本仓库是研究工作快照，不等同于最终投稿归档版本。正式投稿前仍需完成全文合稿、英文改写、统一编号、引用核查和PDF逐页检查。DAOC受限出版PDF未收入公开仓库，仓库中的引用页提供合法获取入口。
