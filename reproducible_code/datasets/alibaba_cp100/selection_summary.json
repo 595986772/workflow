@@ -1,0 +1,123 @@
+{
+  "dataset_name": "Alibaba-CP100",
+  "dataset_role": "mechanism_and_development_stress_test",
+  "formal_unbiased_holdout": false,
+  "generator_version": "1.0.0",
+  "seed": 20260730,
+  "source_archive": "/Users/chenliang/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/batch_task.tar.gz",
+  "source_archive_sha256": "7c4b32361bd1ec2083647a8f52a6854a03bc125ca5c202652316c499fbf978c6",
+  "selected_graphs": 100,
+  "task_count_quotas": {
+    "7": 33,
+    "8": 33,
+    "9": 34
+  },
+  "scan_counters": {
+    "task_rows": 14295731,
+    "jobs": 4201014,
+    "malformed_rows": 0,
+    "job_order_regressions": 2,
+    "duplicate_job_groups": 0,
+    "jobs_7_9_tasks": 231151,
+    "jobs_7_9_all_terminated": 227102,
+    "jobs_parseable": 198439,
+    "jobs_complete_dependencies": 198439,
+    "jobs_acyclic": 198439,
+    "jobs_fork_join": 55820,
+    "jobs_cp_qualified": 16724,
+    "jobs_cp_qualified_7_tasks": 6353,
+    "jobs_cp_qualified_8_tasks": 6970,
+    "jobs_cp_qualified_9_tasks": 3401
+  },
+  "selection_requirements": {
+    "real_tasks": [
+      7,
+      8,
+      9
+    ],
+    "status": "all Terminated",
+    "dependency_names": "letters + numeric id/dependency suffix",
+    "complete_predecessors": true,
+    "acyclic": true,
+    "minimum_forks": 1,
+    "minimum_joins": 1,
+    "minimum_structural_depth": 4,
+    "minimum_critical_path_nodes": 4,
+    "critical_path_must_not_include_all_nodes": true,
+    "minimum_critical_path_work_fraction": 0.5,
+    "minimum_critical_path_dominance_gap": 0.08,
+    "maximum_single_critical_node_share": 0.6
+  },
+  "attribute_protocol": {
+    "task_weight": "log1p((end_time-start_time)*plan_cpu)",
+    "cpucycle": "selected-task weight normalized by selected-set 5th/95th percentiles to [0.05,1.0]",
+    "services": "critical-path tasks use deterministic hot services 1-3; off-path tasks use deterministic services 4-10",
+    "edge_payloads": "critical-path edges [0.75,1.0], incident edges [0.45,0.70], off-path edges [0.15,0.50]",
+    "dummy_source": "node 0 connects to every real source with input payload in [0.35,0.65]"
+  },
+  "cpucycle_weight_quantiles": {
+    "q05": 4.61512051684126,
+    "q95": 10.330420567259534
+  },
+  "selected_source_metrics": {
+    "critical_path_work_fraction": {
+      "minimum": 0.8332106114896857,
+      "mean": 0.8661098100336059,
+      "maximum": 0.9027053806980908
+    },
+    "critical_path_dominance_gap": {
+      "minimum": 0.4579213577020112,
+      "mean": 0.538472394480115,
+      "maximum": 0.5917510822807228
+    },
+    "critical_path_node_fraction": {
+      "minimum": 0.7777777777777778,
+      "mean": 0.843829365079365,
+      "maximum": 0.8888888888888888
+    },
+    "selection_score": {
+      "minimum": 0.8388398001514299,
+      "mean": 0.8696560397142499,
+      "maximum": 0.9079442778050231
+    }
+  },
+  "output_stress_metrics": {
+    "manifest_path_is_output_node_weighted_longest": {
+      "matched": 100,
+      "total": 100
+    },
+    "output_node_weighted_critical_path_fraction": {
+      "minimum": 0.8281455126514295,
+      "mean": 0.9118881027211458,
+      "maximum": 0.9783859860053824
+    },
+    "output_node_weighted_critical_path_gap": {
+      "minimum": 0.39983776676133775,
+      "mean": 0.5324024533389558,
+      "maximum": 0.6256466338333301
+    },
+    "critical_edge_datalength": {
+      "minimum": 0.750027507156,
+      "mean": 0.8808629820199129,
+      "maximum": 0.999636290547
+    },
+    "other_edge_datalength": {
+      "minimum": 0.450688043372,
+      "mean": 0.5745488525960705,
+      "maximum": 0.698070372916
+    },
+    "mapped_service_counts": {
+      "1": 307,
+      "2": 200,
+      "3": 167,
+      "4": 18,
+      "5": 19,
+      "6": 17,
+      "7": 22,
+      "8": 14,
+      "9": 20,
+      "10": 17
+    },
+    "hot_service_fraction_services_1_to_3": 0.8414481897627965
+  }
+}

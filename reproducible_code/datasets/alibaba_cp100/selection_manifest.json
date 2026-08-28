@@ -1,0 +1,6662 @@
+[
+  {
+    "dataset_key": "j_101606",
+    "source_job": "j_101606",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8978852151024161,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.48998026855701976,
+    "max_critical_node_share": 0.18507943911771235,
+    "selection_score": 0.8995708186037497,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 6,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3900925",
+    "source_job": "j_3900925",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8999545180445048,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.4884283853169463,
+    "max_critical_node_share": 0.1831714481536367,
+    "selection_score": 0.8994674098365412,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_1709623",
+    "source_job": "j_1709623",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8845131672207852,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.493071256150321,
+    "max_critical_node_share": 0.1810213252579276,
+    "selection_score": 0.8960765920070781,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_4083616",
+    "source_job": "j_4083616",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8810953299919323,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.4900219910258329,
+    "max_critical_node_share": 0.18456175430394264,
+    "selection_score": 0.8928798980408441,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2494848",
+    "source_job": "j_2494848",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8627598056688891,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.502173836935624,
+    "max_critical_node_share": 0.18266512645632388,
+    "selection_score": 0.8915324936961271,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_1823374",
+    "source_job": "j_1823374",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8650253113230727,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.49788890132014313,
+    "max_critical_node_share": 0.17688393507898031,
+    "selection_score": 0.8911720367498863,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_410096",
+    "source_job": "j_410096",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8618266213959391,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5024771058097657,
+    "max_critical_node_share": 0.18254974463010254,
+    "selection_score": 0.8911592199869471,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_1319783",
+    "source_job": "j_1319783",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8604917696914735,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5019632048215207,
+    "max_critical_node_share": 0.18530995653900267,
+    "selection_score": 0.8906252793051608,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_745337",
+    "source_job": "j_745337",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8586252935844215,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.500042367809058,
+    "max_critical_node_share": 0.18138344465032266,
+    "selection_score": 0.88987868886234,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_4027072",
+    "source_job": "j_4027072",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8810028969508115,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.48395279852420225,
+    "max_critical_node_share": 0.18726672855809628,
+    "selection_score": 0.8892014093234173,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 6,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3479541",
+    "source_job": "j_3479541",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8829634051149423,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.480140034800294,
+    "max_critical_node_share": 0.18377250903646342,
+    "selection_score": 0.8876979543547248,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3908442",
+    "source_job": "j_3908442",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8605886908794702,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.49482034881646386,
+    "max_critical_node_share": 0.18674173379507084,
+    "selection_score": 0.8875562570702378,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_4018520",
+    "source_job": "j_4018520",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8610707012059415,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.4900275910833473,
+    "max_critical_node_share": 0.17996930006720496,
+    "selection_score": 0.8848734065609565,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_1187705",
+    "source_job": "j_1187705",
+    "source_task_names": {
+      "1": "M1",
+      "2": "R2_1",
+      "3": "R3_2",
+      "4": "M4_3",
+      "5": "J5_1_4",
+      "6": "M6",
+      "7": "R7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      1,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8432241832296009,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5012846362343478,
+    "max_critical_node_share": 0.18894873917890861,
+    "selection_score": 0.8837182447204117,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2147153",
+    "source_job": "j_2147153",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "M2_1",
+      "4": "J3_2",
+      "5": "J5_3_4",
+      "6": "M6",
+      "7": "J7_5_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      5,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      4,
+      5,
+      7
+    ],
+    "critical_path_work_fraction": 0.8431137270524187,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5033932183627998,
+    "max_critical_node_share": 0.19968595810828116,
+    "selection_score": 0.8836740622495389,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3164421",
+    "source_job": "j_3164421",
+    "source_task_names": {
+      "1": "M4",
+      "2": "M5",
+      "3": "R1_5",
+      "4": "M2_1",
+      "5": "R3_2",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "5": "2",
+      "1": "3",
+      "2": "4",
+      "3": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8812355263910621,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.49843473076327527,
+    "max_critical_node_share": 0.1855777926886125,
+    "selection_score": 0.8729836204429615,
+    "assigned_service_ids": {
+      "1": 4,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2662613",
+    "source_job": "j_2662613",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "M2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8784747522594328,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5015232037103897,
+    "max_critical_node_share": 0.18974046975734168,
+    "selection_score": 0.8728184723323447,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 6,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_241070",
+    "source_job": "j_241070",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "M7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8766287063744265,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5049329654582472,
+    "max_critical_node_share": 0.22746201737535213,
+    "selection_score": 0.8720800539783422,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2470048",
+    "source_job": "j_2470048",
+    "source_task_names": {
+      "1": "M4",
+      "2": "M5",
+      "3": "R1_5",
+      "4": "M2_1",
+      "5": "R3_2",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "5": "2",
+      "1": "3",
+      "2": "4",
+      "3": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8801844248526599,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.4964245286742699,
+    "max_critical_node_share": 0.18605355817139044,
+    "selection_score": 0.8713570585741974,
+    "assigned_service_ids": {
+      "1": 5,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2631071",
+    "source_job": "j_2631071",
+    "source_task_names": {
+      "1": "M4",
+      "2": "M5",
+      "3": "R1_5",
+      "4": "M2_1",
+      "5": "R3_2",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "5": "2",
+      "1": "3",
+      "2": "4",
+      "3": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8799650840863391,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.4953769052334994,
+    "max_critical_node_share": 0.18644061846300067,
+    "selection_score": 0.8706407482032068,
+    "assigned_service_ids": {
+      "1": 4,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3746370",
+    "source_job": "j_3746370",
+    "source_task_names": {
+      "1": "M4",
+      "2": "R1_4",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M5",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      4,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8719822959809953,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5039590113734296,
+    "max_critical_node_share": 0.1771333707801372,
+    "selection_score": 0.8702214898209697,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 4,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3410542",
+    "source_job": "j_3410542",
+    "source_task_names": {
+      "1": "M4",
+      "2": "M5",
+      "3": "R1_5",
+      "4": "M2_1",
+      "5": "R3_2",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "5": "2",
+      "1": "3",
+      "2": "4",
+      "3": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8772610869018547,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.49582033987651636,
+    "max_critical_node_share": 0.1847784603651705,
+    "selection_score": 0.8698252101152233,
+    "assigned_service_ids": {
+      "1": 10,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2718745",
+    "source_job": "j_2718745",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8673350665918288,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5173150115530643,
+    "max_critical_node_share": 0.17707799492232898,
+    "selection_score": 0.8683625980653031,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_915898",
+    "source_job": "j_915898",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "M7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8670312004318687,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5454094538968284,
+    "max_critical_node_share": 0.22262148520007563,
+    "selection_score": 0.868241051601319,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2079918",
+    "source_job": "j_2079918",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "M7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.866797571756076,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5444879883260768,
+    "max_critical_node_share": 0.2552423985052331,
+    "selection_score": 0.868147600131002,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_432749",
+    "source_job": "j_432749",
+    "source_task_names": {
+      "1": "M4",
+      "2": "M5",
+      "3": "R1_5",
+      "4": "M2_1",
+      "5": "R3_2",
+      "6": "J6_3_4_5",
+      "7": "R7_6"
+    },
+    "source_to_daoc_task_id": {
+      "4": "1",
+      "5": "2",
+      "1": "3",
+      "2": "4",
+      "3": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8818083518729587,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.48946823673910866,
+    "max_critical_node_share": 0.18710646351691107,
+    "selection_score": 0.8678328542212201,
+    "assigned_service_ids": {
+      "1": 5,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_3044886",
+    "source_job": "j_3044886",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "M7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8775695096680335,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.48931645222713577,
+    "max_critical_node_share": 0.23833832630418592,
+    "selection_score": 0.8660462466320664,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_334334",
+    "source_job": "j_334334",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8615081949273979,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5099085675202886,
+    "max_critical_node_share": 0.1690973227783408,
+    "selection_score": 0.8660318493995307,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_994342",
+    "source_job": "j_994342",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.861244143573147,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5091669301995407,
+    "max_critical_node_share": 0.16911792409869958,
+    "selection_score": 0.8659262288578304,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_153878",
+    "source_job": "j_153878",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "M7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8608572304764868,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5208903817310486,
+    "max_critical_node_share": 0.17962878798388907,
+    "selection_score": 0.8657714636191662,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_1550657",
+    "source_job": "j_1550657",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8608252463055459,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.5085783231144935,
+    "max_critical_node_share": 0.16933459750326668,
+    "selection_score": 0.86575866995079,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_550772",
+    "source_job": "j_550772",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.859941652041818,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.506483442012354,
+    "max_critical_node_share": 0.16883303558528046,
+    "selection_score": 0.8654052322452988,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2539751",
+    "source_job": "j_2539751",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R6_5",
+      "7": "J7_4_6"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "task_count": 7,
+    "edge_count_without_dummy": 7,
+    "structural_depth": 6,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7
+    ],
+    "critical_path_work_fraction": 0.8637084029241654,
+    "critical_path_node_fraction": 0.8571428571428571,
+    "critical_path_dominance_gap": 0.49499282703343667,
+    "max_critical_node_share": 0.19071160978026871,
+    "selection_score": 0.8639076288182996,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 1
+    }
+  },
+  {
+    "dataset_key": "j_2086309",
+    "source_job": "j_2086309",
+    "source_task_names": {
+      "1": "M1",
+      "2": "M2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "M5_4",
+      "6": "J6_1_5",
+      "7": "R7_6",
+      "8": "J8_2_7"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8843863581159731,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.49133488814157816,
+    "max_critical_node_share": 0.18057804507029349,
+    "selection_score": 0.8985554761313361,
+    "assigned_service_ids": {
+      "1": 6,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1799664",
+    "source_job": "j_1799664",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8836314288864215,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5917510822807228,
+    "max_critical_node_share": 0.14698844974352138,
+    "selection_score": 0.8784525715545688,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3837817",
+    "source_job": "j_3837817",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8825619125351293,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.586809231360641,
+    "max_critical_node_share": 0.15287608028626856,
+    "selection_score": 0.8780247650140518,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 8,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_323919",
+    "source_job": "j_323919",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8819106053921778,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5830879574627128,
+    "max_critical_node_share": 0.15547384244446344,
+    "selection_score": 0.8777642421568712,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 6,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_4175344",
+    "source_job": "j_4175344",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.881865731119693,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5844344736151812,
+    "max_critical_node_share": 0.15639776511513032,
+    "selection_score": 0.8777462924478774,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3582082",
+    "source_job": "j_3582082",
+    "source_task_names": {
+      "1": "M1",
+      "2": "M2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "M5_4",
+      "6": "J6_1_5",
+      "7": "R7_6",
+      "8": "J8_2_7"
+    },
+    "source_to_daoc_task_id": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8819628482479418,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.4579213577020112,
+    "max_critical_node_share": 0.17148431280285203,
+    "selection_score": 0.8775379539203836,
+    "assigned_service_ids": {
+      "1": 4,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1434027",
+    "source_job": "j_1434027",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8803209248125559,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5847327066715996,
+    "max_critical_node_share": 0.15332742909174313,
+    "selection_score": 0.8771283699250225,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1948118",
+    "source_job": "j_1948118",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8803131509648257,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5793156349322894,
+    "max_critical_node_share": 0.15347985495436864,
+    "selection_score": 0.8771252603859303,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 7,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1987494",
+    "source_job": "j_1987494",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8790040297354567,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5767188323522258,
+    "max_critical_node_share": 0.14434945491332415,
+    "selection_score": 0.8766016118941828,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 8,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2803950",
+    "source_job": "j_2803950",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8780144552641578,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.576695355011055,
+    "max_critical_node_share": 0.14371333113755808,
+    "selection_score": 0.8762057821056632,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 10,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2236507",
+    "source_job": "j_2236507",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8779097039957279,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5752209013299358,
+    "max_critical_node_share": 0.14566324474120576,
+    "selection_score": 0.8761638815982913,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 9,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2942687",
+    "source_job": "j_2942687",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8778204323314313,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5763968621356026,
+    "max_critical_node_share": 0.14587030100885537,
+    "selection_score": 0.8761281729325726,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 7,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_192115",
+    "source_job": "j_192115",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8770500490930476,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5736266562109446,
+    "max_critical_node_share": 0.1471559189442641,
+    "selection_score": 0.8758200196372192,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 4,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1693747",
+    "source_job": "j_1693747",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8770168597762571,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5782731487701348,
+    "max_critical_node_share": 0.14690724422538737,
+    "selection_score": 0.875806743910503,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1680936",
+    "source_job": "j_1680936",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8768963681325337,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5751653413762821,
+    "max_critical_node_share": 0.14311019034833145,
+    "selection_score": 0.8757585472530136,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 4,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3190650",
+    "source_job": "j_3190650",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8767160237488096,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5770610771003718,
+    "max_critical_node_share": 0.14670180187193596,
+    "selection_score": 0.875686409499524,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 9,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_164727",
+    "source_job": "j_164727",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8767032217370228,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5754991108991313,
+    "max_critical_node_share": 0.14322719189992103,
+    "selection_score": 0.8756812886948092,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 10,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1879184",
+    "source_job": "j_1879184",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8765987975828972,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5770343298674092,
+    "max_critical_node_share": 0.14719774546988262,
+    "selection_score": 0.875639519033159,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 9,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3647489",
+    "source_job": "j_3647489",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8765313019498872,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5744063184121394,
+    "max_critical_node_share": 0.1453217794936954,
+    "selection_score": 0.875612520779955,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 4,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2137147",
+    "source_job": "j_2137147",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8760516707887355,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5779723782831462,
+    "max_critical_node_share": 0.14589645940524565,
+    "selection_score": 0.8754206683154944,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 6,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3429859",
+    "source_job": "j_3429859",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8760304850188,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.57426744561547,
+    "max_critical_node_share": 0.1451177818748444,
+    "selection_score": 0.8754121940075201,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_887657",
+    "source_job": "j_887657",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.875999923310665,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5727331029330767,
+    "max_critical_node_share": 0.14285714285714288,
+    "selection_score": 0.8753999693242661,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 6,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2939201",
+    "source_job": "j_2939201",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.875715807417573,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5731412126272909,
+    "max_critical_node_share": 0.14301283751157193,
+    "selection_score": 0.8752863229670294,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 5,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2119795",
+    "source_job": "j_2119795",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8756386759368247,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5729100377260804,
+    "max_critical_node_share": 0.14465675680073126,
+    "selection_score": 0.87525547037473,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_4127469",
+    "source_job": "j_4127469",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8755976443964635,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5728586886917796,
+    "max_critical_node_share": 0.1429871535174345,
+    "selection_score": 0.8752390577585856,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 8,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_451900",
+    "source_job": "j_451900",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8754729445241614,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5727883947931103,
+    "max_critical_node_share": 0.14551353033444273,
+    "selection_score": 0.8751891778096647,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 5,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_215192",
+    "source_job": "j_215192",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8753774476111911,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5704528329471843,
+    "max_critical_node_share": 0.15167778939178897,
+    "selection_score": 0.8751509790444765,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 9,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_582798",
+    "source_job": "j_582798",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8753216406456413,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5707951287818387,
+    "max_critical_node_share": 0.1454690598424961,
+    "selection_score": 0.8751286562582566,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 4,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_222988",
+    "source_job": "j_222988",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8749820413289283,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5705894129641679,
+    "max_critical_node_share": 0.1452178624237625,
+    "selection_score": 0.8749928165315715,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 4,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_3346898",
+    "source_job": "j_3346898",
+    "source_task_names": {
+      "1": "M2",
+      "2": "R1_2",
+      "3": "R3_2",
+      "4": "R4_3",
+      "5": "R5_4",
+      "6": "R6_5",
+      "7": "R7_6",
+      "8": "J8_1_7"
+    },
+    "source_to_daoc_task_id": {
+      "2": "1",
+      "1": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "second_path_source_ids": [
+      2,
+      1,
+      8
+    ],
+    "critical_path_work_fraction": 0.8748264198691654,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5454410632777599,
+    "max_critical_node_share": 0.1796021966522051,
+    "selection_score": 0.8749305679476662,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 7,
+      "3": 2,
+      "4": 1,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1154671",
+    "source_job": "j_1154671",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8748081326900955,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.571413732745197,
+    "max_critical_node_share": 0.14407679888867758,
+    "selection_score": 0.8749232530760382,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 8,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_2147315",
+    "source_job": "j_2147315",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.874459001796851,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5731734530185855,
+    "max_critical_node_share": 0.14655250204447445,
+    "selection_score": 0.8747836007187405,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 6,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_935115",
+    "source_job": "j_935115",
+    "source_task_names": {
+      "1": "M6",
+      "2": "R1_6",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "R4_3",
+      "6": "R5_4",
+      "7": "R7_6",
+      "8": "J8_5_7"
+    },
+    "source_to_daoc_task_id": {
+      "6": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "5": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "task_count": 8,
+    "edge_count_without_dummy": 8,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "second_path_source_ids": [
+      6,
+      7,
+      8
+    ],
+    "critical_path_work_fraction": 0.8738836448311625,
+    "critical_path_node_fraction": 0.875,
+    "critical_path_dominance_gap": 0.5725015226130628,
+    "max_critical_node_share": 0.1470242112092441,
+    "selection_score": 0.8745534579324652,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 10,
+      "8": 3
+    }
+  },
+  {
+    "dataset_key": "j_1005730",
+    "source_job": "j_1005730",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.8886135125179231,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.4995351583667933,
+    "max_critical_node_share": 0.12534863122490497,
+    "selection_score": 0.9079442778050231,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 9,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_520631",
+    "source_job": "j_520631",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.891316731467542,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.4938712630324184,
+    "max_critical_node_share": 0.1280643684837908,
+    "selection_score": 0.9056272281842457,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 5,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_1548559",
+    "source_job": "j_1548559",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.8899543690963168,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.4946124643016314,
+    "max_critical_node_share": 0.13442818747214494,
+    "selection_score": 0.9055270039972834,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 7,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_2384003",
+    "source_job": "j_2384003",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.8983023811811309,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.4866065101665981,
+    "max_critical_node_share": 0.13999787718791695,
+    "selection_score": 0.9040626363501891,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 8,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_1837257",
+    "source_job": "j_1837257",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.8909937469817306,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.48936932896569274,
+    "max_critical_node_share": 0.1436036743100377,
+    "selection_score": 0.9027968739498857,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 9,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_1630739",
+    "source_job": "j_1630739",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.9027053806980908,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.47961040194255705,
+    "max_critical_node_share": 0.13753615110311443,
+    "selection_score": 0.9016261712225484,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 5,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_4032678",
+    "source_job": "j_4032678",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "R3_2",
+      "5": "M4_3",
+      "6": "J6_4_5",
+      "7": "R7_6",
+      "8": "M8",
+      "9": "R9_7_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 8,
+    "fork_count": 1,
+    "join_count": 2,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "critical_path_work_fraction": 0.8968555657075364,
+    "critical_path_node_fraction": 0.8888888888888888,
+    "critical_path_dominance_gap": 0.4800134787279647,
+    "max_critical_node_share": 0.1349932606360177,
+    "selection_score": 0.8995280912975712,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 1,
+      "7": 3,
+      "8": 5,
+      "9": 1
+    }
+  },
+  {
+    "dataset_key": "j_1437936",
+    "source_job": "j_1437936",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8615390140399432,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5556490011022112,
+    "max_critical_node_share": 0.16811085945945162,
+    "selection_score": 0.8501711611715329,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 7,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_1058523",
+    "source_job": "j_1058523",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8565261256499666,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5517851737196741,
+    "max_critical_node_share": 0.17232223942048885,
+    "selection_score": 0.8481660058155422,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 7,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_3178397",
+    "source_job": "j_3178397",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.850980967589579,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5548124149675321,
+    "max_critical_node_share": 0.16778137754870187,
+    "selection_score": 0.8459479425913873,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 7,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_169464",
+    "source_job": "j_169464",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8488050582745995,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5547413453059102,
+    "max_critical_node_share": 0.1678879820411347,
+    "selection_score": 0.8450775788653954,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_1513036",
+    "source_job": "j_1513036",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8448322639034113,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5618502195022567,
+    "max_critical_node_share": 0.157224670746615,
+    "selection_score": 0.8434884611169201,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 4,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2466208",
+    "source_job": "j_2466208",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8424048788075628,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5629987899267563,
+    "max_critical_node_share": 0.15775808562203808,
+    "selection_score": 0.8425175070785808,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 7,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_4036194",
+    "source_job": "j_4036194",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8408546031025571,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5614531404641295,
+    "max_critical_node_share": 0.1578202893038057,
+    "selection_score": 0.8418973967965785,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2357175",
+    "source_job": "j_2357175",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8404284538478967,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5583106060071219,
+    "max_critical_node_share": 0.1625340909893173,
+    "selection_score": 0.8417269370947144,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 9,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_145207",
+    "source_job": "j_145207",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.839760603079199,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5619561912539895,
+    "max_critical_node_share": 0.16003073144694296,
+    "selection_score": 0.8414597967872351,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_383890",
+    "source_job": "j_383890",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8395492423846771,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5586614106601392,
+    "max_critical_node_share": 0.16200788400979116,
+    "selection_score": 0.8413752525094265,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 5,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_39139",
+    "source_job": "j_39139",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8391361479100347,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5548313396510353,
+    "max_critical_node_share": 0.1633191976223524,
+    "selection_score": 0.8412100147195695,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 4,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_3733373",
+    "source_job": "j_3733373",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8384577297305736,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5595632292053329,
+    "max_critical_node_share": 0.16065515619200074,
+    "selection_score": 0.840938647447785,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 9,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_3002919",
+    "source_job": "j_3002919",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8379301681734139,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5597953731541483,
+    "max_critical_node_share": 0.16030694026877756,
+    "selection_score": 0.8407276228249212,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 9,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_1133760",
+    "source_job": "j_1133760",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8373731597655718,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5600407921152537,
+    "max_critical_node_share": 0.15993881182711947,
+    "selection_score": 0.8405048194617843,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 9,
+      "7": 5,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_1694182",
+    "source_job": "j_1694182",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8373731597655718,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5600407921152537,
+    "max_critical_node_share": 0.15993881182711947,
+    "selection_score": 0.8405048194617843,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 10,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2273592",
+    "source_job": "j_2273592",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8373731597655718,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5600407921152537,
+    "max_critical_node_share": 0.15993881182711947,
+    "selection_score": 0.8405048194617843,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 6,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2410419",
+    "source_job": "j_2410419",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8373731597655718,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5600407921152537,
+    "max_critical_node_share": 0.15993881182711947,
+    "selection_score": 0.8405048194617843,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 7,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_3962792",
+    "source_job": "j_3962792",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8356096311969214,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5651232674026166,
+    "max_critical_node_share": 0.1609217057783766,
+    "selection_score": 0.8397994080343242,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 10,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_1746551",
+    "source_job": "j_1746551",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8355988798791929,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5608247242539327,
+    "max_critical_node_share": 0.1630665538737191,
+    "selection_score": 0.8397951075072329,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_189932",
+    "source_job": "j_189932",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.834958605555275,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5567847212969358,
+    "max_critical_node_share": 0.16482291805459637,
+    "selection_score": 0.8395389977776656,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 8,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2332135",
+    "source_job": "j_2332135",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8344188104244274,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5613479617512898,
+    "max_critical_node_share": 0.16231871918403223,
+    "selection_score": 0.8393230797253266,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 5,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_3660158",
+    "source_job": "j_3660158",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8344079027752969,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.557011800559063,
+    "max_critical_node_share": 0.16448229916140547,
+    "selection_score": 0.8393187166656744,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 8,
+      "7": 5,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2104773",
+    "source_job": "j_2104773",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8338263769038466,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5572519151559333,
+    "max_critical_node_share": 0.16412212726609993,
+    "selection_score": 0.8390861063170943,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 4,
+      "7": 6,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_388703",
+    "source_job": "j_388703",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8332106114896857,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5575065327616018,
+    "max_critical_node_share": 0.16374020085759744,
+    "selection_score": 0.8388398001514299,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 6,
+      "7": 9,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_680770",
+    "source_job": "j_680770",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8332106114896857,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5575065327616018,
+    "max_critical_node_share": 0.16374020085759744,
+    "selection_score": 0.8388398001514299,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 5,
+      "7": 8,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_732953",
+    "source_job": "j_732953",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8332106114896857,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5575065327616018,
+    "max_critical_node_share": 0.16374020085759744,
+    "selection_score": 0.8388398001514299,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 5,
+      "8": 1,
+      "9": 3
+    }
+  },
+  {
+    "dataset_key": "j_2026214",
+    "source_job": "j_2026214",
+    "source_task_names": {
+      "1": "M5",
+      "2": "R1_5",
+      "3": "R2_1",
+      "4": "M3_2",
+      "5": "R4_3",
+      "6": "M6",
+      "7": "M7",
+      "8": "J8_4_5_6_7",
+      "9": "R9_8"
+    },
+    "source_to_daoc_task_id": {
+      "5": "1",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "task_count": 9,
+    "edge_count_without_dummy": 9,
+    "structural_depth": 7,
+    "fork_count": 1,
+    "join_count": 1,
+    "critical_path_source_ids": [
+      5,
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "critical_path_daoc_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "second_path_source_ids": [
+      5,
+      8,
+      9
+    ],
+    "critical_path_work_fraction": 0.8332106114896857,
+    "critical_path_node_fraction": 0.7777777777777778,
+    "critical_path_dominance_gap": 0.5575065327616018,
+    "max_critical_node_share": 0.16374020085759744,
+    "selection_score": 0.8388398001514299,
+    "assigned_service_ids": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 2,
+      "6": 7,
+      "7": 4,
+      "8": 1,
+      "9": 3
+    }
+  }
+]

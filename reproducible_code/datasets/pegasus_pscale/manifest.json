@@ -1,0 +1,217 @@
+{
+  "status": "complete",
+  "claim_scope": "controlled_pegasus_pscale_workflow_benchmark",
+  "source_repository": "https://github.com/WorkflowSim/WorkflowSim-1.0",
+  "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+  "source_files": {
+    "Montage": {
+      "upstream_path": "config/dax/Montage_25.xml",
+      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Montage_25.xml",
+      "sha256": "3c791f17b8e57a06e5e7afad57fffc625c0611caf168036efeaa18b1888bab19"
+    },
+    "CyberShake": {
+      "upstream_path": "config/dax/CyberShake_30.xml",
+      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/CyberShake_30.xml",
+      "sha256": "230b9861c69cb9b04165b6d37952a39059aaa1a406350f6c03b238c81aa0228e"
+    },
+    "Epigenomics": {
+      "upstream_path": "config/dax/Epigenomics_24.xml",
+      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Epigenomics_24.xml",
+      "sha256": "867696c4d3028eded842bec41c9ce3ef6ddceb3ccd925212f1282281101c7af1"
+    },
+    "Inspiral": {
+      "upstream_path": "config/dax/Inspiral_30.xml",
+      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Inspiral_30.xml",
+      "sha256": "6d8773fecf8376fda8c5df5c33c527a2485c721371b11f476f4858e1e8f5229b"
+    },
+    "Sipht": {
+      "upstream_path": "config/dax/Sipht_30.xml",
+      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Sipht_30.xml",
+      "sha256": "f9d6bcaf70a9b3f9e57bd599955da2dd90fa35b8c2b9daabea7e137e36534bb6"
+    }
+  },
+  "generator": {
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "complete_workflows": true,
+    "real_task_range": [
+      24,
+      30
+    ],
+    "task_limit_including_dummy": 31,
+    "service_count": 10,
+    "type_mapping": "sha256_namespace_name_mod10_v1",
+    "normalization": "pegasus_global_log_minmax_v1"
+  },
+  "generation": {
+    "normalization": {
+      "version": "pegasus_global_log_minmax_v1",
+      "runtime_log_bounds": [
+        0.04879016416943201,
+        8.309913146690194
+      ],
+      "data_log_bounds": [
+        5.583496308781699,
+        20.35481893604352
+      ],
+      "fallback_data_bytes": 467520.5
+    },
+    "type_mapping": {
+      "version": "sha256_namespace_name_mod10_v1",
+      "program_type_count": 39,
+      "program_type_to_service": {
+        "CyberShake:ExtractSGT": 10,
+        "CyberShake:PeakValCalcOkaya": 1,
+        "CyberShake:SeismogramSynthesis": 8,
+        "CyberShake:ZipPSA": 9,
+        "CyberShake:ZipSeis": 6,
+        "Genome:fastq2bfq_chr21": 3,
+        "Genome:fastqSplit_chr21": 8,
+        "Genome:filterContams_chr21": 10,
+        "Genome:mapMerge_chr21": 6,
+        "Genome:map_chr21": 7,
+        "Genome:maqindex_chr21": 10,
+        "Genome:pileup_chr21": 7,
+        "Genome:sol2sanger_chr21": 4,
+        "LIGO:Inspiral": 6,
+        "LIGO:Thinca": 4,
+        "LIGO:TmpltBank": 9,
+        "LIGO:TrigBank": 10,
+        "Montage:mAdd": 3,
+        "Montage:mBackground": 1,
+        "Montage:mBgModel": 3,
+        "Montage:mConcatFit": 8,
+        "Montage:mDiffFit": 2,
+        "Montage:mImgTbl": 7,
+        "Montage:mJPEG": 5,
+        "Montage:mProjectPP": 5,
+        "Montage:mShrink": 7,
+        "SIPHT:Blast": 1,
+        "SIPHT:Blast_QRNA": 8,
+        "SIPHT:Blast_candidate": 1,
+        "SIPHT:Blast_paralogues": 4,
+        "SIPHT:Blast_synteny": 4,
+        "SIPHT:FFN_Parse": 2,
+        "SIPHT:Findterm": 8,
+        "SIPHT:Patser": 5,
+        "SIPHT:Patser_concate": 4,
+        "SIPHT:RNAMotif": 9,
+        "SIPHT:SRNA": 1,
+        "SIPHT:SRNA_annotate": 1,
+        "SIPHT:Transterm": 10
+      }
+    },
+    "task_service_counts": {
+      "1": 22,
+      "2": 10,
+      "3": 7,
+      "4": 10,
+      "5": 23,
+      "6": 16,
+      "7": 8,
+      "8": 17,
+      "9": 9,
+      "10": 16
+    },
+    "graphs": [
+      {
+        "key": "pegasus_full_montage",
+        "family": "Montage",
+        "real_tasks": 25,
+        "nodes_including_dummy": 26,
+        "edges_including_dummy": 50,
+        "depth": 9,
+        "root_count": 5,
+        "exit_count": 1,
+        "service_ids": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8
+        ]
+      },
+      {
+        "key": "pegasus_full_cybershake",
+        "family": "CyberShake",
+        "real_tasks": 30,
+        "nodes_including_dummy": 31,
+        "edges_including_dummy": 54,
+        "depth": 4,
+        "root_count": 2,
+        "exit_count": 2,
+        "service_ids": [
+          1,
+          6,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "key": "pegasus_full_epigenomics",
+        "family": "Epigenomics",
+        "real_tasks": 24,
+        "nodes_including_dummy": 25,
+        "edges_including_dummy": 28,
+        "depth": 8,
+        "root_count": 1,
+        "exit_count": 1,
+        "service_ids": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          10
+        ]
+      },
+      {
+        "key": "pegasus_full_inspiral",
+        "family": "Inspiral",
+        "real_tasks": 30,
+        "nodes_including_dummy": 31,
+        "edges_including_dummy": 42,
+        "depth": 6,
+        "root_count": 7,
+        "exit_count": 1,
+        "service_ids": [
+          4,
+          6,
+          9,
+          10
+        ]
+      },
+      {
+        "key": "pegasus_full_sipht",
+        "family": "Sipht",
+        "real_tasks": 29,
+        "nodes_including_dummy": 30,
+        "edges_including_dummy": 54,
+        "depth": 5,
+        "root_count": 21,
+        "exit_count": 1,
+        "service_ids": [
+          1,
+          2,
+          4,
+          5,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  "dataset": {
+    "path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "graph_count": 5
+  }
+}

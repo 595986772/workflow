@@ -1,0 +1,2268 @@
+{
+  "pegasus_full_cybershake": {
+    "directed": true,
+    "graph": {
+      "extraction": "complete_workflow_v1",
+      "normalization": "pegasus_global_log_minmax_v1",
+      "source": "WorkflowSim/Pegasus DAX",
+      "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+      "source_family": "CyberShake",
+      "type_mapping": "sha256_namespace_name_mod10_v1",
+      "service_pressure_projection": "modulo_balanced_v1",
+      "source_service_state_dimension": 10,
+      "active_services": 4,
+      "inactive_service_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "links": [
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "12"
+      },
+      {
+        "datalength": 0.9928478745073603,
+        "source": "1",
+        "target": "2"
+      },
+      {
+        "datalength": 1.0,
+        "source": "1",
+        "target": "4"
+      },
+      {
+        "datalength": 0.9928478745073603,
+        "source": "1",
+        "target": "6"
+      },
+      {
+        "datalength": 0.9928478745073603,
+        "source": "1",
+        "target": "8"
+      },
+      {
+        "datalength": 0.9976909341804876,
+        "source": "1",
+        "target": "10"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "2",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "2",
+        "target": "3"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "3",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "4",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "4",
+        "target": "5"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "5",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "6",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "6",
+        "target": "7"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "7",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "8",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "8",
+        "target": "9"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "9",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "10",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "10",
+        "target": "11"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "11",
+        "target": "30"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "13"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "15"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "17"
+      },
+      {
+        "datalength": 0.9928518729371438,
+        "source": "12",
+        "target": "19"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "21"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "23"
+      },
+      {
+        "datalength": 0.9986606387098969,
+        "source": "12",
+        "target": "25"
+      },
+      {
+        "datalength": 0.9843731851318235,
+        "source": "12",
+        "target": "27"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "13",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "13",
+        "target": "14"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "14",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "15",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "15",
+        "target": "16"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "16",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "17",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "17",
+        "target": "18"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "18",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "19",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "19",
+        "target": "20"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "20",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "21",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "21",
+        "target": "22"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "22",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "23",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "23",
+        "target": "24"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "24",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "25",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "25",
+        "target": "26"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "26",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "27",
+        "target": "28"
+      },
+      {
+        "datalength": 0.3117557082841815,
+        "source": "27",
+        "target": "29"
+      },
+      {
+        "datalength": 0.5107667526300547,
+        "source": "29",
+        "target": "30"
+      }
+    ],
+    "multigraph": false,
+    "nodes": [
+      {
+        "cpucycle": 0,
+        "id": "0",
+        "service": 0.0
+      },
+      {
+        "cpucycle": 0.627367706873211,
+        "id": "1",
+        "service": 1.15,
+        "source_job_id": "ID00002",
+        "source_job_type": "CyberShake:ExtractSGT"
+      },
+      {
+        "cpucycle": 0.4687697925675002,
+        "id": "2",
+        "service": 1.35,
+        "source_job_id": "ID00003",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.10057428136595678,
+        "id": "3",
+        "service": 1.05,
+        "source_job_id": "ID00004",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.4671217948048516,
+        "id": "4",
+        "service": 1.35,
+        "source_job_id": "ID00005",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.1119826961515357,
+        "id": "5",
+        "service": 1.05,
+        "source_job_id": "ID00006",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.460468241306941,
+        "id": "6",
+        "service": 1.35,
+        "source_job_id": "ID00007",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.10742133159461781,
+        "id": "7",
+        "service": 1.05,
+        "source_job_id": "ID00008",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.447481498580072,
+        "id": "8",
+        "service": 1.35,
+        "source_job_id": "ID00009",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.10808413730426503,
+        "id": "9",
+        "service": 1.05,
+        "source_job_id": "ID00010",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.5212906130926859,
+        "id": "10",
+        "service": 1.35,
+        "source_job_id": "ID00011",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.14601945266733732,
+        "id": "11",
+        "service": 1.05,
+        "source_job_id": "ID00012",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.5715387312418444,
+        "id": "12",
+        "service": 1.15,
+        "source_job_id": "ID00013",
+        "source_job_type": "CyberShake:ExtractSGT"
+      },
+      {
+        "cpucycle": 0.4906130951556183,
+        "id": "13",
+        "service": 1.35,
+        "source_job_id": "ID00014",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.15113124854928248,
+        "id": "14",
+        "service": 1.05,
+        "source_job_id": "ID00015",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.48615981334956526,
+        "id": "15",
+        "service": 1.35,
+        "source_job_id": "ID00016",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.15113124854928248,
+        "id": "16",
+        "service": 1.05,
+        "source_job_id": "ID00017",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.4342430337065443,
+        "id": "17",
+        "service": 1.35,
+        "source_job_id": "ID00018",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.14313236030410936,
+        "id": "18",
+        "service": 1.05,
+        "source_job_id": "ID00019",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.417096162166992,
+        "id": "19",
+        "service": 1.35,
+        "source_job_id": "ID00020",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.14313236030410936,
+        "id": "20",
+        "service": 1.05,
+        "source_job_id": "ID00021",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.44311624764680985,
+        "id": "21",
+        "service": 1.35,
+        "source_job_id": "ID00022",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.14649366559613136,
+        "id": "22",
+        "service": 1.05,
+        "source_job_id": "ID00023",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.5070232808935253,
+        "id": "23",
+        "service": 1.35,
+        "source_job_id": "ID00024",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.11069780599910994,
+        "id": "24",
+        "service": 1.05,
+        "source_job_id": "ID00025",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.41450265999123675,
+        "id": "25",
+        "service": 1.35,
+        "source_job_id": "ID00026",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.12970948053009368,
+        "id": "26",
+        "service": 1.05,
+        "source_job_id": "ID00027",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.42534161286819705,
+        "id": "27",
+        "service": 1.35,
+        "source_job_id": "ID00028",
+        "source_job_type": "CyberShake:SeismogramSynthesis"
+      },
+      {
+        "cpucycle": 0.06439331989826201,
+        "id": "28",
+        "service": 1.15,
+        "source_job_id": "ID00001",
+        "source_job_type": "CyberShake:ZipSeis"
+      },
+      {
+        "cpucycle": 0.11513348152705692,
+        "id": "29",
+        "service": 1.05,
+        "source_job_id": "ID00029",
+        "source_job_type": "CyberShake:PeakValCalcOkaya"
+      },
+      {
+        "cpucycle": 0.052169809132134974,
+        "id": "30",
+        "service": 1.05,
+        "source_job_id": "ID00000",
+        "source_job_type": "CyberShake:ZipPSA"
+      }
+    ]
+  },
+  "pegasus_full_epigenomics": {
+    "directed": true,
+    "graph": {
+      "extraction": "complete_workflow_v1",
+      "normalization": "pegasus_global_log_minmax_v1",
+      "source": "WorkflowSim/Pegasus DAX",
+      "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+      "source_family": "Epigenomics",
+      "type_mapping": "sha256_namespace_name_mod10_v1",
+      "service_pressure_projection": "modulo_balanced_v1",
+      "source_service_state_dimension": 10,
+      "active_services": 4,
+      "inactive_service_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "links": [
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "datalength": 0.8598983377712164,
+        "source": "1",
+        "target": "2"
+      },
+      {
+        "datalength": 0.8691957008269776,
+        "source": "1",
+        "target": "3"
+      },
+      {
+        "datalength": 0.8559352463695142,
+        "source": "1",
+        "target": "4"
+      },
+      {
+        "datalength": 0.8694206395516256,
+        "source": "1",
+        "target": "5"
+      },
+      {
+        "datalength": 0.8585631391564961,
+        "source": "1",
+        "target": "6"
+      },
+      {
+        "datalength": 0.8154476153268367,
+        "source": "2",
+        "target": "7"
+      },
+      {
+        "datalength": 0.8213772033738296,
+        "source": "3",
+        "target": "8"
+      },
+      {
+        "datalength": 0.8064907045723507,
+        "source": "4",
+        "target": "9"
+      },
+      {
+        "datalength": 0.8203861869531125,
+        "source": "5",
+        "target": "10"
+      },
+      {
+        "datalength": 0.814294751072402,
+        "source": "6",
+        "target": "11"
+      },
+      {
+        "datalength": 0.7764139350523425,
+        "source": "7",
+        "target": "12"
+      },
+      {
+        "datalength": 0.8164858363554008,
+        "source": "8",
+        "target": "13"
+      },
+      {
+        "datalength": 0.7773765401256085,
+        "source": "9",
+        "target": "14"
+      },
+      {
+        "datalength": 0.803191819373694,
+        "source": "10",
+        "target": "15"
+      },
+      {
+        "datalength": 0.8042933695972271,
+        "source": "11",
+        "target": "16"
+      },
+      {
+        "datalength": 0.691359626381969,
+        "source": "12",
+        "target": "17"
+      },
+      {
+        "datalength": 0.7181799751360287,
+        "source": "13",
+        "target": "18"
+      },
+      {
+        "datalength": 0.6813273921449289,
+        "source": "14",
+        "target": "19"
+      },
+      {
+        "datalength": 0.7091042586056436,
+        "source": "15",
+        "target": "20"
+      },
+      {
+        "datalength": 0.7092789240357691,
+        "source": "16",
+        "target": "21"
+      },
+      {
+        "datalength": 0.6969479994268101,
+        "source": "17",
+        "target": "22"
+      },
+      {
+        "datalength": 0.723768354236324,
+        "source": "18",
+        "target": "22"
+      },
+      {
+        "datalength": 0.68691576870126,
+        "source": "19",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7146926349129077,
+        "source": "20",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7148673015440378,
+        "source": "21",
+        "target": "22"
+      },
+      {
+        "datalength": 0.8127115941379208,
+        "source": "22",
+        "target": "23"
+      },
+      {
+        "datalength": 0.5319755506374468,
+        "source": "23",
+        "target": "24"
+      }
+    ],
+    "multigraph": false,
+    "nodes": [
+      {
+        "cpucycle": 0,
+        "id": "0",
+        "service": 0.0
+      },
+      {
+        "cpucycle": 0.5790514221742307,
+        "id": "1",
+        "service": 1.35,
+        "source_job_id": "ID00000",
+        "source_job_type": "Genome:fastqSplit_chr21"
+      },
+      {
+        "cpucycle": 0.2836614006533394,
+        "id": "2",
+        "service": 1.15,
+        "source_job_id": "ID00001",
+        "source_job_type": "Genome:filterContams_chr21"
+      },
+      {
+        "cpucycle": 0.29996425358843426,
+        "id": "3",
+        "service": 1.15,
+        "source_job_id": "ID00002",
+        "source_job_type": "Genome:filterContams_chr21"
+      },
+      {
+        "cpucycle": 0.29896318983675524,
+        "id": "4",
+        "service": 1.15,
+        "source_job_id": "ID00003",
+        "source_job_type": "Genome:filterContams_chr21"
+      },
+      {
+        "cpucycle": 0.31201802937979634,
+        "id": "5",
+        "service": 1.15,
+        "source_job_id": "ID00004",
+        "source_job_type": "Genome:filterContams_chr21"
+      },
+      {
+        "cpucycle": 0.3383722437231727,
+        "id": "6",
+        "service": 1.15,
+        "source_job_id": "ID00005",
+        "source_job_type": "Genome:filterContams_chr21"
+      },
+      {
+        "cpucycle": 0.18375823984867296,
+        "id": "7",
+        "service": 1.35,
+        "source_job_id": "ID00006",
+        "source_job_type": "Genome:sol2sanger_chr21"
+      },
+      {
+        "cpucycle": 0.21837057243096641,
+        "id": "8",
+        "service": 1.35,
+        "source_job_id": "ID00007",
+        "source_job_type": "Genome:sol2sanger_chr21"
+      },
+      {
+        "cpucycle": 0.21105014404473682,
+        "id": "9",
+        "service": 1.35,
+        "source_job_id": "ID00008",
+        "source_job_type": "Genome:sol2sanger_chr21"
+      },
+      {
+        "cpucycle": 0.20552040221291668,
+        "id": "10",
+        "service": 1.35,
+        "source_job_id": "ID00009",
+        "source_job_type": "Genome:sol2sanger_chr21"
+      },
+      {
+        "cpucycle": 0.2508180054822908,
+        "id": "11",
+        "service": 1.35,
+        "source_job_id": "ID00010",
+        "source_job_type": "Genome:sol2sanger_chr21"
+      },
+      {
+        "cpucycle": 0.23507968227170173,
+        "id": "12",
+        "service": 1.25,
+        "source_job_id": "ID00011",
+        "source_job_type": "Genome:fastq2bfq_chr21"
+      },
+      {
+        "cpucycle": 0.26667399259361413,
+        "id": "13",
+        "service": 1.25,
+        "source_job_id": "ID00012",
+        "source_job_type": "Genome:fastq2bfq_chr21"
+      },
+      {
+        "cpucycle": 0.23015690265041577,
+        "id": "14",
+        "service": 1.25,
+        "source_job_id": "ID00013",
+        "source_job_type": "Genome:fastq2bfq_chr21"
+      },
+      {
+        "cpucycle": 0.24493956361242358,
+        "id": "15",
+        "service": 1.25,
+        "source_job_id": "ID00014",
+        "source_job_type": "Genome:fastq2bfq_chr21"
+      },
+      {
+        "cpucycle": 0.25346171897737785,
+        "id": "16",
+        "service": 1.25,
+        "source_job_id": "ID00015",
+        "source_job_type": "Genome:fastq2bfq_chr21"
+      },
+      {
+        "cpucycle": 0.9584475042373669,
+        "id": "17",
+        "service": 1.25,
+        "source_job_id": "ID00016",
+        "source_job_type": "Genome:map_chr21"
+      },
+      {
+        "cpucycle": 0.9724215588808589,
+        "id": "18",
+        "service": 1.25,
+        "source_job_id": "ID00017",
+        "source_job_type": "Genome:map_chr21"
+      },
+      {
+        "cpucycle": 0.9406863970093363,
+        "id": "19",
+        "service": 1.25,
+        "source_job_id": "ID00018",
+        "source_job_type": "Genome:map_chr21"
+      },
+      {
+        "cpucycle": 0.9868263025849797,
+        "id": "20",
+        "service": 1.25,
+        "source_job_id": "ID00019",
+        "source_job_type": "Genome:map_chr21"
+      },
+      {
+        "cpucycle": 1.0,
+        "id": "21",
+        "service": 1.25,
+        "source_job_id": "ID00020",
+        "source_job_type": "Genome:map_chr21"
+      },
+      {
+        "cpucycle": 0.3782319497037299,
+        "id": "22",
+        "service": 1.15,
+        "source_job_id": "ID00021",
+        "source_job_type": "Genome:mapMerge_chr21"
+      },
+      {
+        "cpucycle": 0.05,
+        "id": "23",
+        "service": 1.15,
+        "source_job_id": "ID00022",
+        "source_job_type": "Genome:maqindex_chr21"
+      },
+      {
+        "cpucycle": 0.8754798352996642,
+        "id": "24",
+        "service": 1.25,
+        "source_job_id": "ID00023",
+        "source_job_type": "Genome:pileup_chr21"
+      }
+    ]
+  },
+  "pegasus_full_inspiral": {
+    "directed": true,
+    "graph": {
+      "extraction": "complete_workflow_v1",
+      "normalization": "pegasus_global_log_minmax_v1",
+      "source": "WorkflowSim/Pegasus DAX",
+      "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+      "source_family": "Inspiral",
+      "type_mapping": "sha256_namespace_name_mod10_v1",
+      "service_pressure_projection": "modulo_balanced_v1",
+      "source_service_state_dimension": 10,
+      "active_services": 4,
+      "inactive_service_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "links": [
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "2"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "3"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "4"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "5"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "6"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "7"
+      },
+      {
+        "datalength": 0.5612438766393677,
+        "source": "1",
+        "target": "8"
+      },
+      {
+        "datalength": 0.5606347313853037,
+        "source": "2",
+        "target": "9"
+      },
+      {
+        "datalength": 0.560528311640453,
+        "source": "3",
+        "target": "10"
+      },
+      {
+        "datalength": 0.562357895167802,
+        "source": "4",
+        "target": "11"
+      },
+      {
+        "datalength": 0.5610200662278196,
+        "source": "5",
+        "target": "12"
+      },
+      {
+        "datalength": 0.5614353806973363,
+        "source": "6",
+        "target": "13"
+      },
+      {
+        "datalength": 0.5602479219428199,
+        "source": "7",
+        "target": "14"
+      },
+      {
+        "datalength": 0.4897045806290629,
+        "source": "8",
+        "target": "15"
+      },
+      {
+        "datalength": 0.44106588400313257,
+        "source": "9",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5007472106264862,
+        "source": "10",
+        "target": "15"
+      },
+      {
+        "datalength": 0.46271307131851197,
+        "source": "11",
+        "target": "15"
+      },
+      {
+        "datalength": 0.4643148960331607,
+        "source": "12",
+        "target": "15"
+      },
+      {
+        "datalength": 0.4752770024399439,
+        "source": "13",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5020264108287916,
+        "source": "14",
+        "target": "15"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "16"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "17"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "18"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "19"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "20"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "21"
+      },
+      {
+        "datalength": 0.3480923243250777,
+        "source": "15",
+        "target": "22"
+      },
+      {
+        "datalength": 0.23585562552093015,
+        "source": "16",
+        "target": "23"
+      },
+      {
+        "datalength": 0.28162782174787065,
+        "source": "17",
+        "target": "24"
+      },
+      {
+        "datalength": 0.2858681678606992,
+        "source": "18",
+        "target": "25"
+      },
+      {
+        "datalength": 0.2406700272722113,
+        "source": "19",
+        "target": "26"
+      },
+      {
+        "datalength": 0.2242262533973182,
+        "source": "20",
+        "target": "27"
+      },
+      {
+        "datalength": 0.22759337400895852,
+        "source": "21",
+        "target": "28"
+      },
+      {
+        "datalength": 0.2846825714705298,
+        "source": "22",
+        "target": "29"
+      },
+      {
+        "datalength": 0.5089993755831518,
+        "source": "23",
+        "target": "30"
+      },
+      {
+        "datalength": 0.47494902359620395,
+        "source": "24",
+        "target": "30"
+      },
+      {
+        "datalength": 0.48292465196925133,
+        "source": "25",
+        "target": "30"
+      },
+      {
+        "datalength": 0.5023246298263078,
+        "source": "26",
+        "target": "30"
+      },
+      {
+        "datalength": 0.47611476263448027,
+        "source": "27",
+        "target": "30"
+      },
+      {
+        "datalength": 0.499590971466257,
+        "source": "28",
+        "target": "30"
+      },
+      {
+        "datalength": 0.4947213499796742,
+        "source": "29",
+        "target": "30"
+      }
+    ],
+    "multigraph": false,
+    "nodes": [
+      {
+        "cpucycle": 0,
+        "id": "0",
+        "service": 0.0
+      },
+      {
+        "cpucycle": 0.3819558521737278,
+        "id": "1",
+        "service": 1.05,
+        "source_job_id": "ID00000",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.38280768178924834,
+        "id": "2",
+        "service": 1.05,
+        "source_job_id": "ID00001",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.3806661585931243,
+        "id": "3",
+        "service": 1.05,
+        "source_job_id": "ID00002",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.3814662443142918,
+        "id": "4",
+        "service": 1.05,
+        "source_job_id": "ID00003",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.38329162347041645,
+        "id": "5",
+        "service": 1.05,
+        "source_job_id": "ID00004",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.38035694498312284,
+        "id": "6",
+        "service": 1.05,
+        "source_job_id": "ID00005",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.38437310296726973,
+        "id": "7",
+        "service": 1.05,
+        "source_job_id": "ID00006",
+        "source_job_type": "LIGO:TmpltBank"
+      },
+      {
+        "cpucycle": 0.7936842817107567,
+        "id": "8",
+        "service": 1.15,
+        "source_job_id": "ID00007",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.71844092084556,
+        "id": "9",
+        "service": 1.15,
+        "source_job_id": "ID00008",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.779173024327972,
+        "id": "10",
+        "service": 1.15,
+        "source_job_id": "ID00009",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7635995650341562,
+        "id": "11",
+        "service": 1.15,
+        "source_job_id": "ID00010",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7670876088141305,
+        "id": "12",
+        "service": 1.15,
+        "source_job_id": "ID00011",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7123362759716497,
+        "id": "13",
+        "service": 1.15,
+        "source_job_id": "ID00012",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7164129564636713,
+        "id": "14",
+        "service": 1.15,
+        "source_job_id": "ID00013",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.2615697610249276,
+        "id": "15",
+        "service": 1.35,
+        "source_job_id": "ID00014",
+        "source_job_type": "LIGO:Thinca"
+      },
+      {
+        "cpucycle": 0.2643201814527114,
+        "id": "16",
+        "service": 1.15,
+        "source_job_id": "ID00015",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.2583948101267435,
+        "id": "17",
+        "service": 1.15,
+        "source_job_id": "ID00016",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.24908580829483595,
+        "id": "18",
+        "service": 1.15,
+        "source_job_id": "ID00017",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.25531355403910233,
+        "id": "19",
+        "service": 1.15,
+        "source_job_id": "ID00018",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.2500513594943688,
+        "id": "20",
+        "service": 1.15,
+        "source_job_id": "ID00019",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.25695508587825494,
+        "id": "21",
+        "service": 1.15,
+        "source_job_id": "ID00020",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.25531355403910233,
+        "id": "22",
+        "service": 1.15,
+        "source_job_id": "ID00021",
+        "source_job_type": "LIGO:TrigBank"
+      },
+      {
+        "cpucycle": 0.7851451072286804,
+        "id": "23",
+        "service": 1.15,
+        "source_job_id": "ID00022",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7826248606525312,
+        "id": "24",
+        "service": 1.15,
+        "source_job_id": "ID00023",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7388301465729141,
+        "id": "25",
+        "service": 1.15,
+        "source_job_id": "ID00024",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.6823388365657048,
+        "id": "26",
+        "service": 1.15,
+        "source_job_id": "ID00025",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.702844162109008,
+        "id": "27",
+        "service": 1.15,
+        "source_job_id": "ID00026",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7616330413173903,
+        "id": "28",
+        "service": 1.15,
+        "source_job_id": "ID00027",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.7232215743954613,
+        "id": "29",
+        "service": 1.15,
+        "source_job_id": "ID00028",
+        "source_job_type": "LIGO:Inspiral"
+      },
+      {
+        "cpucycle": 0.24752386275730104,
+        "id": "30",
+        "service": 1.35,
+        "source_job_id": "ID00029",
+        "source_job_type": "LIGO:Thinca"
+      }
+    ]
+  },
+  "pegasus_full_montage": {
+    "directed": true,
+    "graph": {
+      "extraction": "complete_workflow_v1",
+      "normalization": "pegasus_global_log_minmax_v1",
+      "source": "WorkflowSim/Pegasus DAX",
+      "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+      "source_family": "Montage",
+      "type_mapping": "sha256_namespace_name_mod10_v1",
+      "service_pressure_projection": "modulo_balanced_v1",
+      "source_service_state_dimension": 10,
+      "active_services": 4,
+      "inactive_service_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "links": [
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "2"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "3"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "4"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "5"
+      },
+      {
+        "datalength": 0.7038382367143208,
+        "source": "1",
+        "target": "6"
+      },
+      {
+        "datalength": 0.7040652134776788,
+        "source": "1",
+        "target": "7"
+      },
+      {
+        "datalength": 0.7038382367143208,
+        "source": "1",
+        "target": "9"
+      },
+      {
+        "datalength": 0.7038382367143208,
+        "source": "1",
+        "target": "17"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "6"
+      },
+      {
+        "datalength": 0.7041320824623624,
+        "source": "2",
+        "target": "7"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "8"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "10"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "12"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "13"
+      },
+      {
+        "datalength": 0.7039111964945552,
+        "source": "2",
+        "target": "18"
+      },
+      {
+        "datalength": 0.7036741530142447,
+        "source": "3",
+        "target": "9"
+      },
+      {
+        "datalength": 0.7036741530142447,
+        "source": "3",
+        "target": "10"
+      },
+      {
+        "datalength": 0.7036741530142447,
+        "source": "3",
+        "target": "11"
+      },
+      {
+        "datalength": 0.7040792207961668,
+        "source": "3",
+        "target": "19"
+      },
+      {
+        "datalength": 0.703945776014415,
+        "source": "4",
+        "target": "8"
+      },
+      {
+        "datalength": 0.703945776014415,
+        "source": "4",
+        "target": "12"
+      },
+      {
+        "datalength": 0.703945776014415,
+        "source": "4",
+        "target": "14"
+      },
+      {
+        "datalength": 0.703945776014415,
+        "source": "4",
+        "target": "20"
+      },
+      {
+        "datalength": 0.7036160719887282,
+        "source": "5",
+        "target": "13"
+      },
+      {
+        "datalength": 0.7036160719887282,
+        "source": "5",
+        "target": "14"
+      },
+      {
+        "datalength": 0.7036826166091787,
+        "source": "5",
+        "target": "21"
+      },
+      {
+        "datalength": 0.5017509708272246,
+        "source": "6",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017526107760674,
+        "source": "7",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017534307354411,
+        "source": "8",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017509708272246,
+        "source": "9",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017509708272246,
+        "source": "10",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017509708272246,
+        "source": "11",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017512988202034,
+        "source": "12",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017509708272246,
+        "source": "13",
+        "target": "15"
+      },
+      {
+        "datalength": 0.5017550706240944,
+        "source": "14",
+        "target": "15"
+      },
+      {
+        "datalength": 0.14141866102745312,
+        "source": "15",
+        "target": "16"
+      },
+      {
+        "datalength": 0.01,
+        "source": "16",
+        "target": "17"
+      },
+      {
+        "datalength": 0.01,
+        "source": "16",
+        "target": "18"
+      },
+      {
+        "datalength": 0.01,
+        "source": "16",
+        "target": "19"
+      },
+      {
+        "datalength": 0.01,
+        "source": "16",
+        "target": "20"
+      },
+      {
+        "datalength": 0.01,
+        "source": "16",
+        "target": "21"
+      },
+      {
+        "datalength": 0.7037702044190629,
+        "source": "17",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7037500292575308,
+        "source": "18",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7040792207961668,
+        "source": "19",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7038952418214801,
+        "source": "20",
+        "target": "22"
+      },
+      {
+        "datalength": 0.7036826166091787,
+        "source": "21",
+        "target": "22"
+      },
+      {
+        "datalength": 0.13025463245744504,
+        "source": "22",
+        "target": "23"
+      },
+      {
+        "datalength": 0.8655207003763484,
+        "source": "23",
+        "target": "24"
+      },
+      {
+        "datalength": 0.603356892926465,
+        "source": "24",
+        "target": "25"
+      }
+    ],
+    "multigraph": false,
+    "nodes": [
+      {
+        "cpucycle": 0,
+        "id": "0",
+        "service": 0.0
+      },
+      {
+        "cpucycle": 0.3510312513389704,
+        "id": "1",
+        "service": 1.05,
+        "source_job_id": "ID00000",
+        "source_job_type": "Montage:mProjectPP"
+      },
+      {
+        "cpucycle": 0.35449478814245045,
+        "id": "2",
+        "service": 1.05,
+        "source_job_id": "ID00001",
+        "source_job_type": "Montage:mProjectPP"
+      },
+      {
+        "cpucycle": 0.3507912586140789,
+        "id": "3",
+        "service": 1.05,
+        "source_job_id": "ID00002",
+        "source_job_type": "Montage:mProjectPP"
+      },
+      {
+        "cpucycle": 0.3526973211279549,
+        "id": "4",
+        "service": 1.05,
+        "source_job_id": "ID00003",
+        "source_job_type": "Montage:mProjectPP"
+      },
+      {
+        "cpucycle": 0.35410641738400944,
+        "id": "5",
+        "service": 1.05,
+        "source_job_id": "ID00004",
+        "source_job_type": "Montage:mProjectPP"
+      },
+      {
+        "cpucycle": 0.3261470653989726,
+        "id": "6",
+        "service": 1.15,
+        "source_job_id": "ID00005",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3261470653989726,
+        "id": "7",
+        "service": 1.15,
+        "source_job_id": "ID00006",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3289890487229556,
+        "id": "8",
+        "service": 1.15,
+        "source_job_id": "ID00007",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3283094559423076,
+        "id": "9",
+        "service": 1.15,
+        "source_job_id": "ID00008",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3251505559372609,
+        "id": "10",
+        "service": 1.15,
+        "source_job_id": "ID00009",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3253505498524909,
+        "id": "11",
+        "service": 1.15,
+        "source_job_id": "ID00010",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3253505498524909,
+        "id": "12",
+        "service": 1.15,
+        "source_job_id": "ID00011",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.32644434209775747,
+        "id": "13",
+        "service": 1.15,
+        "source_job_id": "ID00012",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.3239432328028139,
+        "id": "14",
+        "service": 1.15,
+        "source_job_id": "ID00013",
+        "source_job_type": "Montage:mDiffFit"
+      },
+      {
+        "cpucycle": 0.10675468351157123,
+        "id": "15",
+        "service": 1.35,
+        "source_job_id": "ID00014",
+        "source_job_type": "Montage:mConcatFit"
+      },
+      {
+        "cpucycle": 0.14601945266733732,
+        "id": "16",
+        "service": 1.25,
+        "source_job_id": "ID00015",
+        "source_job_type": "Montage:mBgModel"
+      },
+      {
+        "cpucycle": 0.32414533561805425,
+        "id": "17",
+        "service": 1.05,
+        "source_job_id": "ID00016",
+        "source_job_type": "Montage:mBackground"
+      },
+      {
+        "cpucycle": 0.3266421004823024,
+        "id": "18",
+        "service": 1.05,
+        "source_job_id": "ID00017",
+        "source_job_type": "Montage:mBackground"
+      },
+      {
+        "cpucycle": 0.32850403546804213,
+        "id": "19",
+        "service": 1.05,
+        "source_job_id": "ID00018",
+        "source_job_type": "Montage:mBackground"
+      },
+      {
+        "cpucycle": 0.32947202495693756,
+        "id": "20",
+        "service": 1.05,
+        "source_job_id": "ID00019",
+        "source_job_type": "Montage:mBackground"
+      },
+      {
+        "cpucycle": 0.3278215618193925,
+        "id": "21",
+        "service": 1.05,
+        "source_job_id": "ID00020",
+        "source_job_type": "Montage:mBackground"
+      },
+      {
+        "cpucycle": 0.1445849666369283,
+        "id": "22",
+        "service": 1.25,
+        "source_job_id": "ID00021",
+        "source_job_type": "Montage:mImgTbl"
+      },
+      {
+        "cpucycle": 0.20466751964632074,
+        "id": "23",
+        "service": 1.25,
+        "source_job_id": "ID00022",
+        "source_job_type": "Montage:mAdd"
+      },
+      {
+        "cpucycle": 0.22620314612622505,
+        "id": "24",
+        "service": 1.25,
+        "source_job_id": "ID00023",
+        "source_job_type": "Montage:mShrink"
+      },
+      {
+        "cpucycle": 0.08711780145371148,
+        "id": "25",
+        "service": 1.05,
+        "source_job_id": "ID00024",
+        "source_job_type": "Montage:mJPEG"
+      }
+    ]
+  },
+  "pegasus_full_sipht": {
+    "directed": true,
+    "graph": {
+      "extraction": "complete_workflow_v1",
+      "normalization": "pegasus_global_log_minmax_v1",
+      "source": "WorkflowSim/Pegasus DAX",
+      "source_commit": "d3ea21afd8ce6479bd292d3bd7469045d7a36089",
+      "source_family": "Sipht",
+      "type_mapping": "sha256_namespace_name_mod10_v1",
+      "service_pressure_projection": "modulo_balanced_v1",
+      "source_service_state_dimension": 10,
+      "active_services": 4,
+      "inactive_service_ids": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "links": [
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "2"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "3"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "4"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "5"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "6"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "7"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "8"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "9"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "10"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "11"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "12"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "13"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "14"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "15"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "16"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "17"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "19"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "20"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "21"
+      },
+      {
+        "datalength": 0.0,
+        "source": "0",
+        "target": "22"
+      },
+      {
+        "datalength": 0.4021466536234392,
+        "source": "1",
+        "target": "18"
+      },
+      {
+        "datalength": 0.40875884412559993,
+        "source": "2",
+        "target": "18"
+      },
+      {
+        "datalength": 0.3968670485412846,
+        "source": "3",
+        "target": "18"
+      },
+      {
+        "datalength": 0.42695294351137975,
+        "source": "4",
+        "target": "18"
+      },
+      {
+        "datalength": 0.41662783511444335,
+        "source": "5",
+        "target": "18"
+      },
+      {
+        "datalength": 0.3641905623387827,
+        "source": "6",
+        "target": "18"
+      },
+      {
+        "datalength": 0.3958332734347688,
+        "source": "7",
+        "target": "18"
+      },
+      {
+        "datalength": 0.42804144407604294,
+        "source": "8",
+        "target": "18"
+      },
+      {
+        "datalength": 0.4015466808178402,
+        "source": "9",
+        "target": "18"
+      },
+      {
+        "datalength": 0.357254009665728,
+        "source": "10",
+        "target": "18"
+      },
+      {
+        "datalength": 0.37315315958549095,
+        "source": "11",
+        "target": "18"
+      },
+      {
+        "datalength": 0.40570872944757,
+        "source": "12",
+        "target": "18"
+      },
+      {
+        "datalength": 0.42732936184594567,
+        "source": "13",
+        "target": "18"
+      },
+      {
+        "datalength": 0.38020700899808374,
+        "source": "14",
+        "target": "18"
+      },
+      {
+        "datalength": 0.37338291172837706,
+        "source": "15",
+        "target": "18"
+      },
+      {
+        "datalength": 0.39801708086521215,
+        "source": "16",
+        "target": "18"
+      },
+      {
+        "datalength": 0.4082611367571647,
+        "source": "17",
+        "target": "18"
+      },
+      {
+        "datalength": 0.5909854147036936,
+        "source": "18",
+        "target": "29"
+      },
+      {
+        "datalength": 0.810544009319954,
+        "source": "19",
+        "target": "23"
+      },
+      {
+        "datalength": 0.5660753236036415,
+        "source": "20",
+        "target": "23"
+      },
+      {
+        "datalength": 0.5124887185304428,
+        "source": "21",
+        "target": "23"
+      },
+      {
+        "datalength": 0.6388808218301572,
+        "source": "22",
+        "target": "23"
+      },
+      {
+        "datalength": 0.3974721288875222,
+        "source": "23",
+        "target": "24"
+      },
+      {
+        "datalength": 0.3974721288875222,
+        "source": "23",
+        "target": "25"
+      },
+      {
+        "datalength": 0.3974721288875222,
+        "source": "23",
+        "target": "26"
+      },
+      {
+        "datalength": 0.39921665870359274,
+        "source": "23",
+        "target": "27"
+      },
+      {
+        "datalength": 0.40044497698068804,
+        "source": "23",
+        "target": "28"
+      },
+      {
+        "datalength": 0.5016582484744272,
+        "source": "23",
+        "target": "29"
+      },
+      {
+        "datalength": 0.5591679785886093,
+        "source": "24",
+        "target": "27"
+      },
+      {
+        "datalength": 0.2799927934886489,
+        "source": "25",
+        "target": "29"
+      },
+      {
+        "datalength": 0.44483208886361886,
+        "source": "26",
+        "target": "29"
+      },
+      {
+        "datalength": 0.5738410622176542,
+        "source": "27",
+        "target": "29"
+      },
+      {
+        "datalength": 0.49411741854063257,
+        "source": "28",
+        "target": "29"
+      }
+    ],
+    "multigraph": false,
+    "nodes": [
+      {
+        "cpucycle": 0,
+        "id": "0",
+        "service": 0.0
+      },
+      {
+        "cpucycle": 0.15402622920536507,
+        "id": "1",
+        "service": 1.05,
+        "source_job_id": "ID00001",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.15390649432570658,
+        "id": "2",
+        "service": 1.05,
+        "source_job_id": "ID00002",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.14375438465923446,
+        "id": "3",
+        "service": 1.05,
+        "source_job_id": "ID00003",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.11287999201258918,
+        "id": "4",
+        "service": 1.05,
+        "source_job_id": "ID00004",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.11150895841379402,
+        "id": "5",
+        "service": 1.05,
+        "source_job_id": "ID00005",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12882996211453235,
+        "id": "6",
+        "service": 1.05,
+        "source_job_id": "ID00006",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.15360883480189702,
+        "id": "7",
+        "service": 1.05,
+        "source_job_id": "ID00007",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12941888447918345,
+        "id": "8",
+        "service": 1.05,
+        "source_job_id": "ID00008",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.15218546001380284,
+        "id": "9",
+        "service": 1.05,
+        "source_job_id": "ID00009",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.13578340116460053,
+        "id": "10",
+        "service": 1.05,
+        "source_job_id": "ID00010",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12377634201723473,
+        "id": "11",
+        "service": 1.05,
+        "source_job_id": "ID00011",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12816033038792757,
+        "id": "12",
+        "service": 1.05,
+        "source_job_id": "ID00012",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.15866510856022054,
+        "id": "13",
+        "service": 1.05,
+        "source_job_id": "ID00013",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.114647606537565,
+        "id": "14",
+        "service": 1.05,
+        "source_job_id": "ID00014",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12257072279747921,
+        "id": "15",
+        "service": 1.05,
+        "source_job_id": "ID00015",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.12678117139175699,
+        "id": "16",
+        "service": 1.05,
+        "source_job_id": "ID00016",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.1289843642295874,
+        "id": "17",
+        "service": 1.05,
+        "source_job_id": "ID00017",
+        "source_job_type": "SIPHT:Patser"
+      },
+      {
+        "cpucycle": 0.05548546236561839,
+        "id": "18",
+        "service": 1.35,
+        "source_job_id": "ID00000",
+        "source_job_type": "SIPHT:Patser_concate"
+      },
+      {
+        "cpucycle": 0.836671242844417,
+        "id": "19",
+        "service": 1.35,
+        "source_job_id": "ID00018",
+        "source_job_type": "SIPHT:Findterm"
+      },
+      {
+        "cpucycle": 0.490795273835559,
+        "id": "20",
+        "service": 1.05,
+        "source_job_id": "ID00019",
+        "source_job_type": "SIPHT:RNAMotif"
+      },
+      {
+        "cpucycle": 0.4833361472972738,
+        "id": "21",
+        "service": 1.15,
+        "source_job_id": "ID00020",
+        "source_job_type": "SIPHT:Transterm"
+      },
+      {
+        "cpucycle": 0.9418074988524219,
+        "id": "22",
+        "service": 1.05,
+        "source_job_id": "ID00021",
+        "source_job_type": "SIPHT:Blast"
+      },
+      {
+        "cpucycle": 0.7572471228098966,
+        "id": "23",
+        "service": 1.05,
+        "source_job_id": "ID00022",
+        "source_job_type": "SIPHT:SRNA"
+      },
+      {
+        "cpucycle": 0.15223949336251108,
+        "id": "24",
+        "service": 1.15,
+        "source_job_id": "ID00023",
+        "source_job_type": "SIPHT:FFN_Parse"
+      },
+      {
+        "cpucycle": 0.2680042880494421,
+        "id": "25",
+        "service": 1.05,
+        "source_job_id": "ID00024",
+        "source_job_type": "SIPHT:Blast_candidate"
+      },
+      {
+        "cpucycle": 0.8828594236118255,
+        "id": "26",
+        "service": 1.35,
+        "source_job_id": "ID00025",
+        "source_job_type": "SIPHT:Blast_QRNA"
+      },
+      {
+        "cpucycle": 0.44990832353113314,
+        "id": "27",
+        "service": 1.35,
+        "source_job_id": "ID00026",
+        "source_job_type": "SIPHT:Blast_synteny"
+      },
+      {
+        "cpucycle": 0.21637253862467565,
+        "id": "28",
+        "service": 1.35,
+        "source_job_id": "ID00027",
+        "source_job_type": "SIPHT:Blast_paralogues"
+      },
+      {
+        "cpucycle": 0.17739762613878252,
+        "id": "29",
+        "service": 1.05,
+        "source_job_id": "ID00028",
+        "source_job_type": "SIPHT:SRNA_annotate"
+      }
+    ]
+  }
+}

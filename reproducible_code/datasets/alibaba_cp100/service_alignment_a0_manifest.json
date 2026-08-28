@@ -1,0 +1,5536 @@
+{
+  "dataset_name": "Alibaba-CP100-A0",
+  "dataset_role": "controlled_service_alignment_variant",
+  "formal_unbiased_holdout": false,
+  "generator_version": "1.0.0",
+  "seed": 20260801,
+  "base_dataset": {
+    "path": "dag_alibaba_cp100.json",
+    "sha256": "2903ff2478f5c55fe445bd2a7b6fbe595aecf6ea6383913b85ea5efd92ee2d89"
+  },
+  "selection_manifest": {
+    "path": "selection_manifest.json",
+    "sha256": "268c8c6d4fbf1c5ffe61e41fb971194ce4b93b5ee3e1a417c1e5f8a98afa522f"
+  },
+  "output_dataset": {
+    "path": "dag_alibaba_cp100_a0.json",
+    "sha256": "6a66ccf46eb9a033827467953f294463f4d666f5da046b7a94a4b690ceefd859"
+  },
+  "transformation": {
+    "name": "within_dag_independent_service_permutation",
+    "scope": "each DAG independently",
+    "algorithm": "sort target task IDs by SHA-256(seed, graph key, task ID, a0-target), then assign the original node-order service sequence",
+    "dummy_source": "node 0 is unchanged",
+    "preserved_exactly": [
+      "graph key order",
+      "DAG topology",
+      "node IDs",
+      "CPU-cycle attributes",
+      "edge payloads",
+      "per-DAG service multisets",
+      "global service counts"
+    ]
+  },
+  "integrity": {
+    "graph_count": 100,
+    "real_task_count": 801,
+    "changed_task_count": 581,
+    "changed_task_fraction": 0.7253433208489388,
+    "graph_key_order_unchanged": true,
+    "non_service_content_unchanged": true,
+    "per_dag_service_multisets_unchanged": true,
+    "global_service_counts_unchanged": true,
+    "a0_max_abs_correlation": 0.1,
+    "a0_acceptance_passed": true
+  },
+  "service_counts": {
+    "before": {
+      "1": 307,
+      "2": 200,
+      "3": 167,
+      "4": 18,
+      "5": 19,
+      "6": 17,
+      "7": 22,
+      "8": 14,
+      "9": 20,
+      "10": 17
+    },
+    "after": {
+      "1": 307,
+      "2": 200,
+      "3": 167,
+      "4": 18,
+      "5": 19,
+      "6": 17,
+      "7": 22,
+      "8": 14,
+      "9": 20,
+      "10": 17
+    }
+  },
+  "association": {
+    "before": {
+      "definition": "Criticality is membership in the trace-derived weighted critical path. Popularity is the global request count of the assigned service. Services 1-3 form the original hot group.",
+      "task_level_popularity_criticality_pearson": 0.818957843556509,
+      "critical_path_hot_service_phi": 1.0,
+      "critical_path_hot_fraction": 1.0,
+      "off_path_hot_fraction": 0.0,
+      "contingency": {
+        "critical_hot": 674,
+        "critical_cold": 0,
+        "off_path_hot": 0,
+        "off_path_cold": 127
+      },
+      "per_service": {
+        "1": {
+          "request_count": 307,
+          "critical_path_count": 307,
+          "critical_path_fraction": 1.0
+        },
+        "2": {
+          "request_count": 200,
+          "critical_path_count": 200,
+          "critical_path_fraction": 1.0
+        },
+        "3": {
+          "request_count": 167,
+          "critical_path_count": 167,
+          "critical_path_fraction": 1.0
+        },
+        "4": {
+          "request_count": 18,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "5": {
+          "request_count": 19,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "6": {
+          "request_count": 17,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "7": {
+          "request_count": 22,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "8": {
+          "request_count": 14,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "9": {
+          "request_count": 20,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        },
+        "10": {
+          "request_count": 17,
+          "critical_path_count": 0,
+          "critical_path_fraction": 0.0
+        }
+      }
+    },
+    "after": {
+      "definition": "Criticality is membership in the trace-derived weighted critical path. Popularity is the global request count of the assigned service. Services 1-3 form the original hot group.",
+      "task_level_popularity_criticality_pearson": -0.035891517737227825,
+      "critical_path_hot_service_phi": -0.048061870604453376,
+      "critical_path_hot_fraction": 0.8338278931750742,
+      "off_path_hot_fraction": 0.8818897637795275,
+      "contingency": {
+        "critical_hot": 562,
+        "critical_cold": 112,
+        "off_path_hot": 112,
+        "off_path_cold": 15
+      },
+      "per_service": {
+        "1": {
+          "request_count": 307,
+          "critical_path_count": 257,
+          "critical_path_fraction": 0.8371335504885994
+        },
+        "2": {
+          "request_count": 200,
+          "critical_path_count": 166,
+          "critical_path_fraction": 0.83
+        },
+        "3": {
+          "request_count": 167,
+          "critical_path_count": 139,
+          "critical_path_fraction": 0.8323353293413174
+        },
+        "4": {
+          "request_count": 18,
+          "critical_path_count": 16,
+          "critical_path_fraction": 0.8888888888888888
+        },
+        "5": {
+          "request_count": 19,
+          "critical_path_count": 18,
+          "critical_path_fraction": 0.9473684210526315
+        },
+        "6": {
+          "request_count": 17,
+          "critical_path_count": 16,
+          "critical_path_fraction": 0.9411764705882353
+        },
+        "7": {
+          "request_count": 22,
+          "critical_path_count": 17,
+          "critical_path_fraction": 0.7727272727272727
+        },
+        "8": {
+          "request_count": 14,
+          "critical_path_count": 14,
+          "critical_path_fraction": 1.0
+        },
+        "9": {
+          "request_count": 20,
+          "critical_path_count": 17,
+          "critical_path_fraction": 0.85
+        },
+        "10": {
+          "request_count": 17,
+          "critical_path_count": 14,
+          "critical_path_fraction": 0.8235294117647058
+        }
+      }
+    }
+  },
+  "per_graph": [
+    {
+      "dataset_key": "j_101606",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3900925",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1709623",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4083616",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 8,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2494848",
+      "task_count": 7,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1823374",
+      "task_count": 7,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_410096",
+      "task_count": 7,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 8,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1319783",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_745337",
+      "task_count": 7,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4027072",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3479541",
+      "task_count": 7,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3908442",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4018520",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1187705",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 9,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2147153",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3164421",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2662613",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_241070",
+      "task_count": 7,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 9,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2470048",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 5,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 5,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2631071",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 4,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3746370",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 4,
+          "after": 2,
+          "critical_path": false
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3410542",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2718745",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_915898",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 4,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2079918",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_432749",
+      "task_count": 7,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 5,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 5,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3044886",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 5,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_334334",
+      "task_count": 7,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 9,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_994342",
+      "task_count": 7,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_153878",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1550657",
+      "task_count": 7,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_550772",
+      "task_count": 7,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2539751",
+      "task_count": 7,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2086309",
+      "task_count": 8,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 6,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1799664",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 10,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3837817",
+      "task_count": 8,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_323919",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "7": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4175344",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 10,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3582082",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "2": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 2,
+          "after": 4,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1434027",
+      "task_count": 8,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 10,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1948118",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "7": {
+          "before": 7,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1987494",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 8,
+          "after": 2,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 8,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2803950",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 10,
+          "after": 2,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2236507",
+      "task_count": 8,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 9,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2942687",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 7,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_192115",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 4,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1693747",
+      "task_count": 8,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 10,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1680936",
+      "task_count": 8,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 4,
+          "after": 2,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 4,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3190650",
+      "task_count": 8,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "7": {
+          "before": 9,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_164727",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 10,
+          "after": 3,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 10,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1879184",
+      "task_count": 8,
+      "changed_tasks": 3,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 9,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3647489",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 4,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2137147",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3429859",
+      "task_count": 8,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 10,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_887657",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 6,
+          "after": 3,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 6,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2939201",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 5,
+          "after": 3,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2119795",
+      "task_count": 8,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 10,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4127469",
+      "task_count": 8,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 8,
+          "after": 3,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 8,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_451900",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 5,
+          "after": 1,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 5,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_215192",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 9,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_582798",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 4,
+          "after": 3,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_222988",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "2": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3346898",
+      "task_count": 8,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "2": {
+          "before": 7,
+          "after": 2,
+          "critical_path": false
+        },
+        "3": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1154671",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2147315",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 6,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_935115",
+      "task_count": 8,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 10,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1005730",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 9,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 9,
+          "after": 3,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_520631",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 5,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "8": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1548559",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 7,
+          "critical_path": true
+        },
+        "8": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2384003",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "8": {
+          "before": 8,
+          "after": 2,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1837257",
+      "task_count": 9,
+      "changed_tasks": 9,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 9,
+          "after": 2,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1630739",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "8": {
+          "before": 5,
+          "after": 5,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4032678",
+      "task_count": 9,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 4,
+        "2": 2,
+        "3": 2,
+        "5": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 5,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "7": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "8": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "9": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1437936",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 7,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 7,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 8,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1058523",
+      "task_count": 9,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 10,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3178397",
+      "task_count": 9,
+      "changed_tasks": 4,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 9,
+          "critical_path": false
+        },
+        "7": {
+          "before": 7,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_169464",
+      "task_count": 9,
+      "changed_tasks": 9,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 7,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1513036",
+      "task_count": 9,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 4,
+          "after": 9,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2466208",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 9,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 7,
+          "critical_path": false
+        },
+        "7": {
+          "before": 7,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_4036194",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 6,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2357175",
+      "task_count": 9,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 7,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 9,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 9,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_145207",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 5,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_383890",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 5,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 5,
+          "after": 10,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_39139",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 4,
+          "critical_path": false
+        },
+        "7": {
+          "before": 4,
+          "after": 7,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3733373",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 4,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 9,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3002919",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 9,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 9,
+          "after": 7,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1133760",
+      "task_count": 9,
+      "changed_tasks": 9,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 9,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 5,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 9,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1694182",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 4,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 10,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2273592",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 2
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 6,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2410419",
+      "task_count": 9,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 2
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 7,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 7,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 7,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3962792",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "10": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 10,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 10,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_1746551",
+      "task_count": 9,
+      "changed_tasks": 6,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 6,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 7,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_189932",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "7": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 2,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 8,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 7,
+          "critical_path": false
+        },
+        "7": {
+          "before": 8,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2332135",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 7,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 3,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 5,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_3660158",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 5,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "6": {
+          "before": 8,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 5,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 8,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2104773",
+      "task_count": 9,
+      "changed_tasks": 5,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "6": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 6,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 4,
+          "after": 4,
+          "critical_path": false
+        },
+        "7": {
+          "before": 6,
+          "after": 3,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_388703",
+      "task_count": 9,
+      "changed_tasks": 9,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "6": 1,
+        "9": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 9,
+          "critical_path": true
+        },
+        "6": {
+          "before": 6,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 9,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 6,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_680770",
+      "task_count": 9,
+      "changed_tasks": 8,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "8": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 5,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "6": {
+          "before": 5,
+          "after": 3,
+          "critical_path": false
+        },
+        "7": {
+          "before": 8,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 8,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_732953",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 2,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 1,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 7,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 1,
+          "critical_path": false
+        },
+        "7": {
+          "before": 5,
+          "after": 2,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 5,
+          "critical_path": true
+        }
+      }
+    },
+    {
+      "dataset_key": "j_2026214",
+      "task_count": 9,
+      "changed_tasks": 7,
+      "service_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "7": 1
+      },
+      "task_service_map": {
+        "1": {
+          "before": 1,
+          "after": 1,
+          "critical_path": true
+        },
+        "2": {
+          "before": 2,
+          "after": 1,
+          "critical_path": true
+        },
+        "3": {
+          "before": 1,
+          "after": 2,
+          "critical_path": true
+        },
+        "4": {
+          "before": 3,
+          "after": 7,
+          "critical_path": true
+        },
+        "5": {
+          "before": 2,
+          "after": 4,
+          "critical_path": true
+        },
+        "6": {
+          "before": 7,
+          "after": 2,
+          "critical_path": false
+        },
+        "7": {
+          "before": 4,
+          "after": 1,
+          "critical_path": false
+        },
+        "8": {
+          "before": 1,
+          "after": 3,
+          "critical_path": true
+        },
+        "9": {
+          "before": 3,
+          "after": 3,
+          "critical_path": true
+        }
+      }
+    }
+  ]
+}
