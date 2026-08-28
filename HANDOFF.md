@@ -34,7 +34,7 @@
 
 ## 5. 未纳入Git的材料
 
-- DAOC原文PDF及其他受版权限制的论文；
+- DAOC受限出版PDF及其他受版权限制的论文；`references/DAOC_REFERENCE.md`已保存官方与作者机构获取入口；
 - 历史checkpoint和完整逐episode训练目录；
 - 旧稿、废弃图、候选图标库和已判定无效的诊断结果；
 - 本机Python环境和Codex账户级配置。

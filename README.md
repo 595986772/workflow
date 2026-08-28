@@ -10,6 +10,7 @@
 - `manuscript/supporting_notes/`: 正式方法命名、实验协议和算法说明。
 - `paper_assets/`: 第一章架构图源文件和第五章实际引用的最终SVG。
 - `experiment_evidence/`: 锁定结果、seed级统计、协议锁和作图数据快照。
+- `references/`: DAOC的标准引用、DOI、IEEE页面和作者机构公开报告入口。
 - `HANDOFF.md`: 换机器、换账号或交给其他模型时的工作入口。
 - `SOURCE_PROVENANCE.md`: 本次打包来源、完整性和适用边界。
 - `SHA256SUMS.txt`: 仓库内交付文件的 SHA-256 清单。
