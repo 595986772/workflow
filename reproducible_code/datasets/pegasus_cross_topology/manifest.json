@@ -6,27 +6,27 @@
   "source_files": {
     "Montage": {
       "upstream_path": "config/dax/Montage_25.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/raw/Montage_25.xml",
+      "local_path": "raw/Montage_25.xml",
       "sha256": "3c791f17b8e57a06e5e7afad57fffc625c0611caf168036efeaa18b1888bab19"
     },
     "CyberShake": {
       "upstream_path": "config/dax/CyberShake_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/raw/CyberShake_30.xml",
+      "local_path": "raw/CyberShake_30.xml",
       "sha256": "230b9861c69cb9b04165b6d37952a39059aaa1a406350f6c03b238c81aa0228e"
     },
     "Epigenomics": {
       "upstream_path": "config/dax/Epigenomics_24.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/raw/Epigenomics_24.xml",
+      "local_path": "raw/Epigenomics_24.xml",
       "sha256": "867696c4d3028eded842bec41c9ce3ef6ddceb3ccd925212f1282281101c7af1"
     },
     "Inspiral": {
       "upstream_path": "config/dax/Inspiral_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/raw/Inspiral_30.xml",
+      "local_path": "raw/Inspiral_30.xml",
       "sha256": "6d8773fecf8376fda8c5df5c33c527a2485c721371b11f476f4858e1e8f5229b"
     },
     "Sipht": {
       "upstream_path": "config/dax/Sipht_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/raw/Sipht_30.xml",
+      "local_path": "raw/Sipht_30.xml",
       "sha256": "f9d6bcaf70a9b3f9e57bd599955da2dd90fa35b8c2b9daabea7e137e36534bb6"
     }
   },
@@ -1430,7 +1430,7 @@
     ]
   },
   "dataset": {
-    "path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_cross_topology/dag_pegasus5_sub10.json",
+    "path": "dag_pegasus5_sub10.json",
     "sha256": "68750cde2903985532506066afb574867bf8af1e3eaaf1b5cb33bbc8354ae6d2",
     "graph_count": 100
   }

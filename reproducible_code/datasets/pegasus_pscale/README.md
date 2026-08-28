@@ -18,5 +18,5 @@ unbiased MEC trace.
 Regenerate with:
 
 ```bash
-/opt/anaconda3/envs/dl/bin/python build_pegasus_pscale_dataset.py
+python build_pegasus_pscale_dataset.py
 ```

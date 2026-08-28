@@ -9,6 +9,8 @@
 
 Draw.io文件已内嵌11个图像对象，未引用本机文件路径，因此单独打开即可继续编辑。独立候选图标库没有上传，因为它不是复现当前图所必需的依赖。
 
+`architecture/icons/`进一步保存从Draw.io中提取的6个唯一原始资产，包括5个SVG和1个PNG；`manifest.json`记录11个图像对象与这些去重资产的对应关系。运行`architecture/extract_embedded_icons.py`可以从当前Draw.io源文件重新生成它们。
+
 ## Figures Used by the Current Manuscript
 
 | 论文编号 | 仓库文件 | 用途 |

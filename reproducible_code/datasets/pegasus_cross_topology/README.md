@@ -16,5 +16,5 @@ The five source DAX files and upstream license notices are stored under `raw/`.
 Regenerate with:
 
 ```bash
-/opt/anaconda3/envs/dl/bin/python build_pegasus_cross_dataset.py
+python build_pegasus_cross_dataset.py
 ```

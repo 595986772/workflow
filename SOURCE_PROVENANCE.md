@@ -15,9 +15,14 @@
 
 - Pegasus 五类工作流数据及转换结果；
 - Alibaba-CP100 受控实验数据；
+- Pegasus与Alibaba-CP100的确定性数据构建脚本；
 - DAOC、DQN、Discrete SAC、DCC 与 OUR 相关训练/评估入口；
 - 容量异构、DAG 完成语义、因果信息协议和主要实验协议测试；
 - 复现说明与依赖清单。
+
+为便于跨机器复现，发布仓库将数据清单中的本机绝对路径改为相对路径，并将示例命令中的特定Conda解释器改为通用`python`。这些可移植性修改不改变数据文件、数据集SHA-256、算法实现或实验结果。
+
+`tools/build_alibaba_cp100.py`和`tools/build_alibaba_cp100_a0.py`从当前工作区原样复制，SHA-256分别为`003f9a65a0c82e108c6bada7084ef8085dbe1e531fd1c769180fec8c0332d1d4`和`ff42abf07e9016a79c6be6e02c7610138b3711996cbdd642b98c631196ed5c3b`。
 
 不包含历史 checkpoint。旧 checkpoint 生成后，代码中的到达时刻、奖励和 DAG 终止语义曾有修订，因此不将旧权重作为与当前代码严格锁定的模型发布。
 
@@ -42,7 +47,7 @@
 - `paper_assets/architecture/hero_dag_system_model_polished_v8_scheduler_gap_plus30.svg`
 - `paper_assets/architecture/hero_dag_system_model_polished_v8_scheduler_gap_plus30_editable.drawio`
 
-Draw.io源文件内嵌11个图像对象，不依赖本机绝对路径。`paper_assets/formal_figures/`只保留当前第五章实际引用的8张SVG，不纳入历史候选图和废弃样式。
+Draw.io源文件内嵌11个图像对象，不依赖本机绝对路径。`paper_assets/architecture/icons/`将其去重提取为5个SVG和1个PNG，并保存对象映射清单。`paper_assets/formal_figures/`只保留当前第五章实际引用的8张SVG，不纳入历史候选图和废弃样式。
 
 ## Experiment Evidence
 

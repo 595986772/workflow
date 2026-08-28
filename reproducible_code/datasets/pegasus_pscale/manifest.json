@@ -6,27 +6,27 @@
   "source_files": {
     "Montage": {
       "upstream_path": "config/dax/Montage_25.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Montage_25.xml",
+      "local_path": "raw/Montage_25.xml",
       "sha256": "3c791f17b8e57a06e5e7afad57fffc625c0611caf168036efeaa18b1888bab19"
     },
     "CyberShake": {
       "upstream_path": "config/dax/CyberShake_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/CyberShake_30.xml",
+      "local_path": "raw/CyberShake_30.xml",
       "sha256": "230b9861c69cb9b04165b6d37952a39059aaa1a406350f6c03b238c81aa0228e"
     },
     "Epigenomics": {
       "upstream_path": "config/dax/Epigenomics_24.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Epigenomics_24.xml",
+      "local_path": "raw/Epigenomics_24.xml",
       "sha256": "867696c4d3028eded842bec41c9ce3ef6ddceb3ccd925212f1282281101c7af1"
     },
     "Inspiral": {
       "upstream_path": "config/dax/Inspiral_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Inspiral_30.xml",
+      "local_path": "raw/Inspiral_30.xml",
       "sha256": "6d8773fecf8376fda8c5df5c33c527a2485c721371b11f476f4858e1e8f5229b"
     },
     "Sipht": {
       "upstream_path": "config/dax/Sipht_30.xml",
-      "local_path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/raw/Sipht_30.xml",
+      "local_path": "raw/Sipht_30.xml",
       "sha256": "f9d6bcaf70a9b3f9e57bd599955da2dd90fa35b8c2b9daabea7e137e36534bb6"
     }
   },
@@ -210,7 +210,7 @@
     ]
   },
   "dataset": {
-    "path": "/Users/chenliang/Documents/python_project/初始版/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "path": "dag_pegasus5_full31.json",
     "sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
     "graph_count": 5
   }

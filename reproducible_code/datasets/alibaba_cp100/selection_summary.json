@@ -4,7 +4,7 @@
   "formal_unbiased_holdout": false,
   "generator_version": "1.0.0",
   "seed": 20260730,
-  "source_archive": "/Users/chenliang/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/batch_task.tar.gz",
+  "source_archive": "batch_task.tar.gz",
   "source_archive_sha256": "7c4b32361bd1ec2083647a8f52a6854a03bc125ca5c202652316c499fbf978c6",
   "selected_graphs": 100,
   "task_count_quotas": {

@@ -22,6 +22,8 @@ SHA-256: 0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5
 它包含 Montage、CyberShake、Epigenomics、Inspiral 和 Sipht 五类工作流，每个 DAG 保留
 24--30 个真实任务。`datasets/alibaba_cp100/` 仅用于受控跨数据集压力测试。
 
+Pegasus数据可由根目录的`build_pegasus_*.py`重建；Alibaba-CP100及A0变体的确定性构建器位于`tools/`。各数据目录的README和manifest记录上游来源、固定commit和SHA-256。
+
 ## 3. 核心测试
 
 ```bash

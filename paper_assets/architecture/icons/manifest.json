@@ -1,0 +1,61 @@
+{
+  "source": "hero_dag_system_model_polished_v8_scheduler_gap_plus30_editable.drawio",
+  "source_sha256": "f992ae336358446c0e092c0a9cb20b6cb4ba1187ba93dbbd2a6a2ebb00d2c07e",
+  "embedded_object_count": 11,
+  "unique_asset_count": 6,
+  "assets": [
+    {
+      "file": "device_phone.png",
+      "mime_type": "image/png",
+      "sha256": "c3de5cf72146f2a235e131593d55bb47b0f6563e0d3b7c34588c60656e5ac42f",
+      "occurrences": [
+        "device-phone-p2"
+      ]
+    },
+    {
+      "file": "device_laptop.svg",
+      "mime_type": "image/svg+xml",
+      "sha256": "b1e1413ef52cc1d8c5883b619d5b724ff3f325baa4539634a75b3d57597cf562",
+      "occurrences": [
+        "device-laptop-f02"
+      ]
+    },
+    {
+      "file": "device_vehicle.svg",
+      "mime_type": "image/svg+xml",
+      "sha256": "b3ada9abe849f1270a2a2b12357c5ea7da28dd0bbdac931c4f0bc446ad3b113a",
+      "occurrences": [
+        "device-vehicle-b10"
+      ]
+    },
+    {
+      "file": "service_repository.svg",
+      "mime_type": "image/svg+xml",
+      "sha256": "ff8cf9682c3a948941f11b44e110b2882388e272bedc7a8ea9b72fc6387e9f53",
+      "occurrences": [
+        "service-repository-cloud-database-svg"
+      ]
+    },
+    {
+      "file": "local_scheduler.svg",
+      "mime_type": "image/svg+xml",
+      "sha256": "ace5c3600884f21a1c4f6ca723a31e6d7827952ed69f53843d54fa52832ba7d8",
+      "occurrences": [
+        "local-scheduler-es1-icon",
+        "local-scheduler-es2-icon",
+        "local-scheduler-es3-icon",
+        "legend-local-scheduler-icon"
+      ]
+    },
+    {
+      "file": "edge_server.svg",
+      "mime_type": "image/svg+xml",
+      "sha256": "174c831edb39ae95d58b43b2064c00e8da209213de030fa453684e4e693a41a4",
+      "occurrences": [
+        "server-1-exact-svg",
+        "server-2-exact-svg",
+        "server-3-exact-svg"
+      ]
+    }
+  ]
+}

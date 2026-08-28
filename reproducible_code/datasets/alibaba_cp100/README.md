@@ -81,8 +81,7 @@ metrics. A0 is still a controlled mechanism dataset, not an unbiased holdout.
 Rebuild the variant with:
 
 ```bash
-/opt/anaconda3/envs/dl/bin/python \
-  tools/build_alibaba_cp100_a0.py
+python tools/build_alibaba_cp100_a0.py
 ```
 
 ## Rebuild
@@ -90,6 +89,5 @@ Rebuild the variant with:
 From the DAOC repository root:
 
 ```bash
-/opt/anaconda3/envs/dl/bin/python \
-  tools/build_alibaba_cp100.py
+python tools/build_alibaba_cp100.py
 ```
