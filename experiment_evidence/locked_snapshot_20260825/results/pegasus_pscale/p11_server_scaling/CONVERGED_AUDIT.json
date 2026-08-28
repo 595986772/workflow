@@ -1,0 +1,267 @@
+{
+  "status": "complete",
+  "stage": "converged",
+  "servers": {
+    "5": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "10": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 12000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "15": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "20": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "daoc_paper": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 26000
+            },
+            "lean_our": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_daoc": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    }
+  },
+  "all_runs_complete": true,
+  "all_learning_runs_converged": true,
+  "all_tasks_exactly_once": true,
+  "all_capacity_constraints_valid": true,
+  "all_methods_scenario_paired": true
+}

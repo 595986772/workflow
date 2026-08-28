@@ -1,0 +1,19 @@
+method,method_key,metric,metric_label,mean_rate,ci95_half_width,independent_seeds
+SA-Nearest,greedy,cache_hit_rate,Cache hit (higher better),0.420613793,0.068892211,10
+SA-Nearest,greedy,cache_service_coverage,Service coverage (higher better),0.390000000,0.062636296,10
+SA-Nearest,greedy,cache_remote_loading_rate,Remote loading (lower better),0.579386207,0.068892211,10
+DAOC,daoc_paper,cache_hit_rate,Cache hit (higher better),0.181476716,0.048581608,10
+DAOC,daoc_paper,cache_service_coverage,Service coverage (higher better),0.560000000,0.083967720,10
+DAOC,daoc_paper,cache_remote_loading_rate,Remote loading (lower better),0.818523284,0.048581608,10
+SAC + DAOC-Cache,discrete_sac_std_cache,cache_hit_rate,Cache hit (higher better),0.238506371,0.052544866,10
+SAC + DAOC-Cache,discrete_sac_std_cache,cache_service_coverage,Service coverage (higher better),0.460000000,0.102284642,10
+SAC + DAOC-Cache,discrete_sac_std_cache,cache_remote_loading_rate,Remote loading (lower better),0.761493629,0.052544866,10
+DAOC + DCC,daoc_our_coord_cache,cache_hit_rate,Cache hit (higher better),0.306171693,0.035086910,10
+DAOC + DCC,daoc_our_coord_cache,cache_service_coverage,Service coverage (higher better),0.800000000,0.000000000,10
+DAOC + DCC,daoc_our_coord_cache,cache_remote_loading_rate,Remote loading (lower better),0.693828307,0.035086910,10
+SAC + DCC,coord_cache_discrete_sac,cache_hit_rate,Cache hit (higher better),0.421166330,0.064167226,10
+SAC + DCC,coord_cache_discrete_sac,cache_service_coverage,Service coverage (higher better),0.800000000,0.000000000,10
+SAC + DCC,coord_cache_discrete_sac,cache_remote_loading_rate,Remote loading (lower better),0.578833670,0.064167226,10
+OUR,lean_our,cache_hit_rate,Cache hit (higher better),0.588895612,0.059970208,10
+OUR,lean_our,cache_service_coverage,Service coverage (higher better),0.800000000,0.000000000,10
+OUR,lean_our,cache_remote_loading_rate,Remote loading (lower better),0.411104388,0.059970208,10

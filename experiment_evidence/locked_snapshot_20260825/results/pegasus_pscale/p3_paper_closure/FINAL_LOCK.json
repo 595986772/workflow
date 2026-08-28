@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "created_at": "2026-08-04T19:27:23.432389+00:00",
+  "specification": {
+    "protocol_version": "pegasus_paper_closure_v1",
+    "methods": [
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "lean_our"
+    ],
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "scenarios_per_seed": 100,
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "freeze_sha256": "726c0e2d1df353022fb1a3b32231174871e171d3d42269f192c7740abe3ba1c8"
+  },
+  "specification_sha256": "0660310c232a20892db5299b77f9f83f033a4414b215c73311a2d177e730b7c7",
+  "algorithm_source_sha256": "3f05d3b4a19ccf18322681450cbca81e0fafedf749cff9d410aaa645915aad42",
+  "protocol_source_sha256": "986fcacf665a70b2c1cc41e1214cbc64d545c4609a1c57ef4db65529507fa463",
+  "completed_at": "2026-08-05T13:55:37.356395+00:00",
+  "summary_sha256": "c81b32c2241f5d900e34451cd5c79fa1a9b27f414ac2a816175c007b77479ddf",
+  "formal_gate": {
+    "integrity": true,
+    "our_formally_beats_daoc_paper": true,
+    "our_formally_beats_centralized_greedy": true,
+    "passed": true
+  }
+}

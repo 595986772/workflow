@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "completed_at": "2026-08-10T14:41:27.717490+00:00",
+  "protocol_lock_sha256": "8be08a8df0b9b9cb5fdf3e31861d308b5fcb1e7c28597afbb6982b00ea6ae472",
+  "reference_reuse_audit_sha256": "56c81338b740f807ae2f94d6c5730fe24582591ecca9037b3d4176f0743e91df",
+  "summary_sha256": "403226ee2939eb80eaa21abb8e892f0cf4760e6f9ec3428246f800eb7aab93cb",
+  "integrity": {
+    "all_runs_complete": true,
+    "all_learning_runs_converged": true,
+    "scenario_banks_paired": true,
+    "capacity_assignments_exact": true,
+    "dataset_and_environment_exact": true,
+    "method_protocols_exact": true,
+    "evaluation_state_frozen": true,
+    "all_tasks_executed_once": true
+  },
+  "evidence": {
+    "integrity_passed": true,
+    "our_beats_daoc": true,
+    "our_beats_centralized_greedy": true,
+    "our_beats_coord_cache_discrete_sac": true,
+    "coordinated_cache_supported_in_both_learners": true,
+    "pairwise_pd3qn_supported_in_both_cache_regimes": true,
+    "task_dependency_state_supported": true,
+    "cache_dependency_weighting_supported": false,
+    "causal_makespan_reward_supported": true
+  }
+}

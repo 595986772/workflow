@@ -1,0 +1,292 @@
+{
+  "status": "complete",
+  "stage": "converged",
+  "all_runs_complete": true,
+  "all_learning_runs_converged": true,
+  "all_tasks_exactly_once": true,
+  "all_capacity_constraints_valid": true,
+  "all_methods_scenario_paired_with_p11": true,
+  "all_method_identities_valid": true,
+  "servers": {
+    "5": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "10": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "15": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 11000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 11000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    },
+    "20": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 12000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "our_flat_ddqn": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "complete": true,
+              "converged": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      }
+    }
+  }
+}

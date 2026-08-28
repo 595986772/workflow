@@ -1,0 +1,92 @@
+{
+  "status": "development_locked",
+  "created_at": "2026-08-04T12:46:52.621148+00:00",
+  "specification": {
+    "protocol_version": "pegasus_paper_closure_v1",
+    "parent_protocol_version": "pegasus_pscale_p2",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "development_seeds": [
+      41,
+      42,
+      43
+    ],
+    "final_seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "capacity_namespace": "pegasus_pscale_p2",
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "evaluation_episodes": 100,
+    "validation_scenarios": 50,
+    "cache_calibration_episodes": 5000,
+    "evaluation_bank_scope": "infrastructure",
+    "task_limit_including_dummy": 31,
+    "p2_lock": "${PROJECT_ROOT}/results/pegasus_pscale/p2/PSCALE_LOCK.json",
+    "parent_p2_lock_sha256": "f14467a782c5dd26b1566978469450dae6dd23a71fe9215b4e833113ce5596d1",
+    "daoc_variants": {
+      "guided_full": "released-code fixed guidance and pure popularity EMA",
+      "daoc_paper": "paper guidance decay and Eq.14 popularity-cost EMA"
+    },
+    "development_methods": [
+      "daoc_paper",
+      "our_dqn",
+      "our_no_telemetry",
+      "our_no_coord_cache"
+    ],
+    "final_methods": [
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "lean_our"
+    ],
+    "development_gate": {
+      "our_beats_daoc_paper": "positive mean and at least 2/3 wins",
+      "our_beats_centralized_greedy": "positive mean and at least 2/3 wins",
+      "ablation": "at least one proposed module is supported"
+    },
+    "final_gate": {
+      "comparisons": [
+        "OUR vs DAOC-paper",
+        "OUR vs Centralized-Greedy-DQN"
+      ],
+      "ci": "paired seed-level 95% lower bound greater than zero",
+      "test": "one-sided Wilcoxon p < 0.05",
+      "wins": "at least 7/10 seeds"
+    }
+  },
+  "specification_sha256": "55ba509a4e9a9613ff4bf49cb34c4eab16e1a67d1d707d586253ba0f0a5d9bdd",
+  "algorithm_source_sha256": "3f05d3b4a19ccf18322681450cbca81e0fafedf749cff9d410aaa645915aad42",
+  "protocol_source_sha256": "986fcacf665a70b2c1cc41e1214cbc64d545c4609a1c57ef4db65529507fa463",
+  "development_source_revisions": [
+    {
+      "changed_at": "2026-08-04T19:25:59.168068+00:00",
+      "algorithm_source_sha256": "3f05d3b4a19ccf18322681450cbca81e0fafedf749cff9d410aaa645915aad42",
+      "protocol_source_sha256": "986fcacf665a70b2c1cc41e1214cbc64d545c4609a1c57ef4db65529507fa463"
+    }
+  ]
+}

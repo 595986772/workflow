@@ -1,0 +1,123 @@
+{
+  "status": "locked",
+  "created_at": "2026-08-14T05:12:41.779430+00:00",
+  "specification": {
+    "protocol_version": "pegasus_server_scaling_p13_heuristics_v1",
+    "parent_protocols": [
+      "pegasus_server_scaling_p11_v1",
+      "pegasus_server_scaling_p12_strong_baselines_v1",
+      "pegasus_p6_baselines_ablation_v1"
+    ],
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "workflow_families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "users": 20,
+    "services": 10,
+    "bandwidth_hz": 15000.0,
+    "server_counts": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "trained_server_counts": [
+      5,
+      15,
+      20
+    ],
+    "reused_server_count": 10,
+    "capacity_profiles": {
+      "5": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "20": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "capacity_assignment_namespace": "pegasus_server_scaling_p11",
+    "methods": [
+      "random",
+      "nearest",
+      "greedy"
+    ],
+    "display_names": {
+      "random": "Random",
+      "nearest": "Nearest",
+      "greedy": "Nearest+Service"
+    },
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "smoke_episodes": 20,
+    "calibration_episodes": 5000,
+    "workers": 6,
+    "full_profile": "pegasus_p6_heuristics",
+    "claim_scope": "three_seed_server_count_sensitivity",
+    "heuristic_identity": "standard independent popularity-EMA cache; no OUR coordination",
+    "specification_sha256": "85f8783a24d50f00ffe0de5f5986ff16ab3d068ce0cef29e90fa5e03575e6267"
+  },
+  "specification_sha256": "93233eff392c4e0203fb9e47035a59b2dd65d71b0c945fdfd43f7e65a6b23f86",
+  "source_sha256": "2e496a95a0b4c73668aef3b7ec5cff72a56a112d6b2315c9e1ad5d3146203640"
+}

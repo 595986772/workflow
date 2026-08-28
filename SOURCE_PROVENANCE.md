@@ -35,6 +35,19 @@
 
 第一章已使用指定的混合双时间尺度架构图；第三、四章保留当前公式对象；第五章为现有正式实验叙事版本。稿件中的 `OUR` 仍为方法占位名称。
 
+## Paper Assets
+
+第一章架构图采用以下最终文件：
+
+- `paper_assets/architecture/hero_dag_system_model_polished_v8_scheduler_gap_plus30.svg`
+- `paper_assets/architecture/hero_dag_system_model_polished_v8_scheduler_gap_plus30_editable.drawio`
+
+Draw.io源文件内嵌11个图像对象，不依赖本机绝对路径。`paper_assets/formal_figures/`只保留当前第五章实际引用的8张SVG，不纳入历史候选图和废弃样式。
+
+## Experiment Evidence
+
+`experiment_evidence/locked_snapshot_20260825/`来自最终Pro复评包的关键结果目录，包含正式主结果、seed级统计、协议锁、作图CSV及在线收敛曲线源数据。它用于核对论文数字和重新绘图，不等同于完整训练工作目录。
+
 ## Publication Boundary
 
-本仓库是研究工作快照，不等同于最终投稿归档版本。正式投稿前仍需完成全文合稿、英文改写、统一编号、引用核查和 PDF 逐页检查。
+本仓库是研究工作快照，不等同于最终投稿归档版本。正式投稿前仍需完成全文合稿、英文改写、统一编号、引用核查和PDF逐页检查。DAOC原文PDF未收入公开仓库，需由作者从合法来源单独保存。

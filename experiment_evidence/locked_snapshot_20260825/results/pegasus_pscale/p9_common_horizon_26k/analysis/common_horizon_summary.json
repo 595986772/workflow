@@ -1,0 +1,2480 @@
+{
+  "protocol": {
+    "training_horizon": 26000,
+    "tail_window": [
+      25001,
+      26000
+    ],
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "methods": [
+      "daoc_paper",
+      "dqn_wdsa_std_cache",
+      "daoc_our_coord_cache",
+      "lean_our",
+      "coord_cache_discrete_sac",
+      "discrete_sac_std_cache"
+    ]
+  },
+  "integrity": {
+    "all_runs_complete": true,
+    "all_training_ends_at_26000": true,
+    "all_tail_windows_have_1000_rows": true,
+    "all_evaluations_have_100_rows": true,
+    "all_evaluation_states_frozen": true,
+    "all_scenario_banks_paired": true,
+    "new_methods_use_fixed_final_checkpoint": true
+  },
+  "aggregate": {
+    "tail": {
+      "daoc_paper": {
+        "average_finish_time": {
+          "mean": 0.7079456047203323,
+          "ci95": [
+            0.5578893799622785,
+            0.8580018294783861
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 1.2337789547025717,
+          "ci95": [
+            1.0034841489577855,
+            1.464073760447358
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.13351543621406886,
+          "ci95": [
+            0.11101481228451605,
+            0.15601606014362168
+          ]
+        },
+        "service_latency": {
+          "mean": 2.014124347745979,
+          "ci95": [
+            1.5953055489385093,
+            2.4329431465534483
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.36674804881553946,
+          "ci95": [
+            0.2887644703358739,
+            0.44473162729520505
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.6332519511844605,
+          "ci95": [
+            0.5552683727047949,
+            0.7112355296641262
+          ]
+        }
+      },
+      "dqn_wdsa_std_cache": {
+        "average_finish_time": {
+          "mean": 1.0638611235987336,
+          "ci95": [
+            0.8742130313642331,
+            1.2535092158332342
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 1.8447410266738544,
+          "ci95": [
+            1.4163008717998584,
+            2.2731811815478506
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.12409512948573709,
+          "ci95": [
+            0.08718952046267292,
+            0.16100073850880126
+          ]
+        },
+        "service_latency": {
+          "mean": 3.8389327834239024,
+          "ci95": [
+            2.853039796609001,
+            4.824825770238804
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.12306191513282161,
+          "ci95": [
+            0.08662658691257816,
+            0.15949724335306506
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.8769380848671785,
+          "ci95": [
+            0.840502756646935,
+            0.913373413087422
+          ]
+        }
+      },
+      "daoc_our_coord_cache": {
+        "average_finish_time": {
+          "mean": 0.2726443483917934,
+          "ci95": [
+            0.1937174461639608,
+            0.351571250619626
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.5838753862625714,
+          "ci95": [
+            0.3409545747249042,
+            0.8267961978002386
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.12508439878303232,
+          "ci95": [
+            0.09599776197612195,
+            0.1541710355899427
+          ]
+        },
+        "service_latency": {
+          "mean": 0.85815051260719,
+          "ci95": [
+            0.4610813999870719,
+            1.255219625227308
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.5322730891192793,
+          "ci95": [
+            0.4893540024771613,
+            0.5751921757613973
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.4677269108807208,
+          "ci95": [
+            0.4248078242386029,
+            0.5106459975228388
+          ]
+        }
+      },
+      "lean_our": {
+        "average_finish_time": {
+          "mean": 0.222293005388277,
+          "ci95": [
+            0.14535583289377962,
+            0.2992301778827744
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.45674253193111436,
+          "ci95": [
+            0.2740141735695002,
+            0.6394708902927285
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.10505853916425836,
+          "ci95": [
+            0.08192850346351449,
+            0.12818857486500224
+          ]
+        },
+        "service_latency": {
+          "mean": 0.5604364288108087,
+          "ci95": [
+            0.25469875307698187,
+            0.8661741045446355
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.688561573138357,
+          "ci95": [
+            0.644570517401126,
+            0.7325526288755879
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.31143842686164297,
+          "ci95": [
+            0.267447371124412,
+            0.3554294825988739
+          ]
+        }
+      },
+      "coord_cache_discrete_sac": {
+        "average_finish_time": {
+          "mean": 0.48831336029121974,
+          "ci95": [
+            0.40080505883564504,
+            0.5758216617467944
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.8081924584476896,
+          "ci95": [
+            0.6013599442462557,
+            1.0150249726491234
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.13616784103017596,
+          "ci95": [
+            0.11282756212337458,
+            0.15950811993697733
+          ]
+        },
+        "service_latency": {
+          "mean": 1.4157947914238183,
+          "ci95": [
+            1.0473624764215725,
+            1.784227106426064
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.18642755115249682,
+          "ci95": [
+            0.17953814653771438,
+            0.19331695576727925
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.8135724488475032,
+          "ci95": [
+            0.8066830442327207,
+            0.8204618534622857
+          ]
+        }
+      },
+      "discrete_sac_std_cache": {
+        "average_finish_time": {
+          "mean": 1.5291874618687085,
+          "ci95": [
+            1.2729985376488646,
+            1.7853763860885523
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 2.419833593417813,
+          "ci95": [
+            2.121564459506329,
+            2.7181027273292964
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.15900615514994937,
+          "ci95": [
+            0.1158070197245437,
+            0.20220529057535502
+          ]
+        },
+        "service_latency": {
+          "mean": 4.442341346533894,
+          "ci95": [
+            3.5135984138219913,
+            5.371084279245797
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.1631912847104475,
+          "ci95": [
+            0.14727157197882115,
+            0.17911099744207384
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.8368087152895525,
+          "ci95": [
+            0.8208890025579262,
+            0.8527284280211788
+          ]
+        }
+      }
+    },
+    "evaluation": {
+      "daoc_paper": {
+        "average_finish_time": {
+          "mean": 0.7736107624426019,
+          "ci95": [
+            0.6611452834440709,
+            0.8860762414411328
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 1.0610170928478253,
+          "ci95": [
+            0.9183683688081001,
+            1.2036658168875505
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.12013794707872363,
+          "ci95": [
+            0.09640256760657395,
+            0.14387332655087332
+          ]
+        },
+        "service_latency": {
+          "mean": 2.5379026706859014,
+          "ci95": [
+            2.148896399241042,
+            2.9269089421307606
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.18147671551724137,
+          "ci95": [
+            0.13289510706574917,
+            0.23005832396873357
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.8185232844827587,
+          "ci95": [
+            0.7699416760312665,
+            0.8671048929342509
+          ]
+        }
+      },
+      "dqn_wdsa_std_cache": {
+        "average_finish_time": {
+          "mean": 1.130813420455795,
+          "ci95": [
+            0.9380131796558272,
+            1.3236136612557627
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 1.4697964927423717,
+          "ci95": [
+            1.2390698216423703,
+            1.700523163842373
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.118223655444083,
+          "ci95": [
+            0.09731651231666666,
+            0.13913079857149935
+          ]
+        },
+        "service_latency": {
+          "mean": 4.2631668348568645,
+          "ci95": [
+            2.9769630205598685,
+            5.549370649153861
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.096379841954023,
+          "ci95": [
+            0.08012372937517354,
+            0.11263595453287245
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.9036201580459771,
+          "ci95": [
+            0.8873640454671275,
+            0.9198762706248266
+          ]
+        }
+      },
+      "daoc_our_coord_cache": {
+        "average_finish_time": {
+          "mean": 0.37730532922756793,
+          "ci95": [
+            0.2731548536542861,
+            0.48145580480084976
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.5749890769637831,
+          "ci95": [
+            0.44745104848057393,
+            0.7025271054469923
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.11830947499023534,
+          "ci95": [
+            0.09657438731366247,
+            0.1400445626668082
+          ]
+        },
+        "service_latency": {
+          "mean": 1.4414388690008582,
+          "ci95": [
+            0.7778703056974441,
+            2.105007432304272
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.3061716925287356,
+          "ci95": [
+            0.2710847824825499,
+            0.3412586025749213
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.6938283074712642,
+          "ci95": [
+            0.6587413974250785,
+            0.7289152175174499
+          ]
+        }
+      },
+      "lean_our": {
+        "average_finish_time": {
+          "mean": 0.2634291940176984,
+          "ci95": [
+            0.17401774295605943,
+            0.3528406450793373
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.43443047439003185,
+          "ci95": [
+            0.30377787793177946,
+            0.5650830708482842
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.10838153263802808,
+          "ci95": [
+            0.0850411349198412,
+            0.13172193035621496
+          ]
+        },
+        "service_latency": {
+          "mean": 0.9356368723006053,
+          "ci95": [
+            0.40236501492066123,
+            1.4689087296805494
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.6160061609195402,
+          "ci95": [
+            0.5522717881894224,
+            0.679740533649658
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.38399383908045975,
+          "ci95": [
+            0.32025946635034197,
+            0.44772821181057754
+          ]
+        }
+      },
+      "coord_cache_discrete_sac": {
+        "average_finish_time": {
+          "mean": 0.3057162446881919,
+          "ci95": [
+            0.21665124653231366,
+            0.3947812428440702
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 0.4587487994155558,
+          "ci95": [
+            0.3499527966529435,
+            0.5675448021781682
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.1062276794432905,
+          "ci95": [
+            0.0829698196440438,
+            0.1294855392425372
+          ]
+        },
+        "service_latency": {
+          "mean": 1.2148964425441593,
+          "ci95": [
+            0.6583046529476776,
+            1.771488232140641
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.40186953448275864,
+          "ci95": [
+            0.3291415623986016,
+            0.4745975065669157
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.5981304655172414,
+          "ci95": [
+            0.5254024934330843,
+            0.6708584376013984
+          ]
+        }
+      },
+      "discrete_sac_std_cache": {
+        "average_finish_time": {
+          "mean": 1.1615049926654961,
+          "ci95": [
+            0.9383943518696338,
+            1.3846156334613584
+          ]
+        },
+        "p95_finish_time": {
+          "mean": 1.496105061579163,
+          "ci95": [
+            1.2207392496583234,
+            1.7714708735000024
+          ]
+        },
+        "waiting_latency": {
+          "mean": 0.17697829089978234,
+          "ci95": [
+            0.04908553577338731,
+            0.3048710460261774
+          ]
+        },
+        "service_latency": {
+          "mean": 3.899643816416469,
+          "ci95": [
+            3.0812540392895897,
+            4.718033593543348
+          ]
+        },
+        "cache_hit_rate": {
+          "mean": 0.23540075287356324,
+          "ci95": [
+            0.1737734925199688,
+            0.29702801322715766
+          ]
+        },
+        "cache_remote_loading_rate": {
+          "mean": 0.7645992471264369,
+          "ci95": [
+            0.7029719867728424,
+            0.8262265074800313
+          ]
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "tail": {
+      "our_vs_daoc_paper": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.7079456047203323,
+          "our_mean": 0.222293005388277,
+          "improvement_seconds": 0.4856525993320554,
+          "improvement_percent": 68.60027042952095,
+          "ci95_seconds": [
+            0.3475950141407327,
+            0.6237101845233781
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.2337789547025717,
+          "our_mean": 0.45674253193111436,
+          "improvement_seconds": 0.7770364227714571,
+          "improvement_percent": 62.98019753131371,
+          "ci95_seconds": [
+            0.5118673246381258,
+            1.0422055209047885
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.13351543621406886,
+          "our_mean": 0.10505853916425836,
+          "improvement_seconds": 0.028456897049810515,
+          "improvement_percent": 21.313563327752465,
+          "ci95_seconds": [
+            0.006177015582081544,
+            0.05073677851753949
+          ],
+          "wilcoxon_one_sided_p": 0.013671875,
+          "wins": 7,
+          "formal_superiority": true
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 2.014124347745979,
+          "our_mean": 0.5604364288108087,
+          "improvement_seconds": 1.4536879189351697,
+          "improvement_percent": 72.17468576664605,
+          "ci95_seconds": [
+            1.003370040678245,
+            1.9040057971920943
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_dqn_wdsa_std_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.0638611235987336,
+          "our_mean": 0.222293005388277,
+          "improvement_seconds": 0.8415681182104567,
+          "improvement_percent": 79.10507297829213,
+          "ci95_seconds": [
+            0.6471027246861802,
+            1.0360335117347332
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.8447410266738544,
+          "our_mean": 0.45674253193111436,
+          "improvement_seconds": 1.3879984947427402,
+          "improvement_percent": 75.240831893101,
+          "ci95_seconds": [
+            0.9351982186632752,
+            1.840798770822205
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.12409512948573709,
+          "our_mean": 0.10505853916425836,
+          "improvement_seconds": 0.019036590321478725,
+          "improvement_percent": 15.340320285226587,
+          "ci95_seconds": [
+            -0.019288852689423402,
+            0.05736203333238085
+          ],
+          "wilcoxon_one_sided_p": 0.24609375,
+          "wins": 6,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 3.8389327834239024,
+          "our_mean": 0.5604364288108087,
+          "improvement_seconds": 3.278496354613093,
+          "improvement_percent": 85.40124403243753,
+          "ci95_seconds": [
+            2.2846483911393074,
+            4.272344318086879
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_daoc_our_coord_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.2726443483917934,
+          "our_mean": 0.222293005388277,
+          "improvement_seconds": 0.05035134300351638,
+          "improvement_percent": 18.467774336976483,
+          "ci95_seconds": [
+            0.03535273228463434,
+            0.06534995372239842
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.5838753862625714,
+          "our_mean": 0.45674253193111436,
+          "improvement_seconds": 0.12713285433145702,
+          "improvement_percent": 21.773970494841993,
+          "ci95_seconds": [
+            0.0028609366373812256,
+            0.2514047720255328
+          ],
+          "wilcoxon_one_sided_p": 0.0029296875,
+          "wins": 9,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.12508439878303232,
+          "our_mean": 0.10505853916425836,
+          "improvement_seconds": 0.020025859618773963,
+          "improvement_percent": 16.009877981274247,
+          "ci95_seconds": [
+            0.006386142828129153,
+            0.03366557640941877
+          ],
+          "wilcoxon_one_sided_p": 0.0048828125,
+          "wins": 9,
+          "formal_superiority": true
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 0.85815051260719,
+          "our_mean": 0.5604364288108087,
+          "improvement_seconds": 0.2977140837963813,
+          "improvement_percent": 34.692525311425996,
+          "ci95_seconds": [
+            0.1570638183944318,
+            0.43836434919833084
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_coord_cache_discrete_sac": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.48831336029121974,
+          "our_mean": 0.222293005388277,
+          "improvement_seconds": 0.2660203549029426,
+          "improvement_percent": 54.477386148987144,
+          "ci95_seconds": [
+            0.24362348828301678,
+            0.28841722152286847
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.8081924584476896,
+          "our_mean": 0.45674253193111436,
+          "improvement_seconds": 0.35144992651657525,
+          "improvement_percent": 43.4859200729999,
+          "ci95_seconds": [
+            0.28419043408447137,
+            0.41870941894867914
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.13616784103017596,
+          "our_mean": 0.10505853916425836,
+          "improvement_seconds": 0.031109301865917614,
+          "improvement_percent": 22.846291481572017,
+          "ci95_seconds": [
+            0.0027554559881290096,
+            0.059463147743706216
+          ],
+          "wilcoxon_one_sided_p": 0.0244140625,
+          "wins": 8,
+          "formal_superiority": true
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 1.4157947914238183,
+          "our_mean": 0.5604364288108087,
+          "improvement_seconds": 0.8553583626130091,
+          "improvement_percent": 60.4154195081339,
+          "ci95_seconds": [
+            0.7297404269491367,
+            0.9809762982768816
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_discrete_sac_std_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.5291874618687085,
+          "our_mean": 0.222293005388277,
+          "improvement_seconds": 1.3068944564804315,
+          "improvement_percent": 85.46332539787967,
+          "ci95_seconds": [
+            1.0353500078078646,
+            1.5784389051529983
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 2.419833593417813,
+          "our_mean": 0.45674253193111436,
+          "improvement_seconds": 1.9630910614866983,
+          "improvement_percent": 81.12504375616987,
+          "ci95_seconds": [
+            1.6247934924519758,
+            2.301388630521421
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.15900615514994937,
+          "our_mean": 0.10505853916425836,
+          "improvement_seconds": 0.05394761598569102,
+          "improvement_percent": 33.92800482145876,
+          "ci95_seconds": [
+            0.004726485880307517,
+            0.10316874609107451
+          ],
+          "wilcoxon_one_sided_p": 0.013671875,
+          "wins": 8,
+          "formal_superiority": true
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 4.442341346533894,
+          "our_mean": 0.5604364288108087,
+          "improvement_seconds": 3.881904917723085,
+          "improvement_percent": 87.38421059768211,
+          "ci95_seconds": [
+            2.9877955351547394,
+            4.776014300291431
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      }
+    },
+    "evaluation": {
+      "our_vs_daoc_paper": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.7736107624426019,
+          "our_mean": 0.2634291940176984,
+          "improvement_seconds": 0.5101815684249035,
+          "improvement_percent": 65.94809601847498,
+          "ci95_seconds": [
+            0.39188705538642815,
+            0.6284760814633787
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.0610170928478253,
+          "our_mean": 0.43443047439003185,
+          "improvement_seconds": 0.6265866184577935,
+          "improvement_percent": 59.05528032314751,
+          "ci95_seconds": [
+            0.47547105493107916,
+            0.7777021819845078
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.12013794707872363,
+          "our_mean": 0.10838153263802808,
+          "improvement_seconds": 0.011756414440695561,
+          "improvement_percent": 9.785762722407645,
+          "ci95_seconds": [
+            -0.008503262653101284,
+            0.032016091534492405
+          ],
+          "wilcoxon_one_sided_p": 0.1162109375,
+          "wins": 6,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 2.5379026706859014,
+          "our_mean": 0.9356368723006053,
+          "improvement_seconds": 1.6022657983852961,
+          "improvement_percent": 63.13346121946681,
+          "ci95_seconds": [
+            1.0724832403737958,
+            2.1320483563967967
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_dqn_wdsa_std_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.130813420455795,
+          "our_mean": 0.2634291940176984,
+          "improvement_seconds": 0.8673842264380962,
+          "improvement_percent": 76.70445103918924,
+          "ci95_seconds": [
+            0.6983902009885201,
+            1.0363782518876723
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.4697964927423717,
+          "our_mean": 0.43443047439003185,
+          "improvement_seconds": 1.0353660183523399,
+          "improvement_percent": 70.44281459813094,
+          "ci95_seconds": [
+            0.8713124929744942,
+            1.1994195437301856
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.118223655444083,
+          "our_mean": 0.10838153263802808,
+          "improvement_seconds": 0.009842122806054926,
+          "improvement_percent": 8.325002952315256,
+          "ci95_seconds": [
+            -0.019787938992795198,
+            0.03947218460490505
+          ],
+          "wilcoxon_one_sided_p": 0.24609375,
+          "wins": 6,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 4.2631668348568645,
+          "our_mean": 0.9356368723006053,
+          "improvement_seconds": 3.3275299625562598,
+          "improvement_percent": 78.05300827894955,
+          "ci95_seconds": [
+            2.1820947437238267,
+            4.472965181388693
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_daoc_our_coord_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.37730532922756793,
+          "our_mean": 0.2634291940176984,
+          "improvement_seconds": 0.11387613520986947,
+          "improvement_percent": 30.181427716115355,
+          "ci95_seconds": [
+            0.07937985388803606,
+            0.14837241653170288
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.5749890769637831,
+          "our_mean": 0.43443047439003185,
+          "improvement_seconds": 0.1405586025737513,
+          "improvement_percent": 24.445438740500574,
+          "ci95_seconds": [
+            0.07271522530294776,
+            0.20840197984455483
+          ],
+          "wilcoxon_one_sided_p": 0.0029296875,
+          "wins": 9,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.11830947499023534,
+          "our_mean": 0.10838153263802808,
+          "improvement_seconds": 0.009927942352207274,
+          "improvement_percent": 8.391502331513749,
+          "ci95_seconds": [
+            -0.008349962270944535,
+            0.028205846975359085
+          ],
+          "wilcoxon_one_sided_p": 0.1611328125,
+          "wins": 7,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 1.4414388690008582,
+          "our_mean": 0.9356368723006053,
+          "improvement_seconds": 0.5058019967002529,
+          "improvement_percent": 35.090076143905605,
+          "ci95_seconds": [
+            0.2946767355344443,
+            0.7169272578660616
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_coord_cache_discrete_sac": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.3057162446881919,
+          "our_mean": 0.2634291940176984,
+          "improvement_seconds": 0.0422870506704935,
+          "improvement_percent": 13.832124201847101,
+          "ci95_seconds": [
+            0.02052279502341425,
+            0.06405130631757275
+          ],
+          "wilcoxon_one_sided_p": 0.001953125,
+          "wins": 9,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 0.4587487994155558,
+          "our_mean": 0.43443047439003185,
+          "improvement_seconds": 0.024318325025524022,
+          "improvement_percent": 5.301011153926828,
+          "ci95_seconds": [
+            -0.025217761951116434,
+            0.07385441200216447
+          ],
+          "wilcoxon_one_sided_p": 0.1611328125,
+          "wins": 7,
+          "formal_superiority": false
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.1062276794432905,
+          "our_mean": 0.10838153263802808,
+          "improvement_seconds": -0.002153853194737599,
+          "improvement_percent": -2.0275818939332386,
+          "ci95_seconds": [
+            -0.018261787503455622,
+            0.013954081113980426
+          ],
+          "wilcoxon_one_sided_p": 0.7216796875,
+          "wins": 5,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 1.2148964425441593,
+          "our_mean": 0.9356368723006053,
+          "improvement_seconds": 0.2792595702435539,
+          "improvement_percent": 22.98628594703481,
+          "ci95_seconds": [
+            0.1498332725386719,
+            0.4086858679484359
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      },
+      "our_vs_discrete_sac_std_cache": {
+        "average_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.1615049926654961,
+          "our_mean": 0.2634291940176984,
+          "improvement_seconds": 0.8980757986477975,
+          "improvement_percent": 77.32001190858729,
+          "ci95_seconds": [
+            0.6738263316434252,
+            1.1223252656521698
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "p95_finish_time": {
+          "pairs": 10,
+          "reference_mean": 1.496105061579163,
+          "our_mean": 0.43443047439003185,
+          "improvement_seconds": 1.0616745871891307,
+          "improvement_percent": 70.96256903699772,
+          "ci95_seconds": [
+            0.806807548242322,
+            1.3165416261359393
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        },
+        "waiting_latency": {
+          "pairs": 10,
+          "reference_mean": 0.17697829089978234,
+          "our_mean": 0.10838153263802808,
+          "improvement_seconds": 0.06859675826175424,
+          "improvement_percent": 38.759984579463804,
+          "ci95_seconds": [
+            -0.06481218455217255,
+            0.20200570107568103
+          ],
+          "wilcoxon_one_sided_p": 0.080078125,
+          "wins": 7,
+          "formal_superiority": false
+        },
+        "service_latency": {
+          "pairs": 10,
+          "reference_mean": 3.899643816416469,
+          "our_mean": 0.9356368723006053,
+          "improvement_seconds": 2.9640069441158636,
+          "improvement_percent": 76.00711971791317,
+          "ci95_seconds": [
+            2.2883583485481704,
+            3.639655539683557
+          ],
+          "wilcoxon_one_sided_p": 0.0009765625,
+          "wins": 10,
+          "formal_superiority": true
+        }
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 51,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.75416028331428,
+        "p95_finish_time": 1.409311829345871,
+        "waiting_latency": 0.19676172037241016,
+        "service_latency": 1.2345635373326986,
+        "cache_hit_rate": 0.5624571948998177,
+        "cache_remote_loading_rate": 0.4375428051001821
+      },
+      "evaluation": {
+        "average_finish_time": 0.7843615164831899,
+        "p95_finish_time": 1.1420173576222354,
+        "waiting_latency": 0.2063528509325559,
+        "service_latency": 1.8764667600721716,
+        "cache_hit_rate": 0.3101599137931034,
+        "cache_remote_loading_rate": 0.6898400862068965
+      },
+      "training_wall_time_sec": 3482.909489749989
+    },
+    {
+      "seed": 51,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.3030618545463748,
+        "p95_finish_time": 2.154854541237276,
+        "waiting_latency": 0.16337021282535777,
+        "service_latency": 3.0096909432491548,
+        "cache_hit_rate": 0.1598178506375227,
+        "cache_remote_loading_rate": 0.840182149362477
+      },
+      "evaluation": {
+        "average_finish_time": 1.3320593796945572,
+        "p95_finish_time": 1.4478455368728975,
+        "waiting_latency": 0.1473944000394396,
+        "service_latency": 3.6004688331273065,
+        "cache_hit_rate": 0.11744436781609195,
+        "cache_remote_loading_rate": 0.8825556321839081
+      },
+      "training_wall_time_sec": 3347.2346886249998
+    },
+    {
+      "seed": 51,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.36853915394742526,
+        "p95_finish_time": 0.5445522044190487,
+        "waiting_latency": 0.20301351209409074,
+        "service_latency": 0.7283572684227654,
+        "cache_hit_rate": 0.6353734061930784,
+        "cache_remote_loading_rate": 0.36462659380692175
+      },
+      "evaluation": {
+        "average_finish_time": 0.43656384093200906,
+        "p95_finish_time": 0.7012335955416372,
+        "waiting_latency": 0.18268891958141834,
+        "service_latency": 1.104785700458231,
+        "cache_hit_rate": 0.36497373563218394,
+        "cache_remote_loading_rate": 0.6350262643678161
+      },
+      "training_wall_time_sec": 4361.665241457988
+    },
+    {
+      "seed": 51,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.3130124382788996,
+        "p95_finish_time": 0.4645025147896576,
+        "waiting_latency": 0.17131814936174747,
+        "service_latency": 0.5065978873366814,
+        "cache_hit_rate": 0.7666065573770492,
+        "cache_remote_loading_rate": 0.2333934426229508
+      },
+      "evaluation": {
+        "average_finish_time": 0.3386237228831326,
+        "p95_finish_time": 0.5688609327348926,
+        "waiting_latency": 0.17419207433573344,
+        "service_latency": 0.8415069348329669,
+        "cache_hit_rate": 0.6497600287356322,
+        "cache_remote_loading_rate": 0.35023997126436784
+      },
+      "training_wall_time_sec": 6706.445221749978
+    },
+    {
+      "seed": 51,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.5976600471690535,
+        "p95_finish_time": 0.8046232927987864,
+        "waiting_latency": 0.1310754989577652,
+        "service_latency": 1.5595907304918695,
+        "cache_hit_rate": 0.19095081967213115,
+        "cache_remote_loading_rate": 0.8090491803278689
+      },
+      "evaluation": {
+        "average_finish_time": 0.38388839120499507,
+        "p95_finish_time": 0.6288989993846112,
+        "waiting_latency": 0.16367891114882308,
+        "service_latency": 1.0701873109490214,
+        "cache_hit_rate": 0.3929071551724138,
+        "cache_remote_loading_rate": 0.6070928448275863
+      },
+      "training_wall_time_sec": 7062.663945457985
+    },
+    {
+      "seed": 51,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.5243322895436182,
+        "p95_finish_time": 2.366261815594158,
+        "waiting_latency": 0.13268570512113587,
+        "service_latency": 3.2319454429303933,
+        "cache_hit_rate": 0.19081420765027324,
+        "cache_remote_loading_rate": 0.8091857923497268
+      },
+      "evaluation": {
+        "average_finish_time": 1.1343811979768146,
+        "p95_finish_time": 1.2785746072488255,
+        "waiting_latency": 0.14401036248134022,
+        "service_latency": 3.0594653301543944,
+        "cache_hit_rate": 0.17673583333333334,
+        "cache_remote_loading_rate": 0.8232641666666666
+      },
+      "training_wall_time_sec": 7496.7895559580065
+    },
+    {
+      "seed": 52,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.47099930456475514,
+        "p95_finish_time": 1.3279970794994964,
+        "waiting_latency": 0.17030380545372464,
+        "service_latency": 1.6104327947792845,
+        "cache_hit_rate": 0.33779813084112154,
+        "cache_remote_loading_rate": 0.6622018691588785
+      },
+      "evaluation": {
+        "average_finish_time": 0.6538489777767886,
+        "p95_finish_time": 0.8836639269738435,
+        "waiting_latency": 0.13224165850034597,
+        "service_latency": 2.9308267178630287,
+        "cache_hit_rate": 0.1834903735632184,
+        "cache_remote_loading_rate": 0.8165096264367817
+      },
+      "training_wall_time_sec": 3369.1817068329838
+    },
+    {
+      "seed": 52,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.24862765459306,
+        "p95_finish_time": 2.0021532196345113,
+        "waiting_latency": 0.24063149560432395,
+        "service_latency": 4.242754687969882,
+        "cache_hit_rate": 0.04544672897196261,
+        "cache_remote_loading_rate": 0.9545532710280373
+      },
+      "evaluation": {
+        "average_finish_time": 1.3057065116149968,
+        "p95_finish_time": 1.9324757722398551,
+        "waiting_latency": 0.13497492780741807,
+        "service_latency": 5.3029027386896885,
+        "cache_hit_rate": 0.09481264367816093,
+        "cache_remote_loading_rate": 0.905187356321839
+      },
+      "training_wall_time_sec": 3281.819102874999
+    },
+    {
+      "seed": 52,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.2888126436397218,
+        "p95_finish_time": 0.813864785953346,
+        "waiting_latency": 0.15428491738833428,
+        "service_latency": 1.0464508778344264,
+        "cache_hit_rate": 0.4241140186915888,
+        "cache_remote_loading_rate": 0.5758859813084113
+      },
+      "evaluation": {
+        "average_finish_time": 0.4197084208783529,
+        "p95_finish_time": 0.5808145498339404,
+        "waiting_latency": 0.12698138016818863,
+        "service_latency": 2.34661748545858,
+        "cache_hit_rate": 0.233476091954023,
+        "cache_remote_loading_rate": 0.766523908045977
+      },
+      "training_wall_time_sec": 4269.042979916994
+    },
+    {
+      "seed": 52,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.23908630489344887,
+        "p95_finish_time": 0.6126326654033349,
+        "waiting_latency": 0.12058347139809357,
+        "service_latency": 0.5278751995379057,
+        "cache_hit_rate": 0.6005121495327103,
+        "cache_remote_loading_rate": 0.39948785046728974
+      },
+      "evaluation": {
+        "average_finish_time": 0.31765421274696465,
+        "p95_finish_time": 0.5371725322879649,
+        "waiting_latency": 0.08900276085454546,
+        "service_latency": 1.609856723372486,
+        "cache_hit_rate": 0.47195330459770113,
+        "cache_remote_loading_rate": 0.5280466954022988
+      },
+      "training_wall_time_sec": 6395.908890833001
+    },
+    {
+      "seed": 52,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.5320980758953442,
+        "p95_finish_time": 1.041379094861752,
+        "waiting_latency": 0.20149039391170134,
+        "service_latency": 1.238114415394332,
+        "cache_hit_rate": 0.17436822429906543,
+        "cache_remote_loading_rate": 0.8256317757009346
+      },
+      "evaluation": {
+        "average_finish_time": 0.31748750091227823,
+        "p95_finish_time": 0.5051333221789391,
+        "waiting_latency": 0.0595851022440359,
+        "service_latency": 1.8739976985364601,
+        "cache_hit_rate": 0.3074097701149425,
+        "cache_remote_loading_rate": 0.6925902298850574
+      },
+      "training_wall_time_sec": 6867.051168667007
+    },
+    {
+      "seed": 52,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 2.3774916821534684,
+        "p95_finish_time": 3.204567191115885,
+        "waiting_latency": 0.2876536086127902,
+        "service_latency": 7.0360019085807455,
+        "cache_hit_rate": 0.10792710280373832,
+        "cache_remote_loading_rate": 0.8920728971962617
+      },
+      "evaluation": {
+        "average_finish_time": 1.8969551462068939,
+        "p95_finish_time": 2.257175511786695,
+        "waiting_latency": 0.6834226931654959,
+        "service_latency": 6.006854705784425,
+        "cache_hit_rate": 0.12198971264367817,
+        "cache_remote_loading_rate": 0.8780102873563217
+      },
+      "training_wall_time_sec": 7289.085321667022
+    },
+    {
+      "seed": 53,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.9990345569201141,
+        "p95_finish_time": 1.5537323159513154,
+        "waiting_latency": 0.13705378886209124,
+        "service_latency": 2.8490672588074113,
+        "cache_hit_rate": 0.2592893309222423,
+        "cache_remote_loading_rate": 0.7407106690777576
+      },
+      "evaluation": {
+        "average_finish_time": 0.9851647496610141,
+        "p95_finish_time": 1.2977599575155778,
+        "waiting_latency": 0.11199965853425344,
+        "service_latency": 2.9494992273554517,
+        "cache_hit_rate": 0.20121856321839082,
+        "cache_remote_loading_rate": 0.7987814367816091
+      },
+      "training_wall_time_sec": 3531.7567326670105
+    },
+    {
+      "seed": 53,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.017901886636306,
+        "p95_finish_time": 1.5691513265516157,
+        "waiting_latency": 0.1388712966432165,
+        "service_latency": 2.7782056462297344,
+        "cache_hit_rate": 0.10477576853526219,
+        "cache_remote_loading_rate": 0.8952242314647378
+      },
+      "evaluation": {
+        "average_finish_time": 1.0940574036405746,
+        "p95_finish_time": 1.5164566879033856,
+        "waiting_latency": 0.13087067539246364,
+        "service_latency": 3.1214358296137403,
+        "cache_hit_rate": 0.11224419540229885,
+        "cache_remote_loading_rate": 0.8877558045977014
+      },
+      "training_wall_time_sec": 3688.2138325410015
+    },
+    {
+      "seed": 53,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.4474276890872969,
+        "p95_finish_time": 0.8350638496799629,
+        "waiting_latency": 0.13080469624512436,
+        "service_latency": 1.0286763933646212,
+        "cache_hit_rate": 0.499625678119349,
+        "cache_remote_loading_rate": 0.500374321880651
+      },
+      "evaluation": {
+        "average_finish_time": 0.5225284648046141,
+        "p95_finish_time": 0.7090468078978404,
+        "waiting_latency": 0.13269511728504008,
+        "service_latency": 1.413014255540034,
+        "cache_hit_rate": 0.32060945402298846,
+        "cache_remote_loading_rate": 0.6793905459770113
+      },
+      "training_wall_time_sec": 4293.402428166999
+    },
+    {
+      "seed": 53,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.4068762631224139,
+        "p95_finish_time": 0.8614764466211935,
+        "waiting_latency": 0.07236796708497183,
+        "service_latency": 0.9295591869602272,
+        "cache_hit_rate": 0.6579855334538879,
+        "cache_remote_loading_rate": 0.3420144665461121
+      },
+      "evaluation": {
+        "average_finish_time": 0.3927659828102945,
+        "p95_finish_time": 0.519444507591011,
+        "waiting_latency": 0.079246943123227,
+        "service_latency": 0.9304583743918344,
+        "cache_hit_rate": 0.7035958620689654,
+        "cache_remote_loading_rate": 0.2964041379310345
+      },
+      "training_wall_time_sec": 6676.423469583009
+    },
+    {
+      "seed": 53,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.7009181853433019,
+        "p95_finish_time": 1.1759514906847106,
+        "waiting_latency": 0.12411381418538205,
+        "service_latency": 1.7609013048954854,
+        "cache_hit_rate": 0.18204159132007233,
+        "cache_remote_loading_rate": 0.8179584086799276
+      },
+      "evaluation": {
+        "average_finish_time": 0.43721154503508136,
+        "p95_finish_time": 0.548221092871399,
+        "waiting_latency": 0.12504123009187243,
+        "service_latency": 1.1765266022303187,
+        "cache_hit_rate": 0.45222626436781616,
+        "cache_remote_loading_rate": 0.5477737356321839
+      },
+      "training_wall_time_sec": 7173.449005208007
+    },
+    {
+      "seed": 53,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.0973206574094192,
+        "p95_finish_time": 1.9710892975139271,
+        "waiting_latency": 0.12787161959765594,
+        "service_latency": 3.4433662383662673,
+        "cache_hit_rate": 0.16652622061482822,
+        "cache_remote_loading_rate": 0.8334737793851719
+      },
+      "evaluation": {
+        "average_finish_time": 0.7769135161217271,
+        "p95_finish_time": 0.988060635167652,
+        "waiting_latency": 0.08460970403419854,
+        "service_latency": 2.550146183127515,
+        "cache_hit_rate": 0.3819112356321839,
+        "cache_remote_loading_rate": 0.6180887643678161
+      },
+      "training_wall_time_sec": 7903.891302084026
+    },
+    {
+      "seed": 54,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.8688226810383797,
+        "p95_finish_time": 1.302530531218628,
+        "waiting_latency": 0.10913694782702064,
+        "service_latency": 2.2990649524483437,
+        "cache_hit_rate": 0.33455844155844155,
+        "cache_remote_loading_rate": 0.6654415584415585
+      },
+      "evaluation": {
+        "average_finish_time": 0.9609116787043935,
+        "p95_finish_time": 1.2759874472249881,
+        "waiting_latency": 0.1088547087619187,
+        "service_latency": 3.2754090903591027,
+        "cache_hit_rate": 0.1301169252873563,
+        "cache_remote_loading_rate": 0.8698830747126436
+      },
+      "training_wall_time_sec": 3467.3931844999897
+    },
+    {
+      "seed": 54,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.0025713495006197,
+        "p95_finish_time": 1.4120604676010102,
+        "waiting_latency": 0.08120991327668325,
+        "service_latency": 3.203003493913319,
+        "cache_hit_rate": 0.16464192949907236,
+        "cache_remote_loading_rate": 0.8353580705009276
+      },
+      "evaluation": {
+        "average_finish_time": 0.9608712632477734,
+        "p95_finish_time": 1.375475067496943,
+        "waiting_latency": 0.08818019111757737,
+        "service_latency": 2.620855591494002,
+        "cache_hit_rate": 0.12397054597701151,
+        "cache_remote_loading_rate": 0.8760294540229886
+      },
+      "training_wall_time_sec": 3666.2114724579988
+    },
+    {
+      "seed": 54,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.14392809413137278,
+        "p95_finish_time": 0.2413657219526811,
+        "waiting_latency": 0.07206571708387942,
+        "service_latency": 0.2573812144897674,
+        "cache_hit_rate": 0.5588794063079776,
+        "cache_remote_loading_rate": 0.4411205936920222
+      },
+      "evaluation": {
+        "average_finish_time": 0.2078838459017391,
+        "p95_finish_time": 0.34169612042638337,
+        "waiting_latency": 0.0687176799379763,
+        "service_latency": 0.6487367996489724,
+        "cache_hit_rate": 0.26595433908045973,
+        "cache_remote_loading_rate": 0.7340456609195403
+      },
+      "training_wall_time_sec": 4158.928613833006
+    },
+    {
+      "seed": 54,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.09613637317689525,
+        "p95_finish_time": 0.17987325191591458,
+        "waiting_latency": 0.07739219303484152,
+        "service_latency": 0.12379847253833304,
+        "cache_hit_rate": 0.6995491651205937,
+        "cache_remote_loading_rate": 0.3004508348794063
+      },
+      "evaluation": {
+        "average_finish_time": 0.12761739945310077,
+        "p95_finish_time": 0.23291226636441056,
+        "waiting_latency": 0.0797736473079792,
+        "service_latency": 0.2814345280960114,
+        "cache_hit_rate": 0.5607492528735631,
+        "cache_remote_loading_rate": 0.43925074712643686
+      },
+      "training_wall_time_sec": 6497.956374792004
+    },
+    {
+      "seed": 54,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.3443631381291427,
+        "p95_finish_time": 0.4529439895350338,
+        "waiting_latency": 0.087836134862623,
+        "service_latency": 0.792165205049076,
+        "cache_hit_rate": 0.2015064935064935,
+        "cache_remote_loading_rate": 0.7984935064935064
+      },
+      "evaluation": {
+        "average_finish_time": 0.15026189544397503,
+        "p95_finish_time": 0.2522530767388297,
+        "waiting_latency": 0.08181741918539753,
+        "service_latency": 0.3438841322193942,
+        "cache_hit_rate": 0.5573166379310345,
+        "cache_remote_loading_rate": 0.44268336206896547
+      },
+      "training_wall_time_sec": 7109.358555915998
+    },
+    {
+      "seed": 54,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.4653998846018839,
+        "p95_finish_time": 1.8489165953744044,
+        "waiting_latency": 0.0932016650034151,
+        "service_latency": 3.88126146447251,
+        "cache_hit_rate": 0.1654230055658627,
+        "cache_remote_loading_rate": 0.8345769944341374
+      },
+      "evaluation": {
+        "average_finish_time": 0.9961791343456001,
+        "p95_finish_time": 1.2152120377741844,
+        "waiting_latency": 0.11217513856871593,
+        "service_latency": 3.740378645995413,
+        "cache_hit_rate": 0.1500852298850575,
+        "cache_remote_loading_rate": 0.8499147701149425
+      },
+      "training_wall_time_sec": 7847.820125667029
+    },
+    {
+      "seed": 55,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.5694998237561206,
+        "p95_finish_time": 0.9360232365883696,
+        "waiting_latency": 0.13191606820544932,
+        "service_latency": 1.6548372621481446,
+        "cache_hit_rate": 0.3661506352087115,
+        "cache_remote_loading_rate": 0.6338493647912886
+      },
+      "evaluation": {
+        "average_finish_time": 0.5797923022053876,
+        "p95_finish_time": 0.7500460993839088,
+        "waiting_latency": 0.11215357466860415,
+        "service_latency": 1.7230197958484712,
+        "cache_hit_rate": 0.2237036781609195,
+        "cache_remote_loading_rate": 0.7762963218390806
+      },
+      "training_wall_time_sec": 3522.2827058330004
+    },
+    {
+      "seed": 55,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.2860266892084915,
+        "p95_finish_time": 1.9201494952694607,
+        "waiting_latency": 0.14966893947817908,
+        "service_latency": 4.131761163552153,
+        "cache_hit_rate": 0.06558076225045371,
+        "cache_remote_loading_rate": 0.9344192377495463
+      },
+      "evaluation": {
+        "average_finish_time": 1.2733460520301818,
+        "p95_finish_time": 1.3620554338495454,
+        "waiting_latency": 0.1635248909898891,
+        "service_latency": 4.290862034392271,
+        "cache_hit_rate": 0.06266022988505748,
+        "cache_remote_loading_rate": 0.9373397701149425
+      },
+      "training_wall_time_sec": 3974.2788237079985
+    },
+    {
+      "seed": 55,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.146730798261315,
+        "p95_finish_time": 0.26843230868115997,
+        "waiting_latency": 0.10774168297861429,
+        "service_latency": 0.43533678569887413,
+        "cache_hit_rate": 0.5331070780399274,
+        "cache_remote_loading_rate": 0.4668929219600726
+      },
+      "evaluation": {
+        "average_finish_time": 0.23413642272415466,
+        "p95_finish_time": 0.44268188998815505,
+        "waiting_latency": 0.1054026677908412,
+        "service_latency": 0.6531755873174977,
+        "cache_hit_rate": 0.3875169252873564,
+        "cache_remote_loading_rate": 0.6124830747126436
+      },
+      "training_wall_time_sec": 3697.4761202500085
+    },
+    {
+      "seed": 55,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.09925860236338946,
+        "p95_finish_time": 0.15831069376397944,
+        "waiting_latency": 0.08242703731177993,
+        "service_latency": 0.1234117652938464,
+        "cache_hit_rate": 0.7691905626134301,
+        "cache_remote_loading_rate": 0.23080943738656987
+      },
+      "evaluation": {
+        "average_finish_time": 0.11731649234406509,
+        "p95_finish_time": 0.2807930128921107,
+        "waiting_latency": 0.08521165680416583,
+        "service_latency": 0.21194682561376332,
+        "cache_hit_rate": 0.7380397988505749,
+        "cache_remote_loading_rate": 0.2619602011494253
+      },
+      "training_wall_time_sec": 6327.903318916011
+    },
+    {
+      "seed": 55,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.35288237074253687,
+        "p95_finish_time": 0.558877099165831,
+        "waiting_latency": 0.16327374536330125,
+        "service_latency": 0.9989076197535166,
+        "cache_hit_rate": 0.1975480943738657,
+        "cache_remote_loading_rate": 0.8024519056261343
+      },
+      "evaluation": {
+        "average_finish_time": 0.15429091931333935,
+        "p95_finish_time": 0.29111992665400505,
+        "waiting_latency": 0.10505176554361034,
+        "service_latency": 0.4808381261926904,
+        "cache_hit_rate": 0.48732991379310353,
+        "cache_remote_loading_rate": 0.5126700862068965
+      },
+      "training_wall_time_sec": 7218.445569000003
+    },
+    {
+      "seed": 55,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.505621564038905,
+        "p95_finish_time": 2.625530891810078,
+        "waiting_latency": 0.17167010379854694,
+        "service_latency": 3.685996815745708,
+        "cache_hit_rate": 0.17147731397459165,
+        "cache_remote_loading_rate": 0.8285226860254084
+      },
+      "evaluation": {
+        "average_finish_time": 1.184365520908917,
+        "p95_finish_time": 1.500866827416494,
+        "waiting_latency": 0.11314616017437404,
+        "service_latency": 3.3537013791898125,
+        "cache_hit_rate": 0.2308720114942529,
+        "cache_remote_loading_rate": 0.7691279885057475
+      },
+      "training_wall_time_sec": 8777.621780583053
+    },
+    {
+      "seed": 56,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.6013023998038091,
+        "p95_finish_time": 1.3329748223797833,
+        "waiting_latency": 0.14965400297189427,
+        "service_latency": 1.607258180592744,
+        "cache_hit_rate": 0.42024324324324325,
+        "cache_remote_loading_rate": 0.5797567567567568
+      },
+      "evaluation": {
+        "average_finish_time": 0.73763437423656,
+        "p95_finish_time": 1.021670003013468,
+        "waiting_latency": 0.1291402889484703,
+        "service_latency": 2.5254137253819398,
+        "cache_hit_rate": 0.1603064655172414,
+        "cache_remote_loading_rate": 0.8396935344827585
+      },
+      "training_wall_time_sec": 3537.521409665991
+    },
+    {
+      "seed": 56,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 0.7509408445374315,
+        "p95_finish_time": 2.7397557029111095,
+        "waiting_latency": 0.123233000222367,
+        "service_latency": 5.185647442297758,
+        "cache_hit_rate": 0.22041621621621618,
+        "cache_remote_loading_rate": 0.7795837837837837
+      },
+      "evaluation": {
+        "average_finish_time": 1.0920000445612608,
+        "p95_finish_time": 1.3146952025472094,
+        "waiting_latency": 0.14180138474117346,
+        "service_latency": 6.643984218127436,
+        "cache_hit_rate": 0.1130998275862069,
+        "cache_remote_loading_rate": 0.886900172413793
+      },
+      "training_wall_time_sec": 3960.0546962080007
+    },
+    {
+      "seed": 56,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.19837634012576644,
+        "p95_finish_time": 0.3176888426580842,
+        "waiting_latency": 0.09407037910127988,
+        "service_latency": 0.5503912384825622,
+        "cache_hit_rate": 0.4900720720720721,
+        "cache_remote_loading_rate": 0.5099279279279278
+      },
+      "evaluation": {
+        "average_finish_time": 0.26434573507003506,
+        "p95_finish_time": 0.39326543820471366,
+        "waiting_latency": 0.09745222558090809,
+        "service_latency": 0.8491034802127381,
+        "cache_hit_rate": 0.27359609195402296,
+        "cache_remote_loading_rate": 0.7264039080459771
+      },
+      "training_wall_time_sec": 3736.1918217079947
+    },
+    {
+      "seed": 56,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.1615652005831444,
+        "p95_finish_time": 0.26218886420478543,
+        "waiting_latency": 0.09225418299787991,
+        "service_latency": 0.3143629435516255,
+        "cache_hit_rate": 0.7168738738738739,
+        "cache_remote_loading_rate": 0.2831261261261261
+      },
+      "evaluation": {
+        "average_finish_time": 0.21781325864499998,
+        "p95_finish_time": 0.4491446650609891,
+        "waiting_latency": 0.12929691806439808,
+        "service_latency": 0.5747894454369038,
+        "cache_hit_rate": 0.5649976149425288,
+        "cache_remote_loading_rate": 0.4350023850574712
+      },
+      "training_wall_time_sec": 6315.884478333028
+    },
+    {
+      "seed": 56,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.37913440897898454,
+        "p95_finish_time": 0.5235508641145812,
+        "waiting_latency": 0.12142449372803081,
+        "service_latency": 1.2351399082221035,
+        "cache_hit_rate": 0.1964918918918919,
+        "cache_remote_loading_rate": 0.8035081081081081
+      },
+      "evaluation": {
+        "average_finish_time": 0.2509282413579048,
+        "p95_finish_time": 0.4191249107627524,
+        "waiting_latency": 0.10678891438485026,
+        "service_latency": 1.0219595842623705,
+        "cache_hit_rate": 0.31753201149425286,
+        "cache_remote_loading_rate": 0.6824679885057472
+      },
+      "training_wall_time_sec": 7189.8592214579985
+    },
+    {
+      "seed": 56,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.5872897827006354,
+        "p95_finish_time": 2.4502179743230332,
+        "waiting_latency": 0.12969061748174807,
+        "service_latency": 4.429758179411174,
+        "cache_hit_rate": 0.18504684684684686,
+        "cache_remote_loading_rate": 0.8149531531531532
+      },
+      "evaluation": {
+        "average_finish_time": 1.2498732424509817,
+        "p95_finish_time": 1.9248486162000753,
+        "waiting_latency": 0.12344535296151751,
+        "service_latency": 4.5150492020755175,
+        "cache_hit_rate": 0.1791022701149425,
+        "cache_remote_loading_rate": 0.8208977298850576
+      },
+      "training_wall_time_sec": 8792.766960540961
+    },
+    {
+      "seed": 57,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.5478374345225222,
+        "p95_finish_time": 0.8135171239563445,
+        "waiting_latency": 0.11482715484874614,
+        "service_latency": 1.7830343057736502,
+        "cache_hit_rate": 0.28989522058823525,
+        "cache_remote_loading_rate": 0.7101047794117648
+      },
+      "evaluation": {
+        "average_finish_time": 0.5381898359121311,
+        "p95_finish_time": 0.7624202436215044,
+        "waiting_latency": 0.10225203173093105,
+        "service_latency": 1.9047749937957936,
+        "cache_hit_rate": 0.14222784482758621,
+        "cache_remote_loading_rate": 0.8577721551724138
+      },
+      "training_wall_time_sec": 3557.446919082984
+    },
+    {
+      "seed": 57,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 0.7075891991289245,
+        "p95_finish_time": 1.2786474079575956,
+        "waiting_latency": 0.09372220773500166,
+        "service_latency": 2.7250359058103313,
+        "cache_hit_rate": 0.11542095588235295,
+        "cache_remote_loading_rate": 0.8845790441176472
+      },
+      "evaluation": {
+        "average_finish_time": 0.5848706444071269,
+        "p95_finish_time": 0.8254516306816894,
+        "waiting_latency": 0.10324565017015769,
+        "service_latency": 2.1900563539438744,
+        "cache_hit_rate": 0.07195402298850574,
+        "cache_remote_loading_rate": 0.9280459770114944
+      },
+      "training_wall_time_sec": 4035.8983604999994
+    },
+    {
+      "seed": 57,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.1308914510549996,
+        "p95_finish_time": 0.25160007536374335,
+        "waiting_latency": 0.07042657789314126,
+        "service_latency": 0.207023565896032,
+        "cache_hit_rate": 0.6039136029411766,
+        "cache_remote_loading_rate": 0.39608639705882354
+      },
+      "evaluation": {
+        "average_finish_time": 0.19844544578693285,
+        "p95_finish_time": 0.43042448456703225,
+        "waiting_latency": 0.09482225384762634,
+        "service_latency": 0.5126124128456307,
+        "cache_hit_rate": 0.3325835057471264,
+        "cache_remote_loading_rate": 0.6674164942528736
+      },
+      "training_wall_time_sec": 3648.798473875009
+    },
+    {
+      "seed": 57,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.0981803833700707,
+        "p95_finish_time": 0.18985482104293977,
+        "waiting_latency": 0.06900815140741141,
+        "service_latency": 0.11313455481129245,
+        "cache_hit_rate": 0.6553235294117646,
+        "cache_remote_loading_rate": 0.34467647058823525
+      },
+      "evaluation": {
+        "average_finish_time": 0.08860229685073573,
+        "p95_finish_time": 0.13908716213178468,
+        "waiting_latency": 0.0723304052472194,
+        "service_latency": 0.1393221163079654,
+        "cache_hit_rate": 0.6727913218390803,
+        "cache_remote_loading_rate": 0.32720867816091953
+      },
+      "training_wall_time_sec": 6322.195240500005
+    },
+    {
+      "seed": 57,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.3604057580741236,
+        "p95_finish_time": 0.535344224116847,
+        "waiting_latency": 0.132831946990662,
+        "service_latency": 0.7692389908062862,
+        "cache_hit_rate": 0.17667279411764708,
+        "cache_remote_loading_rate": 0.823327205882353
+      },
+      "evaluation": {
+        "average_finish_time": 0.16422274917413468,
+        "p95_finish_time": 0.2611941804944836,
+        "waiting_latency": 0.06443654461000026,
+        "service_latency": 0.4839008031151852,
+        "cache_hit_rate": 0.3499875,
+        "cache_remote_loading_rate": 0.6500125
+      },
+      "training_wall_time_sec": 7313.148508833023
+    },
+    {
+      "seed": 57,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.115460984798943,
+        "p95_finish_time": 2.318852283362141,
+        "waiting_latency": 0.23555110983750432,
+        "service_latency": 3.546578681877605,
+        "cache_hit_rate": 0.16623161764705885,
+        "cache_remote_loading_rate": 0.8337683823529413
+      },
+      "evaluation": {
+        "average_finish_time": 0.8058958946242346,
+        "p95_finish_time": 1.1395008704071368,
+        "waiting_latency": 0.12514884777156132,
+        "service_latency": 2.9104744754755982,
+        "cache_hit_rate": 0.30552281609195403,
+        "cache_remote_loading_rate": 0.6944771839080461
+      },
+      "training_wall_time_sec": 8836.450075500004
+    },
+    {
+      "seed": 58,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 1.0864874033995473,
+        "p95_finish_time": 1.800927644516923,
+        "waiting_latency": 0.11741203538794423,
+        "service_latency": 2.889319431052706,
+        "cache_hit_rate": 0.23355350553505536,
+        "cache_remote_loading_rate": 0.7664464944649446
+      },
+      "evaluation": {
+        "average_finish_time": 0.9386817069708,
+        "p95_finish_time": 1.1900873181358964,
+        "waiting_latency": 0.10707826190773265,
+        "service_latency": 2.652948170043261,
+        "cache_hit_rate": 0.1028710344827586,
+        "cache_remote_loading_rate": 0.8971289655172414
+      },
+      "training_wall_time_sec": 3498.8836209170113
+    },
+    {
+      "seed": 58,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 0.918243579091196,
+        "p95_finish_time": 1.3015283042857086,
+        "waiting_latency": 0.09012716858976257,
+        "service_latency": 3.199730748506762,
+        "cache_hit_rate": 0.10134870848708488,
+        "cache_remote_loading_rate": 0.8986512915129152
+      },
+      "evaluation": {
+        "average_finish_time": 0.9664449688019648,
+        "p95_finish_time": 1.3175515439406669,
+        "waiting_latency": 0.10537017906828215,
+        "service_latency": 3.5638820764056542,
+        "cache_hit_rate": 0.11528770114942528,
+        "cache_remote_loading_rate": 0.8847122988505748
+      },
+      "training_wall_time_sec": 3977.4575549580004
+    },
+    {
+      "seed": 58,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.3319783463448932,
+        "p95_finish_time": 0.5629741549012149,
+        "waiting_latency": 0.15190078431086798,
+        "service_latency": 0.806962709620572,
+        "cache_hit_rate": 0.5039538745387454,
+        "cache_remote_loading_rate": 0.49604612546125465
+      },
+      "evaluation": {
+        "average_finish_time": 0.3604726274149917,
+        "p95_finish_time": 0.5487779412871453,
+        "waiting_latency": 0.11618450352471507,
+        "service_latency": 1.1601465462100817,
+        "cache_hit_rate": 0.2894200287356322,
+        "cache_remote_loading_rate": 0.7105799712643678
+      },
+      "training_wall_time_sec": 3607.9922468330187
+    },
+    {
+      "seed": 58,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.26839269780684605,
+        "p95_finish_time": 0.42825527550475395,
+        "waiting_latency": 0.1296484523267431,
+        "service_latency": 0.574139549831514,
+        "cache_hit_rate": 0.6602841328413285,
+        "cache_remote_loading_rate": 0.3397158671586716
+      },
+      "evaluation": {
+        "average_finish_time": 0.24902335452621369,
+        "p95_finish_time": 0.3748041877429855,
+        "waiting_latency": 0.13328494883270253,
+        "service_latency": 0.5861103165696232,
+        "cache_hit_rate": 0.6483019540229885,
+        "cache_remote_loading_rate": 0.35169804597701143
+      },
+      "training_wall_time_sec": 6255.942332207982
+    },
+    {
+      "seed": 58,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.5584415188578503,
+        "p95_finish_time": 0.7990458364117654,
+        "waiting_latency": 0.16666611875965381,
+        "service_latency": 1.4259199924596446,
+        "cache_hit_rate": 0.17793173431734316,
+        "cache_remote_loading_rate": 0.8220682656826568
+      },
+      "evaluation": {
+        "average_finish_time": 0.28909049435554246,
+        "p95_finish_time": 0.43208700015444,
+        "waiting_latency": 0.13540291349704878,
+        "service_latency": 0.8526188708069519,
+        "cache_hit_rate": 0.4029079885057471,
+        "cache_remote_loading_rate": 0.5970920114942528
+      },
+      "training_wall_time_sec": 7207.084987292008
+    },
+    {
+      "seed": 58,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.6828063758007492,
+        "p95_finish_time": 2.525793760699433,
+        "waiting_latency": 0.17277359444188914,
+        "service_latency": 4.454869404769234,
+        "cache_hit_rate": 0.1601771217712177,
+        "cache_remote_loading_rate": 0.8398228782287823
+      },
+      "evaluation": {
+        "average_finish_time": 1.1445739211116774,
+        "p95_finish_time": 1.3769338094057089,
+        "waiting_latency": 0.11073218991097168,
+        "service_latency": 3.4400020911062343,
+        "cache_hit_rate": 0.24515761494252872,
+        "cache_remote_loading_rate": 0.7548423850574713
+      },
+      "training_wall_time_sec": 8671.670201667002
+    },
+    {
+      "seed": 59,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.5988167400078165,
+        "p95_finish_time": 0.9808627022251968,
+        "waiting_latency": 0.11698751583809222,
+        "service_latency": 2.556704784701922,
+        "cache_hit_rate": 0.532434065934066,
+        "cache_remote_loading_rate": 0.4675659340659341
+      },
+      "evaluation": {
+        "average_finish_time": 0.8360848095321807,
+        "p95_finish_time": 1.1419170737592237,
+        "waiting_latency": 0.1079162833467922,
+        "service_latency": 3.06176242946719,
+        "cache_hit_rate": 0.25768163793103444,
+        "cache_remote_loading_rate": 0.7423183620689656
+      },
+      "training_wall_time_sec": 3472.5425242500205
+    },
+    {
+      "seed": 59,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 1.5195078362181247,
+        "p95_finish_time": 2.8561009561357116,
+        "waiting_latency": 0.08911183818642089,
+        "service_latency": 7.038392734419251,
+        "cache_hit_rate": 0.10966483516483519,
+        "cache_remote_loading_rate": 0.8903351648351652
+      },
+      "evaluation": {
+        "average_finish_time": 1.583897671679245,
+        "p95_finish_time": 1.8883585832640142,
+        "waiting_latency": 0.08958360675877129,
+        "service_latency": 7.80258005564203,
+        "cache_hit_rate": 0.0757514367816092,
+        "cache_remote_loading_rate": 0.9242485632183909
+      },
+      "training_wall_time_sec": 3976.9655245830036
+    },
+    {
+      "seed": 59,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.32361796282550626,
+        "p95_finish_time": 1.2955272739889057,
+        "waiting_latency": 0.13141610517774405,
+        "service_latency": 1.727644700453559,
+        "cache_hit_rate": 0.5204615384615383,
+        "cache_remote_loading_rate": 0.4795384615384615
+      },
+      "evaluation": {
+        "average_finish_time": 0.5586601596194524,
+        "p95_finish_time": 0.692692691639688,
+        "waiting_latency": 0.13311658083427522,
+        "service_latency": 3.1991744788088305,
+        "cache_hit_rate": 0.3303412643678162,
+        "cache_remote_loading_rate": 0.6696587356321839
+      },
+      "training_wall_time_sec": 3841.904127624992
+    },
+    {
+      "seed": 59,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.22194461488010814,
+        "p95_finish_time": 0.7084564257812008,
+        "waiting_latency": 0.12220391381895845,
+        "service_latency": 1.0313132036932195,
+        "cache_hit_rate": 0.7495366300366301,
+        "cache_remote_loading_rate": 0.25046336996336993
+      },
+      "evaluation": {
+        "average_finish_time": 0.32408609067980826,
+        "p95_finish_time": 0.4805102004928481,
+        "waiting_latency": 0.12270445717336159,
+        "service_latency": 1.963036475733034,
+        "cache_hit_rate": 0.6576693103448277,
+        "cache_remote_loading_rate": 0.3423306896551725
+      },
+      "training_wall_time_sec": 6193.745143625012
+    },
+    {
+      "seed": 59,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.521796253550753,
+        "p95_finish_time": 1.25971418586559,
+        "waiting_latency": 0.12480160806258463,
+        "service_latency": 2.247533401848008,
+        "cache_hit_rate": 0.18577106227106224,
+        "cache_remote_loading_rate": 0.8142289377289379
+      },
+      "evaluation": {
+        "average_finish_time": 0.43174601056012724,
+        "p95_finish_time": 0.5937626582485946,
+        "waiting_latency": 0.12533485378354675,
+        "service_latency": 2.6155635735455123,
+        "cache_hit_rate": 0.5148709770114942,
+        "cache_remote_loading_rate": 0.48512902298850585
+      },
+      "training_wall_time_sec": 7194.741843957978
+    },
+    {
+      "seed": 59,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.6057473024808353,
+        "p95_finish_time": 2.863587557674903,
+        "waiting_latency": 0.12601301587147548,
+        "service_latency": 6.500909546219305,
+        "cache_hit_rate": 0.16279120879120876,
+        "cache_remote_loading_rate": 0.8372087912087913
+      },
+      "evaluation": {
+        "average_finish_time": 1.3084184635436933,
+        "p95_finish_time": 1.598541329989753,
+        "waiting_latency": 0.1303281278838806,
+        "service_latency": 5.606298061097932,
+        "cache_hit_rate": 0.34961060344827594,
+        "cache_remote_loading_rate": 0.650389396551724
+      },
+      "training_wall_time_sec": 6556.882772249985
+    },
+    {
+      "seed": 60,
+      "method": "daoc_paper",
+      "display_name": "DAOC",
+      "tail": {
+        "average_finish_time": 0.5824954198759793,
+        "p95_finish_time": 0.8799122613437871,
+        "waiting_latency": 0.09110132237331584,
+        "service_latency": 1.6569609698228824,
+        "cache_hit_rate": 0.3311007194244604,
+        "cache_remote_loading_rate": 0.6688992805755395
+      },
+      "evaluation": {
+        "average_finish_time": 0.7214376729435727,
+        "p95_finish_time": 1.1446015012276063,
+        "waiting_latency": 0.08339015345563208,
+        "service_latency": 2.478905796672603,
+        "cache_hit_rate": 0.10299071839080459,
+        "cache_remote_loading_rate": 0.8970092816091954
+      },
+      "training_wall_time_sec": 3519.682571916026
+    },
+    {
+      "seed": 60,
+      "method": "dqn_wdsa_std_cache",
+      "display_name": "DQN-WDSA",
+      "tail": {
+        "average_finish_time": 0.8841403425268088,
+        "p95_finish_time": 1.2130088451545442,
+        "waiting_latency": 0.07100522229605813,
+        "service_latency": 2.875105068290677,
+        "cache_hit_rate": 0.14350539568345322,
+        "cache_remote_loading_rate": 0.8564946043165469
+      },
+      "evaluation": {
+        "average_finish_time": 1.1148802648802663,
+        "p95_finish_time": 1.7175994686275107,
+        "waiting_latency": 0.07729064835565772,
+        "service_latency": 3.4946406171326476,
+        "cache_hit_rate": 0.07657344827586207,
+        "cache_remote_loading_rate": 0.9234265517241381
+      },
+      "training_wall_time_sec": 4016.4507853749965
+    },
+    {
+      "seed": 60,
+      "method": "daoc_our_coord_cache",
+      "display_name": "DAOC+CoordCache",
+      "tail": {
+        "average_finish_time": 0.34614100449963664,
+        "p95_finish_time": 0.707684645027566,
+        "waiting_latency": 0.1351196155572469,
+        "service_latency": 1.7932803718087207,
+        "cache_hit_rate": 0.553230215827338,
+        "cache_remote_loading_rate": 0.44676978417266183
+      },
+      "evaluation": {
+        "average_finish_time": 0.5703083291433971,
+        "p95_finish_time": 0.9092572502512952,
+        "waiting_latency": 0.12503342135136428,
+        "service_latency": 2.5270219435079864,
+        "cache_hit_rate": 0.2632454885057471,
+        "cache_remote_loading_rate": 0.7367545114942529
+      },
+      "training_wall_time_sec": 3860.0253005830164
+    },
+    {
+      "seed": 60,
+      "method": "lean_our",
+      "display_name": "OUR",
+      "tail": {
+        "average_finish_time": 0.3184771754075537,
+        "p95_finish_time": 0.7018743602833829,
+        "waiting_latency": 0.11338187290015636,
+        "service_latency": 1.360171524553442,
+        "cache_hit_rate": 0.6097535971223021,
+        "cache_remote_loading_rate": 0.39024640287769785
+      },
+      "evaluation": {
+        "average_finish_time": 0.46078912923766885,
+        "p95_finish_time": 0.7615752766013206,
+        "waiting_latency": 0.11877151463694827,
+        "service_latency": 2.2179069826514652,
+        "cache_hit_rate": 0.49220316091954025,
+        "cache_remote_loading_rate": 0.5077968390804597
+      },
+      "training_wall_time_sec": 6251.819176750025
+    },
+    {
+      "seed": 60,
+      "method": "coord_cache_discrete_sac",
+      "display_name": "CoordCache-SAC",
+      "tail": {
+        "average_finish_time": 0.5354338461711063,
+        "p95_finish_time": 0.9304945069219982,
+        "waiting_latency": 0.10816465548005559,
+        "service_latency": 2.1304363453178583,
+        "cache_hit_rate": 0.1809928057553957,
+        "cache_remote_loading_rate": 0.8190071942446043
+      },
+      "evaluation": {
+        "average_finish_time": 0.47803469952454086,
+        "p95_finish_time": 0.6556928266675033,
+        "waiting_latency": 0.09513913994371949,
+        "service_latency": 2.2294877235836883,
+        "cache_hit_rate": 0.23620712643678166,
+        "cache_remote_loading_rate": 0.7637928735632186
+      },
+      "training_wall_time_sec": 7167.72409737503
+    },
+    {
+      "seed": 60,
+      "method": "discrete_sac_std_cache",
+      "display_name": "DiscreteSAC+Std",
+      "tail": {
+        "average_finish_time": 1.3304040951586273,
+        "p95_finish_time": 2.023518566710166,
+        "waiting_latency": 0.11295051173333258,
+        "service_latency": 4.212725782965995,
+        "cache_hit_rate": 0.15549820143884893,
+        "cache_remote_loading_rate": 0.844501798561151
+      },
+      "evaluation": {
+        "average_finish_time": 1.11749388936442,
+        "p95_finish_time": 1.6813363703951025,
+        "waiting_latency": 0.14276433204576755,
+        "service_latency": 3.814068090157848,
+        "cache_hit_rate": 0.21302020114942524,
+        "cache_remote_loading_rate": 0.7869797988505749
+      },
+      "training_wall_time_sec": 6491.704823791049
+    }
+  ]
+}

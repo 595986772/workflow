@@ -1,0 +1,10 @@
+method,method_key,dataset,mean_completion_time_s,ci95_half_width_s,independent_seeds,evaluation_mode
+Random,random,Alibaba-CP100,2.521926626,0.384669180,10,frozen_cross_dataset_controlled_pressure_test
+Nearest,nearest,Alibaba-CP100,2.180403287,0.378598782,10,frozen_cross_dataset_controlled_pressure_test
+SA-Nearest,greedy,Alibaba-CP100,1.782225344,0.279473954,10,frozen_cross_dataset_controlled_pressure_test
+DQN-NoDSA,dqn_wdsa_std_cache,Alibaba-CP100,2.229580669,0.419434744,10,frozen_cross_dataset_controlled_pressure_test
+SAC + DAOC-Cache,discrete_sac_std_cache,Alibaba-CP100,1.867782246,0.388028237,10,frozen_cross_dataset_controlled_pressure_test
+DAOC,daoc_paper,Alibaba-CP100,2.101891376,0.348936501,10,frozen_cross_dataset_controlled_pressure_test
+DAOC + DCC,daoc_our_coord_cache,Alibaba-CP100,1.452554475,0.162308440,10,frozen_cross_dataset_controlled_pressure_test
+SAC + DCC,coord_cache_discrete_sac,Alibaba-CP100,1.260082397,0.067045736,10,frozen_cross_dataset_controlled_pressure_test
+OUR,lean_our,Alibaba-CP100,1.198868568,0.044084526,10,frozen_cross_dataset_controlled_pressure_test

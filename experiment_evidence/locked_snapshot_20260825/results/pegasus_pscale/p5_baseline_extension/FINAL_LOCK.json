@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "created_at": "2026-08-06T20:56:45.068950+00:00",
+  "specification": {
+    "protocol_version": "pegasus_baseline_extension_v1",
+    "freeze_sha256": "31971f19e54ed0e8e146555cc7573c985f71ef304427e4819b91516c78ec071f",
+    "methods": [
+      "coord_cache_random",
+      "coord_cache_nearest",
+      "coord_cache_nearest_service",
+      "coord_cache_discrete_sac"
+    ],
+    "reference_methods": [
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "lean_our"
+    ],
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "scenarios_per_seed": 100,
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "post_lock_extension": true
+  },
+  "specification_sha256": "ded3860ec6fab18849c048ec2a58b1811eb3e5a5db0712f7afe5b48149f66c47",
+  "completed_at": "2026-08-07T08:47:23.196537+00:00",
+  "gate": {
+    "integrity": true,
+    "our_beats_all_new_baselines": true,
+    "sac_is_stronger_than_daoc": true,
+    "passed": true
+  },
+  "summary_sha256": "bb7e70fb1fea93592a41adca4d5d4441786e4a5944c274e0e6ede04d7c462d61"
+}

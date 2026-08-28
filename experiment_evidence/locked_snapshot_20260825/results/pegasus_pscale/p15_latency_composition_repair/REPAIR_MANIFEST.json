@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "methods": [
+    "greedy",
+    "daoc_paper",
+    "discrete_sac_std_cache",
+    "daoc_our_coord_cache",
+    "coord_cache_discrete_sac",
+    "lean_our"
+  ],
+  "seeds": [
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "episodes_per_seed": 100,
+  "workers": 6,
+  "outputs": {
+    "png": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p15_latency_composition_repair/figure/fig03b_latency_composition.png",
+    "pdf": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p15_latency_composition_repair/figure/fig03b_latency_composition.pdf",
+    "svg": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p15_latency_composition_repair/figure/fig03b_latency_composition.svg",
+    "export.json": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p15_latency_composition_repair/figure/fig03b_latency_composition.export.json"
+  },
+  "canonical_replacement": true,
+  "copied_outputs": [
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/paper_drafts/figures_topconf/fig03b_latency_composition.png",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/paper_drafts/figures_topconf/fig03b_latency_composition.pdf",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/paper_drafts/figures_topconf/fig03b_latency_composition.svg",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/paper_drafts/figures_topconf/fig03b_latency_composition.export.json",
+    "${HOME}/Desktop/dag\u8bba\u6587\u56fe\u7247/fig03b_latency_composition.png",
+    "${HOME}/Desktop/dag\u8bba\u6587\u56fe\u7247/fig03b_latency_composition.pdf",
+    "${HOME}/Desktop/dag\u8bba\u6587\u56fe\u7247/fig03b_latency_composition.svg",
+    "${HOME}/Desktop/dag\u8bba\u6587\u56fe\u7247/fig03b_latency_composition.export.json",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_repro_writing_package_20260818/04_FINAL_FIGURES/fig03b_latency_composition.png",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_repro_writing_package_20260818/04_FINAL_FIGURES/fig03b_latency_composition.pdf",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_repro_writing_package_20260818/04_FINAL_FIGURES/fig03b_latency_composition.svg",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_repro_writing_package_20260818/04_FINAL_FIGURES/fig03b_latency_composition.export.json",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_chapters_DAOC_review_package_20260818/04_KEY_FIGURES/fig03b_latency_composition.png",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_chapters_DAOC_review_package_20260818/04_KEY_FIGURES/fig03b_latency_composition.pdf",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_chapters_DAOC_review_package_20260818/04_KEY_FIGURES/fig03b_latency_composition.svg",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_chapters_DAOC_review_package_20260818/04_KEY_FIGURES/fig03b_latency_composition.export.json",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/paper_drafts/figures_topconf/fig03b_latency_composition_data.csv",
+    "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/deliverables/OUR_repro_writing_package_20260818/03_KEY_RESULTS/figure_data/fig03b_latency_composition_data.csv"
+  ],
+  "source_sha256": "36b85dc90d8b3dad9e07df4470f292f519a0340f1c0b65f72ba088874e531d8f"
+}

@@ -1,0 +1,2753 @@
+{
+  "status": "complete",
+  "protocol": {
+    "protocol_version": "pegasus_server_scaling_p13_heuristics_v1",
+    "parent_protocols": [
+      "pegasus_server_scaling_p11_v1",
+      "pegasus_server_scaling_p12_strong_baselines_v1",
+      "pegasus_p6_baselines_ablation_v1"
+    ],
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "workflow_families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "users": 20,
+    "services": 10,
+    "bandwidth_hz": 15000.0,
+    "server_counts": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "trained_server_counts": [
+      5,
+      15,
+      20
+    ],
+    "reused_server_count": 10,
+    "capacity_profiles": {
+      "5": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "20": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "capacity_assignment_namespace": "pegasus_server_scaling_p11",
+    "methods": [
+      "random",
+      "nearest",
+      "greedy"
+    ],
+    "display_names": {
+      "random": "Random",
+      "nearest": "Nearest",
+      "greedy": "Nearest+Service"
+    },
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "smoke_episodes": 20,
+    "calibration_episodes": 5000,
+    "workers": 6,
+    "full_profile": "pegasus_p6_heuristics",
+    "claim_scope": "three_seed_server_count_sensitivity",
+    "heuristic_identity": "standard independent popularity-EMA cache; no OUR coordination",
+    "specification_sha256": "85f8783a24d50f00ffe0de5f5986ff16ab3d068ce0cef29e90fa5e03575e6267"
+  },
+  "integrity": {
+    "all_runs_complete": true,
+    "all_cache_calibrations_complete": true,
+    "all_tasks_exactly_once": true,
+    "all_capacity_constraints_valid": true,
+    "all_methods_scenario_paired_with_p11": true,
+    "all_method_identities_valid": true
+  },
+  "results": {
+    "5": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.5138220520913364,
+              "p95_completion_time_s": 2.9871095166205395,
+              "cache_hit_rate": 0.11260816091954022,
+              "remote_loading_rate": 0.8873918390804598,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 2.40685913169214,
+              "p95_completion_time_s": 3.3744143154000685,
+              "cache_hit_rate": 0.10278091954022989,
+              "remote_loading_rate": 0.8972190804597702,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 2.3969722679766408,
+              "p95_completion_time_s": 3.3423276904071666,
+              "cache_hit_rate": 0.23314942528735635,
+              "remote_loading_rate": 0.7668505747126436,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 1.0331187005042373,
+              "p95_completion_time_s": 1.1031807693945577,
+              "cache_hit_rate": 0.12698778735632185,
+              "remote_loading_rate": 0.8730122126436781,
+              "inference_ms_per_decision": 0.15445853638103604,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 1.0588152870120586,
+              "p95_completion_time_s": 1.2051810912954681,
+              "cache_hit_rate": 0.2232160344827586,
+              "remote_loading_rate": 0.7767839655172414,
+              "inference_ms_per_decision": 0.0983404976314709,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.9999069238916026,
+              "p95_completion_time_s": 1.0234566837584094,
+              "cache_hit_rate": 0.11884666666666668,
+              "remote_loading_rate": 0.8811533333333333,
+              "inference_ms_per_decision": 0.3816230048068137,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.9939958477884459,
+              "p95_completion_time_s": 1.0398551103192935,
+              "cache_hit_rate": 0.3097881896551724,
+              "remote_loading_rate": 0.6902118103448277,
+              "inference_ms_per_decision": 1.5264991252467417,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.1771405518720512,
+              "p95_completion_time_s": 2.5392063332549744,
+              "cache_hit_rate": 0.1081441379310345,
+              "remote_loading_rate": 0.8918558620689656,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.9520448046106744,
+              "p95_completion_time_s": 2.8256212096690465,
+              "cache_hit_rate": 0.12208626436781608,
+              "remote_loading_rate": 0.8779137356321839,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.924384214098833,
+              "p95_completion_time_s": 2.8233110467006957,
+              "cache_hit_rate": 0.27104597701149424,
+              "remote_loading_rate": 0.7289540229885059,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 1.1240120906523576,
+              "p95_completion_time_s": 1.3241655048840983,
+              "cache_hit_rate": 0.13766566091954024,
+              "remote_loading_rate": 0.8623343390804596,
+              "inference_ms_per_decision": 0.13963136146579175,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 1.037320691538674,
+              "p95_completion_time_s": 1.1623568853978008,
+              "cache_hit_rate": 0.21380474137931033,
+              "remote_loading_rate": 0.7861952586206895,
+              "inference_ms_per_decision": 0.09916120193197175,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.9886100667283217,
+              "p95_completion_time_s": 1.0173970625232278,
+              "cache_hit_rate": 0.14810732758620687,
+              "remote_loading_rate": 0.8518926724137931,
+              "inference_ms_per_decision": 0.29841170248425475,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 1.0239608778459295,
+              "p95_completion_time_s": 1.1396762395411217,
+              "cache_hit_rate": 0.2568704022988506,
+              "remote_loading_rate": 0.7431295977011493,
+              "inference_ms_per_decision": 0.8449282846886171,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.2532094568579133,
+              "p95_completion_time_s": 2.5402038271283907,
+              "cache_hit_rate": 0.08394971264367815,
+              "remote_loading_rate": 0.9160502873563219,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 2.5380859483854663,
+              "p95_completion_time_s": 3.160495450328791,
+              "cache_hit_rate": 0.054928908045977005,
+              "remote_loading_rate": 0.9450710919540232,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 2.507815851993103,
+              "p95_completion_time_s": 3.1263407625024384,
+              "cache_hit_rate": 0.2991494252873564,
+              "remote_loading_rate": 0.7008505747126437,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 1.1938130533815319,
+              "p95_completion_time_s": 1.5530309083913365,
+              "cache_hit_rate": 0.100351091954023,
+              "remote_loading_rate": 0.8996489080459773,
+              "inference_ms_per_decision": 0.1703225299365696,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 1.1248531789296587,
+              "p95_completion_time_s": 1.3397275121235408,
+              "cache_hit_rate": 0.3244804022988506,
+              "remote_loading_rate": 0.6755195977011494,
+              "inference_ms_per_decision": 0.08757975927571131,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 1.1656829824472459,
+              "p95_completion_time_s": 1.4210051134801207,
+              "cache_hit_rate": 0.1322825287356322,
+              "remote_loading_rate": 0.8677174712643678,
+              "inference_ms_per_decision": 0.15037220199868895,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 1.1466834611563153,
+              "p95_completion_time_s": 1.3812943628794914,
+              "cache_hit_rate": 0.3275039367816093,
+              "remote_loading_rate": 0.6724960632183907,
+              "inference_ms_per_decision": 0.9101763855792793,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "random": {
+          "mean_completion_time_s": {
+            "mean": 2.314724020273767,
+            "ci95_half_width": 0.4386219052137445,
+            "per_seed": [
+              2.5138220520913364,
+              2.1771405518720512,
+              2.2532094568579133
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.688839892334635,
+            "ci95_half_width": 0.6416765026557415,
+            "per_seed": [
+              2.9871095166205395,
+              2.5392063332549744,
+              2.5402038271283907
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.10156733716475097,
+            "ci95_half_width": 0.03830467821330771,
+            "per_seed": [
+              0.11260816091954022,
+              0.1081441379310345,
+              0.08394971264367815
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8984326628352491,
+            "ci95_half_width": 0.03830467821330765,
+            "per_seed": [
+              0.8873918390804598,
+              0.8918558620689656,
+              0.9160502873563219
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "nearest": {
+          "mean_completion_time_s": {
+            "mean": 2.298996628229427,
+            "ci95_half_width": 0.7639957163988812,
+            "per_seed": [
+              2.40685913169214,
+              1.9520448046106744,
+              2.5380859483854663
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 3.1201769917993025,
+            "ci95_half_width": 0.6871353553372718,
+            "per_seed": [
+              3.3744143154000685,
+              2.8256212096690465,
+              3.160495450328791
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.09326536398467433,
+            "ci95_half_width": 0.08588928950573337,
+            "per_seed": [
+              0.10278091954022989,
+              0.12208626436781608,
+              0.054928908045977005
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.9067346360153258,
+            "ci95_half_width": 0.0858892895057336,
+            "per_seed": [
+              0.8972190804597702,
+              0.8779137356321839,
+              0.9450710919540232
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "greedy": {
+          "mean_completion_time_s": {
+            "mean": 2.276390778022859,
+            "ci95_half_width": 0.769694108769444,
+            "per_seed": [
+              2.3969722679766408,
+              1.924384214098833,
+              2.507815851993103
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 3.0973264998701002,
+            "ci95_half_width": 0.6476692495932258,
+            "per_seed": [
+              3.3423276904071666,
+              2.8233110467006957,
+              3.1263407625024384
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.26778160919540234,
+            "ci95_half_width": 0.08227680383846372,
+            "per_seed": [
+              0.23314942528735635,
+              0.27104597701149424,
+              0.2991494252873564
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7322183908045977,
+            "ci95_half_width": 0.08227680383846363,
+            "per_seed": [
+              0.7668505747126436,
+              0.7289540229885059,
+              0.7008505747126437
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 1.116981281512709,
+            "ci95_half_width": 0.20016575233860504,
+            "per_seed": [
+              1.0331187005042373,
+              1.1240120906523576,
+              1.1938130533815319
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.3267923942233308,
+            "ci95_half_width": 0.5587734260897254,
+            "per_seed": [
+              1.1031807693945577,
+              1.3241655048840983,
+              1.5530309083913365
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.12166818007662838,
+            "ci95_half_width": 0.04773927997969804,
+            "per_seed": [
+              0.12698778735632185,
+              0.13766566091954024,
+              0.100351091954023
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8783318199233717,
+            "ci95_half_width": 0.04773927997969858,
+            "per_seed": [
+              0.8730122126436781,
+              0.8623343390804596,
+              0.8996489080459773
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.15480414259446582,
+            "ci95_half_width": 0.038127794629163436,
+            "per_seed": [
+              0.15445853638103604,
+              0.13963136146579175,
+              0.1703225299365696
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "our_flat_ddqn": {
+          "mean_completion_time_s": {
+            "mean": 1.0736630524934636,
+            "ci95_half_width": 0.11331660927236853,
+            "per_seed": [
+              1.0588152870120586,
+              1.037320691538674,
+              1.1248531789296587
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.2357551629389365,
+            "ci95_half_width": 0.2299158388097405,
+            "per_seed": [
+              1.2051810912954681,
+              1.1623568853978008,
+              1.3397275121235408
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.25383372605363985,
+            "ci95_half_width": 0.15243292769362285,
+            "per_seed": [
+              0.2232160344827586,
+              0.21380474137931033,
+              0.3244804022988506
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.74616627394636,
+            "ci95_half_width": 0.15243292769362263,
+            "per_seed": [
+              0.7767839655172414,
+              0.7861952586206895,
+              0.6755195977011494
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.09502715294638465,
+            "ci95_half_width": 0.016054169899773554,
+            "per_seed": [
+              0.0983404976314709,
+              0.09916120193197175,
+              0.08757975927571131
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "coord_cache_discrete_sac": {
+          "mean_completion_time_s": {
+            "mean": 1.0513999910223901,
+            "ci95_half_width": 0.24626008207733496,
+            "per_seed": [
+              0.9999069238916026,
+              0.9886100667283217,
+              1.1656829824472459
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.1539529532539194,
+            "ci95_half_width": 0.5745656513088356,
+            "per_seed": [
+              1.0234566837584094,
+              1.0173970625232278,
+              1.4210051134801207
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.1330788409961686,
+            "ci95_half_width": 0.03638410888471794,
+            "per_seed": [
+              0.11884666666666668,
+              0.14810732758620687,
+              0.1322825287356322
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8669211590038314,
+            "ci95_half_width": 0.036384108884718054,
+            "per_seed": [
+              0.8811533333333333,
+              0.8518926724137931,
+              0.8677174712643678
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.27680230309658577,
+            "ci95_half_width": 0.2909672745187707,
+            "per_seed": [
+              0.3816230048068137,
+              0.29841170248425475,
+              0.15037220199868895
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 1.0548800622635637,
+            "ci95_half_width": 0.20097539668004372,
+            "per_seed": [
+              0.9939958477884459,
+              1.0239608778459295,
+              1.1466834611563153
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.1869419042466356,
+            "ci95_half_width": 0.43611103886822133,
+            "per_seed": [
+              1.0398551103192935,
+              1.1396762395411217,
+              1.3812943628794914
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.29805417624521074,
+            "ci95_half_width": 0.09129127853113242,
+            "per_seed": [
+              0.3097881896551724,
+              0.2568704022988506,
+              0.3275039367816093
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7019458237547892,
+            "ci95_half_width": 0.09129127853113224,
+            "per_seed": [
+              0.6902118103448277,
+              0.7431295977011493,
+              0.6724960632183907
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 1.0938679318382125,
+            "ci95_half_width": 0.9342525905957844,
+            "per_seed": [
+              1.5264991252467417,
+              0.8449282846886171,
+              0.9101763855792793
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "our_vs_random": {
+          "relative_reduction_percent_mean": 54.178430600328966,
+          "relative_reduction_percent_ci95_half_width": 14.335990633484949,
+          "relative_reduction_percent_per_seed": [
+            60.45878239625171,
+            52.96762641413025,
+            49.108882990604954
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_nearest": {
+          "relative_reduction_percent_mean": 53.68888818819486,
+          "relative_reduction_percent_ci95_half_width": 14.070558888495155,
+          "relative_reduction_percent_per_seed": [
+            58.701536176335416,
+            47.54419184296575,
+            54.82093654528341
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_greedy": {
+          "relative_reduction_percent_mean": 53.19900288069899,
+          "relative_reduction_percent_ci95_half_width": 14.76589475956463,
+          "relative_reduction_percent_per_seed": [
+            58.53119115860657,
+            46.790205908780095,
+            54.27561157471028
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_daoc_paper": {
+          "relative_reduction_percent_mean": 5.545315645884183,
+          "relative_reduction_percent_ci95_half_width": 7.222493855883493,
+          "relative_reduction_percent_per_seed": [
+            3.786869088391935,
+            8.90125770340781,
+            3.9478201458528055
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_our_flat_ddqn": {
+          "relative_reduction_percent_mean": 1.8230254150700558,
+          "relative_reduction_percent_ci95_half_width": 10.080263057732768,
+          "relative_reduction_percent_per_seed": [
+            6.121883582407567,
+            1.2879154731722933,
+            -1.9407228103696932
+          ],
+          "seed_wins": 2,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.375
+        },
+        "our_vs_coord_cache_discrete_sac": {
+          "relative_reduction_percent_mean": -0.45158068158593023,
+          "relative_reduction_percent_ci95_half_width": 6.843945823547222,
+          "relative_reduction_percent_per_seed": [
+            0.5911626334330274,
+            -3.5758093415533097,
+            1.6299046633624914
+          ],
+          "seed_wins": 2,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.625
+        }
+      }
+    },
+    "10": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.427795279969608,
+              "p95_completion_time_s": 2.860143634285176,
+              "cache_hit_rate": 0.1099089655172414,
+              "remote_loading_rate": 0.8900910344827588,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.6429631022205669,
+              "p95_completion_time_s": 2.2971194641957067,
+              "cache_hit_rate": 0.1094170114942529,
+              "remote_loading_rate": 0.890582988505747,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.89217848825215,
+              "p95_completion_time_s": 2.659342200876852,
+              "cache_hit_rate": 0.34148275862068966,
+              "remote_loading_rate": 0.6585172413793103,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7843615164831899,
+              "p95_completion_time_s": 1.1420173576222354,
+              "cache_hit_rate": 0.3101599137931034,
+              "remote_loading_rate": 0.6898400862068965,
+              "inference_ms_per_decision": 0.022199805128519743,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.4521517331267762,
+              "p95_completion_time_s": 0.7246129488094113,
+              "cache_hit_rate": 0.3204655172413793,
+              "remote_loading_rate": 0.6795344827586208,
+              "inference_ms_per_decision": 0.04412909365097264,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.3888858920865922,
+              "p95_completion_time_s": 0.6241984553799049,
+              "cache_hit_rate": 0.34736408045977,
+              "remote_loading_rate": 0.6526359195402298,
+              "inference_ms_per_decision": 0.13634753967168833,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.34780913803543373,
+              "p95_completion_time_s": 0.580245206155054,
+              "cache_hit_rate": 0.6141486206896551,
+              "remote_loading_rate": 0.3858513793103448,
+              "inference_ms_per_decision": 0.1704272140581845,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.094459516988831,
+              "p95_completion_time_s": 2.4612608718292663,
+              "cache_hit_rate": 0.10087704022988506,
+              "remote_loading_rate": 0.8991229597701149,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.5158550914884166,
+              "p95_completion_time_s": 2.1804410180123823,
+              "cache_hit_rate": 0.08722433908045976,
+              "remote_loading_rate": 0.9127756609195401,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.4809546425660427,
+              "p95_completion_time_s": 2.169883833587654,
+              "cache_hit_rate": 0.41594252873563214,
+              "remote_loading_rate": 0.5840574712643679,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.6538489777767886,
+              "p95_completion_time_s": 0.8836639269738435,
+              "cache_hit_rate": 0.1834903735632184,
+              "remote_loading_rate": 0.8165096264367817,
+              "inference_ms_per_decision": 0.021119246357283655,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.3806975137282542,
+              "p95_completion_time_s": 0.6363967518445823,
+              "cache_hit_rate": 0.24143448275862067,
+              "remote_loading_rate": 0.7585655172413793,
+              "inference_ms_per_decision": 0.03765115559931671,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.3119664711044276,
+              "p95_completion_time_s": 0.47682575758606277,
+              "cache_hit_rate": 0.35507310344827586,
+              "remote_loading_rate": 0.6449268965517241,
+              "inference_ms_per_decision": 0.1447580939554325,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.29396885254601385,
+              "p95_completion_time_s": 0.4995868716547236,
+              "cache_hit_rate": 0.45361025862068965,
+              "remote_loading_rate": 0.5463897413793104,
+              "inference_ms_per_decision": 0.19398604280542572,
+              "selected_checkpoint_episode": 12000
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.3042850925323568,
+              "p95_completion_time_s": 1.480418271841863,
+              "cache_hit_rate": 0.07285997126436781,
+              "remote_loading_rate": 0.9271400287356323,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 2.53573361227905,
+              "p95_completion_time_s": 3.18550348220336,
+              "cache_hit_rate": 0.08080379310344828,
+              "remote_loading_rate": 0.9191962068965519,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 2.50118775038586,
+              "p95_completion_time_s": 3.136626216036044,
+              "cache_hit_rate": 0.2991494252873564,
+              "remote_loading_rate": 0.7008505747126437,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.9851647496610141,
+              "p95_completion_time_s": 1.2977599575155778,
+              "cache_hit_rate": 0.20121856321839082,
+              "remote_loading_rate": 0.7987814367816091,
+              "inference_ms_per_decision": 0.021607684964659,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.5137891259848607,
+              "p95_completion_time_s": 0.7188282026205112,
+              "cache_hit_rate": 0.33741540229885053,
+              "remote_loading_rate": 0.6625845977011495,
+              "inference_ms_per_decision": 0.07154341937668506,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.43016984717103846,
+              "p95_completion_time_s": 0.557843818160495,
+              "cache_hit_rate": 0.49867795977011503,
+              "remote_loading_rate": 0.501322040229885,
+              "inference_ms_per_decision": 0.16165916786662599,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.4223310677536375,
+              "p95_completion_time_s": 0.5473404514573024,
+              "cache_hit_rate": 0.5834802011494253,
+              "remote_loading_rate": 0.4165197988505747,
+              "inference_ms_per_decision": 0.21207569247439853,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "random": {
+          "mean_completion_time_s": {
+            "mean": 1.9421799631635988,
+            "ci95_half_width": 1.4334154429228472,
+            "per_seed": [
+              2.427795279969608,
+              2.094459516988831,
+              1.3042850925323568
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.2672742593187682,
+            "ci95_half_width": 1.7637965947277703,
+            "per_seed": [
+              2.860143634285176,
+              2.4612608718292663,
+              1.480418271841863
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.09454865900383143,
+            "ci95_half_width": 0.04798909802744263,
+            "per_seed": [
+              0.1099089655172414,
+              0.10087704022988506,
+              0.07285997126436781
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.9054513409961688,
+            "ci95_half_width": 0.04798909802744255,
+            "per_seed": [
+              0.8900910344827588,
+              0.8991229597701149,
+              0.9271400287356323
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "nearest": {
+          "mean_completion_time_s": {
+            "mean": 1.8981839353293444,
+            "ci95_half_width": 1.3806338252932457,
+            "per_seed": [
+              1.6429631022205669,
+              1.5158550914884166,
+              2.53573361227905
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.5543546548038165,
+            "ci95_half_width": 1.3655192175198805,
+            "per_seed": [
+              2.2971194641957067,
+              2.1804410180123823,
+              3.18550348220336
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.09248171455938697,
+            "ci95_half_width": 0.037295922701392405,
+            "per_seed": [
+              0.1094170114942529,
+              0.08722433908045976,
+              0.08080379310344828
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.907518285440613,
+            "ci95_half_width": 0.03729592270139264,
+            "per_seed": [
+              0.890582988505747,
+              0.9127756609195401,
+              0.9191962068965519
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "greedy": {
+          "mean_completion_time_s": {
+            "mean": 1.958106960401351,
+            "ci95_half_width": 1.2751125603662945,
+            "per_seed": [
+              1.89217848825215,
+              1.4809546425660427,
+              2.50118775038586
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.655284083500183,
+            "ci95_half_width": 1.2007923421543347,
+            "per_seed": [
+              2.659342200876852,
+              2.169883833587654,
+              3.136626216036044
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.35219157088122605,
+            "ci95_half_width": 0.146883058060978,
+            "per_seed": [
+              0.34148275862068966,
+              0.41594252873563214,
+              0.2991494252873564
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.6478084291187739,
+            "ci95_half_width": 0.14688305806097798,
+            "per_seed": [
+              0.6585172413793103,
+              0.5840574712643679,
+              0.7008505747126437
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.8077917479736643,
+            "ci95_half_width": 0.4145925892598251,
+            "per_seed": [
+              0.7843615164831899,
+              0.6538489777767886,
+              0.9851647496610141
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.1078137473705523,
+            "ci95_half_width": 0.5195726843691003,
+            "per_seed": [
+              1.1420173576222354,
+              0.8836639269738435,
+              1.2977599575155778
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2316229501915709,
+            "ci95_half_width": 0.17038745955501972,
+            "per_seed": [
+              0.3101599137931034,
+              0.1834903735632184,
+              0.20121856321839082
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7683770498084291,
+            "ci95_half_width": 0.1703874595550198,
+            "per_seed": [
+              0.6898400862068965,
+              0.8165096264367817,
+              0.7987814367816091
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.021642245483487466,
+            "ci95_half_width": 0.0013441862585707436,
+            "per_seed": [
+              0.022199805128519743,
+              0.021119246357283655,
+              0.021607684964659
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "our_flat_ddqn": {
+          "mean_completion_time_s": {
+            "mean": 0.448879457613297,
+            "ci95_half_width": 0.1654587732569042,
+            "per_seed": [
+              0.4521517331267762,
+              0.3806975137282542,
+              0.5137891259848607
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.6932793010915016,
+            "ci95_half_width": 0.12258367945725772,
+            "per_seed": [
+              0.7246129488094113,
+              0.6363967518445823,
+              0.7188282026205112
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2997718007662835,
+            "ci95_half_width": 0.12725616217487734,
+            "per_seed": [
+              0.3204655172413793,
+              0.24143448275862067,
+              0.33741540229885053
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7002281992337166,
+            "ci95_half_width": 0.12725616217487723,
+            "per_seed": [
+              0.6795344827586208,
+              0.7585655172413793,
+              0.6625845977011495
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.05110788954232479,
+            "ci95_half_width": 0.044693709360268334,
+            "per_seed": [
+              0.04412909365097264,
+              0.03765115559931671,
+              0.07154341937668506
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "coord_cache_discrete_sac": {
+          "mean_completion_time_s": {
+            "mean": 0.3770074034540194,
+            "ci95_half_width": 0.14902411073648286,
+            "per_seed": [
+              0.3888858920865922,
+              0.3119664711044276,
+              0.43016984717103846
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.5529560103754876,
+            "ci95_half_width": 0.18334881801513678,
+            "per_seed": [
+              0.6241984553799049,
+              0.47682575758606277,
+              0.557843818160495
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.40037171455938697,
+            "ci95_half_width": 0.2117054629325298,
+            "per_seed": [
+              0.34736408045977,
+              0.35507310344827586,
+              0.49867795977011503
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.599628285440613,
+            "ci95_half_width": 0.21170546293252956,
+            "per_seed": [
+              0.6526359195402298,
+              0.6449268965517241,
+              0.501322040229885
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.14758826716458226,
+            "ci95_half_width": 0.03202293828366605,
+            "per_seed": [
+              0.13634753967168833,
+              0.1447580939554325,
+              0.16165916786662599
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.3547030194450283,
+            "ci95_half_width": 0.1601230305481568,
+            "per_seed": [
+              0.34780913803543373,
+              0.29396885254601385,
+              0.4223310677536375
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.5423908430890266,
+            "ci95_half_width": 0.10074750253200138,
+            "per_seed": [
+              0.580245206155054,
+              0.4995868716547236,
+              0.5473404514573024
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.5504130268199233,
+            "ci95_half_width": 0.21170946053941198,
+            "per_seed": [
+              0.6141486206896551,
+              0.45361025862068965,
+              0.5834802011494253
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.4495869731800766,
+            "ci95_half_width": 0.21170946053941206,
+            "per_seed": [
+              0.3858513793103448,
+              0.5463897413793104,
+              0.4165197988505747
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.19216298311266958,
+            "ci95_half_width": 0.051878740451386775,
+            "per_seed": [
+              0.1704272140581845,
+              0.19398604280542572,
+              0.21207569247439853
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 11000.0,
+            "ci95_half_width": 2151.326364848071,
+            "per_seed": [
+              10500,
+              12000,
+              10500
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "our_vs_random": {
+          "relative_reduction_percent_mean": 79.75268302904867,
+          "relative_reduction_percent_ci95_half_width": 26.104442449371966,
+          "relative_reduction_percent_per_seed": [
+            85.67386876047523,
+            85.96445287380642,
+            67.61972745286435
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_nearest": {
+          "relative_reduction_percent_mean": 80.9274175461311,
+          "relative_reduction_percent_ci95_half_width": 5.649444641652518,
+          "relative_reduction_percent_per_seed": [
+            78.83037436657294,
+            80.60706104451145,
+            83.34481722730892
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_greedy": {
+          "relative_reduction_percent_mean": 81.6278033962888,
+          "relative_reduction_percent_ci95_half_width": 3.6824595965987115,
+          "relative_reduction_percent_per_seed": [
+            81.61858724243751,
+            80.15004348569005,
+            83.11477946073883
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_daoc_paper": {
+          "relative_reduction_percent_mean": 55.942736194816746,
+          "relative_reduction_percent_ci95_half_width": 2.668501493417178,
+          "relative_reduction_percent_per_seed": [
+            55.65703687313835,
+            55.040252024930275,
+            57.13091968638163
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_our_flat_ddqn": {
+          "relative_reduction_percent_mean": 21.219704217283066,
+          "relative_reduction_percent_ci95_half_width": 7.364539490037716,
+          "relative_reduction_percent_per_seed": [
+            23.076898184107247,
+            22.78151499674573,
+            17.80069947099622
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_coord_cache_discrete_sac": {
+          "relative_reduction_percent_mean": 6.051338311222765,
+          "relative_reduction_percent_ci95_half_width": 10.873175537301108,
+          "relative_reduction_percent_per_seed": [
+            10.562675295511108,
+            5.769087458244586,
+            1.822252179912604
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        }
+      }
+    },
+    "15": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.8939610840976238,
+              "p95_completion_time_s": 2.307046008269185,
+              "cache_hit_rate": 0.11560916666666665,
+              "remote_loading_rate": 0.8843908333333332,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.3247241483135483,
+              "p95_completion_time_s": 1.965596088847501,
+              "cache_hit_rate": 0.08490896551724138,
+              "remote_loading_rate": 0.9150910344827585,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.6107795837755499,
+              "p95_completion_time_s": 2.4676801780459563,
+              "cache_hit_rate": 0.5067241379310345,
+              "remote_loading_rate": 0.49327586206896545,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.4191481729022057,
+              "p95_completion_time_s": 0.6359923775637197,
+              "cache_hit_rate": 0.20369643678160923,
+              "remote_loading_rate": 0.7963035632183907,
+              "inference_ms_per_decision": 0.13370445780464765,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.26154483446350024,
+              "p95_completion_time_s": 0.43017678953248045,
+              "cache_hit_rate": 0.329431091954023,
+              "remote_loading_rate": 0.6705689080459769,
+              "inference_ms_per_decision": 0.10824559514464988,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.22420320342449326,
+              "p95_completion_time_s": 0.427507212394283,
+              "cache_hit_rate": 0.4085199425287357,
+              "remote_loading_rate": 0.5914800574712643,
+              "inference_ms_per_decision": 0.398483780210148,
+              "selected_checkpoint_episode": 11000
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.21161072980423398,
+              "p95_completion_time_s": 0.49093608773732084,
+              "cache_hit_rate": 0.6593593678160918,
+              "remote_loading_rate": 0.34064063218390805,
+              "inference_ms_per_decision": 1.2456462463892222,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.894224638088022,
+              "p95_completion_time_s": 2.23427105557743,
+              "cache_hit_rate": 0.10689810344827587,
+              "remote_loading_rate": 0.8931018965517242,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.6211670535772225,
+              "p95_completion_time_s": 2.1155830454061166,
+              "cache_hit_rate": 0.08872181034482757,
+              "remote_loading_rate": 0.9112781896551725,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.5306696926853252,
+              "p95_completion_time_s": 2.029258185218805,
+              "cache_hit_rate": 0.35681609195402303,
+              "remote_loading_rate": 0.643183908045977,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7580609033003601,
+              "p95_completion_time_s": 0.9796712080067022,
+              "cache_hit_rate": 0.20303931034482756,
+              "remote_loading_rate": 0.7969606896551725,
+              "inference_ms_per_decision": 0.1297907506411724,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.2827186101019202,
+              "p95_completion_time_s": 0.49206172302228246,
+              "cache_hit_rate": 0.24306204022988503,
+              "remote_loading_rate": 0.7569379597701151,
+              "inference_ms_per_decision": 0.10508017589165342,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.227385355080701,
+              "p95_completion_time_s": 0.5193948076415918,
+              "cache_hit_rate": 0.4074597988505747,
+              "remote_loading_rate": 0.5925402011494253,
+              "inference_ms_per_decision": 0.3043425515124169,
+              "selected_checkpoint_episode": 11000
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.19141768140048568,
+              "p95_completion_time_s": 0.5103254253182484,
+              "cache_hit_rate": 0.6363857183908046,
+              "remote_loading_rate": 0.3636142816091954,
+              "inference_ms_per_decision": 0.6501012110506484,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.8296321309772858,
+              "p95_completion_time_s": 2.0701379467689858,
+              "cache_hit_rate": 0.0930208908045977,
+              "remote_loading_rate": 0.9069791091954023,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 2.240489819718904,
+              "p95_completion_time_s": 2.6879053719436707,
+              "cache_hit_rate": 0.08292201149425286,
+              "remote_loading_rate": 0.9170779885057473,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 2.7089002213872955,
+              "p95_completion_time_s": 3.22273732734359,
+              "cache_hit_rate": 0.2991494252873564,
+              "remote_loading_rate": 0.7008505747126437,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.49206380814131906,
+              "p95_completion_time_s": 0.7281002456423553,
+              "cache_hit_rate": 0.24762488505747132,
+              "remote_loading_rate": 0.7523751149425288,
+              "inference_ms_per_decision": 0.14208517086570552,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.3202392131215766,
+              "p95_completion_time_s": 0.5146431696147004,
+              "cache_hit_rate": 0.26324198275862076,
+              "remote_loading_rate": 0.7367580172413796,
+              "inference_ms_per_decision": 0.07630079069893725,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.2660071284992432,
+              "p95_completion_time_s": 0.543202653525301,
+              "cache_hit_rate": 0.47278905172413793,
+              "remote_loading_rate": 0.527210948275862,
+              "inference_ms_per_decision": 0.14581823442204542,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.1942654120360508,
+              "p95_completion_time_s": 0.43023150493967394,
+              "cache_hit_rate": 0.6665371264367814,
+              "remote_loading_rate": 0.33346287356321835,
+              "inference_ms_per_decision": 0.411025733505195,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "random": {
+          "mean_completion_time_s": {
+            "mean": 1.8726059510543107,
+            "ci95_half_width": 0.09245129167728362,
+            "per_seed": [
+              1.8939610840976238,
+              1.894224638088022,
+              1.8296321309772858
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.203818336871867,
+            "ci95_half_width": 0.3014609704816371,
+            "per_seed": [
+              2.307046008269185,
+              2.23427105557743,
+              2.0701379467689858
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.10517605363984674,
+            "ci95_half_width": 0.028299730667232265,
+            "per_seed": [
+              0.11560916666666665,
+              0.10689810344827587,
+              0.0930208908045977
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8948239463601532,
+            "ci95_half_width": 0.02829973066723232,
+            "per_seed": [
+              0.8843908333333332,
+              0.8931018965517242,
+              0.9069791091954023
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "nearest": {
+          "mean_completion_time_s": {
+            "mean": 1.7287936738698917,
+            "ci95_half_width": 1.160771150147386,
+            "per_seed": [
+              1.3247241483135483,
+              1.6211670535772225,
+              2.240489819718904
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.256361502065763,
+            "ci95_half_width": 0.9468984420718163,
+            "per_seed": [
+              1.965596088847501,
+              2.1155830454061166,
+              2.6879053719436707
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.0855175957854406,
+            "ci95_half_width": 0.007321778262648569,
+            "per_seed": [
+              0.08490896551724138,
+              0.08872181034482757,
+              0.08292201149425286
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.9144824042145595,
+            "ci95_half_width": 0.007321778262648637,
+            "per_seed": [
+              0.9150910344827585,
+              0.9112781896551725,
+              0.9170779885057473
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "greedy": {
+          "mean_completion_time_s": {
+            "mean": 1.9501164992827238,
+            "ci95_half_width": 1.6354211744173635,
+            "per_seed": [
+              1.6107795837755499,
+              1.5306696926853252,
+              2.7089002213872955
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.573225230202784,
+            "ci95_half_width": 1.4996723815562487,
+            "per_seed": [
+              2.4676801780459563,
+              2.029258185218805,
+              3.22273732734359
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.38756321839080465,
+            "ci95_half_width": 0.26617225114637966,
+            "per_seed": [
+              0.5067241379310345,
+              0.35681609195402303,
+              0.2991494252873564
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.6124367816091953,
+            "ci95_half_width": 0.26617225114637977,
+            "per_seed": [
+              0.49327586206896545,
+              0.643183908045977,
+              0.7008505747126437
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.556424294781295,
+            "ci95_half_width": 0.4431395597900806,
+            "per_seed": [
+              0.4191481729022057,
+              0.7580609033003601,
+              0.49206380814131906
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.7812546104042591,
+            "ci95_half_width": 0.44192401098554296,
+            "per_seed": [
+              0.6359923775637197,
+              0.9796712080067022,
+              0.7281002456423553
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2181202107279694,
+            "ci95_half_width": 0.06347943117108415,
+            "per_seed": [
+              0.20369643678160923,
+              0.20303931034482756,
+              0.24762488505747132
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7818797892720307,
+            "ci95_half_width": 0.06347943117108393,
+            "per_seed": [
+              0.7963035632183907,
+              0.7969606896551725,
+              0.7523751149425288
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.13519345977050853,
+            "ci95_half_width": 0.015602884056651193,
+            "per_seed": [
+              0.13370445780464765,
+              0.1297907506411724,
+              0.14208517086570552
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "our_flat_ddqn": {
+          "mean_completion_time_s": {
+            "mean": 0.28816755256233234,
+            "ci95_half_width": 0.07383890949044823,
+            "per_seed": [
+              0.26154483446350024,
+              0.2827186101019202,
+              0.3202392131215766
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.4789605607231544,
+            "ci95_half_width": 0.10863304009451906,
+            "per_seed": [
+              0.43017678953248045,
+              0.49206172302228246,
+              0.5146431696147004
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2785783716475096,
+            "ci95_half_width": 0.11223538969962235,
+            "per_seed": [
+              0.329431091954023,
+              0.24306204022988503,
+              0.26324198275862076
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7214216283524905,
+            "ci95_half_width": 0.11223538969962281,
+            "per_seed": [
+              0.6705689080459769,
+              0.7569379597701151,
+              0.7367580172413796
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.09654218724508018,
+            "ci95_half_width": 0.04372298108774533,
+            "per_seed": [
+              0.10824559514464988,
+              0.10508017589165342,
+              0.07630079069893725
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "coord_cache_discrete_sac": {
+          "mean_completion_time_s": {
+            "mean": 0.23919856233481251,
+            "ci95_half_width": 0.057809249149217964,
+            "per_seed": [
+              0.22420320342449326,
+              0.227385355080701,
+              0.2660071284992432
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.4967015578537253,
+            "ci95_half_width": 0.15176834143359896,
+            "per_seed": [
+              0.427507212394283,
+              0.5193948076415918,
+              0.543202653525301
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.42958959770114946,
+            "ci95_half_width": 0.09294545229896416,
+            "per_seed": [
+              0.4085199425287357,
+              0.4074597988505747,
+              0.47278905172413793
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.5704104022988505,
+            "ci95_half_width": 0.09294545229896425,
+            "per_seed": [
+              0.5914800574712643,
+              0.5925402011494253,
+              0.527210948275862
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.28288152204820344,
+            "ci95_half_width": 0.3172060153417426,
+            "per_seed": [
+              0.398483780210148,
+              0.3043425515124169,
+              0.14581823442204542
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10833.333333333334,
+            "ci95_half_width": 717.1087882826904,
+            "per_seed": [
+              11000,
+              11000,
+              10500
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.19909794108025683,
+            "ci95_half_width": 0.02715047783429886,
+            "per_seed": [
+              0.21161072980423398,
+              0.19141768140048568,
+              0.1942654120360508
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.47716433933174773,
+            "ci95_half_width": 0.10380024675627077,
+            "per_seed": [
+              0.49093608773732084,
+              0.5103254253182484,
+              0.43023150493967394
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.654094070881226,
+            "ci95_half_width": 0.039125710391235365,
+            "per_seed": [
+              0.6593593678160918,
+              0.6363857183908046,
+              0.6665371264367814
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.3459059291187739,
+            "ci95_half_width": 0.039125710391235635,
+            "per_seed": [
+              0.34064063218390805,
+              0.3636142816091954,
+              0.33346287356321835
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.7689243969816886,
+            "ci95_half_width": 1.0677084614170638,
+            "per_seed": [
+              1.2456462463892222,
+              0.6501012110506484,
+              0.411025733505195
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "our_vs_random": {
+          "relative_reduction_percent_mean": 89.36800637391632,
+          "relative_reduction_percent_ci95_half_width": 1.3263714760398029,
+          "relative_reduction_percent_per_seed": [
+            88.82708142310877,
+            89.89466837504038,
+            89.38226932359976
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_nearest": {
+          "relative_reduction_percent_mean": 87.84932869106223,
+          "relative_reduction_percent_ci95_half_width": 9.101186944196417,
+          "relative_reduction_percent_per_seed": [
+            84.0260532674952,
+            88.19259983244116,
+            91.3293329732503
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_greedy": {
+          "relative_reduction_percent_mean": 89.06199202864947,
+          "relative_reduction_percent_ci95_half_width": 8.141149904213906,
+          "relative_reduction_percent_per_seed": [
+            86.86283760139088,
+            87.49451417799533,
+            92.82862430656222
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_daoc_paper": {
+          "relative_reduction_percent_mean": 61.59447211474393,
+          "relative_reduction_percent_ci95_half_width": 31.42860595749159,
+          "relative_reduction_percent_per_seed": [
+            49.514099431943286,
+            74.74903657910427,
+            60.52028033318426
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_our_flat_ddqn": {
+          "relative_reduction_percent_mean": 30.241105177271418,
+          "relative_reduction_percent_ci95_half_width": 25.53106312053713,
+          "relative_reduction_percent_per_seed": [
+            19.091986565781244,
+            32.29392245120351,
+            39.3374065148295
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_coord_cache_discrete_sac": {
+          "relative_reduction_percent_mean": 16.134776632323522,
+          "relative_reduction_percent_ci95_half_width": 26.531029354322502,
+          "relative_reduction_percent_per_seed": [
+            5.616544914577972,
+            15.81793764486288,
+            26.969847337529714
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        }
+      }
+    },
+    "20": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.4891541131347321,
+              "p95_completion_time_s": 1.8720502666069936,
+              "cache_hit_rate": 0.10210721264367814,
+              "remote_loading_rate": 0.8978927873563218,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.4276894153626054,
+              "p95_completion_time_s": 2.104887608280554,
+              "cache_hit_rate": 0.10888658045977012,
+              "remote_loading_rate": 0.8911134195402299,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.2219715410261522,
+              "p95_completion_time_s": 1.8075454696204483,
+              "cache_hit_rate": 0.5727241379310346,
+              "remote_loading_rate": 0.4272758620689654,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.5285584171167891,
+              "p95_completion_time_s": 0.822962288477709,
+              "cache_hit_rate": 0.21421988505747122,
+              "remote_loading_rate": 0.7857801149425288,
+              "inference_ms_per_decision": 0.15757597721838987,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.3148832318577428,
+              "p95_completion_time_s": 0.5957398614878278,
+              "cache_hit_rate": 0.3091849712643679,
+              "remote_loading_rate": 0.6908150287356319,
+              "inference_ms_per_decision": 0.08370881831972098,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.25885802878399694,
+              "p95_completion_time_s": 0.5404877286911813,
+              "cache_hit_rate": 0.36400772988505736,
+              "remote_loading_rate": 0.6359922701149425,
+              "inference_ms_per_decision": 0.4417838899400797,
+              "selected_checkpoint_episode": 12000
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.17967032538093938,
+              "p95_completion_time_s": 0.4516704771633174,
+              "cache_hit_rate": 0.5993018965517242,
+              "remote_loading_rate": 0.40069810344827594,
+              "inference_ms_per_decision": 0.8499198358671604,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 1.4364455980879383,
+              "p95_completion_time_s": 1.7433974394817093,
+              "cache_hit_rate": 0.10121758620689655,
+              "remote_loading_rate": 0.8987824137931035,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 1.4756126194834982,
+              "p95_completion_time_s": 2.1322925044362986,
+              "cache_hit_rate": 0.09505977011494254,
+              "remote_loading_rate": 0.9049402298850576,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 1.4261202681351992,
+              "p95_completion_time_s": 2.0613283360329904,
+              "cache_hit_rate": 0.35681609195402303,
+              "remote_loading_rate": 0.643183908045977,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7290266122226063,
+              "p95_completion_time_s": 1.0569282750824405,
+              "cache_hit_rate": 0.17601356321839082,
+              "remote_loading_rate": 0.8239864367816092,
+              "inference_ms_per_decision": 0.12885354617739028,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.24636311877684708,
+              "p95_completion_time_s": 0.36291636014619444,
+              "cache_hit_rate": 0.2631423563218391,
+              "remote_loading_rate": 0.7368576436781609,
+              "inference_ms_per_decision": 0.11165198470535588,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.18294982765657522,
+              "p95_completion_time_s": 0.4589058590666983,
+              "cache_hit_rate": 0.5570899137931035,
+              "remote_loading_rate": 0.44291008620689654,
+              "inference_ms_per_decision": 0.19131753347919464,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.1482688088942038,
+              "p95_completion_time_s": 0.41474883412343594,
+              "cache_hit_rate": 0.6326350287356322,
+              "remote_loading_rate": 0.3673649712643678,
+              "inference_ms_per_decision": 0.220706102517594,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "random": {
+              "mean_completion_time_s": 2.3697270630313954,
+              "p95_completion_time_s": 2.6254771719178365,
+              "cache_hit_rate": 0.10570988505747128,
+              "remote_loading_rate": 0.8942901149425286,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "mean_completion_time_s": 2.2614254583169315,
+              "p95_completion_time_s": 2.811961473191614,
+              "cache_hit_rate": 0.09585344827586206,
+              "remote_loading_rate": 0.904146551724138,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "mean_completion_time_s": 2.1493497817309826,
+              "p95_completion_time_s": 2.6441685426276083,
+              "cache_hit_rate": 0.35681609195402303,
+              "remote_loading_rate": 0.643183908045977,
+              "inference_ms_per_decision": 0.0,
+              "selected_checkpoint_episode": 5000
+            },
+            "daoc_paper": {
+              "mean_completion_time_s": 0.5472655840214632,
+              "p95_completion_time_s": 0.812692369551362,
+              "cache_hit_rate": 0.1716908333333333,
+              "remote_loading_rate": 0.8283091666666665,
+              "inference_ms_per_decision": 0.15522100636969394,
+              "selected_checkpoint_episode": 26000
+            },
+            "our_flat_ddqn": {
+              "mean_completion_time_s": 0.3183523137551433,
+              "p95_completion_time_s": 0.4933015512442268,
+              "cache_hit_rate": 0.263057643678161,
+              "remote_loading_rate": 0.7369423563218391,
+              "inference_ms_per_decision": 0.04861768280569599,
+              "selected_checkpoint_episode": 10500
+            },
+            "coord_cache_discrete_sac": {
+              "mean_completion_time_s": 0.24742310395211498,
+              "p95_completion_time_s": 0.4678701339855984,
+              "cache_hit_rate": 0.3589886494252873,
+              "remote_loading_rate": 0.6410113505747127,
+              "inference_ms_per_decision": 0.13157822582004297,
+              "selected_checkpoint_episode": 10500
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.2148334553563569,
+              "p95_completion_time_s": 0.5032871433524511,
+              "cache_hit_rate": 0.5671682183908046,
+              "remote_loading_rate": 0.4328317816091955,
+              "inference_ms_per_decision": 0.2808716761794887,
+              "selected_checkpoint_episode": 10500
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "random": {
+          "mean_completion_time_s": {
+            "mean": 1.7651089247513552,
+            "ci95_half_width": 1.3023774374580783,
+            "per_seed": [
+              1.4891541131347321,
+              1.4364455980879383,
+              2.3697270630313954
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.0803082926688465,
+            "ci95_half_width": 1.1836719852902626,
+            "per_seed": [
+              1.8720502666069936,
+              1.7433974394817093,
+              2.6254771719178365
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.103011561302682,
+            "ci95_half_width": 0.005909205527352671,
+            "per_seed": [
+              0.10210721264367814,
+              0.10121758620689655,
+              0.10570988505747128
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8969884386973179,
+            "ci95_half_width": 0.005909205527352853,
+            "per_seed": [
+              0.8978927873563218,
+              0.8987824137931035,
+              0.8942901149425286
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "nearest": {
+          "mean_completion_time_s": {
+            "mean": 1.721575831054345,
+            "ci95_half_width": 1.1629171013575257,
+            "per_seed": [
+              1.4276894153626054,
+              1.4756126194834982,
+              2.2614254583169315
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.349713861969489,
+            "ci95_half_width": 0.9950278572568801,
+            "per_seed": [
+              2.104887608280554,
+              2.1322925044362986,
+              2.811961473191614
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.0999332662835249,
+            "ci95_half_width": 0.019286711021362594,
+            "per_seed": [
+              0.10888658045977012,
+              0.09505977011494254,
+              0.09585344827586206
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.9000667337164753,
+            "ci95_half_width": 0.019286711021362715,
+            "per_seed": [
+              0.8911134195402299,
+              0.9049402298850576,
+              0.904146551724138
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "greedy": {
+          "mean_completion_time_s": {
+            "mean": 1.5991471969641111,
+            "ci95_half_width": 1.210520431581949,
+            "per_seed": [
+              1.2219715410261522,
+              1.4261202681351992,
+              2.1493497817309826
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 2.1710141160936822,
+            "ci95_half_width": 1.0655988623828676,
+            "per_seed": [
+              1.8075454696204483,
+              2.0613283360329904,
+              2.6441685426276083
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.4287854406130269,
+            "ci95_half_width": 0.30965911446211636,
+            "per_seed": [
+              0.5727241379310346,
+              0.35681609195402303,
+              0.35681609195402303
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.5712145593869732,
+            "ci95_half_width": 0.3096591144621164,
+            "per_seed": [
+              0.4272758620689654,
+              0.643183908045977,
+              0.643183908045977
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 5000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              5000,
+              5000,
+              5000
+            ]
+          }
+        },
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.6016168711202862,
+            "ci95_half_width": 0.2750830185156918,
+            "per_seed": [
+              0.5285584171167891,
+              0.7290266122226063,
+              0.5472655840214632
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.8975276443705038,
+            "ci95_half_width": 0.3431599434924373,
+            "per_seed": [
+              0.822962288477709,
+              1.0569282750824405,
+              0.812692369551362
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.1873080938697318,
+            "ci95_half_width": 0.058144472385132775,
+            "per_seed": [
+              0.21421988505747122,
+              0.17601356321839082,
+              0.1716908333333333
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8126919061302682,
+            "ci95_half_width": 0.058144472385132685,
+            "per_seed": [
+              0.7857801149425288,
+              0.8239864367816092,
+              0.8283091666666665
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.14721684325515802,
+            "ci95_half_width": 0.039613583929136435,
+            "per_seed": [
+              0.15757597721838987,
+              0.12885354617739028,
+              0.15522100636969394
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "our_flat_ddqn": {
+          "mean_completion_time_s": {
+            "mean": 0.2931995547965777,
+            "ci95_half_width": 0.10085254740342738,
+            "per_seed": [
+              0.3148832318577428,
+              0.24636311877684708,
+              0.3183523137551433
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.4839859242927497,
+            "ci95_half_width": 0.2898764274199406,
+            "per_seed": [
+              0.5957398614878278,
+              0.36291636014619444,
+              0.4933015512442268
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.27846165708812265,
+            "ci95_half_width": 0.06609595955255194,
+            "per_seed": [
+              0.3091849712643679,
+              0.2631423563218391,
+              0.263057643678161
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7215383429118774,
+            "ci95_half_width": 0.06609595955255224,
+            "per_seed": [
+              0.6908150287356319,
+              0.7368576436781609,
+              0.7369423563218391
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.08132616194359095,
+            "ci95_half_width": 0.07846056028146998,
+            "per_seed": [
+              0.08370881831972098,
+              0.11165198470535588,
+              0.04861768280569599
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        },
+        "coord_cache_discrete_sac": {
+          "mean_completion_time_s": {
+            "mean": 0.22974365346422906,
+            "ci95_half_width": 0.10166577448934751,
+            "per_seed": [
+              0.25885802878399694,
+              0.18294982765657522,
+              0.24742310395211498
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.489087907247826,
+            "ci95_half_width": 0.11113693947634919,
+            "per_seed": [
+              0.5404877286911813,
+              0.4589058590666983,
+              0.4678701339855984
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.42669543103448265,
+            "ci95_half_width": 0.2805903498732871,
+            "per_seed": [
+              0.36400772988505736,
+              0.5570899137931035,
+              0.3589886494252873
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.5733045689655172,
+            "ci95_half_width": 0.280590349873287,
+            "per_seed": [
+              0.6359922701149425,
+              0.44291008620689654,
+              0.6410113505747127
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.25489321641310575,
+            "ci95_half_width": 0.40885231003024364,
+            "per_seed": [
+              0.4417838899400797,
+              0.19131753347919464,
+              0.13157822582004297
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 11000.0,
+            "ci95_half_width": 2151.326364848071,
+            "per_seed": [
+              12000,
+              10500,
+              10500
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.18092419654383338,
+            "ci95_half_width": 0.0827218672742574,
+            "per_seed": [
+              0.17967032538093938,
+              0.1482688088942038,
+              0.2148334553563569
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.4565688182130681,
+            "ci95_half_width": 0.11047442080115562,
+            "per_seed": [
+              0.4516704771633174,
+              0.41474883412343594,
+              0.5032871433524511
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.5997017145593869,
+            "ci95_half_width": 0.0813188353513162,
+            "per_seed": [
+              0.5993018965517242,
+              0.6326350287356322,
+              0.5671682183908046
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.40029828544061313,
+            "ci95_half_width": 0.08131883535131636,
+            "per_seed": [
+              0.40069810344827594,
+              0.3673649712643678,
+              0.4328317816091955
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.45049920485474765,
+            "ci95_half_width": 0.8625275439215452,
+            "per_seed": [
+              0.8499198358671604,
+              0.220706102517594,
+              0.2808716761794887
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "our_vs_random": {
+          "relative_reduction_percent_mean": 89.51568983954125,
+          "relative_reduction_percent_ci95_half_width": 3.741945976045143,
+          "relative_reduction_percent_per_seed": [
+            87.93473933985746,
+            89.67807697753639,
+            90.93425320122992
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_nearest": {
+          "relative_reduction_percent_mean": 89.28914825336426,
+          "relative_reduction_percent_ci95_half_width": 4.088309442857859,
+          "relative_reduction_percent_per_seed": [
+            87.41530731771192,
+            89.95205063059832,
+            90.50008681178255
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_greedy": {
+          "relative_reduction_percent_mean": 88.30158434927772,
+          "relative_reduction_percent_ci95_half_width": 6.483714345104591,
+          "relative_reduction_percent_per_seed": [
+            85.29668495961364,
+            89.60334466825294,
+            90.00472341996657
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_daoc_paper": {
+          "relative_reduction_percent_mean": 68.80459021709237,
+          "relative_reduction_percent_ci95_half_width": 24.255594229217003,
+          "relative_reduction_percent_per_seed": [
+            66.00748005092503,
+            79.66208552494784,
+            60.744205075404246
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_our_flat_ddqn": {
+          "relative_reduction_percent_mean": 38.424895498002485,
+          "relative_reduction_percent_ci95_half_width": 13.288655440935193,
+          "relative_reduction_percent_per_seed": [
+            42.94064999240403,
+            39.81696220183671,
+            32.51707429976671
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        },
+        "our_vs_coord_cache_discrete_sac": {
+          "relative_reduction_percent_mean": 20.906457387651656,
+          "relative_reduction_percent_ci95_half_width": 22.03916932267651,
+          "relative_reduction_percent_per_seed": [
+            30.59117145218448,
+            18.956573617261338,
+            13.171627093509148
+          ],
+          "seed_wins": 3,
+          "seed_count": 3,
+          "wilcoxon_one_sided_p": 0.125
+        }
+      }
+    }
+  },
+  "plotted_metric": "mean_completion_time_s",
+  "p95_retained_in_data_but_not_plotted": true,
+  "statistical_scope": "descriptive three-seed sensitivity; not a ten-seed superiority test"
+}

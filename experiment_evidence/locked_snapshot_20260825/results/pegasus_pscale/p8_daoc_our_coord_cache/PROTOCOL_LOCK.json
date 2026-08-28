@@ -1,0 +1,66 @@
+{
+  "status": "frozen",
+  "created_at": "2026-08-11T03:10:44.997003+00:00",
+  "specification": {
+    "protocol_version": "pegasus_p8_daoc_our_coord_cache_v1",
+    "new_method": "daoc_our_coord_cache",
+    "matched_method": "daoc_paper",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "capacity_namespace": "pegasus_pscale_p2",
+    "smoke_seeds": [
+      42
+    ],
+    "final_seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "evaluation_episodes": 100,
+    "controlled_difference": {
+      "daoc_cache": "paper_popularity_cost_ema",
+      "our_cache": "critical_path_joint",
+      "all_daoc_state_scheduler_guidance_reward_and_training_settings_matched": true
+    },
+    "parent_locks": {
+      "p6": "183ad0e8de3d81415d1ab4494b937da9e0d9362b3c729afe46cad171cc430fc5",
+      "p7": "15d4327450245e33ac10f5fd96c720e142dcc78c42b164e62ef4b5f63fbe5dfd"
+    },
+    "governance": {
+      "daoc_and_our_are_not_retrained": true,
+      "new_control_trains_from_scratch": true,
+      "seeds_51_to_60_are_paired_confirmation_not_holdout": true,
+      "no_post_result_hyperparameter_tuning": true
+    }
+  },
+  "specification_sha256": "24cb9def26ef9e9b256396203692f4679ef5f1fd5084e94596c550897eb97584",
+  "algorithm_source_sha256": "8164a0b3969336154a5d2319b055c006f39627f573eb4335b4498c2f46015a70",
+  "extension_source_sha256": "b34cbad0a79f1a2a06ca406b7ed54ce49ede4b88a8855c3176183fba0982224f"
+}

@@ -1,0 +1,400 @@
+{
+  "status": "complete",
+  "stage": "converged",
+  "all_runs_complete": true,
+  "all_cache_calibrations_complete": true,
+  "all_tasks_exactly_once": true,
+  "all_capacity_constraints_valid": true,
+  "all_methods_scenario_paired_with_p11": true,
+  "all_method_identities_valid": true,
+  "servers": {
+    "5": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        }
+      }
+    },
+    "10": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        }
+      }
+    },
+    "15": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        }
+      }
+    },
+    "20": {
+      "seeds": {
+        "51": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "52": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        },
+        "53": {
+          "methods": {
+            "random": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "nearest": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            },
+            "greedy": {
+              "complete": true,
+              "cache_calibrated": true,
+              "tasks_exactly_once": true,
+              "capacity_valid": true,
+              "paired_with_p11": true,
+              "method_identity_valid": true,
+              "selected_checkpoint_episode": 5000
+            }
+          }
+        }
+      }
+    }
+  }
+}

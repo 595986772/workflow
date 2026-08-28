@@ -1,0 +1,59 @@
+{
+  "generator": "distributed-dag-offloading-caching/plot_topconf_paper_figures.py",
+  "generator_sha256": "7362e773c8dec9f9852c25c0d8914dfd5e749b2311acf96fb853707b4903a6bc",
+  "skill": {
+    "name": "scientific-visualization",
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "commit": "991bd993aca4e90891d1f9908ba82ef45d77b6f0",
+    "path": ".codex/skills/scientific-visualization",
+    "style": ".codex/skills/scientific-visualization/assets/publication.mplstyle",
+    "palette": "nature-inspired editorial palette with redundant encodings",
+    "exporter": ".codex/skills/scientific-visualization/scripts/figure_export.py"
+  },
+  "statistical_unit": "independent seed-level mean",
+  "uncertainty": "two-sided 95% Student-t confidence interval",
+  "data_policy": "fig08 is generated separately from measured 26k online-training logs using a declared 500-episode trailing mean; no selective filtering or scenario-level pseudo-replication",
+  "input_sha256": {
+    "results/pegasus_pscale/p3_paper_closure/final/analysis/pegasus_paper_closure_summary.json": "c81b32c2241f5d900e34451cd5c79fa1a9b27f414ac2a816175c007b77479ddf",
+    "results/pegasus_pscale/p4_paper_supplement/analysis/paper_supplement_summary.json": "f4baf3f1fb6556422a5ceda61809b819ff28fe73ff188019788c9891eb44472f",
+    "results/pegasus_pscale/p5_baseline_extension/analysis/baseline_extension_summary.json": "bb7e70fb1fea93592a41adca4d5d4441786e4a5944c274e0e6ede04d7c462d61",
+    "results/pegasus_pscale/p6_baselines_ablation/analysis/pegasus_p6_summary.json": "403226ee2939eb80eaa21abb8e892f0cf4760e6f9ec3428246f800eb7aab93cb",
+    "results/pegasus_pscale/p7_std_cache_discrete_sac/analysis/sac_std_cache_extension_summary.json": "ad4330d51c4ec5f36bb35867a7b9ec03ebb67b9a7a2e271779b239d2e60ee3cf",
+    "results/pegasus_pscale/p8_daoc_our_coord_cache/analysis/daoc_coord_cache_extension_summary.json": "bdcddaeaa6ff5e82ff43cf45e7029f935bfe2790e20572006a8fd40136d91958",
+    "results/pegasus_pscale/p10_alibaba_cp100_cross_dataset/protocol_summary.json": "9e4df4491c83e903c90ee7b4fd17df7ddd4fe024e2ef4937f704f51441d5098e",
+    "results/pegasus_pscale/p2/sensitivity/analysis/pegasus_pscale_sensitivity_summary.json": "15def18f72d85bbee9d860d152b5476181a8979f201f5c13c337b465cd594dd1",
+    "results/pegasus_pscale/p3_paper_closure/final/oracle/oracle_floor_per_seed.csv": "3990a072bbd55bbf3b42b801801bac7446048460fbf189d20a3f23bb4834434e"
+  },
+  "preserved_previous_figures": {
+    "fig06_heterogeneity_budget": {
+      "png": {
+        "source": "paper_drafts/figures_scivis_v3/fig06_heterogeneity_budget.png",
+        "sha256": "2addf01be297219a68d4931d745e0777a516751ce9ea98d80fb7c145f382e4b8"
+      },
+      "pdf": {
+        "source": "paper_drafts/figures_scivis_v3/fig06_heterogeneity_budget.pdf",
+        "sha256": "4a9eef3c8fa3287acfaf464a8430056c70b0b94ad49bdcf43f5e8e0fff519e31"
+      }
+    },
+    "fig07_scalability_overhead": {
+      "png": {
+        "source": "paper_drafts/figures_scivis_v3/fig07_scalability_overhead.png",
+        "sha256": "0d023d1d3561a91b1d12f26129ad95d804b8533f22ca4e30a588020835aad0b9"
+      },
+      "pdf": {
+        "source": "paper_drafts/figures_scivis_v3/fig07_scalability_overhead.pdf",
+        "sha256": "15fc242b3e1627d7de8223002e447689a2ca105faba71d7a0504cffad0358a81"
+      }
+    }
+  },
+  "physical_width_mm": {
+    "single_column": 88,
+    "double_column": 180
+  },
+  "exports": {
+    "pdf": "vector with embedded TrueType fonts",
+    "svg": "editable vector for newly rendered figures",
+    "png": "400 dpi for newly rendered figures; approved metadata retained for preserved figures",
+    "bbox_inches": null
+  }
+}

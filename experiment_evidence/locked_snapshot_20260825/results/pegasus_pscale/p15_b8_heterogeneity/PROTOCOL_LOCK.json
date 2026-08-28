@@ -1,0 +1,206 @@
+{
+  "status": "frozen",
+  "created_at": "2026-08-18T17:24:29.567878+00:00",
+  "protocol": {
+    "protocol_version": "pegasus_b8_heterogeneity_v1",
+    "dataset_path": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes": 100,
+    "capacity_namespace": "pegasus_pscale_p2",
+    "capacity_profiles": {
+      "H0": {
+        "multiset": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total": 8,
+        "population_variance": 0.16
+      },
+      "H1": {
+        "multiset": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "total": 8,
+        "population_variance": 0.36
+      },
+      "H2": {
+        "multiset": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        "total": 8,
+        "population_variance": 0.56
+      },
+      "H3": {
+        "multiset": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          3
+        ],
+        "total": 8,
+        "population_variance": 0.9600000000000002
+      }
+    },
+    "new_profiles": [
+      "H0",
+      "H1",
+      "H3"
+    ],
+    "methods": [
+      "daoc_paper",
+      "daoc_our_coord_cache",
+      "our_flat_ddqn",
+      "lean_our"
+    ],
+    "display_names": {
+      "daoc_paper": "DAOC",
+      "daoc_our_coord_cache": "DAOC + DCC",
+      "our_flat_ddqn": "DDQN + DCC",
+      "lean_our": "OUR"
+    },
+    "convergence": {
+      "validation_scenarios": 50,
+      "window": 5,
+      "patience": 3,
+      "relative_mean_change": 0.05,
+      "relative_slope": 0.01,
+      "stable_final_checkpoint": true,
+      "historical_best_checkpoint": false
+    },
+    "h2_reuse_audit": {
+      "daoc_paper": {
+        "51": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_51",
+          "config_sha256": "baa1d008319436c88bef607077b2ec79cf8c52eb71e7d6b8738f656aa82adb5b",
+          "checkpoint_sha256": "0d8ba3a9265458dae5d601f82755c78453bc354bb3ba99b4f0aac8ac9a3a9956",
+          "convergence_episode": 26000
+        },
+        "52": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_52",
+          "config_sha256": "07052f2b5db9f0a8be2c4a879efc7c136cebca6b207358394a64405d3ee6a360",
+          "checkpoint_sha256": "db5b15a4623a8deca8b1f8b67213604710084f7e482a5b322435f811b8179909",
+          "convergence_episode": 26000
+        },
+        "53": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_53",
+          "config_sha256": "f8b3d7574284420096bad1d5357328b8dcac37f35b8e16c859728963397ceb39",
+          "checkpoint_sha256": "3f883b531eb27daf883d889153695ecc15a0a31bb32e5ec978d14ec65be64aaa",
+          "convergence_episode": 26000
+        }
+      },
+      "daoc_our_coord_cache": {
+        "51": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p8_daoc_our_coord_cache/final/runs/daoc_our_coord_cache/seed_51",
+          "config_sha256": "b5d79ada18e4d69cd9ecda5306307e8dd22e34efbc497005165815cb5aef67b2",
+          "checkpoint_sha256": "6afce0896220ab442c3505438f018942e47f454868e62841de471affb60622d4",
+          "convergence_episode": 26000
+        },
+        "52": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p8_daoc_our_coord_cache/final/runs/daoc_our_coord_cache/seed_52",
+          "config_sha256": "00a45e49ad4f76591b98c56b24a89c59d34a5557f97bbc2f2604fda02c6ab331",
+          "checkpoint_sha256": "16d8ed4d100dd1e537f82662d68f4f79b16617e64016f14b19acd3b38ded9385",
+          "convergence_episode": 26000
+        },
+        "53": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p8_daoc_our_coord_cache/final/runs/daoc_our_coord_cache/seed_53",
+          "config_sha256": "ec343a1786b6fe8d060c0d1dfa7343de8d48a160f3ae461dbe665cdc45abe7fd",
+          "checkpoint_sha256": "1fe60b6810ee7103e91034ad15503e3cb4e30959bf117000caff29ccc804c0ed",
+          "convergence_episode": 26000
+        }
+      },
+      "our_flat_ddqn": {
+        "51": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_51",
+          "config_sha256": "365a0aeaff1a4be5bd9ad4fa7df05970bc58123812a3b1fd68fe3c7927b47b6f",
+          "checkpoint_sha256": "7271349a951014c7418013ae45157b96ef8c39c9a4a977638424f3a90a3f15d6",
+          "convergence_episode": 10500
+        },
+        "52": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_52",
+          "config_sha256": "4182c9429e815a509156e204fb469456a4b3057f0f96ac3c8cba2d9d7b34da39",
+          "checkpoint_sha256": "31c64fab9ee7245748cfc59331ba393bb44cf204e59d7ba613956e203be01116",
+          "convergence_episode": 10500
+        },
+        "53": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_53",
+          "config_sha256": "f0c1c9e9717e23308abf6ec2fcefbaaa3aeee2f41621484c5cceeaa7c065d64b",
+          "checkpoint_sha256": "5ad352abd8f4b9aff78785a689e560d276e6d07793909adf2fb6d82abb578fd7",
+          "convergence_episode": 10500
+        }
+      },
+      "lean_our": {
+        "51": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_51",
+          "config_sha256": "980633bc281ad83caee2dd00008bdc574cdd49d53702420fbbc9c01c8d3485ed",
+          "checkpoint_sha256": "77b5f47b66205223596265f5ed4d9def4397e476d9cc827474a89d4e8d4ebf9b",
+          "convergence_episode": 10500
+        },
+        "52": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_52",
+          "config_sha256": "61b280a9bb0da58e29627f7c45fa158697be0e8354cdc45399daa98e1b545c28",
+          "checkpoint_sha256": "7d1f9b1dd3db2ea553567c2fe23078cb81aeab9d7d8bad06cb5dfbbfc2b8eb66",
+          "convergence_episode": 12000
+        },
+        "53": {
+          "run_dir": "${HOME}/Documents/python_project/\u521d\u59cb\u7248/FDEdge-main/distributed-dag-offloading-caching/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_53",
+          "config_sha256": "1ccdd4634bf14609c57aad5b78f1719985f286d4ce7410f8402b6cdd3c36ffc6",
+          "checkpoint_sha256": "e2f8a16cb53d1bdc727ffbf73c70a06f84c06646acd8f3d51e36d73b0d176df6",
+          "convergence_episode": 10500
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "pegasus_b8_heterogeneity_protocol.py": "2fd2fa0e6f0c32f1ef19d325e08229f68bc748014265d4109b7aecc60187a842",
+    "run_pegasus_b8_heterogeneity.py": "8b9952f6082d5484ab6a5e0fecc711bf66c40daa58228fb6952b02ca9e9b5a8e",
+    "run_independent_experiment.py": "ea0263cc3a64f1dbedd7013dda5f7f1e00825a49198c4d09802c5b21d51676f3",
+    "run_reproduction_suite.py": "b2fdbe3234cceb758221d169626475d93dddb0a1805effa8245fca9b1b554717",
+    "critical_path_cache.py": "49c2623c12e856aef9ccf96d4c93b74f7ae92c99084f91426444f8e81f62f693",
+    "critical_path_rl.py": "13c812bc713ba1934b6ac55c031b2b5c8159d3465a52b7f4f8cf2b3d7fbfe762"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "status": "complete",
+  "created_at": "2026-08-05T14:44:25.800642+00:00",
+  "protocol_version": "pegasus_paper_supplement_v1",
+  "specification": {
+    "protocol_version": "pegasus_paper_supplement_v1",
+    "parent": {
+      "algorithm_source_sha256": "3f05d3b4a19ccf18322681450cbca81e0fafedf749cff9d410aaa645915aad42",
+      "p3_protocol_source_sha256": "986fcacf665a70b2c1cc41e1214cbc64d545c4609a1c57ef4db65529507fa463",
+      "p3_final_summary_sha256": "c81b32c2241f5d900e34451cd5c79fa1a9b27f414ac2a816175c007b77479ddf"
+    },
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "task_limit_including_dummy": 31,
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "evaluation_episodes": 100,
+    "heterogeneity": {
+      "seeds": [
+        71,
+        72,
+        73
+      ],
+      "methods": [
+        "daoc_paper",
+        "centralized_greedy_daoc",
+        "lean_our"
+      ],
+      "capacity_profiles": {
+        "uniform_b10": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "heterogeneous_b10": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "capacity_namespace": "pegasus_p4_b10_control",
+      "same_total_budget": 10
+    },
+    "ablation": {
+      "seeds": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "methods": [
+        "our_dqn",
+        "our_no_coord_cache"
+      ],
+      "reference_method": "lean_our",
+      "capacity_namespace": "pegasus_pscale_p2",
+      "formal_gate": {
+        "ci95_lower": "greater_than_zero",
+        "wilcoxon_one_sided": "p_less_than_0.05",
+        "wins": "at_least_7_of_10"
+      }
+    },
+    "scaling": {
+      "seeds": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "methods": [
+        "daoc_paper",
+        "centralized_greedy_daoc",
+        "lean_our"
+      ],
+      "user_counts": [
+        10,
+        20,
+        40,
+        60
+      ],
+      "episodes_per_seed": 50,
+      "model_and_cache_frozen": true,
+      "cache_benchmark_repeats": 200
+    },
+    "governance": {
+      "algorithm_changes_forbidden": true,
+      "p3_results_immutable": true,
+      "supplement_is_post_lock": true
+    },
+    "specification_sha256": "2a2e3c5dc541625f63f8786c5acd3b0067958253ba26ff622ada7384a2cf5267"
+  },
+  "specification_sha256": "2a2e3c5dc541625f63f8786c5acd3b0067958253ba26ff622ada7384a2cf5267",
+  "supplement_source_sha256": "524dbb68ef914d2b1bc7e1e7bc44d94f95c493d48f8651f58a01c8ba58881f86",
+  "completed_stages": [
+    "tests",
+    "heterogeneity",
+    "ablation",
+    "scaling",
+    "analysis"
+  ],
+  "stage_records": {
+    "tests": {
+      "completed_at": "2026-08-05T14:44:36.560632+00:00",
+      "passed": true
+    },
+    "heterogeneity": {
+      "completed_at": "2026-08-06T01:51:13.653401+00:00",
+      "all_runs_valid": true,
+      "methods_paired": true,
+      "profiles_paired_except_capacity": true,
+      "equal_total_budget": true
+    },
+    "ablation": {
+      "completed_at": "2026-08-06T13:07:43.220037+00:00",
+      "all_runs_valid": true,
+      "paired_with_frozen_our": true,
+      "ten_seed_complete": true
+    },
+    "scaling": {
+      "completed_at": "2026-08-06T14:10:11.576950+00:00",
+      "all_methods_scenario_paired": true,
+      "twenty_user_reference_exact": true
+    },
+    "analysis": {
+      "completed_at": "2026-08-06T14:12:31.506843+00:00",
+      "gate": {
+        "integrity": true,
+        "heterogeneity_control": true,
+        "primary_ablation": true,
+        "scaling_complete": true,
+        "passed": true
+      }
+    }
+  }
+}

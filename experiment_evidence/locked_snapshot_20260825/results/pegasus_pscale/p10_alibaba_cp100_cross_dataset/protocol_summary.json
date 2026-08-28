@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "protocol_version": "pegasus_b8_frozen_alibaba_cp100_v1",
+  "dataset_path": "${PROJECT_ROOT}/datasets/alibaba_cp100/dag_alibaba_cp100.json",
+  "dataset_sha256": "2903ff2478f5c55fe445bd2a7b6fbe595aecf6ea6383913b85ea5efd92ee2d89",
+  "dataset_role": "selected_cross_dataset_stress_set_not_unbiased_holdout",
+  "source_environment": "Pegasus-B8",
+  "only_changed_factor": "DAG dataset",
+  "methods": [
+    "random",
+    "nearest",
+    "greedy",
+    "dqn_wdsa_std_cache",
+    "discrete_sac_std_cache",
+    "daoc_paper",
+    "daoc_our_coord_cache",
+    "coord_cache_discrete_sac",
+    "lean_our"
+  ],
+  "seeds": [
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "evaluation_scenarios_per_seed": 100,
+  "paired_scenarios_across_methods": true,
+  "cache_budget": 8,
+  "capacity_multiset": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+  ],
+  "checkpoint_training_dataset": "Pegasus five-family P-Scale",
+  "checkpoint_weights_frozen": true,
+  "cache_and_history_frozen": true
+}

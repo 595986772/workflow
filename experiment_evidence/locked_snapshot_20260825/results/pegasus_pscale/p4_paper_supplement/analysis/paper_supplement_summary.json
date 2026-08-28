@@ -1,0 +1,4102 @@
+{
+  "status": "complete",
+  "protocol_version": "pegasus_paper_supplement_v1",
+  "specification": {
+    "protocol_version": "pegasus_paper_supplement_v1",
+    "parent": {
+      "algorithm_source_sha256": "3f05d3b4a19ccf18322681450cbca81e0fafedf749cff9d410aaa645915aad42",
+      "p3_protocol_source_sha256": "986fcacf665a70b2c1cc41e1214cbc64d545c4609a1c57ef4db65529507fa463",
+      "p3_final_summary_sha256": "c81b32c2241f5d900e34451cd5c79fa1a9b27f414ac2a816175c007b77479ddf"
+    },
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "task_limit_including_dummy": 31,
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "evaluation_episodes": 100,
+    "heterogeneity": {
+      "seeds": [
+        71,
+        72,
+        73
+      ],
+      "methods": [
+        "daoc_paper",
+        "centralized_greedy_daoc",
+        "lean_our"
+      ],
+      "capacity_profiles": {
+        "uniform_b10": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "heterogeneous_b10": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "capacity_namespace": "pegasus_p4_b10_control",
+      "same_total_budget": 10
+    },
+    "ablation": {
+      "seeds": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "methods": [
+        "our_dqn",
+        "our_no_coord_cache"
+      ],
+      "reference_method": "lean_our",
+      "capacity_namespace": "pegasus_pscale_p2",
+      "formal_gate": {
+        "ci95_lower": "greater_than_zero",
+        "wilcoxon_one_sided": "p_less_than_0.05",
+        "wins": "at_least_7_of_10"
+      }
+    },
+    "scaling": {
+      "seeds": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "methods": [
+        "daoc_paper",
+        "centralized_greedy_daoc",
+        "lean_our"
+      ],
+      "user_counts": [
+        10,
+        20,
+        40,
+        60
+      ],
+      "episodes_per_seed": 50,
+      "model_and_cache_frozen": true,
+      "cache_benchmark_repeats": 200
+    },
+    "governance": {
+      "algorithm_changes_forbidden": true,
+      "p3_results_immutable": true,
+      "supplement_is_post_lock": true
+    },
+    "specification_sha256": "2a2e3c5dc541625f63f8786c5acd3b0067958253ba26ff622ada7384a2cf5267"
+  },
+  "integrity": {
+    "parent_frozen_hash_exact": true,
+    "supplement_source_hash_recorded": true,
+    "heterogeneity_integrity": true,
+    "ablation_integrity": true,
+    "scaling_methods_paired": true,
+    "scaling_20_user_exact": true,
+    "p3_final_gate_still_passed": true
+  },
+  "heterogeneity": {
+    "integrity": {
+      "all_runs_valid": true,
+      "methods_paired": true,
+      "profiles_paired_except_capacity": true,
+      "equal_total_budget": true
+    },
+    "profiles": {
+      "uniform_b10": {
+        "capacity_multiset": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_budget": 10,
+        "capacity_mean": 1.0,
+        "capacity_variance": 0.0,
+        "per_seed": [
+          {
+            "seed": 71,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.1427736768527879,
+                "mean_p95_finish_time": 1.3674072958627064,
+                "mean_waiting_latency": 0.13366250657936166,
+                "mean_cache_hit_rate": 0.18338295977011498,
+                "mean_cache_service_coverage": 0.5,
+                "mean_remote_loading_rate": 0.816617040229885,
+                "mean_service_loading_latency": 3.420509268765216,
+                "mean_inference_time_per_decision_ms": 0.023889240551510444,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.234452361359601,
+                "mean_p95_finish_time": 0.3557358258697802,
+                "mean_waiting_latency": 0.10804242521470923,
+                "mean_cache_hit_rate": 0.32444083333333323,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.6755591666666666,
+                "mean_service_loading_latency": 0.6152543406288679,
+                "mean_inference_time_per_decision_ms": 0.022507521775052695,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.14916022432768716,
+                "mean_p95_finish_time": 0.35415957804107945,
+                "mean_waiting_latency": 0.08153162008538065,
+                "mean_cache_hit_rate": 0.6816147701149425,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.31838522988505746,
+                "mean_service_loading_latency": 0.311715820114285,
+                "mean_inference_time_per_decision_ms": 0.16479256977584586,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          },
+          {
+            "seed": 72,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.679065098575805,
+                "mean_p95_finish_time": 0.9254262619551199,
+                "mean_waiting_latency": 0.12657858987115428,
+                "mean_cache_hit_rate": 0.2124462356321839,
+                "mean_cache_service_coverage": 0.6,
+                "mean_remote_loading_rate": 0.787553764367816,
+                "mean_service_loading_latency": 2.1609074290382533,
+                "mean_inference_time_per_decision_ms": 0.025165059135065292,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.250753223285775,
+                "mean_p95_finish_time": 0.41081711248062497,
+                "mean_waiting_latency": 0.09893049817021847,
+                "mean_cache_hit_rate": 0.27772505747126436,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.7222749425287357,
+                "mean_service_loading_latency": 0.7558543994612377,
+                "mean_inference_time_per_decision_ms": 0.02289868780029081,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.13133763991476277,
+                "mean_p95_finish_time": 0.33216447625285617,
+                "mean_waiting_latency": 0.08705809508702199,
+                "mean_cache_hit_rate": 0.6811349425287356,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.3188650574712644,
+                "mean_service_loading_latency": 0.2750082063359453,
+                "mean_inference_time_per_decision_ms": 0.19160495332556293,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          },
+          {
+            "seed": 73,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.5632421134723932,
+                "mean_p95_finish_time": 0.7549055972209113,
+                "mean_waiting_latency": 0.15736845665213628,
+                "mean_cache_hit_rate": 0.19280887931034485,
+                "mean_cache_service_coverage": 0.7000000000000002,
+                "mean_remote_loading_rate": 0.807191120689655,
+                "mean_service_loading_latency": 1.69928127452499,
+                "mean_inference_time_per_decision_ms": 0.02669933570592548,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.232138294689766,
+                "mean_p95_finish_time": 0.3707267812705146,
+                "mean_waiting_latency": 0.11085438755536925,
+                "mean_cache_hit_rate": 0.33488169540229884,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.665118304597701,
+                "mean_service_loading_latency": 0.6739258631715793,
+                "mean_inference_time_per_decision_ms": 0.019767569617715187,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.106078097487027,
+                "mean_p95_finish_time": 0.17985255394300415,
+                "mean_waiting_latency": 0.12599986705804153,
+                "mean_cache_hit_rate": 0.7317045977011495,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.26829540229885057,
+                "mean_service_loading_latency": 0.22377436098383094,
+                "mean_inference_time_per_decision_ms": 0.14177482347092432,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          }
+        ],
+        "method_aggregates": {
+          "daoc_paper": {
+            "mean_finish_time": 0.7950269629669954,
+            "mean_p95_finish_time": 1.0159130516795793,
+            "mean_waiting_latency": 0.13920318436755075,
+            "mean_cache_hit_rate": 0.19621269157088125,
+            "mean_cache_service_coverage": 0.6000000000000001,
+            "mean_remote_loading_rate": 0.8037873084291186,
+            "mean_service_loading_latency": 2.4268993241094865,
+            "mean_inference_time_per_decision_ms": 0.025251211797500405,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.23911462644504733,
+            "mean_p95_finish_time": 0.3790932398736399,
+            "mean_waiting_latency": 0.10594243698009898,
+            "mean_cache_hit_rate": 0.31234919540229883,
+            "mean_cache_service_coverage": 1.0,
+            "mean_remote_loading_rate": 0.6876508045977011,
+            "mean_service_loading_latency": 0.6816782010872283,
+            "mean_inference_time_per_decision_ms": 0.0217245930643529,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.12885865390982565,
+            "mean_p95_finish_time": 0.28872553607897994,
+            "mean_waiting_latency": 0.09819652741014806,
+            "mean_cache_hit_rate": 0.6981514367816093,
+            "mean_cache_service_coverage": 1.0,
+            "mean_remote_loading_rate": 0.3018485632183909,
+            "mean_service_loading_latency": 0.2701661291446871,
+            "mean_inference_time_per_decision_ms": 0.16605744885744436,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 3,
+            "reference_mean": 0.7950269629669954,
+            "our_mean": 0.12885865390982565,
+            "mean_improvement_sec": 0.6661683090571696,
+            "mean_improvement_percent": 83.791913996359,
+            "ci95_lower_sec": -0.04719748164063631,
+            "ci95_upper_sec": 1.3795340997549754,
+            "wilcoxon_one_sided_p": 0.125,
+            "wins": 3,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 3,
+            "reference_mean": 0.23911462644504733,
+            "our_mean": 0.12885865390982565,
+            "mean_improvement_sec": 0.11025597253522168,
+            "mean_improvement_percent": 46.11009128735184,
+            "ci95_lower_sec": 0.055920178140972415,
+            "ci95_upper_sec": 0.16459176692947095,
+            "wilcoxon_one_sided_p": 0.125,
+            "wins": 3,
+            "passed": true
+          }
+        }
+      },
+      "heterogeneous_b10": {
+        "capacity_multiset": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "total_budget": 10,
+        "capacity_mean": 1.0,
+        "capacity_variance": 0.6,
+        "per_seed": [
+          {
+            "seed": 71,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0384364854700985,
+                "mean_p95_finish_time": 1.429037683753215,
+                "mean_waiting_latency": 0.15059977486624587,
+                "mean_cache_hit_rate": 0.15618810344827586,
+                "mean_cache_service_coverage": 0.6,
+                "mean_remote_loading_rate": 0.8438118965517242,
+                "mean_service_loading_latency": 3.096366748276773,
+                "mean_inference_time_per_decision_ms": 0.02147112462773816,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.23215141317086752,
+                "mean_p95_finish_time": 0.36057029430404897,
+                "mean_waiting_latency": 0.09715280255100177,
+                "mean_cache_hit_rate": 0.28546968390804595,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.7145303160919542,
+                "mean_service_loading_latency": 0.6809970326291492,
+                "mean_inference_time_per_decision_ms": 0.023405764835649812,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.1448189390825045,
+                "mean_p95_finish_time": 0.31497864311970286,
+                "mean_waiting_latency": 0.08957786693499503,
+                "mean_cache_hit_rate": 0.6929593103448275,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.30704068965517245,
+                "mean_service_loading_latency": 0.26350666192670136,
+                "mean_inference_time_per_decision_ms": 0.1492785897726195,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          },
+          {
+            "seed": 72,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6890598812233598,
+                "mean_p95_finish_time": 0.9919793852709191,
+                "mean_waiting_latency": 0.11870423478973369,
+                "mean_cache_hit_rate": 0.2508752586206897,
+                "mean_cache_service_coverage": 0.6,
+                "mean_remote_loading_rate": 0.7491247413793104,
+                "mean_service_loading_latency": 2.182919278638251,
+                "mean_inference_time_per_decision_ms": 0.02116626241118593,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.2674140856696181,
+                "mean_p95_finish_time": 0.4143709255694257,
+                "mean_waiting_latency": 0.12374296904915191,
+                "mean_cache_hit_rate": 0.2664871264367816,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.7335128735632185,
+                "mean_service_loading_latency": 0.9126468560903984,
+                "mean_inference_time_per_decision_ms": 0.02242163523208202,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.15084669608025775,
+                "mean_p95_finish_time": 0.32610201604637984,
+                "mean_waiting_latency": 0.09493200013567338,
+                "mean_cache_hit_rate": 0.6359323275862069,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.36406767241379306,
+                "mean_service_loading_latency": 0.3642704042973001,
+                "mean_inference_time_per_decision_ms": 0.21746963653838075,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          },
+          {
+            "seed": 73,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.7913210790504156,
+                "mean_p95_finish_time": 0.9482071054220165,
+                "mean_waiting_latency": 0.13455791359678015,
+                "mean_cache_hit_rate": 0.1508053448275862,
+                "mean_cache_service_coverage": 0.6,
+                "mean_remote_loading_rate": 0.8491946551724139,
+                "mean_service_loading_latency": 2.3534024263966047,
+                "mean_inference_time_per_decision_ms": 0.02397710581057526,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.24219813894710815,
+                "mean_p95_finish_time": 0.37619327487760823,
+                "mean_waiting_latency": 0.14506176283828656,
+                "mean_cache_hit_rate": 0.3528374712643679,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.6471625287356322,
+                "mean_service_loading_latency": 0.6331554552112043,
+                "mean_inference_time_per_decision_ms": 0.019395956586223118,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              },
+              "lean_our": {
+                "mean_finish_time": 0.1428398892091569,
+                "mean_p95_finish_time": 0.25233278135217313,
+                "mean_waiting_latency": 0.12699022304644217,
+                "mean_cache_hit_rate": 0.6767391954022989,
+                "mean_cache_service_coverage": 1.0,
+                "mean_remote_loading_rate": 0.3232608045977011,
+                "mean_service_loading_latency": 0.41858489783782604,
+                "mean_inference_time_per_decision_ms": 0.14008038328596906,
+                "cache_decision_wall_time_sec": 0.0,
+                "cache_migration_time_sec": 0.0
+              }
+            }
+          }
+        ],
+        "method_aggregates": {
+          "daoc_paper": {
+            "mean_finish_time": 0.8396058152479579,
+            "mean_p95_finish_time": 1.1230747248153834,
+            "mean_waiting_latency": 0.13462064108425323,
+            "mean_cache_hit_rate": 0.1859562356321839,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.8140437643678161,
+            "mean_service_loading_latency": 2.5442294844372095,
+            "mean_inference_time_per_decision_ms": 0.02220483094983312,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.24725454592919793,
+            "mean_p95_finish_time": 0.38371149825036094,
+            "mean_waiting_latency": 0.12198584481281342,
+            "mean_cache_hit_rate": 0.3015980938697318,
+            "mean_cache_service_coverage": 1.0,
+            "mean_remote_loading_rate": 0.6984019061302682,
+            "mean_service_loading_latency": 0.7422664479769173,
+            "mean_inference_time_per_decision_ms": 0.02174111888465165,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.14616850812397306,
+            "mean_p95_finish_time": 0.29780448017275196,
+            "mean_waiting_latency": 0.10383336337237019,
+            "mean_cache_hit_rate": 0.668543611111111,
+            "mean_cache_service_coverage": 1.0,
+            "mean_remote_loading_rate": 0.3314563888888889,
+            "mean_service_loading_latency": 0.34878732135394247,
+            "mean_inference_time_per_decision_ms": 0.16894286986565643,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 3,
+            "reference_mean": 0.8396058152479579,
+            "our_mean": 0.14616850812397306,
+            "mean_improvement_sec": 0.6934373071239849,
+            "mean_improvement_percent": 82.59081756350085,
+            "ci95_lower_sec": 0.2415300209815472,
+            "ci95_upper_sec": 1.1453445932664226,
+            "wilcoxon_one_sided_p": 0.125,
+            "wins": 3,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 3,
+            "reference_mean": 0.24725454592919793,
+            "our_mean": 0.14616850812397306,
+            "mean_improvement_sec": 0.10108603780522486,
+            "mean_improvement_percent": 40.88338898900211,
+            "ci95_lower_sec": 0.06458450931999112,
+            "ci95_upper_sec": 0.1375875662904586,
+            "wilcoxon_one_sided_p": 0.125,
+            "wins": 3,
+            "passed": true
+          }
+        }
+      }
+    },
+    "heterogeneity_effect_on_our_advantage": {
+      "our_vs_daoc_paper": {
+        "pairs": 3,
+        "mean_delta_sec": 0.02726899806681519,
+        "ci95_lower_sec": -0.34311405577443205,
+        "ci95_upper_sec": 0.39765205190806246,
+        "wilcoxon_one_sided_p": 0.625,
+        "positive_seeds": 1
+      },
+      "our_vs_centralized_greedy_daoc": {
+        "pairs": 3,
+        "mean_delta_sec": -0.009169934729996812,
+        "ci95_lower_sec": -0.04737263211452587,
+        "ci95_upper_sec": 0.02903276265453225,
+        "wilcoxon_one_sided_p": 0.875,
+        "positive_seeds": 1
+      }
+    },
+    "gate": {
+      "uniform_b10": true,
+      "heterogeneous_b10": true,
+      "passed": true
+    }
+  },
+  "ablation": {
+    "integrity": {
+      "all_runs_valid": true,
+      "paired_with_frozen_our": true,
+      "ten_seed_complete": true
+    },
+    "per_seed": [
+      {
+        "seed": 51,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.34780913803543373,
+            "mean_p95_finish_time": 0.580245206155054,
+            "mean_waiting_latency": 0.18375374358700555,
+            "mean_cache_hit_rate": 0.6141486206896551,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.3858513793103448,
+            "mean_service_loading_latency": 0.8974013390168846,
+            "mean_inference_time_per_decision_ms": 0.1704272140581845,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.4521517331267762,
+            "mean_p95_finish_time": 0.7246129488094113,
+            "mean_waiting_latency": 0.13550329015930704,
+            "mean_cache_hit_rate": 0.3204655172413793,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.6795344827586208,
+            "mean_service_loading_latency": 1.217296839731811,
+            "mean_inference_time_per_decision_ms": 0.052295940541518426,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.7770679802997692,
+            "mean_p95_finish_time": 1.1249206178777125,
+            "mean_waiting_latency": 0.18284275262866168,
+            "mean_cache_hit_rate": 0.47996681034482763,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.5200331896551724,
+            "mean_service_loading_latency": 1.9788657516182255,
+            "mean_inference_time_per_decision_ms": 0.17561466712450266,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 52,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.29396885254601385,
+            "mean_p95_finish_time": 0.4995868716547236,
+            "mean_waiting_latency": 0.08925885139908202,
+            "mean_cache_hit_rate": 0.45361025862068965,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5463897413793104,
+            "mean_service_loading_latency": 1.5527923936734322,
+            "mean_inference_time_per_decision_ms": 0.19398604280542572,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.3806975137282542,
+            "mean_p95_finish_time": 0.6363967518445823,
+            "mean_waiting_latency": 0.14244698285042878,
+            "mean_cache_hit_rate": 0.24143448275862067,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7585655172413793,
+            "mean_service_loading_latency": 1.8156911934726292,
+            "mean_inference_time_per_decision_ms": 0.06198229972872585,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.7098232458420566,
+            "mean_p95_finish_time": 0.8963004401330136,
+            "mean_waiting_latency": 0.1124629166403509,
+            "mean_cache_hit_rate": 0.38603390804597704,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.613966091954023,
+            "mean_service_loading_latency": 2.2995844017450233,
+            "mean_inference_time_per_decision_ms": 0.20982210297781123,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 53,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.4223310677536375,
+            "mean_p95_finish_time": 0.5473404514573024,
+            "mean_waiting_latency": 0.07103323112699515,
+            "mean_cache_hit_rate": 0.5834802011494253,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4165197988505747,
+            "mean_service_loading_latency": 1.1596641545710558,
+            "mean_inference_time_per_decision_ms": 0.21207569247439853,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.5137891259848607,
+            "mean_p95_finish_time": 0.7188282026205112,
+            "mean_waiting_latency": 0.11185047345593492,
+            "mean_cache_hit_rate": 0.33741540229885053,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.6625845977011495,
+            "mean_service_loading_latency": 1.4567784639419221,
+            "mean_inference_time_per_decision_ms": 0.052789745936646926,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.6103783302822561,
+            "mean_p95_finish_time": 0.7719048478281342,
+            "mean_waiting_latency": 0.08868801243580142,
+            "mean_cache_hit_rate": 0.5991972701149425,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.4008027298850574,
+            "mean_service_loading_latency": 1.6978623286156551,
+            "mean_inference_time_per_decision_ms": 0.19742174594260478,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 54,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.12240373026342151,
+            "mean_p95_finish_time": 0.2088104293730591,
+            "mean_waiting_latency": 0.07932524396428689,
+            "mean_cache_hit_rate": 0.5693376149425287,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4306623850574713,
+            "mean_service_loading_latency": 0.2719531407332183,
+            "mean_inference_time_per_decision_ms": 0.21451610945715127,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.2179484575394218,
+            "mean_p95_finish_time": 0.34657491108865907,
+            "mean_waiting_latency": 0.07216240375298195,
+            "mean_cache_hit_rate": 0.26187094827586205,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7381290517241381,
+            "mean_service_loading_latency": 0.6619801434989955,
+            "mean_inference_time_per_decision_ms": 0.06608201612852213,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.7697074754806423,
+            "mean_p95_finish_time": 1.1777781895819903,
+            "mean_waiting_latency": 0.13453182256926796,
+            "mean_cache_hit_rate": 0.33822612068965513,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.6617738793103449,
+            "mean_service_loading_latency": 2.591203472599255,
+            "mean_inference_time_per_decision_ms": 0.18930446320854666,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 55,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.12350321643333877,
+            "mean_p95_finish_time": 0.2962137704201138,
+            "mean_waiting_latency": 0.08294811143632863,
+            "mean_cache_hit_rate": 0.7321324712643679,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.2678675287356322,
+            "mean_service_loading_latency": 0.22571670528023804,
+            "mean_inference_time_per_decision_ms": 0.1947240817062617,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.22361354276649517,
+            "mean_p95_finish_time": 0.41357664330204763,
+            "mean_waiting_latency": 0.10682356864426396,
+            "mean_cache_hit_rate": 0.43191040229885064,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5680895977011493,
+            "mean_service_loading_latency": 0.563706793683083,
+            "mean_inference_time_per_decision_ms": 0.041209439590428464,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 1.0088067156036509,
+            "mean_p95_finish_time": 1.37684965100813,
+            "mean_waiting_latency": 0.13733248277174936,
+            "mean_cache_hit_rate": 0.5068148563218391,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.49318514367816085,
+            "mean_service_loading_latency": 2.878590047736486,
+            "mean_inference_time_per_decision_ms": 0.21216808965838127,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 56,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.2237259997924106,
+            "mean_p95_finish_time": 0.4587991505754011,
+            "mean_waiting_latency": 0.1282557894473367,
+            "mean_cache_hit_rate": 0.5457245689655172,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4542754310344828,
+            "mean_service_loading_latency": 0.5968285920795977,
+            "mean_inference_time_per_decision_ms": 0.18285640766581132,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.29650461387265553,
+            "mean_p95_finish_time": 0.4680388176294268,
+            "mean_waiting_latency": 0.12817487022165994,
+            "mean_cache_hit_rate": 0.24667054597701152,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7533294540229885,
+            "mean_service_loading_latency": 1.000172790999818,
+            "mean_inference_time_per_decision_ms": 0.046964602594544186,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.43639017463860347,
+            "mean_p95_finish_time": 0.695477468292175,
+            "mean_waiting_latency": 0.12225044913713128,
+            "mean_cache_hit_rate": 0.5894989942528736,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.4105010057471265,
+            "mean_service_loading_latency": 1.6987817848757336,
+            "mean_inference_time_per_decision_ms": 0.21252243440461094,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 57,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.09559197669827668,
+            "mean_p95_finish_time": 0.1691912507959805,
+            "mean_waiting_latency": 0.07610379232522069,
+            "mean_cache_hit_rate": 0.6439166954022988,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.35608330459770116,
+            "mean_service_loading_latency": 0.1710124229914242,
+            "mean_inference_time_per_decision_ms": 0.17431098638460352,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.16301929701282297,
+            "mean_p95_finish_time": 0.28073559042981844,
+            "mean_waiting_latency": 0.07043930567159265,
+            "mean_cache_hit_rate": 0.2935545689655173,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7064454310344828,
+            "mean_service_loading_latency": 0.4461862670344506,
+            "mean_inference_time_per_decision_ms": 0.04851863618708288,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.5146342817038385,
+            "mean_p95_finish_time": 0.5575508503800631,
+            "mean_waiting_latency": 0.12117431109417387,
+            "mean_cache_hit_rate": 0.5627617816091954,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.4372382183908046,
+            "mean_service_loading_latency": 1.4025983909833704,
+            "mean_inference_time_per_decision_ms": 0.2003888259034727,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 58,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.24570031392562705,
+            "mean_p95_finish_time": 0.34541546158611874,
+            "mean_waiting_latency": 0.13829825852027894,
+            "mean_cache_hit_rate": 0.6329500574712644,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.3670499425287355,
+            "mean_service_loading_latency": 0.5769147060157216,
+            "mean_inference_time_per_decision_ms": 0.19049695525416485,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.3118979477154598,
+            "mean_p95_finish_time": 0.49399590163260043,
+            "mean_waiting_latency": 0.13065061191746513,
+            "mean_cache_hit_rate": 0.37283784482758614,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.6271621551724139,
+            "mean_service_loading_latency": 0.9098925671660713,
+            "mean_inference_time_per_decision_ms": 0.047868767002558654,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.7079709839285829,
+            "mean_p95_finish_time": 0.8768462476217112,
+            "mean_waiting_latency": 0.1463358612470229,
+            "mean_cache_hit_rate": 0.5478731609195403,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.45212683908045975,
+            "mean_service_loading_latency": 1.546986322982683,
+            "mean_inference_time_per_decision_ms": 0.2611418081123359,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 59,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.34064742369487483,
+            "mean_p95_finish_time": 0.5019877887547776,
+            "mean_waiting_latency": 0.12411944364214605,
+            "mean_cache_hit_rate": 0.6419573563218389,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.35804264367816097,
+            "mean_service_loading_latency": 2.1358391441616202,
+            "mean_inference_time_per_decision_ms": 0.17322401984288333,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.4921159848399879,
+            "mean_p95_finish_time": 0.6475617328688967,
+            "mean_waiting_latency": 0.10693140302486989,
+            "mean_cache_hit_rate": 0.30213063218390807,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.697869367816092,
+            "mean_service_loading_latency": 2.666491321864404,
+            "mean_inference_time_per_decision_ms": 0.04356884054803983,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.9810289475569701,
+            "mean_p95_finish_time": 1.297808341022891,
+            "mean_waiting_latency": 0.10146251434760555,
+            "mean_cache_hit_rate": 0.5299708908045977,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.47002910919540236,
+            "mean_service_loading_latency": 4.328291895284207,
+            "mean_inference_time_per_decision_ms": 0.24330503471087314,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      },
+      {
+        "seed": 60,
+        "methods": {
+          "lean_our": {
+            "mean_finish_time": 0.45219488400066254,
+            "mean_p95_finish_time": 0.7281068198515713,
+            "mean_waiting_latency": 0.10777119691600634,
+            "mean_cache_hit_rate": 0.47169827586206897,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5283017241379311,
+            "mean_service_loading_latency": 2.103724119485687,
+            "mean_inference_time_per_decision_ms": 0.22309929484965635,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_dqn": {
+            "mean_finish_time": 0.5273392804477949,
+            "mean_p95_finish_time": 0.7772881592549701,
+            "mean_waiting_latency": 0.0840802494870175,
+            "mean_cache_hit_rate": 0.23017264367816093,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7698273563218392,
+            "mean_service_loading_latency": 2.322980193158682,
+            "mean_inference_time_per_decision_ms": 0.06407035313523911,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "our_no_coord_cache": {
+            "mean_finish_time": 0.8575888904961927,
+            "mean_p95_finish_time": 1.3477510474316885,
+            "mean_waiting_latency": 0.10124196976078254,
+            "mean_cache_hit_rate": 0.357819540229885,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.642180459770115,
+            "mean_service_loading_latency": 2.9203995546585997,
+            "mean_inference_time_per_decision_ms": 0.15060865209133154,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        }
+      }
+    ],
+    "method_aggregates": {
+      "lean_our": {
+        "mean_finish_time": 0.2667876603143697,
+        "mean_p95_finish_time": 0.4335697200624102,
+        "mean_waiting_latency": 0.10808676623646866,
+        "mean_cache_hit_rate": 0.5888956120689656,
+        "mean_cache_service_coverage": 0.7999999999999998,
+        "mean_remote_loading_rate": 0.4111043879310345,
+        "mean_service_loading_latency": 0.9691846718008879,
+        "mean_inference_time_per_decision_ms": 0.1929716804498541,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      },
+      "our_dqn": {
+        "mean_finish_time": 0.3579077497034529,
+        "mean_p95_finish_time": 0.5507609659480923,
+        "mean_waiting_latency": 0.10890631591855218,
+        "mean_cache_hit_rate": 0.3038462988505747,
+        "mean_cache_service_coverage": 0.7999999999999998,
+        "mean_remote_loading_rate": 0.6961537011494253,
+        "mean_service_loading_latency": 1.306117657455187,
+        "mean_inference_time_per_decision_ms": 0.052535064139330644,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      },
+      "our_no_coord_cache": {
+        "mean_finish_time": 0.7373397025832562,
+        "mean_p95_finish_time": 1.012318770117751,
+        "mean_waiting_latency": 0.12483230926325475,
+        "mean_cache_hit_rate": 0.48981633333333335,
+        "mean_cache_service_coverage": 0.6600000000000001,
+        "mean_remote_loading_rate": 0.5101836666666666,
+        "mean_service_loading_latency": 2.3343163951099237,
+        "mean_inference_time_per_decision_ms": 0.2052297824134471,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      }
+    },
+    "paired_comparisons": {
+      "our_vs_our_dqn": {
+        "pairs": 10,
+        "reference_mean": 0.3579077497034529,
+        "our_mean": 0.2667876603143697,
+        "mean_improvement_sec": 0.09112008938908321,
+        "mean_improvement_percent": 25.45909929711816,
+        "ci95_lower_sec": 0.07310047449640793,
+        "ci95_upper_sec": 0.1091397042817585,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      },
+      "our_vs_our_no_coord_cache": {
+        "pairs": 10,
+        "reference_mean": 0.7373397025832562,
+        "our_mean": 0.2667876603143697,
+        "mean_improvement_sec": 0.47055204226888653,
+        "mean_improvement_percent": 63.81753764517441,
+        "ci95_lower_sec": 0.32162307706846116,
+        "ci95_upper_sec": 0.6194810074693119,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      }
+    },
+    "p95_paired_comparisons": {
+      "our_vs_our_dqn": {
+        "pairs": 10,
+        "reference_mean": 0.5507609659480923,
+        "our_mean": 0.4335697200624102,
+        "mean_improvement_sec": 0.11719124588568217,
+        "mean_improvement_percent": 21.278059472487584,
+        "ci95_lower_sec": 0.08134678990700389,
+        "ci95_upper_sec": 0.15303570186436044,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      },
+      "our_vs_our_no_coord_cache": {
+        "pairs": 10,
+        "reference_mean": 1.012318770117751,
+        "our_mean": 0.4335697200624102,
+        "mean_improvement_sec": 0.5787490500553407,
+        "mean_improvement_percent": 57.17063311865903,
+        "ci95_lower_sec": 0.3697530235572981,
+        "ci95_upper_sec": 0.7877450765533833,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      }
+    },
+    "gate": {
+      "pairwise_pd3qn": true,
+      "coordinated_cache": true,
+      "passed": true
+    }
+  },
+  "scaling": {
+    "status": "complete",
+    "protocol_version": "pegasus_paper_supplement_v1_user_scaling_v1",
+    "labels": [
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "lean_our"
+    ],
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "user_counts": [
+      10,
+      20,
+      40,
+      60
+    ],
+    "episodes_per_seed": 50,
+    "all_methods_scenario_paired": true,
+    "model_frozen": true,
+    "cache_frozen": true,
+    "target_retraining": false,
+    "reference_reproduction_audit": {
+      "reference_users": 20,
+      "fields": [
+        "scenario_fingerprint",
+        "average_finish_time",
+        "p95_finish_time",
+        "cache_matrix_json",
+        "server_action_histogram_json"
+      ],
+      "all_exact": true,
+      "combinations": [
+        {
+          "label": "daoc_paper",
+          "seed": 51,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 52,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 53,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 54,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 55,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 56,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 57,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 58,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 59,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "daoc_paper",
+          "seed": 60,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 51,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 52,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 53,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 54,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 55,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 56,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 57,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 58,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 59,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "centralized_greedy_daoc",
+          "seed": 60,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 51,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 52,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 53,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 54,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 55,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 56,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 57,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 58,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 59,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        },
+        {
+          "label": "lean_our",
+          "seed": 60,
+          "source_rows": 50,
+          "scaled_rows": 50,
+          "mismatch_counts": {
+            "scenario_fingerprint": 0,
+            "average_finish_time": 0,
+            "p95_finish_time": 0,
+            "cache_matrix_json": 0,
+            "server_action_histogram_json": 0
+          }
+        }
+      ]
+    },
+    "results": {
+      "10": {
+        "per_seed": [
+          {
+            "seed": 51,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.1386344543728253,
+                "mean_p95_finish_time": 1.6141219955462587,
+                "inference_ms_per_task": 0.022571650093279615,
+                "tasks_per_wall_second": 10876.780886213865,
+                "cache_decision_mean_ms": 0.007884374062996358,
+                "cache_decision_p95_ms": 0.008041973342187703,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.9710334266296152,
+                "mean_p95_finish_time": 1.3047597811840896,
+                "inference_ms_per_task": 0.022990193595077195,
+                "tasks_per_wall_second": 9692.155836306138,
+                "cache_decision_mean_ms": 8.59334453678457,
+                "cache_decision_p95_ms": 9.028847905574366,
+                "coordination_bytes": 3429,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.754255560348168,
+                "mean_p95_finish_time": 1.0080468531028324,
+                "inference_ms_per_task": 0.1836314434911111,
+                "tasks_per_wall_second": 3240.1961841533753,
+                "cache_decision_mean_ms": 7.940056394436397,
+                "cache_decision_p95_ms": 8.111672889208421,
+                "coordination_bytes": 4843,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 52,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0175177005889875,
+                "mean_p95_finish_time": 1.3490726342155959,
+                "inference_ms_per_task": 0.023637892867344013,
+                "tasks_per_wall_second": 10464.710890384094,
+                "cache_decision_mean_ms": 0.008534138032700866,
+                "cache_decision_p95_ms": 0.008627082570455968,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.8214315081583579,
+                "mean_p95_finish_time": 1.0876726614318664,
+                "inference_ms_per_task": 0.024511532535763,
+                "tasks_per_wall_second": 9154.369295957376,
+                "cache_decision_mean_ms": 7.823947260330897,
+                "cache_decision_p95_ms": 8.292293720296584,
+                "coordination_bytes": 3430,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.665054158749872,
+                "mean_p95_finish_time": 0.8382014328410157,
+                "inference_ms_per_task": 0.1871425414540589,
+                "tasks_per_wall_second": 3177.1232099748977,
+                "cache_decision_mean_ms": 8.6117291636765,
+                "cache_decision_p95_ms": 9.090977074811235,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 53,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.5899280704554473,
+                "mean_p95_finish_time": 0.751935976931138,
+                "inference_ms_per_task": 0.023375853193431176,
+                "tasks_per_wall_second": 10512.093593391985,
+                "cache_decision_mean_ms": 0.008604942704550922,
+                "cache_decision_p95_ms": 0.008791976142674685,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.32655416413427174,
+                "mean_p95_finish_time": 0.4226665365172901,
+                "inference_ms_per_task": 0.023383772092621664,
+                "tasks_per_wall_second": 9513.82352843313,
+                "cache_decision_mean_ms": 9.865697666245978,
+                "cache_decision_p95_ms": 10.352691658772528,
+                "coordination_bytes": 3437,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.2632836856943291,
+                "mean_p95_finish_time": 0.428911998714564,
+                "inference_ms_per_task": 0.20868815075896302,
+                "tasks_per_wall_second": 2971.586624848334,
+                "cache_decision_mean_ms": 9.101399148348719,
+                "cache_decision_p95_ms": 9.518918464891613,
+                "coordination_bytes": 4866,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 54,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0998065447199665,
+                "mean_p95_finish_time": 1.4861325727241896,
+                "inference_ms_per_task": 0.024335187702925632,
+                "tasks_per_wall_second": 10116.560969470782,
+                "cache_decision_mean_ms": 0.008996277465485036,
+                "cache_decision_p95_ms": 0.009124982170760632,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.6292375724216793,
+                "mean_p95_finish_time": 0.7926933608508725,
+                "inference_ms_per_task": 0.0237852364375283,
+                "tasks_per_wall_second": 9357.949454605989,
+                "cache_decision_mean_ms": 10.281948717893101,
+                "cache_decision_p95_ms": 10.793164567439817,
+                "coordination_bytes": 3455,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.4056100419424935,
+                "mean_p95_finish_time": 0.5917813111588639,
+                "inference_ms_per_task": 0.18428048053570767,
+                "tasks_per_wall_second": 3227.2091169823175,
+                "cache_decision_mean_ms": 9.287702288420405,
+                "cache_decision_p95_ms": 9.796039626235142,
+                "coordination_bytes": 4850,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 55,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6551973742201898,
+                "mean_p95_finish_time": 0.8249772060720404,
+                "inference_ms_per_task": 0.023492705186599516,
+                "tasks_per_wall_second": 10455.139804410343,
+                "cache_decision_mean_ms": 0.008703497587703168,
+                "cache_decision_p95_ms": 0.008919055107980967,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.5473452138257014,
+                "mean_p95_finish_time": 0.7044435350839123,
+                "inference_ms_per_task": 0.0239347104334097,
+                "tasks_per_wall_second": 9305.814600068878,
+                "cache_decision_mean_ms": 8.639722484804224,
+                "cache_decision_p95_ms": 9.148689909488894,
+                "coordination_bytes": 3449,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.3980730076034292,
+                "mean_p95_finish_time": 0.5794834279388417,
+                "inference_ms_per_task": 0.30680787577918067,
+                "tasks_per_wall_second": 1927.8925121424877,
+                "cache_decision_mean_ms": 8.443502317823004,
+                "cache_decision_p95_ms": 8.948812473681755,
+                "coordination_bytes": 4846,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 56,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.846490119075616,
+                "mean_p95_finish_time": 1.1400413375571463,
+                "inference_ms_per_task": 0.04354020268521339,
+                "tasks_per_wall_second": 5693.607296455873,
+                "cache_decision_mean_ms": 0.009377069654874504,
+                "cache_decision_p95_ms": 0.009083948680199683,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.2927567533763547,
+                "mean_p95_finish_time": 0.41238315254598473,
+                "inference_ms_per_task": 0.030935972336801173,
+                "tasks_per_wall_second": 7215.789725258324,
+                "cache_decision_mean_ms": 35.67173729388742,
+                "cache_decision_p95_ms": 75.66171703801948,
+                "coordination_bytes": 3428,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.20626886030563077,
+                "mean_p95_finish_time": 0.38295318829206615,
+                "inference_ms_per_task": 0.28412784362444654,
+                "tasks_per_wall_second": 2279.9479693482253,
+                "cache_decision_mean_ms": 13.614030417229515,
+                "cache_decision_p95_ms": 15.678323269821703,
+                "coordination_bytes": 4868,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 57,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.605875729140128,
+                "mean_p95_finish_time": 2.1943134330943264,
+                "inference_ms_per_task": 0.0249346127089086,
+                "tasks_per_wall_second": 9861.11691530598,
+                "cache_decision_mean_ms": 0.00925407133763656,
+                "cache_decision_p95_ms": 0.009417010005563498,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.8158630515514947,
+                "mean_p95_finish_time": 1.0454769573701186,
+                "inference_ms_per_task": 0.025620302320390507,
+                "tasks_per_wall_second": 8690.149642958928,
+                "cache_decision_mean_ms": 9.703710749163292,
+                "cache_decision_p95_ms": 10.011291009141132,
+                "coordination_bytes": 3417,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.5853679133440436,
+                "mean_p95_finish_time": 0.6971125744645881,
+                "inference_ms_per_task": 0.32207635762355546,
+                "tasks_per_wall_second": 2095.675057276034,
+                "cache_decision_mean_ms": 10.154028712131549,
+                "cache_decision_p95_ms": 12.132658340851776,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 58,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.7484106942969203,
+                "mean_p95_finish_time": 0.9272625736333707,
+                "inference_ms_per_task": 0.028897105948999524,
+                "tasks_per_wall_second": 8541.067791107425,
+                "cache_decision_mean_ms": 0.008979100093711168,
+                "cache_decision_p95_ms": 0.009167008101940155,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.42461746954973956,
+                "mean_p95_finish_time": 0.5992528510570367,
+                "inference_ms_per_task": 0.026733987096636352,
+                "tasks_per_wall_second": 8296.541019462591,
+                "cache_decision_mean_ms": 9.229172867781017,
+                "cache_decision_p95_ms": 9.722722883452661,
+                "coordination_bytes": 3443,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.42008613808128975,
+                "mean_p95_finish_time": 0.6886532016642519,
+                "inference_ms_per_task": 0.21032813931832198,
+                "tasks_per_wall_second": 2795.7494357888804,
+                "cache_decision_mean_ms": 10.016127065464389,
+                "cache_decision_p95_ms": 10.593541670823468,
+                "coordination_bytes": 4835,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 59,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0970339268878413,
+                "mean_p95_finish_time": 1.3108058281740071,
+                "inference_ms_per_task": 0.02578249467752766,
+                "tasks_per_wall_second": 9485.008142404837,
+                "cache_decision_mean_ms": 0.010364082991145551,
+                "cache_decision_p95_ms": 0.010540999937802553,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.8553635536932515,
+                "mean_p95_finish_time": 0.9745226880690503,
+                "inference_ms_per_task": 0.025477835607370766,
+                "tasks_per_wall_second": 8694.535449461651,
+                "cache_decision_mean_ms": 10.531545373378322,
+                "cache_decision_p95_ms": 11.292022606357932,
+                "coordination_bytes": 3434,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.6461080734088324,
+                "mean_p95_finish_time": 0.8623303075526019,
+                "inference_ms_per_task": 0.21042750639658744,
+                "tasks_per_wall_second": 2803.281400962145,
+                "cache_decision_mean_ms": 9.329223942186218,
+                "cache_decision_p95_ms": 10.054596161353402,
+                "coordination_bytes": 4851,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 60,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.7845792171292927,
+                "mean_p95_finish_time": 1.0329486411841295,
+                "inference_ms_per_task": 0.026632719609947147,
+                "tasks_per_wall_second": 9160.618750756976,
+                "cache_decision_mean_ms": 0.008727516105864197,
+                "cache_decision_p95_ms": 0.008791976142674685,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.5534132515352438,
+                "mean_p95_finish_time": 0.7402895856840215,
+                "inference_ms_per_task": 0.02758560821150794,
+                "tasks_per_wall_second": 8112.969975132499,
+                "cache_decision_mean_ms": 10.984230588946957,
+                "cache_decision_p95_ms": 12.18116429517977,
+                "coordination_bytes": 3448,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.4559522732001872,
+                "mean_p95_finish_time": 0.703118380718672,
+                "inference_ms_per_task": 0.21660005973662128,
+                "tasks_per_wall_second": 2721.694220100257,
+                "cache_decision_mean_ms": 12.231884815264493,
+                "cache_decision_p95_ms": 14.19206252321601,
+                "coordination_bytes": 4861,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          }
+        ],
+        "method_means": {
+          "daoc_paper": {
+            "mean_finish_time": 0.9583473830887215,
+            "mean_p95_finish_time": 1.2631612199132203,
+            "inference_ms_per_task": 0.026720042467417625,
+            "tasks_per_wall_second": 9516.670503990217,
+            "cache_decision_mean_ms": 0.008942507003666833,
+            "cache_decision_p95_ms": 0.009050601220224053,
+            "coordination_bytes": 0.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 559215.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.6237615964875711,
+            "mean_p95_finish_time": 0.8084161109794243,
+            "inference_ms_per_task": 0.025495915066710662,
+            "tasks_per_wall_second": 8803.409852764551,
+            "cache_decision_mean_ms": 12.132505753921578,
+            "cache_decision_p95_ms": 16.648460559372317,
+            "coordination_bytes": 3437.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 560239.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.48000597126782757,
+            "mean_p95_finish_time": 0.6780592676448298,
+            "inference_ms_per_task": 0.23141103987185535,
+            "tasks_per_wall_second": 2724.0355731576956,
+            "cache_decision_mean_ms": 9.872968426498119,
+            "cache_decision_p95_ms": 10.811760249489453,
+            "coordination_bytes": 4849.8,
+            "parameters": 405140.0,
+            "checkpoint_bytes": 1721727.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 10,
+            "reference_mean": 0.9583473830887215,
+            "our_mean": 0.48000597126782757,
+            "mean_improvement_sec": 0.4783414118208939,
+            "mean_improvement_percent": 49.91315469336553,
+            "ci95_lower_sec": 0.3082132276594859,
+            "ci95_upper_sec": 0.6484695959823019,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 10,
+            "reference_mean": 0.6237615964875711,
+            "our_mean": 0.48000597126782757,
+            "mean_improvement_sec": 0.14375562521974344,
+            "mean_improvement_percent": 23.04656555152444,
+            "ci95_lower_sec": 0.08783384038816808,
+            "ci95_upper_sec": 0.1996774100513188,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          }
+        }
+      },
+      "20": {
+        "per_seed": [
+          {
+            "seed": 51,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.7833066333626101,
+                "mean_p95_finish_time": 1.150819419145816,
+                "inference_ms_per_task": 0.027631674262617405,
+                "tasks_per_wall_second": 8931.501568820464,
+                "cache_decision_mean_ms": 0.009276455093640834,
+                "cache_decision_p95_ms": 0.009416951797902584,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.4688684592720186,
+                "mean_p95_finish_time": 0.7078714910850191,
+                "inference_ms_per_task": 0.027063175674403032,
+                "tasks_per_wall_second": 8257.631822639656,
+                "cache_decision_mean_ms": 9.975844321015757,
+                "cache_decision_p95_ms": 10.845964521286078,
+                "coordination_bytes": 3429,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.34427072993788727,
+                "mean_p95_finish_time": 0.564057043432383,
+                "inference_ms_per_task": 0.1920407024622166,
+                "tasks_per_wall_second": 3062.098214872948,
+                "cache_decision_mean_ms": 8.645608114893548,
+                "cache_decision_p95_ms": 9.14354819979053,
+                "coordination_bytes": 4843,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 52,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6585682867773649,
+                "mean_p95_finish_time": 0.881054410631602,
+                "inference_ms_per_task": 0.02454209528218928,
+                "tasks_per_wall_second": 9983.716175239271,
+                "cache_decision_mean_ms": 0.008913044584915042,
+                "cache_decision_p95_ms": 0.009083014447242022,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.44681404657553253,
+                "mean_p95_finish_time": 0.724673053840435,
+                "inference_ms_per_task": 0.02484112189647377,
+                "tasks_per_wall_second": 8929.61185238098,
+                "cache_decision_mean_ms": 8.188822179217823,
+                "cache_decision_p95_ms": 8.746812187018804,
+                "coordination_bytes": 3430,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.29339322050613126,
+                "mean_p95_finish_time": 0.48636904280331394,
+                "inference_ms_per_task": 0.2107221976663256,
+                "tasks_per_wall_second": 2892.9391612188037,
+                "cache_decision_mean_ms": 9.250515161256772,
+                "cache_decision_p95_ms": 9.784084791317582,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 53,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.9896967798015788,
+                "mean_p95_finish_time": 1.3093964163607805,
+                "inference_ms_per_task": 0.02520541276232731,
+                "tasks_per_wall_second": 9716.378545054029,
+                "cache_decision_mean_ms": 0.009371653432026505,
+                "cache_decision_p95_ms": 0.008837209315970538,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.5283242967011799,
+                "mean_p95_finish_time": 0.7121577827474518,
+                "inference_ms_per_task": 0.02541737611560772,
+                "tasks_per_wall_second": 8735.202297498168,
+                "cache_decision_mean_ms": 10.385608101787511,
+                "cache_decision_p95_ms": 10.83023062092252,
+                "coordination_bytes": 3437,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.4268872251627005,
+                "mean_p95_finish_time": 0.5723379193622512,
+                "inference_ms_per_task": 0.22339865927832483,
+                "tasks_per_wall_second": 2801.926913858238,
+                "cache_decision_mean_ms": 9.835989537532441,
+                "cache_decision_p95_ms": 10.374071152182296,
+                "coordination_bytes": 4866,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 54,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.9567934528783539,
+                "mean_p95_finish_time": 1.2757706360586634,
+                "inference_ms_per_task": 0.02501400461356304,
+                "tasks_per_wall_second": 9825.820566293643,
+                "cache_decision_mean_ms": 0.008590204524807632,
+                "cache_decision_p95_ms": 0.008457980584353209,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.196623523649894,
+                "mean_p95_finish_time": 0.2943683506849467,
+                "inference_ms_per_task": 0.02461812550672735,
+                "tasks_per_wall_second": 9038.778931160374,
+                "cache_decision_mean_ms": 10.063671608222649,
+                "cache_decision_p95_ms": 10.782624993589707,
+                "coordination_bytes": 3455,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.1214163632813679,
+                "mean_p95_finish_time": 0.2000692853435826,
+                "inference_ms_per_task": 0.2110803582911393,
+                "tasks_per_wall_second": 2888.950962081368,
+                "cache_decision_mean_ms": 10.521752420172561,
+                "cache_decision_p95_ms": 11.109835669049062,
+                "coordination_bytes": 4850,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 55,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.5780123857480173,
+                "mean_p95_finish_time": 0.7431603892419787,
+                "inference_ms_per_task": 0.025355991554375658,
+                "tasks_per_wall_second": 9658.77448322555,
+                "cache_decision_mean_ms": 0.008862499962560833,
+                "cache_decision_p95_ms": 0.014825319522060442,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.21875995804202436,
+                "mean_p95_finish_time": 0.384481165827103,
+                "inference_ms_per_task": 0.025410846325373142,
+                "tasks_per_wall_second": 8765.827923202858,
+                "cache_decision_mean_ms": 12.226289585523773,
+                "cache_decision_p95_ms": 14.880239599733612,
+                "coordination_bytes": 3449,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.1269242410938677,
+                "mean_p95_finish_time": 0.3169567020216302,
+                "inference_ms_per_task": 0.19431483339428887,
+                "tasks_per_wall_second": 3124.2119179062342,
+                "cache_decision_mean_ms": 8.335221433371771,
+                "cache_decision_p95_ms": 8.581929534557275,
+                "coordination_bytes": 4846,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 56,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.7392500412268632,
+                "mean_p95_finish_time": 1.0221932533506908,
+                "inference_ms_per_task": 0.0231261541257086,
+                "tasks_per_wall_second": 10495.352091089137,
+                "cache_decision_mean_ms": 0.008019338711164892,
+                "cache_decision_p95_ms": 0.008124974556267262,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.2727058766619514,
+                "mean_p95_finish_time": 0.3893463626710833,
+                "inference_ms_per_task": 0.022840774485223887,
+                "tasks_per_wall_second": 9609.832536830701,
+                "cache_decision_mean_ms": 9.144768869155087,
+                "cache_decision_p95_ms": 9.374674991704524,
+                "coordination_bytes": 3428,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.2241345800773061,
+                "mean_p95_finish_time": 0.4739606962842338,
+                "inference_ms_per_task": 0.20469447487772888,
+                "tasks_per_wall_second": 3040.177208180811,
+                "cache_decision_mean_ms": 8.79219059163006,
+                "cache_decision_p95_ms": 9.004562179325148,
+                "coordination_bytes": 4868,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 57,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.536074059023118,
+                "mean_p95_finish_time": 0.7663223556076528,
+                "inference_ms_per_task": 0.02290338647519778,
+                "tasks_per_wall_second": 10686.261252533748,
+                "cache_decision_mean_ms": 0.008884730050340295,
+                "cache_decision_p95_ms": 0.009044085163623095,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.1906698276190736,
+                "mean_p95_finish_time": 0.3916408933226425,
+                "inference_ms_per_task": 0.022871229355560914,
+                "tasks_per_wall_second": 9612.031622171166,
+                "cache_decision_mean_ms": 8.411277651612181,
+                "cache_decision_p95_ms": 8.625276721431872,
+                "coordination_bytes": 3417,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.09521629037713071,
+                "mean_p95_finish_time": 0.1662974795152924,
+                "inference_ms_per_task": 0.2040452479833629,
+                "tasks_per_wall_second": 3040.55359003097,
+                "cache_decision_mean_ms": 8.340212639013771,
+                "cache_decision_p95_ms": 8.64811281207949,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 58,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.937494647974842,
+                "mean_p95_finish_time": 1.1693795638245366,
+                "inference_ms_per_task": 0.023328474702978292,
+                "tasks_per_wall_second": 10432.821936458915,
+                "cache_decision_mean_ms": 0.008505383157171309,
+                "cache_decision_p95_ms": 0.008624978363513947,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.3399885102001709,
+                "mean_p95_finish_time": 0.49120848981161946,
+                "inference_ms_per_task": 0.023137763036293505,
+                "tasks_per_wall_second": 9510.912676934724,
+                "cache_decision_mean_ms": 8.153277205128688,
+                "cache_decision_p95_ms": 8.642277124454267,
+                "coordination_bytes": 3442,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.24760994075376666,
+                "mean_p95_finish_time": 0.3440835905019708,
+                "inference_ms_per_task": 0.19301098776665732,
+                "tasks_per_wall_second": 3135.5145247957157,
+                "cache_decision_mean_ms": 8.56530598946847,
+                "cache_decision_p95_ms": 8.955314219929278,
+                "coordination_bytes": 4834,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 59,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8355625948967788,
+                "mean_p95_finish_time": 1.1460208575705355,
+                "inference_ms_per_task": 0.023110327589244622,
+                "tasks_per_wall_second": 10543.311627910229,
+                "cache_decision_mean_ms": 0.008904777641873807,
+                "cache_decision_p95_ms": 0.009040988516062498,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.39810616419768274,
+                "mean_p95_finish_time": 0.5159667852928773,
+                "inference_ms_per_task": 0.023376415789454662,
+                "tasks_per_wall_second": 9403.318803189233,
+                "cache_decision_mean_ms": 10.319702675333247,
+                "cache_decision_p95_ms": 10.668395855464041,
+                "coordination_bytes": 3433,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.34054002719987353,
+                "mean_p95_finish_time": 0.49846697764230635,
+                "inference_ms_per_task": 0.18952798322087788,
+                "tasks_per_wall_second": 3192.324034470107,
+                "cache_decision_mean_ms": 9.005971362057608,
+                "cache_decision_p95_ms": 9.150045845308341,
+                "coordination_bytes": 4851,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 60,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.716787752801584,
+                "mean_p95_finish_time": 1.1302064231830533,
+                "inference_ms_per_task": 0.02298858134620958,
+                "tasks_per_wall_second": 10611.334951628243,
+                "cache_decision_mean_ms": 0.008587015327066183,
+                "cache_decision_p95_ms": 0.008708040695637465,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.6782831140750223,
+                "mean_p95_finish_time": 0.9625938684338755,
+                "inference_ms_per_task": 0.022994256116520694,
+                "tasks_per_wall_second": 9560.192042803461,
+                "cache_decision_mean_ms": 9.784270573873073,
+                "cache_decision_p95_ms": 10.476589281461202,
+                "coordination_bytes": 3448,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.44975506707053775,
+                "mean_p95_finish_time": 0.730786989813058,
+                "inference_ms_per_task": 0.1794304971944244,
+                "tasks_per_wall_second": 3284.394353324144,
+                "cache_decision_mean_ms": 9.776696395420004,
+                "cache_decision_p95_ms": 10.21774138789624,
+                "coordination_bytes": 4861,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          }
+        ],
+        "method_means": {
+          "daoc_paper": {
+            "mean_finish_time": 0.7731546634491111,
+            "mean_p95_finish_time": 1.0594323724975312,
+            "inference_ms_per_task": 0.024320610271441154,
+            "tasks_per_wall_second": 10088.527319825324,
+            "cache_decision_mean_ms": 0.008791510248556733,
+            "cache_decision_p95_ms": 0.009416354296263306,
+            "coordination_bytes": 0.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 559215.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.373914377699455,
+            "mean_p95_finish_time": 0.5574308243717054,
+            "inference_ms_per_task": 0.02425710843016387,
+            "tasks_per_wall_second": 9142.334050881132,
+            "cache_decision_mean_ms": 9.665353277086979,
+            "cache_decision_p95_ms": 10.387308589706663,
+            "coordination_bytes": 3436.8,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 560239.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.26701476854605694,
+            "mean_p95_finish_time": 0.4353385726720022,
+            "inference_ms_per_task": 0.20022659421353467,
+            "tasks_per_wall_second": 3046.309088073934,
+            "cache_decision_mean_ms": 9.1069463644817,
+            "cache_decision_p95_ms": 9.496924579143524,
+            "coordination_bytes": 4849.7,
+            "parameters": 405140.0,
+            "checkpoint_bytes": 1721727.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 10,
+            "reference_mean": 0.7731546634491111,
+            "our_mean": 0.26701476854605694,
+            "mean_improvement_sec": 0.5061398949030542,
+            "mean_improvement_percent": 65.46424911221767,
+            "ci95_lower_sec": 0.3906901575295155,
+            "ci95_upper_sec": 0.6215896322765929,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 10,
+            "reference_mean": 0.373914377699455,
+            "our_mean": 0.26701476854605694,
+            "mean_improvement_sec": 0.10689960915339809,
+            "mean_improvement_percent": 28.589328340650724,
+            "ci95_lower_sec": 0.06941633913617071,
+            "ci95_upper_sec": 0.14438287917062548,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          }
+        }
+      },
+      "40": {
+        "per_seed": [
+          {
+            "seed": 51,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8684777504366968,
+                "mean_p95_finish_time": 1.3708930316884613,
+                "inference_ms_per_task": 0.022991983125288294,
+                "tasks_per_wall_second": 10616.060027513944,
+                "cache_decision_mean_ms": 0.008757463656365871,
+                "cache_decision_p95_ms": 0.008917006198316813,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.6798072451284679,
+                "mean_p95_finish_time": 0.9547291989805435,
+                "inference_ms_per_task": 0.02325655827745863,
+                "tasks_per_wall_second": 9479.594173102252,
+                "cache_decision_mean_ms": 8.22731561405817,
+                "cache_decision_p95_ms": 8.508614255697466,
+                "coordination_bytes": 3429,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.5328446237191108,
+                "mean_p95_finish_time": 0.8323934943240332,
+                "inference_ms_per_task": 0.18652136026239663,
+                "tasks_per_wall_second": 3228.688495747758,
+                "cache_decision_mean_ms": 8.558277009578887,
+                "cache_decision_p95_ms": 8.910379101871513,
+                "coordination_bytes": 4843,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 52,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8189894718165391,
+                "mean_p95_finish_time": 1.0804852911623402,
+                "inference_ms_per_task": 0.022980529259033232,
+                "tasks_per_wall_second": 10607.900945372798,
+                "cache_decision_mean_ms": 0.008076448575593531,
+                "cache_decision_p95_ms": 0.00820808345451951,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.612559870512978,
+                "mean_p95_finish_time": 0.8726677825589264,
+                "inference_ms_per_task": 0.02298593448358588,
+                "tasks_per_wall_second": 9574.515206054093,
+                "cache_decision_mean_ms": 8.056290365348104,
+                "cache_decision_p95_ms": 8.172091969754547,
+                "coordination_bytes": 3430,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.3245069918609315,
+                "mean_p95_finish_time": 0.4848986174280163,
+                "inference_ms_per_task": 0.17643692729652158,
+                "tasks_per_wall_second": 3332.940977543914,
+                "cache_decision_mean_ms": 8.171760337718297,
+                "cache_decision_p95_ms": 8.323031294276007,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 53,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.213237552498868,
+                "mean_p95_finish_time": 1.6002503678538311,
+                "inference_ms_per_task": 0.02327015350021901,
+                "tasks_per_wall_second": 10467.16254619315,
+                "cache_decision_mean_ms": 0.007827529916539788,
+                "cache_decision_p95_ms": 0.007957976777106524,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.7076932188607414,
+                "mean_p95_finish_time": 0.8977414122829582,
+                "inference_ms_per_task": 0.02294579920050202,
+                "tasks_per_wall_second": 9551.65547355735,
+                "cache_decision_mean_ms": 9.259135783358943,
+                "cache_decision_p95_ms": 9.65803329308983,
+                "coordination_bytes": 3437,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.6707803842222007,
+                "mean_p95_finish_time": 1.1166802565191722,
+                "inference_ms_per_task": 0.1853459490856672,
+                "tasks_per_wall_second": 3227.652971504353,
+                "cache_decision_mean_ms": 9.23528009938309,
+                "cache_decision_p95_ms": 9.564189598313533,
+                "coordination_bytes": 4866,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 54,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.216545605917351,
+                "mean_p95_finish_time": 1.7695269442561896,
+                "inference_ms_per_task": 0.022798098767795465,
+                "tasks_per_wall_second": 10706.219594474378,
+                "cache_decision_mean_ms": 0.008912689809221774,
+                "cache_decision_p95_ms": 0.009083061013370752,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.393929057776539,
+                "mean_p95_finish_time": 0.5169607038202949,
+                "inference_ms_per_task": 0.0230658539384013,
+                "tasks_per_wall_second": 9572.79764348323,
+                "cache_decision_mean_ms": 9.972008500481024,
+                "cache_decision_p95_ms": 10.465133321122266,
+                "coordination_bytes": 3455,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.3072862137225076,
+                "mean_p95_finish_time": 0.598827958506763,
+                "inference_ms_per_task": 0.19310685141228032,
+                "tasks_per_wall_second": 3162.56589920409,
+                "cache_decision_mean_ms": 9.306801114580594,
+                "cache_decision_p95_ms": 9.854760408052243,
+                "coordination_bytes": 4850,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 55,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.5627346939696565,
+                "mean_p95_finish_time": 0.7663075359268184,
+                "inference_ms_per_task": 0.023680710994243702,
+                "tasks_per_wall_second": 10305.006410808617,
+                "cache_decision_mean_ms": 0.008071025949902833,
+                "cache_decision_p95_ms": 0.009213184239342807,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.28410634388783523,
+                "mean_p95_finish_time": 0.4419405003729706,
+                "inference_ms_per_task": 0.02420193740112734,
+                "tasks_per_wall_second": 9123.721754991242,
+                "cache_decision_mean_ms": 8.409295111487154,
+                "cache_decision_p95_ms": 8.74297673581168,
+                "coordination_bytes": 3449,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.16748990357875926,
+                "mean_p95_finish_time": 0.2152051298860842,
+                "inference_ms_per_task": 0.2115286033686193,
+                "tasks_per_wall_second": 2795.4357760951993,
+                "cache_decision_mean_ms": 9.158323076844681,
+                "cache_decision_p95_ms": 10.14902529423125,
+                "coordination_bytes": 4846,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 56,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8710332805301231,
+                "mean_p95_finish_time": 1.3085353962306174,
+                "inference_ms_per_task": 0.026583735952558724,
+                "tasks_per_wall_second": 9222.599976624912,
+                "cache_decision_mean_ms": 0.008844357798807323,
+                "cache_decision_p95_ms": 0.00904203625395894,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.6186167815117765,
+                "mean_p95_finish_time": 0.844039938954299,
+                "inference_ms_per_task": 0.024834085601521994,
+                "tasks_per_wall_second": 8942.13031562883,
+                "cache_decision_mean_ms": 9.887283732532524,
+                "cache_decision_p95_ms": 10.013076779432593,
+                "coordination_bytes": 3428,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.5800527600053959,
+                "mean_p95_finish_time": 1.0669240636664075,
+                "inference_ms_per_task": 0.20301970313058532,
+                "tasks_per_wall_second": 2929.6010564219378,
+                "cache_decision_mean_ms": 8.736326919170097,
+                "cache_decision_p95_ms": 9.268779520061798,
+                "coordination_bytes": 4868,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 57,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 2.0384815853571117,
+                "mean_p95_finish_time": 2.861780255793812,
+                "inference_ms_per_task": 0.024468846382080592,
+                "tasks_per_wall_second": 10028.65570392754,
+                "cache_decision_mean_ms": 0.00853455887408927,
+                "cache_decision_p95_ms": 0.008666061330586672,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 1.1364930792753696,
+                "mean_p95_finish_time": 1.6004540456668515,
+                "inference_ms_per_task": 0.02486206437068809,
+                "tasks_per_wall_second": 8924.76892888663,
+                "cache_decision_mean_ms": 9.590142242377624,
+                "cache_decision_p95_ms": 10.03241631842684,
+                "coordination_bytes": 3417,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.7783383378482169,
+                "mean_p95_finish_time": 0.9771799647024069,
+                "inference_ms_per_task": 0.18998523398202952,
+                "tasks_per_wall_second": 3094.6452394395915,
+                "cache_decision_mean_ms": 9.407964542333502,
+                "cache_decision_p95_ms": 10.022435418795794,
+                "coordination_bytes": 4840,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 58,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.9140393412759987,
+                "mean_p95_finish_time": 1.1120588696112608,
+                "inference_ms_per_task": 0.024891410687722375,
+                "tasks_per_wall_second": 9846.267420947985,
+                "cache_decision_mean_ms": 0.008068301249295473,
+                "cache_decision_p95_ms": 0.008207981591112912,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.7609602472453861,
+                "mean_p95_finish_time": 1.1236427815482943,
+                "inference_ms_per_task": 0.02482488090564679,
+                "tasks_per_wall_second": 8937.383729019082,
+                "cache_decision_mean_ms": 9.848866649554111,
+                "cache_decision_p95_ms": 10.314614241360687,
+                "coordination_bytes": 3443,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.6426235268298583,
+                "mean_p95_finish_time": 0.9189689269879832,
+                "inference_ms_per_task": 0.19124764706656858,
+                "tasks_per_wall_second": 3072.9766900831864,
+                "cache_decision_mean_ms": 9.246313531475607,
+                "cache_decision_p95_ms": 9.716754494002089,
+                "coordination_bytes": 4835,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 59,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8404105011300647,
+                "mean_p95_finish_time": 1.0159603037450153,
+                "inference_ms_per_task": 0.02591976150722695,
+                "tasks_per_wall_second": 9474.020380045506,
+                "cache_decision_mean_ms": 0.008993026276584715,
+                "cache_decision_p95_ms": 0.009124982170760632,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.8997912023842082,
+                "mean_p95_finish_time": 1.0591474618299963,
+                "inference_ms_per_task": 0.02679655885794605,
+                "tasks_per_wall_second": 8442.050274569794,
+                "cache_decision_mean_ms": 10.610358125413768,
+                "cache_decision_p95_ms": 11.550897915731184,
+                "coordination_bytes": 3434,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.47187219838425526,
+                "mean_p95_finish_time": 0.6883080943286717,
+                "inference_ms_per_task": 0.21290105934262418,
+                "tasks_per_wall_second": 2884.823531026671,
+                "cache_decision_mean_ms": 10.500724540906958,
+                "cache_decision_p95_ms": 11.207825317978859,
+                "coordination_bytes": 4851,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 60,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0077995295057414,
+                "mean_p95_finish_time": 1.5912954947099789,
+                "inference_ms_per_task": 0.025860191670000095,
+                "tasks_per_wall_second": 9596.3553285632,
+                "cache_decision_mean_ms": 0.008170217333827168,
+                "cache_decision_p95_ms": 0.00825000461190939,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 1.0308638584215906,
+                "mean_p95_finish_time": 1.4638302263914518,
+                "inference_ms_per_task": 0.024769102912640832,
+                "tasks_per_wall_second": 8963.796185057065,
+                "cache_decision_mean_ms": 10.77112996892538,
+                "cache_decision_p95_ms": 11.43430273514241,
+                "coordination_bytes": 3448,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.9479427835175508,
+                "mean_p95_finish_time": 1.5396908063516843,
+                "inference_ms_per_task": 0.19024222497123908,
+                "tasks_per_wall_second": 3088.8901878963193,
+                "cache_decision_mean_ms": 10.524847054621205,
+                "cache_decision_p95_ms": 11.120491393376142,
+                "coordination_bytes": 4861,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          }
+        ],
+        "method_means": {
+          "daoc_paper": {
+            "mean_finish_time": 1.035174931243815,
+            "mean_p95_finish_time": 1.4477093490978323,
+            "inference_ms_per_task": 0.024344542184616843,
+            "tasks_per_wall_second": 10087.024833447203,
+            "cache_decision_mean_ms": 0.008425561944022775,
+            "cache_decision_p95_ms": 0.008667037764098495,
+            "coordination_bytes": 0.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 559215.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.7124820905004893,
+            "mean_p95_finish_time": 0.9775154052406586,
+            "inference_ms_per_task": 0.02425427759495189,
+            "tasks_per_wall_second": 9151.241368434956,
+            "cache_decision_mean_ms": 9.46318260935368,
+            "cache_decision_p95_ms": 9.88921575655695,
+            "coordination_bytes": 3437.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 560239.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.5423737723688787,
+            "mean_p95_finish_time": 0.8439077312701222,
+            "inference_ms_per_task": 0.19403355599185318,
+            "tasks_per_wall_second": 3081.822082496302,
+            "cache_decision_mean_ms": 9.284661822661292,
+            "cache_decision_p95_ms": 9.813767184095923,
+            "coordination_bytes": 4849.9,
+            "parameters": 405140.0,
+            "checkpoint_bytes": 1721727.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 10,
+            "reference_mean": 1.035174931243815,
+            "our_mean": 0.5423737723688787,
+            "mean_improvement_sec": 0.49280115887493636,
+            "mean_improvement_percent": 47.60559244637144,
+            "ci95_lower_sec": 0.2436710955103086,
+            "ci95_upper_sec": 0.7419312222395641,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 10,
+            "reference_mean": 0.7124820905004893,
+            "our_mean": 0.5423737723688787,
+            "mean_improvement_sec": 0.17010831813161054,
+            "mean_improvement_percent": 23.87545180428556,
+            "ci95_lower_sec": 0.07137951349048002,
+            "ci95_upper_sec": 0.2688371227727411,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          }
+        }
+      },
+      "60": {
+        "per_seed": [
+          {
+            "seed": 51,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6426754592852819,
+                "mean_p95_finish_time": 0.8992799329406884,
+                "inference_ms_per_task": 0.02477941921842397,
+                "tasks_per_wall_second": 9901.667110401644,
+                "cache_decision_mean_ms": 0.008833352185320109,
+                "cache_decision_p95_ms": 0.008957984391599894,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.4246062733966297,
+                "mean_p95_finish_time": 0.6686522564733406,
+                "inference_ms_per_task": 0.025163672634980816,
+                "tasks_per_wall_second": 8837.232229564843,
+                "cache_decision_mean_ms": 8.91591185471043,
+                "cache_decision_p95_ms": 9.384563151979819,
+                "coordination_bytes": 3429,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.3168785103214737,
+                "mean_p95_finish_time": 0.5131111723687518,
+                "inference_ms_per_task": 0.19103381248989035,
+                "tasks_per_wall_second": 3076.01134255924,
+                "cache_decision_mean_ms": 8.611096029053442,
+                "cache_decision_p95_ms": 9.341027386835776,
+                "coordination_bytes": 4843,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 52,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6141986123446983,
+                "mean_p95_finish_time": 0.9038469664435699,
+                "inference_ms_per_task": 0.02499805881888133,
+                "tasks_per_wall_second": 9821.175968900217,
+                "cache_decision_mean_ms": 0.008995808602776378,
+                "cache_decision_p95_ms": 0.009124982170760632,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.47413434426011575,
+                "mean_p95_finish_time": 0.7162815254311699,
+                "inference_ms_per_task": 0.024811206180922876,
+                "tasks_per_wall_second": 8926.104307476984,
+                "cache_decision_mean_ms": 8.617356012400705,
+                "cache_decision_p95_ms": 9.230462496634573,
+                "coordination_bytes": 3430,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.3455383122775651,
+                "mean_p95_finish_time": 0.49875312085813894,
+                "inference_ms_per_task": 0.19180218983907815,
+                "tasks_per_wall_second": 3064.208438466223,
+                "cache_decision_mean_ms": 8.902552463987377,
+                "cache_decision_p95_ms": 9.348545840475708,
+                "coordination_bytes": 4839,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 53,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.0544180794593259,
+                "mean_p95_finish_time": 1.458646653666637,
+                "inference_ms_per_task": 0.02493279318452885,
+                "tasks_per_wall_second": 9840.08305387025,
+                "cache_decision_mean_ms": 0.008918906096369028,
+                "cache_decision_p95_ms": 0.009083014447242022,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.6272805254354623,
+                "mean_p95_finish_time": 0.9277269812502204,
+                "inference_ms_per_task": 0.0248743996337947,
+                "tasks_per_wall_second": 8929.636569208044,
+                "cache_decision_mean_ms": 10.943707103142515,
+                "cache_decision_p95_ms": 12.502128508640451,
+                "coordination_bytes": 3437,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.504851663716758,
+                "mean_p95_finish_time": 0.9361397370892286,
+                "inference_ms_per_task": 0.20622039278732965,
+                "tasks_per_wall_second": 2864.0186265189477,
+                "cache_decision_mean_ms": 9.615577859804034,
+                "cache_decision_p95_ms": 10.3132639254909,
+                "coordination_bytes": 4866,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 54,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.185865631089134,
+                "mean_p95_finish_time": 1.5374368243030525,
+                "inference_ms_per_task": 0.02731934683366481,
+                "tasks_per_wall_second": 9010.780937823592,
+                "cache_decision_mean_ms": 0.009815249650273472,
+                "cache_decision_p95_ms": 0.010881244088523088,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.5024098499715394,
+                "mean_p95_finish_time": 0.6986763751733639,
+                "inference_ms_per_task": 0.024938064298771347,
+                "tasks_per_wall_second": 8913.242339392493,
+                "cache_decision_mean_ms": 13.240418936184142,
+                "cache_decision_p95_ms": 16.207244343240745,
+                "coordination_bytes": 3455,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.37758168967909134,
+                "mean_p95_finish_time": 0.6272607737022797,
+                "inference_ms_per_task": 0.19036688502404978,
+                "tasks_per_wall_second": 3086.9605457465777,
+                "cache_decision_mean_ms": 10.316981625219341,
+                "cache_decision_p95_ms": 10.862517289933749,
+                "coordination_bytes": 4850,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 55,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.6347980601848309,
+                "mean_p95_finish_time": 0.8317364214667426,
+                "inference_ms_per_task": 0.025099395290084616,
+                "tasks_per_wall_second": 9756.247147966966,
+                "cache_decision_mean_ms": 0.008861034002620727,
+                "cache_decision_p95_ms": 0.009041980956681073,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.654187760499896,
+                "mean_p95_finish_time": 0.9215984349532456,
+                "inference_ms_per_task": 0.026010041398441663,
+                "tasks_per_wall_second": 8538.890656690823,
+                "cache_decision_mean_ms": 9.61787689186167,
+                "cache_decision_p95_ms": 10.219864250393584,
+                "coordination_bytes": 3449,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.5152075347472064,
+                "mean_p95_finish_time": 1.033760486419826,
+                "inference_ms_per_task": 0.20731537502665626,
+                "tasks_per_wall_second": 2849.322247719438,
+                "cache_decision_mean_ms": 9.305994077585638,
+                "cache_decision_p95_ms": 9.996053483337164,
+                "coordination_bytes": 4846,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 56,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.3723581863321912,
+                "mean_p95_finish_time": 1.7972123997780454,
+                "inference_ms_per_task": 0.027026271081702774,
+                "tasks_per_wall_second": 9120.53158004092,
+                "cache_decision_mean_ms": 0.008718246535863727,
+                "cache_decision_p95_ms": 0.008877084474079311,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.2953663295122978,
+                "mean_p95_finish_time": 0.4112821711054508,
+                "inference_ms_per_task": 0.028337315338633387,
+                "tasks_per_wall_second": 7846.655380411488,
+                "cache_decision_mean_ms": 10.964894348871894,
+                "cache_decision_p95_ms": 12.211068416945634,
+                "coordination_bytes": 3428,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.2315138467119746,
+                "mean_p95_finish_time": 0.4777804998310401,
+                "inference_ms_per_task": 0.21416896268832813,
+                "tasks_per_wall_second": 2765.8393210311324,
+                "cache_decision_mean_ms": 9.732512492337264,
+                "cache_decision_p95_ms": 10.441662190714851,
+                "coordination_bytes": 4868,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 57,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 1.9656892666322348,
+                "mean_p95_finish_time": 2.6261302277758967,
+                "inference_ms_per_task": 0.025096333493306505,
+                "tasks_per_wall_second": 9795.470603155663,
+                "cache_decision_mean_ms": 0.009063045436050743,
+                "cache_decision_p95_ms": 0.009211027645505965,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 1.1506733250782637,
+                "mean_p95_finish_time": 1.4841281466344032,
+                "inference_ms_per_task": 0.025360047574557707,
+                "tasks_per_wall_second": 8772.071122613,
+                "cache_decision_mean_ms": 10.832256606663577,
+                "cache_decision_p95_ms": 11.625762813491747,
+                "coordination_bytes": 3418,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.7227736711028812,
+                "mean_p95_finish_time": 0.9074237202501358,
+                "inference_ms_per_task": 0.20365729548049988,
+                "tasks_per_wall_second": 2911.1451695240175,
+                "cache_decision_mean_ms": 8.705484346719459,
+                "cache_decision_p95_ms": 9.263437247136608,
+                "coordination_bytes": 4840,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 58,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8608228816434604,
+                "mean_p95_finish_time": 1.0561958339020847,
+                "inference_ms_per_task": 0.02534559205838632,
+                "tasks_per_wall_second": 9696.852258079827,
+                "cache_decision_mean_ms": 0.009181259956676513,
+                "cache_decision_p95_ms": 0.009124982170760632,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.3612186134400012,
+                "mean_p95_finish_time": 0.555191519286208,
+                "inference_ms_per_task": 0.027800672158940835,
+                "tasks_per_wall_second": 8028.263299324694,
+                "cache_decision_mean_ms": 9.172531207150314,
+                "cache_decision_p95_ms": 10.069601709255949,
+                "coordination_bytes": 3443,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.27607398807764666,
+                "mean_p95_finish_time": 0.4980164699865021,
+                "inference_ms_per_task": 0.21284672133931057,
+                "tasks_per_wall_second": 2783.538498669746,
+                "cache_decision_mean_ms": 8.717527492844965,
+                "cache_decision_p95_ms": 9.326250027515925,
+                "coordination_bytes": 4835,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 59,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.8163893501258828,
+                "mean_p95_finish_time": 1.0537074858921018,
+                "inference_ms_per_task": 0.024244744481225294,
+                "tasks_per_wall_second": 10110.119099783422,
+                "cache_decision_mean_ms": 0.009001220460049808,
+                "cache_decision_p95_ms": 0.009124985081143677,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 1.5065513397491126,
+                "mean_p95_finish_time": 1.701524426132712,
+                "inference_ms_per_task": 0.024477380387212828,
+                "tasks_per_wall_second": 9079.814199021268,
+                "cache_decision_mean_ms": 9.226020977948792,
+                "cache_decision_p95_ms": 9.714889514725655,
+                "coordination_bytes": 3434,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.7339437156281637,
+                "mean_p95_finish_time": 1.0062280839055087,
+                "inference_ms_per_task": 0.18860776057795303,
+                "tasks_per_wall_second": 3117.752925341514,
+                "cache_decision_mean_ms": 10.178730124025606,
+                "cache_decision_p95_ms": 10.61109757865779,
+                "coordination_bytes": 4851,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          },
+          {
+            "seed": 60,
+            "scenario_paired": true,
+            "methods": {
+              "daoc_paper": {
+                "mean_finish_time": 0.5975420615616809,
+                "mean_p95_finish_time": 1.0048767694330751,
+                "inference_ms_per_task": 0.024714266604649416,
+                "tasks_per_wall_second": 9918.56841205724,
+                "cache_decision_mean_ms": 0.008661586616653949,
+                "cache_decision_p95_ms": 0.008794083259999752,
+                "coordination_bytes": 0,
+                "parameters": 133860,
+                "checkpoint_bytes": 559215
+              },
+              "centralized_greedy_daoc": {
+                "mean_finish_time": 0.7148614518014256,
+                "mean_p95_finish_time": 1.0111964312864168,
+                "inference_ms_per_task": 0.02439947326649048,
+                "tasks_per_wall_second": 9081.125831945068,
+                "cache_decision_mean_ms": 10.079489962372463,
+                "cache_decision_p95_ms": 10.86702739703469,
+                "coordination_bytes": 3448,
+                "parameters": 133860,
+                "checkpoint_bytes": 560239
+              },
+              "lean_our": {
+                "mean_finish_time": 0.5360658614483248,
+                "mean_p95_finish_time": 0.9665039019788055,
+                "inference_ms_per_task": 0.18212960184124918,
+                "tasks_per_wall_second": 3243.4409663619867,
+                "cache_decision_mean_ms": 10.600631654378958,
+                "cache_decision_p95_ms": 11.189857992576433,
+                "coordination_bytes": 4861,
+                "parameters": 405140,
+                "checkpoint_bytes": 1721727
+              }
+            }
+          }
+        ],
+        "method_means": {
+          "daoc_paper": {
+            "mean_finish_time": 0.9744757588658721,
+            "mean_p95_finish_time": 1.3169069515601894,
+            "inference_ms_per_task": 0.025355622106485388,
+            "tasks_per_wall_second": 9697.149617207975,
+            "cache_decision_mean_ms": 0.009004970954265445,
+            "cache_decision_p95_ms": 0.009222136868629605,
+            "coordination_bytes": 0.0,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 559215.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.6711289813144743,
+            "mean_p95_finish_time": 0.9096258267726531,
+            "inference_ms_per_task": 0.025617227287274662,
+            "tasks_per_wall_second": 8695.303593564871,
+            "cache_decision_mean_ms": 10.16104639013065,
+            "cache_decision_p95_ms": 11.203261260234285,
+            "coordination_bytes": 3437.1,
+            "parameters": 133860.0,
+            "checkpoint_bytes": 560239.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.45604287937110854,
+            "mean_p95_finish_time": 0.7464977966390217,
+            "inference_ms_per_task": 0.1988148997094345,
+            "tasks_per_wall_second": 2976.2238081938826,
+            "cache_decision_mean_ms": 9.468708816595608,
+            "cache_decision_p95_ms": 10.06937129626749,
+            "coordination_bytes": 4849.9,
+            "parameters": 405140.0,
+            "checkpoint_bytes": 1721727.0
+          }
+        },
+        "comparisons": {
+          "our_vs_daoc_paper": {
+            "pairs": 10,
+            "reference_mean": 0.9744757588658721,
+            "our_mean": 0.45604287937110854,
+            "mean_improvement_sec": 0.5184328794947636,
+            "mean_improvement_percent": 53.20120842186298,
+            "ci95_lower_sec": 0.21129035348107555,
+            "ci95_upper_sec": 0.8255754055084517,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          },
+          "our_vs_centralized_greedy_daoc": {
+            "pairs": 10,
+            "reference_mean": 0.6711289813144743,
+            "our_mean": 0.45604287937110854,
+            "mean_improvement_sec": 0.21508610194336586,
+            "mean_improvement_percent": 32.048400222874875,
+            "ci95_lower_sec": 0.05714433265342406,
+            "ci95_upper_sec": 0.37302787123330766,
+            "wilcoxon_one_sided_p": 0.0009765625,
+            "wins": 10,
+            "passed": true
+          }
+        }
+      }
+    }
+  },
+  "frozen_main_context": {
+    "method_aggregates": {
+      "daoc_paper": {
+        "mean_finish_time": 0.7736107624426019,
+        "mean_p95_finish_time": 1.0610170928478253,
+        "mean_waiting_latency": 0.12013794707872363,
+        "mean_cache_hit_rate": 0.18147671551724137,
+        "mean_cache_service_coverage": 0.56,
+        "mean_remote_loading_rate": 0.8185232844827587,
+        "mean_service_loading_latency": 2.5379026706859014,
+        "mean_inference_time_per_decision_ms": 0.021730722958029258,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      },
+      "centralized_greedy_daoc": {
+        "mean_finish_time": 0.37495905907194443,
+        "mean_p95_finish_time": 0.5585715913790389,
+        "mean_waiting_latency": 0.12209049253410229,
+        "mean_cache_hit_rate": 0.29189638505747123,
+        "mean_cache_service_coverage": 0.7999999999999998,
+        "mean_remote_loading_rate": 0.7081036149425287,
+        "mean_service_loading_latency": 1.1726442794853085,
+        "mean_inference_time_per_decision_ms": 0.025435989615711068,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      },
+      "lean_our": {
+        "mean_finish_time": 0.2667876603143697,
+        "mean_p95_finish_time": 0.4335697200624102,
+        "mean_waiting_latency": 0.10808676623646866,
+        "mean_cache_hit_rate": 0.5888956120689656,
+        "mean_cache_service_coverage": 0.7999999999999998,
+        "mean_remote_loading_rate": 0.4111043879310345,
+        "mean_service_loading_latency": 0.9691846718008879,
+        "mean_inference_time_per_decision_ms": 0.1929716804498541,
+        "cache_decision_wall_time_sec": 0.0,
+        "cache_migration_time_sec": 0.0
+      }
+    },
+    "family_aggregates": {
+      "daoc_paper": {
+        "Montage": {
+          "mean_finish_time": 1.1715037702418365,
+          "mean_p95_finish_time": 1.607668816132857,
+          "mean_waiting_latency": 0.11032856412548013,
+          "mean_cache_hit_rate": 0.14697000000000002,
+          "mean_cache_service_coverage": 0.56,
+          "mean_remote_loading_rate": 0.8530299999999998,
+          "mean_service_loading_latency": 3.720149616114264,
+          "mean_inference_time_per_decision_ms": 0.021806838852644433,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "CyberShake": {
+          "mean_finish_time": 0.41409253010859876,
+          "mean_p95_finish_time": 0.5657470959876687,
+          "mean_waiting_latency": 0.13649344560410384,
+          "mean_cache_hit_rate": 0.22307499999999997,
+          "mean_cache_service_coverage": 0.56,
+          "mean_remote_loading_rate": 0.7769250000000001,
+          "mean_service_loading_latency": 2.0716843876639595,
+          "mean_inference_time_per_decision_ms": 0.02174807302969081,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Epigenomics": {
+          "mean_finish_time": 0.8245360974706722,
+          "mean_p95_finish_time": 1.1318689085732245,
+          "mean_waiting_latency": 0.1021850525449256,
+          "mean_cache_hit_rate": 0.17292708333333334,
+          "mean_cache_service_coverage": 0.56,
+          "mean_remote_loading_rate": 0.8270729166666666,
+          "mean_service_loading_latency": 2.2445174124173786,
+          "mean_inference_time_per_decision_ms": 0.021858391573611392,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Inspiral": {
+          "mean_finish_time": 0.60497329459188,
+          "mean_p95_finish_time": 0.7926737326717411,
+          "mean_waiting_latency": 0.12407407689852572,
+          "mean_cache_hit_rate": 0.2240666666666667,
+          "mean_cache_service_coverage": 0.56,
+          "mean_remote_loading_rate": 0.7759333333333334,
+          "mean_service_loading_latency": 2.4608587949703735,
+          "mean_inference_time_per_decision_ms": 0.021610789090482283,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Sipht": {
+          "mean_finish_time": 0.8529481198000217,
+          "mean_p95_finish_time": 1.2071269108736353,
+          "mean_waiting_latency": 0.12760859622058293,
+          "mean_cache_hit_rate": 0.1403448275862069,
+          "mean_cache_service_coverage": 0.56,
+          "mean_remote_loading_rate": 0.8596551724137932,
+          "mean_service_loading_latency": 2.1923031422635293,
+          "mean_inference_time_per_decision_ms": 0.02162952224371738,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        }
+      },
+      "centralized_greedy_daoc": {
+        "Montage": {
+          "mean_finish_time": 0.5568711208524084,
+          "mean_p95_finish_time": 0.8272377499454748,
+          "mean_waiting_latency": 0.11967190081349943,
+          "mean_cache_hit_rate": 0.26502,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.73498,
+          "mean_service_loading_latency": 1.760509384159377,
+          "mean_inference_time_per_decision_ms": 0.025750603042251897,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "CyberShake": {
+          "mean_finish_time": 0.20207243223450355,
+          "mean_p95_finish_time": 0.2940457449837952,
+          "mean_waiting_latency": 0.12930726741494267,
+          "mean_cache_hit_rate": 0.29460000000000003,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.7054,
+          "mean_service_loading_latency": 1.026603950435,
+          "mean_inference_time_per_decision_ms": 0.025254712697399855,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Epigenomics": {
+          "mean_finish_time": 0.4680948983326821,
+          "mean_p95_finish_time": 0.6806604352145248,
+          "mean_waiting_latency": 0.10496208182864782,
+          "mean_cache_hit_rate": 0.30843750000000003,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.6915625000000001,
+          "mean_service_loading_latency": 1.0561471056319154,
+          "mean_inference_time_per_decision_ms": 0.026297361857662814,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Inspiral": {
+          "mean_finish_time": 0.2674966275529348,
+          "mean_p95_finish_time": 0.4184410145356952,
+          "mean_waiting_latency": 0.12036258449419043,
+          "mean_cache_hit_rate": 0.3336916666666666,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.6663083333333334,
+          "mean_service_loading_latency": 1.1087196166214617,
+          "mean_inference_time_per_decision_ms": 0.024708395216536398,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Sipht": {
+          "mean_finish_time": 0.3802602163871933,
+          "mean_p95_finish_time": 0.5724730122157038,
+          "mean_waiting_latency": 0.13614862811923117,
+          "mean_cache_hit_rate": 0.25773275862068973,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.7422672413793104,
+          "mean_service_loading_latency": 0.9112413405787896,
+          "mean_inference_time_per_decision_ms": 0.02516887526470437,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        }
+      },
+      "lean_our": {
+        "Montage": {
+          "mean_finish_time": 0.49369580621899783,
+          "mean_p95_finish_time": 0.7693421018674653,
+          "mean_waiting_latency": 0.10152989262043784,
+          "mean_cache_hit_rate": 0.55263,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.44737,
+          "mean_service_loading_latency": 1.041820949116523,
+          "mean_inference_time_per_decision_ms": 0.19722975856420816,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "CyberShake": {
+          "mean_finish_time": 0.11636571265593328,
+          "mean_p95_finish_time": 0.22095851215023074,
+          "mean_waiting_latency": 0.10657071742379165,
+          "mean_cache_hit_rate": 0.6605083333333334,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.33949166666666664,
+          "mean_service_loading_latency": 0.5547786643379021,
+          "mean_inference_time_per_decision_ms": 0.2044678490211178,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Epigenomics": {
+          "mean_finish_time": 0.30764035470616086,
+          "mean_p95_finish_time": 0.4571974615974061,
+          "mean_waiting_latency": 0.09879628752858102,
+          "mean_cache_hit_rate": 0.5350520833333333,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.4649479166666667,
+          "mean_service_loading_latency": 0.6414322092283358,
+          "mean_inference_time_per_decision_ms": 0.1921544202632504,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Inspiral": {
+          "mean_finish_time": 0.17181982179459307,
+          "mean_p95_finish_time": 0.32146749213784653,
+          "mean_waiting_latency": 0.11040042838645632,
+          "mean_cache_hit_rate": 0.6881583333333333,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.3118416666666667,
+          "mean_service_loading_latency": 0.5666458972660754,
+          "mean_inference_time_per_decision_ms": 0.1832805144433223,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        },
+        "Sipht": {
+          "mean_finish_time": 0.24441660619616354,
+          "mean_p95_finish_time": 0.39888303255910257,
+          "mean_waiting_latency": 0.12313650522307665,
+          "mean_cache_hit_rate": 0.5081293103448276,
+          "mean_cache_service_coverage": 0.8000000000000002,
+          "mean_remote_loading_rate": 0.49187068965517244,
+          "mean_service_loading_latency": 2.041245639055604,
+          "mean_inference_time_per_decision_ms": 0.18772585995737182,
+          "cache_decision_wall_time_sec": 0.0,
+          "cache_migration_time_sec": 0.0
+        }
+      }
+    },
+    "paired_comparisons": {
+      "our_vs_daoc_paper": {
+        "pairs": 10,
+        "reference_mean": 0.7736107624426019,
+        "our_mean": 0.2667876603143697,
+        "mean_improvement_sec": 0.5068231021282321,
+        "mean_improvement_percent": 65.51396732485814,
+        "ci95_lower_sec": 0.39058159039604484,
+        "ci95_upper_sec": 0.6230646138604194,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      },
+      "our_vs_centralized_greedy_daoc": {
+        "pairs": 10,
+        "reference_mean": 0.37495905907194443,
+        "our_mean": 0.2667876603143697,
+        "mean_improvement_sec": 0.10817139875757475,
+        "mean_improvement_percent": 28.848855932513853,
+        "ci95_lower_sec": 0.07240733522708613,
+        "ci95_upper_sec": 0.14393546228806336,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      }
+    },
+    "p95_paired_comparisons": {
+      "our_vs_daoc_paper": {
+        "pairs": 10,
+        "reference_mean": 1.0610170928478253,
+        "our_mean": 0.4335697200624102,
+        "mean_improvement_sec": 0.6274473727854151,
+        "mean_improvement_percent": 59.136405720035434,
+        "ci95_lower_sec": 0.4767588799813116,
+        "ci95_upper_sec": 0.7781358655895185,
+        "wilcoxon_one_sided_p": 0.0009765625,
+        "wins": 10,
+        "passed": true
+      },
+      "our_vs_centralized_greedy_daoc": {
+        "pairs": 10,
+        "reference_mean": 0.5585715913790389,
+        "our_mean": 0.4335697200624102,
+        "mean_improvement_sec": 0.12500187131662854,
+        "mean_improvement_percent": 22.378845119569288,
+        "ci95_lower_sec": 0.05443008304905725,
+        "ci95_upper_sec": 0.19557365958419984,
+        "wilcoxon_one_sided_p": 0.0029296875,
+        "wins": 9,
+        "passed": true
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 51,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.7843615164831899,
+            "mean_p95_finish_time": 1.1420173576222354,
+            "mean_waiting_latency": 0.2063528509325559,
+            "mean_cache_hit_rate": 0.3101599137931034,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.6898400862068965,
+            "mean_service_loading_latency": 1.8764667600721716,
+            "mean_inference_time_per_decision_ms": 0.022199805128519743,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.47601325777245074,
+            "mean_p95_finish_time": 0.7100753728525957,
+            "mean_waiting_latency": 0.15759747970111884,
+            "mean_cache_hit_rate": 0.2889269252873563,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7110730747126438,
+            "mean_service_loading_latency": 1.3717982874558337,
+            "mean_inference_time_per_decision_ms": 0.02480896975972554,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.34780913803543373,
+            "mean_p95_finish_time": 0.580245206155054,
+            "mean_waiting_latency": 0.18375374358700555,
+            "mean_cache_hit_rate": 0.6141486206896551,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.3858513793103448,
+            "mean_service_loading_latency": 0.8974013390168846,
+            "mean_inference_time_per_decision_ms": 0.1704272140581845,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 52,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.6538489777767886,
+            "mean_p95_finish_time": 0.8836639269738435,
+            "mean_waiting_latency": 0.13224165850034597,
+            "mean_cache_hit_rate": 0.1834903735632184,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.8165096264367817,
+            "mean_service_loading_latency": 2.9308267178630287,
+            "mean_inference_time_per_decision_ms": 0.021119246357283655,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.4452281756868742,
+            "mean_p95_finish_time": 0.7186424332675915,
+            "mean_waiting_latency": 0.16651177928309324,
+            "mean_cache_hit_rate": 0.22904034482758623,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7709596551724138,
+            "mean_service_loading_latency": 1.654849066912405,
+            "mean_inference_time_per_decision_ms": 0.023788965885375556,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.29396885254601385,
+            "mean_p95_finish_time": 0.4995868716547236,
+            "mean_waiting_latency": 0.08925885139908202,
+            "mean_cache_hit_rate": 0.45361025862068965,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5463897413793104,
+            "mean_service_loading_latency": 1.5527923936734322,
+            "mean_inference_time_per_decision_ms": 0.19398604280542572,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 12000
+        }
+      },
+      {
+        "seed": 53,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.9851647496610141,
+            "mean_p95_finish_time": 1.2977599575155778,
+            "mean_waiting_latency": 0.11199965853425344,
+            "mean_cache_hit_rate": 0.20121856321839082,
+            "mean_cache_service_coverage": 0.5,
+            "mean_remote_loading_rate": 0.7987814367816091,
+            "mean_service_loading_latency": 2.9494992273554517,
+            "mean_inference_time_per_decision_ms": 0.021607684964659,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.5262667356234639,
+            "mean_p95_finish_time": 0.7085892720020209,
+            "mean_waiting_latency": 0.14933632727286686,
+            "mean_cache_hit_rate": 0.29899120689655173,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7010087931034483,
+            "mean_service_loading_latency": 1.4149570130651592,
+            "mean_inference_time_per_decision_ms": 0.025318606333487977,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.4223310677536375,
+            "mean_p95_finish_time": 0.5473404514573024,
+            "mean_waiting_latency": 0.07103323112699515,
+            "mean_cache_hit_rate": 0.5834802011494253,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4165197988505747,
+            "mean_service_loading_latency": 1.1596641545710558,
+            "mean_inference_time_per_decision_ms": 0.21207569247439853,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 54,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.9609116787043935,
+            "mean_p95_finish_time": 1.2759874472249881,
+            "mean_waiting_latency": 0.1088547087619187,
+            "mean_cache_hit_rate": 0.1301169252873563,
+            "mean_cache_service_coverage": 0.3999999999999999,
+            "mean_remote_loading_rate": 0.8698830747126436,
+            "mean_service_loading_latency": 3.2754090903591027,
+            "mean_inference_time_per_decision_ms": 0.022104823922343857,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.19727290753747068,
+            "mean_p95_finish_time": 0.2949697299289673,
+            "mean_waiting_latency": 0.07879973689189045,
+            "mean_cache_hit_rate": 0.2937960057471264,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7062039942528736,
+            "mean_service_loading_latency": 0.5953930763018841,
+            "mean_inference_time_per_decision_ms": 0.027172359047961378,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.12240373026342151,
+            "mean_p95_finish_time": 0.2088104293730591,
+            "mean_waiting_latency": 0.07932524396428689,
+            "mean_cache_hit_rate": 0.5693376149425287,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4306623850574713,
+            "mean_service_loading_latency": 0.2719531407332183,
+            "mean_inference_time_per_decision_ms": 0.21451610945715127,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 55,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.5797923022053876,
+            "mean_p95_finish_time": 0.7500460993839088,
+            "mean_waiting_latency": 0.11215357466860415,
+            "mean_cache_hit_rate": 0.2237036781609195,
+            "mean_cache_service_coverage": 0.6,
+            "mean_remote_loading_rate": 0.7762963218390806,
+            "mean_service_loading_latency": 1.7230197958484712,
+            "mean_inference_time_per_decision_ms": 0.02151369469907437,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.22186386062983512,
+            "mean_p95_finish_time": 0.39436768407633876,
+            "mean_waiting_latency": 0.12122349126061283,
+            "mean_cache_hit_rate": 0.4363768678160918,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5636231321839081,
+            "mean_service_loading_latency": 0.5743273380540819,
+            "mean_inference_time_per_decision_ms": 0.026376029554373636,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.12350321643333877,
+            "mean_p95_finish_time": 0.2962137704201138,
+            "mean_waiting_latency": 0.08294811143632863,
+            "mean_cache_hit_rate": 0.7321324712643679,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.2678675287356322,
+            "mean_service_loading_latency": 0.22571670528023804,
+            "mean_inference_time_per_decision_ms": 0.1947240817062617,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 56,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.73763437423656,
+            "mean_p95_finish_time": 1.021670003013468,
+            "mean_waiting_latency": 0.1291402889484703,
+            "mean_cache_hit_rate": 0.1603064655172414,
+            "mean_cache_service_coverage": 0.5,
+            "mean_remote_loading_rate": 0.8396935344827585,
+            "mean_service_loading_latency": 2.5254137253819398,
+            "mean_inference_time_per_decision_ms": 0.0223581376694104,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.2736088303259747,
+            "mean_p95_finish_time": 0.3889832496706931,
+            "mean_waiting_latency": 0.09139324623309639,
+            "mean_cache_hit_rate": 0.25149629310344834,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7485037068965517,
+            "mean_service_loading_latency": 0.9195043388802575,
+            "mean_inference_time_per_decision_ms": 0.026832770252114918,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.2237259997924106,
+            "mean_p95_finish_time": 0.4587991505754011,
+            "mean_waiting_latency": 0.1282557894473367,
+            "mean_cache_hit_rate": 0.5457245689655172,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.4542754310344828,
+            "mean_service_loading_latency": 0.5968285920795977,
+            "mean_inference_time_per_decision_ms": 0.18285640766581132,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 57,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.5381898359121311,
+            "mean_p95_finish_time": 0.7624202436215044,
+            "mean_waiting_latency": 0.10225203173093105,
+            "mean_cache_hit_rate": 0.14222784482758621,
+            "mean_cache_service_coverage": 0.3999999999999999,
+            "mean_remote_loading_rate": 0.8577721551724138,
+            "mean_service_loading_latency": 1.9047749937957936,
+            "mean_inference_time_per_decision_ms": 0.021505868458006748,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.19401427217183542,
+            "mean_p95_finish_time": 0.401710158621581,
+            "mean_waiting_latency": 0.07541182035059499,
+            "mean_cache_hit_rate": 0.29767,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7023299999999999,
+            "mean_service_loading_latency": 0.4440010133340469,
+            "mean_inference_time_per_decision_ms": 0.025075167430093578,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.09559197669827668,
+            "mean_p95_finish_time": 0.1691912507959805,
+            "mean_waiting_latency": 0.07610379232522069,
+            "mean_cache_hit_rate": 0.6439166954022988,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.35608330459770116,
+            "mean_service_loading_latency": 0.1710124229914242,
+            "mean_inference_time_per_decision_ms": 0.17431098638460352,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 11500
+        }
+      },
+      {
+        "seed": 58,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.9386817069708,
+            "mean_p95_finish_time": 1.1900873181358964,
+            "mean_waiting_latency": 0.10707826190773265,
+            "mean_cache_hit_rate": 0.1028710344827586,
+            "mean_cache_service_coverage": 0.5,
+            "mean_remote_loading_rate": 0.8971289655172414,
+            "mean_service_loading_latency": 2.652948170043261,
+            "mean_inference_time_per_decision_ms": 0.021099644348300643,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.3394546743076141,
+            "mean_p95_finish_time": 0.48530715518256307,
+            "mean_waiting_latency": 0.13182003895633337,
+            "mean_cache_hit_rate": 0.28118859195402296,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7188114080459769,
+            "mean_service_loading_latency": 1.0095427840239624,
+            "mean_inference_time_per_decision_ms": 0.023970322253335744,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.24570031392562705,
+            "mean_p95_finish_time": 0.34541546158611874,
+            "mean_waiting_latency": 0.13829825852027894,
+            "mean_cache_hit_rate": 0.6329500574712644,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.3670499425287355,
+            "mean_service_loading_latency": 0.5769147060157216,
+            "mean_inference_time_per_decision_ms": 0.19049695525416485,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      },
+      {
+        "seed": 59,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.8360848095321807,
+            "mean_p95_finish_time": 1.1419170737592237,
+            "mean_waiting_latency": 0.1079162833467922,
+            "mean_cache_hit_rate": 0.25768163793103444,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.7423183620689656,
+            "mean_service_loading_latency": 3.06176242946719,
+            "mean_inference_time_per_decision_ms": 0.02160043135965136,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.40125784806770026,
+            "mean_p95_finish_time": 0.5156970745453929,
+            "mean_waiting_latency": 0.12935334603797272,
+            "mean_cache_hit_rate": 0.27855212643678157,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7214478735632184,
+            "mean_service_loading_latency": 1.4457906581917501,
+            "mean_inference_time_per_decision_ms": 0.02923495464816327,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.34064742369487483,
+            "mean_p95_finish_time": 0.5019877887547776,
+            "mean_waiting_latency": 0.12411944364214605,
+            "mean_cache_hit_rate": 0.6419573563218389,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.35804264367816097,
+            "mean_service_loading_latency": 2.1358391441616202,
+            "mean_inference_time_per_decision_ms": 0.17322401984288333,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 11500
+        }
+      },
+      {
+        "seed": 60,
+        "methods": {
+          "daoc_paper": {
+            "mean_finish_time": 0.7214376729435727,
+            "mean_p95_finish_time": 1.1446015012276063,
+            "mean_waiting_latency": 0.08339015345563208,
+            "mean_cache_hit_rate": 0.10299071839080459,
+            "mean_cache_service_coverage": 0.7000000000000002,
+            "mean_remote_loading_rate": 0.8970092816091954,
+            "mean_service_loading_latency": 2.478905796672603,
+            "mean_inference_time_per_decision_ms": 0.02219789267304282,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "centralized_greedy_daoc": {
+            "mean_finish_time": 0.6746100285962254,
+            "mean_p95_finish_time": 0.9673737836426433,
+            "mean_waiting_latency": 0.11945765935344324,
+            "mean_cache_hit_rate": 0.2629254885057471,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.7370745114942528,
+            "mean_service_loading_latency": 2.2962792186337055,
+            "mean_inference_time_per_decision_ms": 0.021781750992479084,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          },
+          "lean_our": {
+            "mean_finish_time": 0.45219488400066254,
+            "mean_p95_finish_time": 0.7281068198515713,
+            "mean_waiting_latency": 0.10777119691600634,
+            "mean_cache_hit_rate": 0.47169827586206897,
+            "mean_cache_service_coverage": 0.7999999999999998,
+            "mean_remote_loading_rate": 0.5283017241379311,
+            "mean_service_loading_latency": 2.103724119485687,
+            "mean_inference_time_per_decision_ms": 0.22309929484965635,
+            "cache_decision_wall_time_sec": 0.0,
+            "cache_migration_time_sec": 0.0
+          }
+        },
+        "selected_checkpoint_episode": {
+          "daoc_paper": 26000,
+          "centralized_greedy_daoc": 26000,
+          "lean_our": 10500
+        }
+      }
+    ],
+    "gate": {
+      "integrity": true,
+      "our_formally_beats_daoc_paper": true,
+      "our_formally_beats_centralized_greedy": true,
+      "passed": true
+    }
+  },
+  "gate": {
+    "integrity": true,
+    "heterogeneity_control": true,
+    "primary_ablation": true,
+    "scaling_complete": true,
+    "passed": true
+  }
+}

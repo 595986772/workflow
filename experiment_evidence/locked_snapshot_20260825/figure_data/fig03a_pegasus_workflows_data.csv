@@ -1,0 +1,46 @@
+method,method_key,dataset_or_workflow,mean_completion_time_s,ci95_half_width_s,independent_seeds,evaluation_mode
+Random,random,CyberShake,1.172687246,0.227288609,10,frozen_in_dataset_evaluation
+Random,random,Epigenomics,2.228448941,0.495322132,10,frozen_in_dataset_evaluation
+Random,random,Inspiral,1.888810969,0.593280572,10,frozen_in_dataset_evaluation
+Random,random,Montage,2.302194051,0.534119756,10,frozen_in_dataset_evaluation
+Random,random,Sipht,1.552921891,0.372535782,10,frozen_in_dataset_evaluation
+Nearest,nearest,CyberShake,1.042527479,0.252309479,10,frozen_in_dataset_evaluation
+Nearest,nearest,Epigenomics,1.925116398,0.569346160,10,frozen_in_dataset_evaluation
+Nearest,nearest,Inspiral,1.604853826,0.546013720,10,frozen_in_dataset_evaluation
+Nearest,nearest,Montage,1.979931610,0.630521032,10,frozen_in_dataset_evaluation
+Nearest,nearest,Sipht,1.377117974,0.311788223,10,frozen_in_dataset_evaluation
+SA-Nearest,greedy,CyberShake,1.161884334,0.243152386,10,frozen_in_dataset_evaluation
+SA-Nearest,greedy,Epigenomics,2.204645417,0.559702289,10,frozen_in_dataset_evaluation
+SA-Nearest,greedy,Inspiral,1.873669401,0.406089150,10,frozen_in_dataset_evaluation
+SA-Nearest,greedy,Montage,1.741588363,0.566150683,10,frozen_in_dataset_evaluation
+SA-Nearest,greedy,Sipht,1.249026705,0.299865498,10,frozen_in_dataset_evaluation
+DQN-NoDSA,dqn_wdsa_std_cache,CyberShake,0.576852057,0.185495727,10,frozen_in_dataset_evaluation
+DQN-NoDSA,dqn_wdsa_std_cache,Epigenomics,1.193317653,0.398610849,10,frozen_in_dataset_evaluation
+DQN-NoDSA,dqn_wdsa_std_cache,Inspiral,1.248795256,0.504353454,10,frozen_in_dataset_evaluation
+DQN-NoDSA,dqn_wdsa_std_cache,Montage,1.538517422,0.437333396,10,frozen_in_dataset_evaluation
+DQN-NoDSA,dqn_wdsa_std_cache,Sipht,1.096584715,0.173206581,10,frozen_in_dataset_evaluation
+SAC + DAOC-Cache,discrete_sac_std_cache,CyberShake,0.683618528,0.177656631,10,frozen_in_dataset_evaluation
+SAC + DAOC-Cache,discrete_sac_std_cache,Epigenomics,1.382419031,0.412218835,10,frozen_in_dataset_evaluation
+SAC + DAOC-Cache,discrete_sac_std_cache,Inspiral,1.347080818,0.417733704,10,frozen_in_dataset_evaluation
+SAC + DAOC-Cache,discrete_sac_std_cache,Montage,1.247428311,0.458825912,10,frozen_in_dataset_evaluation
+SAC + DAOC-Cache,discrete_sac_std_cache,Sipht,1.017704650,0.228021485,10,frozen_in_dataset_evaluation
+DAOC,daoc_paper,CyberShake,0.414092530,0.177737538,10,frozen_in_dataset_evaluation
+DAOC,daoc_paper,Epigenomics,0.824536097,0.273109323,10,frozen_in_dataset_evaluation
+DAOC,daoc_paper,Inspiral,0.604973295,0.226299119,10,frozen_in_dataset_evaluation
+DAOC,daoc_paper,Montage,1.171503770,0.267184611,10,frozen_in_dataset_evaluation
+DAOC,daoc_paper,Sipht,0.852948120,0.234604618,10,frozen_in_dataset_evaluation
+DAOC + DCC,daoc_our_coord_cache,CyberShake,0.189274643,0.055234724,10,frozen_in_dataset_evaluation
+DAOC + DCC,daoc_our_coord_cache,Epigenomics,0.425033577,0.166752644,10,frozen_in_dataset_evaluation
+DAOC + DCC,daoc_our_coord_cache,Inspiral,0.255308754,0.095019930,10,frozen_in_dataset_evaluation
+DAOC + DCC,daoc_our_coord_cache,Montage,0.679770613,0.333746431,10,frozen_in_dataset_evaluation
+DAOC + DCC,daoc_our_coord_cache,Sipht,0.337139059,0.108184278,10,frozen_in_dataset_evaluation
+SAC + DCC,coord_cache_discrete_sac,CyberShake,0.149844353,0.064541600,10,frozen_in_dataset_evaluation
+SAC + DCC,coord_cache_discrete_sac,Epigenomics,0.310392532,0.134565569,10,frozen_in_dataset_evaluation
+SAC + DCC,coord_cache_discrete_sac,Inspiral,0.217264039,0.092351288,10,frozen_in_dataset_evaluation
+SAC + DCC,coord_cache_discrete_sac,Montage,0.552844091,0.270837031,10,frozen_in_dataset_evaluation
+SAC + DCC,coord_cache_discrete_sac,Sipht,0.270058684,0.087857069,10,frozen_in_dataset_evaluation
+OUR,lean_our,CyberShake,0.116365713,0.047250378,10,frozen_in_dataset_evaluation
+OUR,lean_our,Epigenomics,0.307640355,0.152411877,10,frozen_in_dataset_evaluation
+OUR,lean_our,Inspiral,0.171819822,0.085922627,10,frozen_in_dataset_evaluation
+OUR,lean_our,Montage,0.493695806,0.256406157,10,frozen_in_dataset_evaluation
+OUR,lean_our,Sipht,0.244416606,0.091802182,10,frozen_in_dataset_evaluation

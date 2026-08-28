@@ -7,6 +7,10 @@
 - `reproducible_code/`: 可执行实验代码、测试、协议脚本和论文使用的数据集。
 - `pro_reviews/`: 2026-08-19、2026-08-21 和 2026-08-25 三轮 Pro 评阅原文。
 - `manuscript/latest_chapters/`: 2026-08-28 整理的最新版分章节中文稿件。
+- `manuscript/supporting_notes/`: 正式方法命名、实验协议和算法说明。
+- `paper_assets/`: 第一章架构图源文件和第五章实际引用的最终SVG。
+- `experiment_evidence/`: 锁定结果、seed级统计、协议锁和作图数据快照。
+- `HANDOFF.md`: 换机器、换账号或交给其他模型时的工作入口。
 - `SOURCE_PROVENANCE.md`: 本次打包来源、完整性和适用边界。
 - `SHA256SUMS.txt`: 仓库内交付文件的 SHA-256 清单。
 
@@ -61,7 +65,7 @@ python run_reproduction_suite.py \
 
 ## Scope
 
-本次提交不包含历史 checkpoint、完整训练中间日志、旧稿或已判定无效的性能结果。正式训练成本较高，smoke test 只验证执行链完整性，不能作为论文性能结论。
+本仓库包含支持论文图表的锁定统计快照，但不包含历史 checkpoint、完整逐episode训练目录、旧稿或已判定无效的性能结果。正式训练成本较高，smoke test只验证执行链完整性，不能作为论文性能结论。
 
 论文仍处于投稿前修订阶段。`pro_reviews/` 中的内容是审阅意见和风险清单，不代表所有问题已经关闭。
 

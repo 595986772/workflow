@@ -1,0 +1,109 @@
+{
+  "status": "locked",
+  "created_at": "2026-08-12T17:26:28.189484+00:00",
+  "specification": {
+    "protocol_version": "pegasus_server_scaling_p11_v1",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "workflow_families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "users": 20,
+    "services": 10,
+    "bandwidth_hz": 15000.0,
+    "server_counts": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "trained_server_counts": [
+      5,
+      15,
+      20
+    ],
+    "reused_server_count": 10,
+    "capacity_profiles": {
+      "5": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "20": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "capacity_budget_rule": "0.8 slots per server",
+    "capacity_fraction_rule": "40% K0, 40% K1, 20% K2",
+    "capacity_assignment_namespace": "pegasus_server_scaling_p11",
+    "methods": [
+      "daoc_paper",
+      "lean_our"
+    ],
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "claim_scope": "three_seed_server_count_sensitivity",
+    "training_rule": "from scratch to convergence for S=5,15,20; exact P3 reuse for S=10"
+  },
+  "specification_sha256": "447fdf8e44fd7ecab568d9bb0699c0d4d4cdffb8e7baf0d8cee822c15f6812bf",
+  "source_sha256": "76bc2619945218a4b9fb22fdbd14bbc89ca6cf4898d85dbd13e400891de16740"
+}

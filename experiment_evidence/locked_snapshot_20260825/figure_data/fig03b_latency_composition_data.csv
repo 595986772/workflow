@@ -1,0 +1,31 @@
+method_key,method,mean_completion_time_s,completion_ci95_half_width_s,latency_component_key,latency_component,mean_component_time_s,component_ci95_half_width_s,mean_share_percent,independent_seeds,decomposition_scope
+greedy,SA-Nearest,1.646162843840207,0.2736597392381249,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+greedy,SA-Nearest,1.646162843840207,0.2736597392381249,dependency_transfer_s,Dependency transfer,0.0001733678841230155,4.521907413222424e-05,0.010531636330618353,10,realized_completion_critical_path
+greedy,SA-Nearest,1.646162843840207,0.2736597392381249,service_loading_s,Service loading,1.5430940836946054,0.2739748296167738,93.73884785874768,10,realized_completion_critical_path
+greedy,SA-Nearest,1.646162843840207,0.2736597392381249,waiting_s,Waiting,0.04080289616173323,0.014772098379868691,2.478667059848543,10,realized_completion_critical_path
+greedy,SA-Nearest,1.646162843840207,0.2736597392381249,computation_s,Task processing,0.062092496099745265,0.02023926156512159,3.771953445073177,10,realized_completion_critical_path
+daoc_paper,DAOC,0.7736107624426019,0.11246547899853102,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+daoc_paper,DAOC,0.7736107624426019,0.11246547899853102,dependency_transfer_s,Dependency transfer,0.00016764923224355871,2.9925780804470368e-05,0.021671005676578533,10,realized_completion_critical_path
+daoc_paper,DAOC,0.7736107624426019,0.11246547899853102,service_loading_s,Service loading,0.7012383753380436,0.11469036657691487,90.6448577736885,10,realized_completion_critical_path
+daoc_paper,DAOC,0.7736107624426019,0.11246547899853102,waiting_s,Waiting,0.02838381452279786,0.0052694335700522255,3.6690046081027474,10,realized_completion_critical_path
+daoc_paper,DAOC,0.7736107624426019,0.11246547899853102,computation_s,Task processing,0.043820923349516816,0.010493106855632378,5.66446661253218,10,realized_completion_critical_path
+discrete_sac_std_cache,SAC + DAOC-Cache,1.1356502677397784,0.2245652535907177,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+discrete_sac_std_cache,SAC + DAOC-Cache,1.1356502677397784,0.2245652535907177,dependency_transfer_s,Dependency transfer,0.00016914978072848116,4.2008194318223664e-05,0.014894530960233965,10,realized_completion_critical_path
+discrete_sac_std_cache,SAC + DAOC-Cache,1.1356502677397784,0.2245652535907177,service_loading_s,Service loading,1.0423719841217411,0.1861846558982189,91.78635480765715,10,realized_completion_critical_path
+discrete_sac_std_cache,SAC + DAOC-Cache,1.1356502677397784,0.2245652535907177,waiting_s,Waiting,0.0366369173138331,0.0246358997196002,3.2260739379518246,10,realized_completion_critical_path
+discrete_sac_std_cache,SAC + DAOC-Cache,1.1356502677397784,0.2245652535907177,computation_s,Task processing,0.056472216523475526,0.03586530434793605,4.972676723430801,10,realized_completion_critical_path
+daoc_our_coord_cache,DAOC + DCC,0.3773053292275679,0.10415047557328184,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+daoc_our_coord_cache,DAOC + DCC,0.3773053292275679,0.10415047557328184,dependency_transfer_s,Dependency transfer,0.00021546360555487468,3.534765056863579e-05,0.05710590041120782,10,realized_completion_critical_path
+daoc_our_coord_cache,DAOC + DCC,0.3773053292275679,0.10415047557328184,service_loading_s,Service loading,0.308308340239238,0.10020712450702178,81.71322172162719,10,realized_completion_critical_path
+daoc_our_coord_cache,DAOC + DCC,0.3773053292275679,0.10415047557328184,waiting_s,Waiting,0.027790343942364605,0.004845345275161435,7.365478775308563,10,realized_completion_critical_path
+daoc_our_coord_cache,DAOC + DCC,0.3773053292275679,0.10415047557328184,computation_s,Task processing,0.04099118144041043,0.012412019377772745,10.864193602653042,10,realized_completion_critical_path
+coord_cache_discrete_sac,SAC + DCC,0.3000807397846891,0.09091817063729227,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+coord_cache_discrete_sac,SAC + DCC,0.3000807397846891,0.09091817063729227,dependency_transfer_s,Dependency transfer,0.000225388381201915,3.581941516093681e-05,0.07510924605279015,10,realized_completion_critical_path
+coord_cache_discrete_sac,SAC + DCC,0.3000807397846891,0.09091817063729227,service_loading_s,Service loading,0.23640385239021375,0.09035012924289244,78.78008184058594,10,realized_completion_critical_path
+coord_cache_discrete_sac,SAC + DCC,0.3000807397846891,0.09091817063729227,waiting_s,Waiting,0.023859127640210826,0.004875783240534027,7.950902699496806,10,realized_completion_critical_path
+coord_cache_discrete_sac,SAC + DCC,0.3000807397846891,0.09091817063729227,computation_s,Task processing,0.039592371373062554,0.010211757322768831,13.19390621386447,10,realized_completion_critical_path
+lean_our,OUR,0.26678766031436973,0.09058433808449845,user_input_transfer_s,User input transfer,0.0,0.0,0.0,10,realized_completion_critical_path
+lean_our,OUR,0.26678766031436973,0.09058433808449845,dependency_transfer_s,Dependency transfer,0.00025650046685002966,3.540085738051075e-05,0.0961440519954266,10,realized_completion_critical_path
+lean_our,OUR,0.26678766031436973,0.09058433808449845,service_loading_s,Service loading,0.2013961126603881,0.08866546078418806,75.489290780193,10,realized_completion_critical_path
+lean_our,OUR,0.26678766031436973,0.09058433808449845,waiting_s,Waiting,0.025658778310322226,0.005966155830207214,9.617678074048538,10,realized_completion_critical_path
+lean_our,OUR,0.26678766031436973,0.09058433808449845,computation_s,Task processing,0.03947626887680934,0.009524662890086577,14.796887093763038,10,realized_completion_critical_path

@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "created_at": "2026-08-10T15:47:53.141439+00:00",
+  "specification": {
+    "protocol_version": "pegasus_p7_std_cache_discrete_sac_v1",
+    "freeze_sha256": "53d7c95e18939b98947c75e389ebeed95834be9ac2079dc66fb654462607464d",
+    "method": "discrete_sac_std_cache",
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "scenarios_per_seed": 100,
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "specification_sha256": "f9d291b393eac70ac257c77e36f265ffbfaed9cf76f6aee0d7dd5c41646706a0",
+  "completed_at": "2026-08-11T03:09:49.321154+00:00",
+  "summary_sha256": "ad4330d51c4ec5f36bb35867a7b9ec03ebb67b9a7a2e271779b239d2e60ee3cf",
+  "integrity": {
+    "all_new_runs_complete": true,
+    "all_new_runs_converged": true,
+    "new_method_trained_from_scratch": true,
+    "scenario_banks_paired": true,
+    "capacity_assignments_exact": true,
+    "dataset_and_environment_exact": true,
+    "sac_state_reward_action_training_matched": true,
+    "only_cache_subsystem_changed": true,
+    "evaluation_state_frozen": true,
+    "all_tasks_executed_once": true,
+    "p6_parent_integrity_passed": true
+  },
+  "evidence": {
+    "standard_cache_sac_is_valid_baseline": true,
+    "coord_cache_effect_under_sac_supported": true,
+    "our_beats_standard_cache_sac": true,
+    "our_beats_coordinated_sac_mean": true,
+    "our_beats_coordinated_sac_p95": false
+  }
+}

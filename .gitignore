@@ -8,7 +8,7 @@ __pycache__/
 venv/
 .env
 .env.*
-results/
+/reproducible_code/results/
 checkpoints/
 *.ckpt
 *.pth

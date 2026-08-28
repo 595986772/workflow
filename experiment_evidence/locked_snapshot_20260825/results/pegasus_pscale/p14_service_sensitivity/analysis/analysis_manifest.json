@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "seeds": [
+    51,
+    52,
+    53
+  ],
+  "active_service_counts": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "service_size_multipliers": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "methods": [
+    "greedy",
+    "daoc_paper",
+    "our_flat_ddqn",
+    "coord_cache_discrete_sac",
+    "lean_our"
+  ],
+  "figure_png": "${PROJECT_ROOT}/paper_drafts/figures_topconf/fig_service_cache_pressure_sensitivity.png",
+  "figure_pdf": "${PROJECT_ROOT}/paper_drafts/figures_topconf/fig_service_cache_pressure_sensitivity.pdf",
+  "claim_scope": "three_seed_descriptive_sensitivity"
+}

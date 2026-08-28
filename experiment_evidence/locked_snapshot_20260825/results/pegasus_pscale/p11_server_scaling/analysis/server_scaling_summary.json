@@ -1,0 +1,1008 @@
+{
+  "status": "complete",
+  "protocol": {
+    "protocol_version": "pegasus_server_scaling_p11_v1",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "workflow_families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "users": 20,
+    "services": 10,
+    "bandwidth_hz": 15000.0,
+    "server_counts": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "trained_server_counts": [
+      5,
+      15,
+      20
+    ],
+    "reused_server_count": 10,
+    "capacity_profiles": {
+      "5": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "20": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "capacity_budget_rule": "0.8 slots per server",
+    "capacity_fraction_rule": "40% K0, 40% K1, 20% K2",
+    "capacity_assignment_namespace": "pegasus_server_scaling_p11",
+    "methods": [
+      "daoc_paper",
+      "lean_our"
+    ],
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "claim_scope": "three_seed_server_count_sensitivity",
+    "training_rule": "from scratch to convergence for S=5,15,20; exact P3 reuse for S=10"
+  },
+  "integrity": {
+    "all_runs_complete": true,
+    "all_learning_runs_converged": true,
+    "all_tasks_exactly_once": true,
+    "all_capacity_constraints_valid": true,
+    "all_methods_scenario_paired": true
+  },
+  "results": {
+    "5": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 1.0331187005042373,
+              "p95_completion_time_s": 1.1031807693945577,
+              "cache_hit_rate": 0.12698778735632185,
+              "remote_loading_rate": 0.8730122126436781,
+              "inference_ms_per_decision": 0.15445853638103604,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 23372.933410416998
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.9939958477884459,
+              "p95_completion_time_s": 1.0398551103192935,
+              "cache_hit_rate": 0.3097881896551724,
+              "remote_loading_rate": 0.6902118103448277,
+              "inference_ms_per_decision": 1.5264991252467417,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 23404.467429124983
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 1.1240120906523576,
+              "p95_completion_time_s": 1.3241655048840983,
+              "cache_hit_rate": 0.13766566091954024,
+              "remote_loading_rate": 0.8623343390804596,
+              "inference_ms_per_decision": 0.13963136146579175,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 22996.16120199999
+            },
+            "lean_our": {
+              "mean_completion_time_s": 1.0239608778459295,
+              "p95_completion_time_s": 1.1396762395411217,
+              "cache_hit_rate": 0.2568704022988506,
+              "remote_loading_rate": 0.7431295977011493,
+              "inference_ms_per_decision": 0.8449282846886171,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 20459.980529959023
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 1.1938130533815319,
+              "p95_completion_time_s": 1.5530309083913365,
+              "cache_hit_rate": 0.100351091954023,
+              "remote_loading_rate": 0.8996489080459773,
+              "inference_ms_per_decision": 0.1703225299365696,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 23079.624376832973
+            },
+            "lean_our": {
+              "mean_completion_time_s": 1.1466834611563153,
+              "p95_completion_time_s": 1.3812943628794914,
+              "cache_hit_rate": 0.3275039367816093,
+              "remote_loading_rate": 0.6724960632183907,
+              "inference_ms_per_decision": 0.9101763855792793,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 20037.159133750014
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 1.116981281512709,
+            "ci95_half_width": 0.20016575233860504,
+            "per_seed": [
+              1.0331187005042373,
+              1.1240120906523576,
+              1.1938130533815319
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.3267923942233308,
+            "ci95_half_width": 0.5587734260897254,
+            "per_seed": [
+              1.1031807693945577,
+              1.3241655048840983,
+              1.5530309083913365
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.12166818007662838,
+            "ci95_half_width": 0.04773927997969804,
+            "per_seed": [
+              0.12698778735632185,
+              0.13766566091954024,
+              0.100351091954023
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8783318199233717,
+            "ci95_half_width": 0.04773927997969858,
+            "per_seed": [
+              0.8730122126436781,
+              0.8623343390804596,
+              0.8996489080459773
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.15480414259446582,
+            "ci95_half_width": 0.038127794629163436,
+            "per_seed": [
+              0.15445853638103604,
+              0.13963136146579175,
+              0.1703225299365696
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 1.0548800622635637,
+            "ci95_half_width": 0.20097539668004372,
+            "per_seed": [
+              0.9939958477884459,
+              1.0239608778459295,
+              1.1466834611563153
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.1869419042466356,
+            "ci95_half_width": 0.43611103886822133,
+            "per_seed": [
+              1.0398551103192935,
+              1.1396762395411217,
+              1.3812943628794914
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.29805417624521074,
+            "ci95_half_width": 0.09129127853113242,
+            "per_seed": [
+              0.3097881896551724,
+              0.2568704022988506,
+              0.3275039367816093
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7019458237547892,
+            "ci95_half_width": 0.09129127853113224,
+            "per_seed": [
+              0.6902118103448277,
+              0.7431295977011493,
+              0.6724960632183907
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 1.0938679318382125,
+            "ci95_half_width": 0.9342525905957844,
+            "per_seed": [
+              1.5264991252467417,
+              0.8449282846886171,
+              0.9101763855792793
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "our_vs_daoc": {
+        "relative_reduction_percent_mean": 5.545315645884183,
+        "relative_reduction_percent_ci95_half_width": 7.222493855883493,
+        "relative_reduction_percent_per_seed": [
+          3.786869088391935,
+          8.90125770340781,
+          3.9478201458528055
+        ],
+        "seed_wins": 3,
+        "seed_count": 3,
+        "wilcoxon_one_sided_p": 0.125
+      }
+    },
+    "10": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7843615164831899,
+              "p95_completion_time_s": 1.1420173576222354,
+              "cache_hit_rate": 0.3101599137931034,
+              "remote_loading_rate": 0.6898400862068965,
+              "inference_ms_per_decision": 0.022199805128519743,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 3482.909489749989
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.34780913803543373,
+              "p95_completion_time_s": 0.580245206155054,
+              "cache_hit_rate": 0.6141486206896551,
+              "remote_loading_rate": 0.3858513793103448,
+              "inference_ms_per_decision": 0.1704272140581845,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 4637.715333792003
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.6538489777767886,
+              "p95_completion_time_s": 0.8836639269738435,
+              "cache_hit_rate": 0.1834903735632184,
+              "remote_loading_rate": 0.8165096264367817,
+              "inference_ms_per_decision": 0.021119246357283655,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 3369.1817068329838
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.29396885254601385,
+              "p95_completion_time_s": 0.4995868716547236,
+              "cache_hit_rate": 0.45361025862068965,
+              "remote_loading_rate": 0.5463897413793104,
+              "inference_ms_per_decision": 0.19398604280542572,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 12000,
+              "total_wall_time_sec": 5171.071871791995
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.9851647496610141,
+              "p95_completion_time_s": 1.2977599575155778,
+              "cache_hit_rate": 0.20121856321839082,
+              "remote_loading_rate": 0.7987814367816091,
+              "inference_ms_per_decision": 0.021607684964659,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 3531.7567326670105
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.4223310677536375,
+              "p95_completion_time_s": 0.5473404514573024,
+              "cache_hit_rate": 0.5834802011494253,
+              "remote_loading_rate": 0.4165197988505747,
+              "inference_ms_per_decision": 0.21207569247439853,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 4945.135559499991
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.8077917479736643,
+            "ci95_half_width": 0.4145925892598251,
+            "per_seed": [
+              0.7843615164831899,
+              0.6538489777767886,
+              0.9851647496610141
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 1.1078137473705523,
+            "ci95_half_width": 0.5195726843691003,
+            "per_seed": [
+              1.1420173576222354,
+              0.8836639269738435,
+              1.2977599575155778
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2316229501915709,
+            "ci95_half_width": 0.17038745955501972,
+            "per_seed": [
+              0.3101599137931034,
+              0.1834903735632184,
+              0.20121856321839082
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7683770498084291,
+            "ci95_half_width": 0.1703874595550198,
+            "per_seed": [
+              0.6898400862068965,
+              0.8165096264367817,
+              0.7987814367816091
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.021642245483487466,
+            "ci95_half_width": 0.0013441862585707436,
+            "per_seed": [
+              0.022199805128519743,
+              0.021119246357283655,
+              0.021607684964659
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.3547030194450283,
+            "ci95_half_width": 0.1601230305481568,
+            "per_seed": [
+              0.34780913803543373,
+              0.29396885254601385,
+              0.4223310677536375
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.5423908430890266,
+            "ci95_half_width": 0.10074750253200138,
+            "per_seed": [
+              0.580245206155054,
+              0.4995868716547236,
+              0.5473404514573024
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.5504130268199233,
+            "ci95_half_width": 0.21170946053941198,
+            "per_seed": [
+              0.6141486206896551,
+              0.45361025862068965,
+              0.5834802011494253
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.4495869731800766,
+            "ci95_half_width": 0.21170946053941206,
+            "per_seed": [
+              0.3858513793103448,
+              0.5463897413793104,
+              0.4165197988505747
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.19216298311266958,
+            "ci95_half_width": 0.051878740451386775,
+            "per_seed": [
+              0.1704272140581845,
+              0.19398604280542572,
+              0.21207569247439853
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 11000.0,
+            "ci95_half_width": 2151.326364848071,
+            "per_seed": [
+              10500,
+              12000,
+              10500
+            ]
+          }
+        }
+      },
+      "our_vs_daoc": {
+        "relative_reduction_percent_mean": 55.942736194816746,
+        "relative_reduction_percent_ci95_half_width": 2.668501493417178,
+        "relative_reduction_percent_per_seed": [
+          55.65703687313835,
+          55.040252024930275,
+          57.13091968638163
+        ],
+        "seed_wins": 3,
+        "seed_count": 3,
+        "wilcoxon_one_sided_p": 0.125
+      }
+    },
+    "15": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.4191481729022057,
+              "p95_completion_time_s": 0.6359923775637197,
+              "cache_hit_rate": 0.20369643678160923,
+              "remote_loading_rate": 0.7963035632183907,
+              "inference_ms_per_decision": 0.13370445780464765,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 26780.678218709014
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.21161072980423398,
+              "p95_completion_time_s": 0.49093608773732084,
+              "cache_hit_rate": 0.6593593678160918,
+              "remote_loading_rate": 0.34064063218390805,
+              "inference_ms_per_decision": 1.2456462463892222,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 36071.07905183296
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7580609033003601,
+              "p95_completion_time_s": 0.9796712080067022,
+              "cache_hit_rate": 0.20303931034482756,
+              "remote_loading_rate": 0.7969606896551725,
+              "inference_ms_per_decision": 0.1297907506411724,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 26649.711767041998
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.19141768140048568,
+              "p95_completion_time_s": 0.5103254253182484,
+              "cache_hit_rate": 0.6363857183908046,
+              "remote_loading_rate": 0.3636142816091954,
+              "inference_ms_per_decision": 0.6501012110506484,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 29134.191486124997
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.49206380814131906,
+              "p95_completion_time_s": 0.7281002456423553,
+              "cache_hit_rate": 0.24762488505747132,
+              "remote_loading_rate": 0.7523751149425288,
+              "inference_ms_per_decision": 0.14208517086570552,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 28104.203477167
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.1942654120360508,
+              "p95_completion_time_s": 0.43023150493967394,
+              "cache_hit_rate": 0.6665371264367814,
+              "remote_loading_rate": 0.33346287356321835,
+              "inference_ms_per_decision": 0.411025733505195,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 30587.518214375013
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.556424294781295,
+            "ci95_half_width": 0.4431395597900806,
+            "per_seed": [
+              0.4191481729022057,
+              0.7580609033003601,
+              0.49206380814131906
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.7812546104042591,
+            "ci95_half_width": 0.44192401098554296,
+            "per_seed": [
+              0.6359923775637197,
+              0.9796712080067022,
+              0.7281002456423553
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.2181202107279694,
+            "ci95_half_width": 0.06347943117108415,
+            "per_seed": [
+              0.20369643678160923,
+              0.20303931034482756,
+              0.24762488505747132
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.7818797892720307,
+            "ci95_half_width": 0.06347943117108393,
+            "per_seed": [
+              0.7963035632183907,
+              0.7969606896551725,
+              0.7523751149425288
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.13519345977050853,
+            "ci95_half_width": 0.015602884056651193,
+            "per_seed": [
+              0.13370445780464765,
+              0.1297907506411724,
+              0.14208517086570552
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.19909794108025683,
+            "ci95_half_width": 0.02715047783429886,
+            "per_seed": [
+              0.21161072980423398,
+              0.19141768140048568,
+              0.1942654120360508
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.47716433933174773,
+            "ci95_half_width": 0.10380024675627077,
+            "per_seed": [
+              0.49093608773732084,
+              0.5103254253182484,
+              0.43023150493967394
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.654094070881226,
+            "ci95_half_width": 0.039125710391235365,
+            "per_seed": [
+              0.6593593678160918,
+              0.6363857183908046,
+              0.6665371264367814
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.3459059291187739,
+            "ci95_half_width": 0.039125710391235635,
+            "per_seed": [
+              0.34064063218390805,
+              0.3636142816091954,
+              0.33346287356321835
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.7689243969816886,
+            "ci95_half_width": 1.0677084614170638,
+            "per_seed": [
+              1.2456462463892222,
+              0.6501012110506484,
+              0.411025733505195
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "our_vs_daoc": {
+        "relative_reduction_percent_mean": 61.59447211474393,
+        "relative_reduction_percent_ci95_half_width": 31.42860595749159,
+        "relative_reduction_percent_per_seed": [
+          49.514099431943286,
+          74.74903657910427,
+          60.52028033318426
+        ],
+        "seed_wins": 3,
+        "seed_count": 3,
+        "wilcoxon_one_sided_p": 0.125
+      }
+    },
+    "20": {
+      "per_seed": [
+        {
+          "seed": 51,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.5285584171167891,
+              "p95_completion_time_s": 0.822962288477709,
+              "cache_hit_rate": 0.21421988505747122,
+              "remote_loading_rate": 0.7857801149425288,
+              "inference_ms_per_decision": 0.15757597721838987,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 28978.095831957995
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.17967032538093938,
+              "p95_completion_time_s": 0.4516704771633174,
+              "cache_hit_rate": 0.5993018965517242,
+              "remote_loading_rate": 0.40069810344827594,
+              "inference_ms_per_decision": 0.8499198358671604,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 43565.846454832994
+            }
+          }
+        },
+        {
+          "seed": 52,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.7290266122226063,
+              "p95_completion_time_s": 1.0569282750824405,
+              "cache_hit_rate": 0.17601356321839082,
+              "remote_loading_rate": 0.8239864367816092,
+              "inference_ms_per_decision": 0.12885354617739028,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 28707.73871162499
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.1482688088942038,
+              "p95_completion_time_s": 0.41474883412343594,
+              "cache_hit_rate": 0.6326350287356322,
+              "remote_loading_rate": 0.3673649712643678,
+              "inference_ms_per_decision": 0.220706102517594,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 29505.265625583008
+            }
+          }
+        },
+        {
+          "seed": 53,
+          "methods": {
+            "daoc_paper": {
+              "mean_completion_time_s": 0.5472655840214632,
+              "p95_completion_time_s": 0.812692369551362,
+              "cache_hit_rate": 0.1716908333333333,
+              "remote_loading_rate": 0.8283091666666665,
+              "inference_ms_per_decision": 0.15522100636969394,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 26000,
+              "total_wall_time_sec": 29056.922727958998
+            },
+            "lean_our": {
+              "mean_completion_time_s": 0.2148334553563569,
+              "p95_completion_time_s": 0.5032871433524511,
+              "cache_hit_rate": 0.5671682183908046,
+              "remote_loading_rate": 0.4328317816091955,
+              "inference_ms_per_decision": 0.2808716761794887,
+              "cache_decision_ms_per_episode": 0.0,
+              "selected_checkpoint_episode": 10500,
+              "total_wall_time_sec": 29176.246095041977
+            }
+          }
+        }
+      ],
+      "method_summary": {
+        "daoc_paper": {
+          "mean_completion_time_s": {
+            "mean": 0.6016168711202862,
+            "ci95_half_width": 0.2750830185156918,
+            "per_seed": [
+              0.5285584171167891,
+              0.7290266122226063,
+              0.5472655840214632
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.8975276443705038,
+            "ci95_half_width": 0.3431599434924373,
+            "per_seed": [
+              0.822962288477709,
+              1.0569282750824405,
+              0.812692369551362
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.1873080938697318,
+            "ci95_half_width": 0.058144472385132775,
+            "per_seed": [
+              0.21421988505747122,
+              0.17601356321839082,
+              0.1716908333333333
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.8126919061302682,
+            "ci95_half_width": 0.058144472385132685,
+            "per_seed": [
+              0.7857801149425288,
+              0.8239864367816092,
+              0.8283091666666665
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.14721684325515802,
+            "ci95_half_width": 0.039613583929136435,
+            "per_seed": [
+              0.15757597721838987,
+              0.12885354617739028,
+              0.15522100636969394
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 26000.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              26000,
+              26000,
+              26000
+            ]
+          }
+        },
+        "lean_our": {
+          "mean_completion_time_s": {
+            "mean": 0.18092419654383338,
+            "ci95_half_width": 0.0827218672742574,
+            "per_seed": [
+              0.17967032538093938,
+              0.1482688088942038,
+              0.2148334553563569
+            ]
+          },
+          "p95_completion_time_s": {
+            "mean": 0.4565688182130681,
+            "ci95_half_width": 0.11047442080115562,
+            "per_seed": [
+              0.4516704771633174,
+              0.41474883412343594,
+              0.5032871433524511
+            ]
+          },
+          "cache_hit_rate": {
+            "mean": 0.5997017145593869,
+            "ci95_half_width": 0.0813188353513162,
+            "per_seed": [
+              0.5993018965517242,
+              0.6326350287356322,
+              0.5671682183908046
+            ]
+          },
+          "remote_loading_rate": {
+            "mean": 0.40029828544061313,
+            "ci95_half_width": 0.08131883535131636,
+            "per_seed": [
+              0.40069810344827594,
+              0.3673649712643678,
+              0.4328317816091955
+            ]
+          },
+          "inference_ms_per_decision": {
+            "mean": 0.45049920485474765,
+            "ci95_half_width": 0.8625275439215452,
+            "per_seed": [
+              0.8499198358671604,
+              0.220706102517594,
+              0.2808716761794887
+            ]
+          },
+          "cache_decision_ms_per_episode": {
+            "mean": 0.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "selected_checkpoint_episode": {
+            "mean": 10500.0,
+            "ci95_half_width": 0.0,
+            "per_seed": [
+              10500,
+              10500,
+              10500
+            ]
+          }
+        }
+      },
+      "our_vs_daoc": {
+        "relative_reduction_percent_mean": 68.80459021709237,
+        "relative_reduction_percent_ci95_half_width": 24.255594229217003,
+        "relative_reduction_percent_per_seed": [
+          66.00748005092503,
+          79.66208552494784,
+          60.744205075404246
+        ],
+        "seed_wins": 3,
+        "seed_count": 3,
+        "wilcoxon_one_sided_p": 0.125
+      }
+    }
+  },
+  "statistical_scope": "descriptive three-seed sensitivity; not a ten-seed superiority test"
+}

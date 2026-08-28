@@ -1,0 +1,76 @@
+{
+  "status": "running",
+  "created_at": "2026-08-11T15:01:42.534378+00:00",
+  "specification": {
+    "protocol_version": "pegasus_common_horizon_26k_v1",
+    "profile": "pegasus_common_horizon_26k",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "capacity_namespace": "pegasus_pscale_p2",
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "rerun_methods": [
+      "lean_our",
+      "coord_cache_discrete_sac",
+      "discrete_sac_std_cache"
+    ],
+    "reference_methods": [
+      "daoc_paper",
+      "dqn_wdsa_std_cache",
+      "daoc_our_coord_cache"
+    ],
+    "fixed_train_episodes": 26000,
+    "tail_start_episode": 25001,
+    "tail_end_episode": 26000,
+    "tail_episodes": 1000,
+    "evaluation_episodes": 100,
+    "default_workers": 4,
+    "checkpoint_rule": "fixed_budget_final",
+    "parent_locks": {
+      "results/pegasus_pscale/p3_paper_closure/FINAL_LOCK.json": "a34f8b1e0f1f4cf2af98c3335482161823b09e66459ae817fab7af20d30e843d",
+      "results/pegasus_pscale/p5_baseline_extension/FINAL_LOCK.json": "b8e1361d34aff2da8b3515837cab5ecc18318eee35961d7ba717e9791d69cf8f",
+      "results/pegasus_pscale/p6_baselines_ablation/FINAL_LOCK.json": "183ad0e8de3d81415d1ab4494b937da9e0d9362b3c729afe46cad171cc430fc5",
+      "results/pegasus_pscale/p7_std_cache_discrete_sac/FINAL_LOCK.json": "15d4327450245e33ac10f5fd96c720e142dcc78c42b164e62ef4b5f63fbe5dfd",
+      "results/pegasus_pscale/p8_daoc_our_coord_cache/FINAL_LOCK.json": "5ccae5455953c54d36f4c751c46cc4053dbff66891dd564a3344533dec65ddff"
+    },
+    "governance": {
+      "old_results_are_not_overwritten": true,
+      "all_three_methods_train_from_scratch": true,
+      "no_early_stopping": true,
+      "no_historical_best_checkpoint_selection": true,
+      "seeds_51_to_60_are_confirmation_not_holdout": true
+    }
+  },
+  "specification_sha256": "a1b41e9750baa59a9233c05d3f67f648a0e29779b61cdaf73aa7aeae0be16667",
+  "algorithm_source_sha256": "8678a61c8c902b26ccd6eb675427f728aa58185b19fee803ff63c1af043e9d63",
+  "protocol_source_sha256": "2583e5e04f6194388f07ac4603446b80d3a61f42efa297e844ba3f5cea48014c"
+}

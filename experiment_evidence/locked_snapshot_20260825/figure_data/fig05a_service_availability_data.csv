@@ -1,0 +1,31 @@
+method,method_key,service_id,availability,independent_seeds
+DAOC,daoc_paper,1,0.900000000,10
+DAOC,daoc_paper,2,0.200000000,10
+DAOC,daoc_paper,3,0.500000000,10
+DAOC,daoc_paper,4,0.500000000,10
+DAOC,daoc_paper,5,0.700000000,10
+DAOC,daoc_paper,6,0.900000000,10
+DAOC,daoc_paper,7,0.300000000,10
+DAOC,daoc_paper,8,0.500000000,10
+DAOC,daoc_paper,9,0.200000000,10
+DAOC,daoc_paper,10,0.900000000,10
+DAOC + DCC,daoc_our_coord_cache,1,1.000000000,10
+DAOC + DCC,daoc_our_coord_cache,2,0.800000000,10
+DAOC + DCC,daoc_our_coord_cache,3,0.800000000,10
+DAOC + DCC,daoc_our_coord_cache,4,0.900000000,10
+DAOC + DCC,daoc_our_coord_cache,5,0.600000000,10
+DAOC + DCC,daoc_our_coord_cache,6,0.900000000,10
+DAOC + DCC,daoc_our_coord_cache,7,0.700000000,10
+DAOC + DCC,daoc_our_coord_cache,8,0.800000000,10
+DAOC + DCC,daoc_our_coord_cache,9,0.700000000,10
+DAOC + DCC,daoc_our_coord_cache,10,0.800000000,10
+OUR,lean_our,1,1.000000000,10
+OUR,lean_our,2,0.800000000,10
+OUR,lean_our,3,0.800000000,10
+OUR,lean_our,4,0.900000000,10
+OUR,lean_our,5,0.600000000,10
+OUR,lean_our,6,0.900000000,10
+OUR,lean_our,7,0.700000000,10
+OUR,lean_our,8,0.700000000,10
+OUR,lean_our,9,0.800000000,10
+OUR,lean_our,10,0.800000000,10

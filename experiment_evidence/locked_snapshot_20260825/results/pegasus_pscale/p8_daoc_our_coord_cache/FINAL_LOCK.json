@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "created_at": "2026-08-11T03:13:19.832567+00:00",
+  "specification": {
+    "protocol_version": "pegasus_p8_daoc_our_coord_cache_v1",
+    "freeze_sha256": "a3a9c73b1fc3a76e89617ebb12b06aec458020a47617f3b214ac5b207d7d42f6",
+    "method": "daoc_our_coord_cache",
+    "seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "scenarios_per_seed": 100,
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "specification_sha256": "8537e9e1301f6e8dc9d060b19ab4095cbc678d0aed0d4bdb3fef8740034d7657",
+  "completed_at": "2026-08-11T08:43:45.107255+00:00",
+  "summary_sha256": "bdcddaeaa6ff5e82ff43cf45e7029f935bfe2790e20572006a8fd40136d91958",
+  "integrity": {
+    "all_new_runs_complete": true,
+    "all_new_runs_converged": true,
+    "new_control_trained_from_scratch": true,
+    "scenario_banks_paired": true,
+    "capacity_assignments_exact": true,
+    "dataset_and_environment_exact": true,
+    "daoc_state_scheduler_guidance_reward_training_matched": true,
+    "only_cache_subsystem_changed": true,
+    "evaluation_state_frozen": true,
+    "all_tasks_executed_once": true,
+    "p6_parent_integrity_passed": true,
+    "p7_parent_integrity_passed": true
+  },
+  "evidence": {
+    "daoc_coord_cache_control_valid": true,
+    "our_coord_cache_improves_daoc_mean": true,
+    "our_coord_cache_improves_daoc_p95": true,
+    "our_beats_daoc_with_same_coord_cache_mean": true,
+    "our_beats_daoc_with_same_coord_cache_p95": true
+  }
+}

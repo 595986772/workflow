@@ -1,0 +1,173 @@
+{
+  "status": "locked",
+  "created_at": "2026-08-14T16:21:31.277563+00:00",
+  "specification": {
+    "protocol_version": "pegasus_p14_service_sensitivity_v1",
+    "base_dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "base_dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "projected_dataset_sha256": {
+      "10": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+      "4": "30bf4786d86c2f76389f5e7c99c72d7739e2f4aaa3d43780b95747e24a31a583",
+      "6": "f21e58331568478f0cdfeec442dc675e6400384fdaeef27882e3381a78375a21",
+      "8": "924670197cf7dfc81f4d3b05146dc309987e62765200b25efc0e09d9dc10bde1"
+    },
+    "active_service_counts": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "service_size_multipliers": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "service_projection": "map original service q to 1 + (q - 1) mod Q_active; keep the network state dimension fixed at 10",
+    "users": 20,
+    "servers": 10,
+    "service_state_dimension": 10,
+    "task_limit_including_dummy": 31,
+    "bandwidth_hz": 15000,
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "capacity_assignment_namespace": "pegasus_pscale_p2",
+    "workflow_families": [
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Montage",
+      "Sipht"
+    ],
+    "methods": [
+      "greedy",
+      "daoc_paper",
+      "our_flat_ddqn",
+      "coord_cache_discrete_sac",
+      "lean_our"
+    ],
+    "display_names": {
+      "greedy": "Nearest+Service",
+      "daoc_paper": "DAOC",
+      "our_flat_ddqn": "DQN+CoordCache",
+      "coord_cache_discrete_sac": "CoordCache-DiscreteSAC",
+      "lean_our": "OUR"
+    },
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "q10_source_runs": [
+      {
+        "method": "greedy",
+        "seed": 51,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/heuristics/runs/greedy/seed_51",
+        "selected_checkpoint_sha256": "cdda33c4fee1d821e17c462850204cfe61785e6c8d141ea54ee20b2d3783c784"
+      },
+      {
+        "method": "greedy",
+        "seed": 52,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/heuristics/runs/greedy/seed_52",
+        "selected_checkpoint_sha256": "b6f09976b690747739ed5b29ec1ab4274512d2a2e524e1c3d4a9bcae4497378d"
+      },
+      {
+        "method": "greedy",
+        "seed": 53,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/heuristics/runs/greedy/seed_53",
+        "selected_checkpoint_sha256": "5fce0e881cd6b57c5b89c97381fe3bbf3045b721114dfedd9e0778d5f51c98fb"
+      },
+      {
+        "method": "daoc_paper",
+        "seed": 51,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_51",
+        "selected_checkpoint_sha256": "0d8ba3a9265458dae5d601f82755c78453bc354bb3ba99b4f0aac8ac9a3a9956"
+      },
+      {
+        "method": "daoc_paper",
+        "seed": 52,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_52",
+        "selected_checkpoint_sha256": "db5b15a4623a8deca8b1f8b67213604710084f7e482a5b322435f811b8179909"
+      },
+      {
+        "method": "daoc_paper",
+        "seed": 53,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/daoc_paper/seed_53",
+        "selected_checkpoint_sha256": "3f883b531eb27daf883d889153695ecc15a0a31bb32e5ec978d14ec65be64aaa"
+      },
+      {
+        "method": "our_flat_ddqn",
+        "seed": 51,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_51",
+        "selected_checkpoint_sha256": "7271349a951014c7418013ae45157b96ef8c39c9a4a977638424f3a90a3f15d6"
+      },
+      {
+        "method": "our_flat_ddqn",
+        "seed": 52,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_52",
+        "selected_checkpoint_sha256": "31c64fab9ee7245748cfc59331ba393bb44cf204e59d7ba613956e203be01116"
+      },
+      {
+        "method": "our_flat_ddqn",
+        "seed": 53,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p6_baselines_ablation/learning/runs/our_flat_ddqn/seed_53",
+        "selected_checkpoint_sha256": "5ad352abd8f4b9aff78785a689e560d276e6d07793909adf2fb6d82abb578fd7"
+      },
+      {
+        "method": "coord_cache_discrete_sac",
+        "seed": 51,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p5_baseline_extension/sac_final/runs/coord_cache_discrete_sac/seed_51",
+        "selected_checkpoint_sha256": "06ecc1ca7e5b7c6566c29afcdb05bb21c1ba2f8067a47e4e355db5576b1f9ba9"
+      },
+      {
+        "method": "coord_cache_discrete_sac",
+        "seed": 52,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p5_baseline_extension/sac_final/runs/coord_cache_discrete_sac/seed_52",
+        "selected_checkpoint_sha256": "4f3961948d3abb0661e1d16655fe7f8729400410a22bc6a7a5cea925a534154a"
+      },
+      {
+        "method": "coord_cache_discrete_sac",
+        "seed": 53,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p5_baseline_extension/sac_final/runs/coord_cache_discrete_sac/seed_53",
+        "selected_checkpoint_sha256": "0cad877eec82a0d6328e19efffffec78ee6a90c851b342ff6fd35a878b5f224c"
+      },
+      {
+        "method": "lean_our",
+        "seed": 51,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_51",
+        "selected_checkpoint_sha256": "77b5f47b66205223596265f5ed4d9def4397e476d9cc827474a89d4e8d4ebf9b"
+      },
+      {
+        "method": "lean_our",
+        "seed": 52,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_52",
+        "selected_checkpoint_sha256": "7d1f9b1dd3db2ea553567c2fe23078cb81aeab9d7d8bad06cb5dfbbfc2b8eb66"
+      },
+      {
+        "method": "lean_our",
+        "seed": 53,
+        "run": "${PROJECT_ROOT}/results/pegasus_pscale/p3_paper_closure/final/runs/lean_our/seed_53",
+        "selected_checkpoint_sha256": "e2f8a16cb53d1bdc727ffbf73c70a06f84c06646acd8f3d51e36d73b0d176df6"
+      }
+    ],
+    "claim_scope": "three_seed_control_sensitivity; descriptive trend evidence only",
+    "method_identity": {
+      "our_flat_ddqn": "flat Double DQN scheduler with OUR's coordinated cache, causal state, reward and information protocol",
+      "coord_cache_discrete_sac": "Discrete SAC scheduler with the same coordinated cache, causal state, reward and information protocol"
+    },
+    "specification_sha256": "d027be5e2f3e919d925868730e9adbf7c8aa21ac451c5fe1f7e6a2651048a31c"
+  },
+  "specification_sha256": "2bf35187efbbfe37ed4c45b42edf638b79fa3745ef8789be3a37ae40973a3f08",
+  "source_sha256": "fecda10d9ee30e2b2f2e8dcf1221ed939b4b957a1b8d843667c3e209dad94389"
+}

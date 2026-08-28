@@ -1,0 +1,122 @@
+{
+  "status": "locked",
+  "created_at": "2026-08-13T10:34:26.794417+00:00",
+  "specification": {
+    "protocol_version": "pegasus_server_scaling_p12_strong_baselines_v1",
+    "parent_protocol": "pegasus_server_scaling_p11_v1",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "workflow_families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "users": 20,
+    "services": 10,
+    "bandwidth_hz": 15000.0,
+    "server_counts": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "trained_server_counts": [
+      5,
+      15,
+      20
+    ],
+    "reused_server_count": 10,
+    "capacity_profiles": {
+      "5": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "10": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "20": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "capacity_assignment_namespace": "pegasus_server_scaling_p11",
+    "methods": [
+      "our_flat_ddqn",
+      "coord_cache_discrete_sac"
+    ],
+    "display_names": {
+      "our_flat_ddqn": "OUR-DQN",
+      "coord_cache_discrete_sac": "CoordCache-DiscreteSAC"
+    },
+    "seeds": [
+      51,
+      52,
+      53
+    ],
+    "evaluation_episodes_per_seed": 100,
+    "smoke_episodes": 20,
+    "workers": 6,
+    "training_profiles": {
+      "our_flat_ddqn": "pegasus_p6_learning_converged",
+      "coord_cache_discrete_sac": "pegasus_baseline_sac_converged"
+    },
+    "claim_scope": "three_seed_server_count_sensitivity",
+    "method_identity": {
+      "our_flat_ddqn": "OUR state, reward, telemetry and coordinated cache; Pairwise PD3QN replaced by flat Double DQN",
+      "coord_cache_discrete_sac": "OUR state, reward, telemetry and coordinated cache; scheduler replaced by Discrete SAC"
+    },
+    "specification_sha256": "58807aa84870b584b9f579fa026a1a04352400b298204109898e69308bf372fc"
+  },
+  "specification_sha256": "994bf1ad6b5443790b7cb41206aabdd2fd717a032068f28d43fc16e1b294486f",
+  "source_sha256": "44d2f8783bb497c5653511f8acf9be0d069cd16cbd16882d663e92ea600c7646"
+}

@@ -1,0 +1,611 @@
+{
+  "status": "complete",
+  "protocol_version": "pegasus_p14_service_sensitivity_v1_service_size_v1",
+  "all_runs_complete": true,
+  "all_tasks_exactly_once": true,
+  "all_scenarios_paired": true,
+  "all_networks_frozen": true,
+  "all_native_cache_updates_enabled": true,
+  "records": [
+    {
+      "multiplier": 0.5,
+      "seed": 51,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 51,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 51,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 51,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 51,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 52,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 52,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 52,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 52,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 52,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 53,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 53,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 53,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 53,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 0.5,
+      "seed": 53,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 51,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 51,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 51,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 51,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 51,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 52,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 52,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 52,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 52,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 52,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 53,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 53,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 53,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 53,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 1.0,
+      "seed": 53,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 51,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 51,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 51,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 51,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 51,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 52,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 52,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 52,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 52,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 52,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 53,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 53,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 53,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 53,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 2.0,
+      "seed": 53,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 51,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 51,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 51,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 51,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 51,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 52,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 52,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 52,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 52,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 52,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 53,
+      "label": "greedy",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 53,
+      "label": "daoc_paper",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 53,
+      "label": "our_flat_ddqn",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 53,
+      "label": "coord_cache_discrete_sac",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    },
+    {
+      "multiplier": 4.0,
+      "seed": 53,
+      "label": "lean_our",
+      "complete": true,
+      "exact_once": true,
+      "model_frozen": true,
+      "cache_updates": true,
+      "paired": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "running",
+  "created_at": "2026-08-08T16:19:34.282948+00:00",
+  "specification": {
+    "protocol_version": "pegasus_p6_baselines_ablation_v1",
+    "dataset_path": "${PROJECT_ROOT}/datasets/pegasus_pscale/dag_pegasus5_full31.json",
+    "dataset_sha256": "0671d8ea1ecdd8165062e19733e4859edb8e5ce87ecdd054bcef290abc49d5a5",
+    "families": [
+      "Montage",
+      "CyberShake",
+      "Epigenomics",
+      "Inspiral",
+      "Sipht"
+    ],
+    "task_limit_including_dummy": 31,
+    "capacity_multiset": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "capacity_namespace": "pegasus_pscale_p2",
+    "smoke_seeds": [
+      41
+    ],
+    "final_seeds": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "evaluation_episodes": 100,
+    "new_methods": [
+      "random",
+      "nearest",
+      "greedy",
+      "dqn_wdsa_std_cache",
+      "base_ddqn_std_cache",
+      "our_flat_ddqn",
+      "our_no_task_dependency",
+      "our_no_dependency_cache",
+      "our_terminal_reward"
+    ],
+    "reference_methods": [
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "coord_cache_discrete_sac",
+      "lean_our",
+      "our_no_coord_cache"
+    ],
+    "main_comparison_methods": [
+      "random",
+      "nearest",
+      "greedy",
+      "dqn_wdsa_std_cache",
+      "daoc_paper",
+      "centralized_greedy_daoc",
+      "coord_cache_discrete_sac",
+      "lean_our"
+    ],
+    "factorial_methods": [
+      "base_ddqn_std_cache",
+      "our_flat_ddqn",
+      "our_no_coord_cache",
+      "lean_our"
+    ],
+    "mechanism_ablations": [
+      "our_no_task_dependency",
+      "our_no_dependency_cache",
+      "our_terminal_reward"
+    ],
+    "reuse_policy": {
+      "p3_daoc_central_our": true,
+      "p4_pairwise_standard_cache": true,
+      "p5_coord_cache_discrete_sac": true,
+      "requires_exact_scenario_bank_and_environment": true
+    },
+    "governance": {
+      "seeds_51_to_60_are_paired_confirmation_not_holdout": true,
+      "new_learning_methods_train_from_scratch": true,
+      "heuristics_receive_cache_calibration_only": true,
+      "stable_final_checkpoint_required": true
+    },
+    "parent_locks": {
+      "p3": "a34f8b1e0f1f4cf2af98c3335482161823b09e66459ae817fab7af20d30e843d",
+      "p4": "0d51c5e6e18ce486ccd217fc17a9cd6dc8dae950bd8d6dc1c0512f84a3587449",
+      "p5": "b8e1361d34aff2da8b3515837cab5ecc18318eee35961d7ba717e9791d69cf8f"
+    }
+  },
+  "specification_sha256": "4396fda2268532129fba46679d40ea395d1e5eddf5a5478f160b22d1aa8f3ee6",
+  "algorithm_source_sha256": "8678a61c8c902b26ccd6eb675427f728aa58185b19fee803ff63c1af043e9d63",
+  "protocol_source_sha256": "157aa0e94c37217026e972f4773f5143513a3acb2c5079564d58d29e6d30bf4f"
+}
